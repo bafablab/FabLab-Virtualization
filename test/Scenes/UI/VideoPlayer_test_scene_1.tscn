@@ -3,9 +3,16 @@
 [ext_resource path="res://test/Scenes/UI/VideoPlayer_test_scene_1.gd" type="Script" id=1]
 
 [node name="Container" type="Container"]
-margin_right = 975.0
-margin_bottom = 538.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 1024, 600 )
+rect_pivot_offset = Vector2( 198, 78 )
 
 [node name="Video" type="VideoPlayer" parent="."]
 margin_right = 40.0

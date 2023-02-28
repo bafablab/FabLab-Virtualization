@@ -11,11 +11,16 @@ config_version=4
 [application]
 
 config/name="FabLab-Virtualization"
+run/main_scene="res://test/Scenes/UI/UI_Theme_test_scene.tscn"
 config/icon="res://icon.png"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[mono]
+
+project/assembly_name="FabLab-Virtualization"
 
 [physics]
 

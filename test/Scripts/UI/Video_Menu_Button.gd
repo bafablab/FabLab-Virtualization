@@ -38,8 +38,9 @@ func play_video():
 	create_video_panel()
 	
 func create_video_panel():
+	var parent = get_parent()
 	videoplayer_scene=videoplayer.instance()
-	add_child(videoplayer_scene)
+	parent.add_child(videoplayer_scene)
 	#$self/Panel.rect_size_x=4
 	#print_debug($self.get_children())
 	#print_debug(get_children())
