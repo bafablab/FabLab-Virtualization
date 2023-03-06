@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_Game/Scenes/Models/stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
+[ext_resource path="res://_Game/Scenes/Models/stg_fablab.tscn" type="PackedScene" id=2]
+
+[node name="FabLab" type="Spatial"]
+
+[node name="stg_fablab" parent="." instance=ExtResource( 2 )]
+
+[node name="stg_obj_metal_shroud" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 0.9666, 0, -0.956732, 0, -4.18201e-08, 0, 0, -12.466 )
