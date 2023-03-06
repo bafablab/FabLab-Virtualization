@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://test/Model/black_shroud_texture_repeat_test/model_test_text_repeat.glb" type="PackedScene" id=1]
+
+[node name="stg_fl_obj_black_shroud" instance=ExtResource( 1 )]
