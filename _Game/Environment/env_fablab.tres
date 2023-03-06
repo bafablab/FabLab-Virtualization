@@ -1,0 +1,16 @@
+[gd_resource type="Environment" format=2]
+
+[resource]
+ambient_light_color = Color( 0.870588, 0.870588, 0.870588, 1 )
+fog_color = Color( 0.992157, 0.992157, 0.992157, 1 )
+fog_depth_begin = 0.0
+fog_depth_end = 27.4
+tonemap_mode = 2
+ssao_enabled = true
+ssao_radius = 0.41
+ssao_intensity = 1.81
+ssao_radius2 = 1.81
+ssao_intensity2 = 1.26
+ssao_quality = 0
+adjustment_enabled = true
+adjustment_saturation = 1.49
