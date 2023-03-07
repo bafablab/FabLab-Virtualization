@@ -69,5 +69,5 @@ shape = SubResource( 2 )
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Camera"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
