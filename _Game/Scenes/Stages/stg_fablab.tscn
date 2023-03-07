@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/stg_fablab.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://_Game/Scenes/Models/box_filament_pack_closed.tscn" type="PackedScene" id=4]
 [ext_resource path="res://_Game/Scenes/Models/chair_bar_stool_01.tscn" type="PackedScene" id=5]
 [ext_resource path="res://_Game/Scenes/Models/mats_filament_roll.tscn" type="PackedScene" id=6]
+[ext_resource path="res://test/Scenes/FPSController.tscn" type="PackedScene" id=7]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -14,6 +15,9 @@ margin = 0.198
 radius = 0.188198
 
 [node name="FabLab" type="Spatial"]
+
+[node name="FPSController" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.69243, 1.71273, -2.49126 )
 
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
 
@@ -53,7 +57,7 @@ skeleton = NodePath("../..")
 shape = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.43282, 1.10859, -5.16481 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Camera"]
 environment = ExtResource( 3 )

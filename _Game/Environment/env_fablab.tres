@@ -6,7 +6,6 @@ fog_color = Color( 0.992157, 0.992157, 0.992157, 1 )
 fog_depth_begin = 0.0
 fog_depth_end = 27.4
 tonemap_mode = 2
-ssao_enabled = true
 ssao_radius = 0.41
 ssao_intensity = 1.81
 ssao_radius2 = 1.81

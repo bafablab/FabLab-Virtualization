@@ -1,0 +1,112 @@
+extends KinematicBody
+
+var speed = 10
+var h_acceleration = 6
+var gravity = 20
+var jump = 10
+var full_contact = false
+
+export var mouse_sensitivity = 0.06
+export var object_rotation_scale = 2
+export var inverse_mouse = -1
+export var moving = true
+
+var direction = Vector3()
+var h_velocity = Vector3()
+var movement = Vector3()
+var gravity_vec = Vector3()
+
+var objects_in_range = []
+var selected_object = null
+var selected_object_transform
+export var selected_object_position_zScale = 1.7
+export var selected_object_position_yScale = 1.5
+
+onready var head = $Head
+onready var ground_check = $GroundCheck
+onready var object_select = $Head/ObjectSelect
+
+signal object_selected
+
+#func _ready():
+	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _input(event):
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	if event is InputEventMouseMotion:
+		if !selected_object:
+			rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
+			head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
+			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
+		else:
+			selected_object.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity * object_rotation_scale))
+			selected_object.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * object_rotation_scale))
+
+func _physics_process(delta):
+
+	# Check if interactable objects in range
+	if objects_in_range.size() > 0:
+		if !object_select.enabled:
+			object_select.enabled = true
+		if object_select.is_colliding():
+			emit_signal("object_selected")
+	# if no interactable objects in range, disable object_select raycast
+	else:
+		if object_select.enabled:
+			object_select.enabled = false
+		selected_object = null
+
+	# ------- Object selection code ends -------
+	direction = Vector3()
+	if ground_check.is_colliding():
+		full_contact = true
+	else:
+		full_contact = false
+	
+	if not is_on_floor():
+		gravity_vec += Vector3.DOWN * gravity * delta
+	elif is_on_floor() and full_contact:
+		gravity_vec = -get_floor_normal() * gravity
+	else:
+		gravity_vec = -get_floor_normal()
+	
+	moving = !selected_object
+	if moving:
+#		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
+#			gravity_vec = Vector3.UP * jump
+		
+		if Input.is_action_pressed("move_forward"):
+			direction -= transform.basis.z
+		elif Input.is_action_pressed("move_backward"):
+			direction += transform.basis.z
+		if Input.is_action_pressed("move_left"):
+			direction -= transform.basis.x
+		elif Input.is_action_pressed("move_right"):
+			direction += transform.basis.x
+			
+		direction = direction.normalized()
+		h_velocity = h_velocity.linear_interpolate(direction * speed, h_acceleration * delta)
+		movement.z = h_velocity.z + gravity_vec.z
+		movement.x = h_velocity.x + gravity_vec.x
+		movement.y = gravity_vec.y
+		
+		move_and_slide(movement, Vector3.UP)
+	else:
+		h_velocity = Vector3.ZERO
+
+func _on_Area_body_entered(body):
+	objects_in_range.append(body)
+	print(objects_in_range)
+
+func _on_Area_body_exited(body):
+	objects_in_range.erase(body)
+	print(objects_in_range)
+	
+func _on_Area_area_entered(area):
+	objects_in_range.append(area)
+	print(objects_in_range)
+
+func _on_Area_area_exited(area):
+	objects_in_range.erase(area)
+	print(objects_in_range)
+
