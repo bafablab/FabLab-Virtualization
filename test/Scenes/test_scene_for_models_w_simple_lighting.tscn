@@ -1,11 +1,12 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://test/Environment/env_test_01.tres" type="Environment" id=1]
-[ext_resource path="res://_Game/Scenes/Models/chair_bar_stool_01.tscn" type="PackedScene" id=2]
-[ext_resource path="res://_Game/Scenes/Models/box_filament_pack_closed.tscn" type="PackedScene" id=3]
-[ext_resource path="res://_Game/Scenes/Models/mats_filament_roll.tscn" type="PackedScene" id=4]
-[ext_resource path="res://_Game/Scenes/Models/stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=5]
-[ext_resource path="res://_Game/Scenes/Models/stg_fablab.tscn" type="PackedScene" id=6]
+[ext_resource path="res://_Game/Scenes/Models/mdl_chair_bar_stool_01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://_Game/Scenes/Models/mdl_box_filament_pack_closed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll.tscn" type="PackedScene" id=4]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=5]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=6]
+
 
 [sub_resource type="PlaneMesh" id=1]
 

@@ -24,7 +24,7 @@ visible = false
 [node name="static_floor" type="StaticBody" parent="stage_collision" index="0"]
 
 [node name="CollisionShape" type="CollisionShape" parent="stage_collision/static_floor" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79204, 0, -9.45863 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79204, -0.171614, -9.45863 )
 shape = SubResource( 1 )
 
 [node name="static_floor2" type="StaticBody" parent="stage_collision" index="1"]
