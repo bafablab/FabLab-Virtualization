@@ -8,11 +8,55 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "SkCsvWriter",
+"language": "GDScript",
+"path": "res://addons/string_keys/csv_writer.gd"
+}, {
+"base": "Reference",
+"class": "SkFileFinder",
+"language": "GDScript",
+"path": "res://addons/string_keys/file_finder.gd"
+}, {
+"base": "Reference",
+"class": "SkKeyFinder",
+"language": "GDScript",
+"path": "res://addons/string_keys/key_finder.gd"
+}, {
+"base": "Reference",
+"class": "SkModifiedFileTracker",
+"language": "GDScript",
+"path": "res://addons/string_keys/modified_file_tracker.gd"
+}, {
+"base": "Reference",
+"class": "StringKeys",
+"language": "GDScript",
+"path": "res://addons/string_keys/string_keys.gd"
+}, {
+"base": "Resource",
+"class": "StringKeysOptions",
+"language": "GDScript",
+"path": "res://addons/string_keys/string_keys_options.gd"
+} ]
+_global_script_class_icons={
+"SkCsvWriter": "",
+"SkFileFinder": "",
+"SkKeyFinder": "",
+"SkModifiedFileTracker": "",
+"StringKeys": "",
+"StringKeysOptions": ""
+}
+
 [application]
 
 config/name="FabLab-Virtualization"
 run/main_scene="res://test/Scenes/UI/UI_Theme_test_scene.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/string_keys/plugin.cfg" )
 
 [gui]
 
