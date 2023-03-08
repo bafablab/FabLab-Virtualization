@@ -15,14 +15,14 @@ func _ready():
 	#$Video.stream=VideoStreamWebm.new().set_file(videofile)
 	#$Video.stream=load("res://test/Video/test files/V208 WEBM - VP8 1080p 24fps 8bit - VORBIS2.0.webm")
 	
-	$Video.stream=load("res://test/Video/test files/V208 WEBM - VP8 1080p 24fps 8bit - VORBIS2.0.webm")
+	$Video.stream=load("res://test/Video/test files/bus.ogv")
 	$Video.play()
 	print_debug($Video.get_stream_name())
 
 
-#func _on_Video_finished():
-#	$Video.play()
-#	$Video.stream_position=0.5
-#	$Video.paused=true
+func _on_Video_finished():
+	$Video.play()
+	$Video.set_stream_position(0.5)
+	$Video.paused=true
 	
 	
