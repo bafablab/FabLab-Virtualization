@@ -18,7 +18,7 @@ radius = 0.188198
 [node name="FabLab" type="Spatial"]
 
 [node name="FPSController" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.69243, 1.71273, -2.49126 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.692, 0, -2.491 )
 
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
 
@@ -52,22 +52,23 @@ transform = Transform( 0.282124, 0, 0.959378, 0, 1, 0, -0.959378, 0, 0.282124, 1
 [node name="stg_obj_metal_shroud" parent="stg_fablab" instance=ExtResource( 1 )]
 transform = Transform( -4.13073e-08, 0, 1, 0, 0.957, 0, -0.945, 0, -4.37114e-08, 0, 0, -12.4823 )
 
-[node name="RigidBody" type="RigidBody" parent="."]
+[node name="collision_test_object" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
 collision_layer = 2147483649
 collision_mask = 2147483649
 can_sleep = false
 
-[node name="MeshInstance" type="MeshInstance" parent="RigidBody"]
+[node name="MeshInstance" type="MeshInstance" parent="collision_test_object"]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
 mesh = SubResource( 1 )
 skeleton = NodePath("../..")
 
-[node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
+[node name="CollisionShape" type="CollisionShape" parent="collision_test_object"]
 shape = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )
+far = 30.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )

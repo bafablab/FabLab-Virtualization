@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://test/Scripts/FPSController.gd" type="Script" id=1]
 
@@ -7,10 +7,14 @@ radius = 0.5
 mid_height = 1.3
 
 [sub_resource type="CapsuleShape" id=2]
-radius = 0.5
-height = 1.3
+radius = 0.202746
+height = 1.47313
 
 [sub_resource type="CylinderShape" id=3]
+height = 0.265201
+radius = 0.241777
+
+[sub_resource type="CapsuleMesh" id=5]
 
 [sub_resource type="CylinderShape" id=4]
 radius = 5.03202
@@ -19,22 +23,29 @@ radius = 5.03202
 script = ExtResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -0.524014, 0 )
+transform = Transform( 0.522506, 0, 0, 0, -3.90703e-08, -0.893824, 0, 0.414528, -1.81196e-08, 0, 1.07959, 0 )
 mesh = SubResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -0.538794, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.06481, 0 )
 shape = SubResource( 2 )
 
 [node name="Foot" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.882365, 0 )
 shape = SubResource( 3 )
 
 [node name="Head" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125713, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.72, 0 )
 
 [node name="Camera" type="Camera" parent="Head"]
-far = 194.5
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.140002 )
+fov = 55.0
+near = 0.01
+far = 25.0
+
+[node name="face_direction" type="MeshInstance" parent="Head/Camera"]
+transform = Transform( 0.212, 0, 0, 0, 0.142, 0, 0, 0, 0.172, 0, 0, -0.192387 )
+mesh = SubResource( 5 )
 
 [node name="ObjectSelect" type="RayCast" parent="Head"]
 enabled = true
@@ -44,11 +55,12 @@ collide_with_areas = true
 collide_with_bodies = false
 
 [node name="GroundCheck" type="RayCast" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.984223, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.252088, 0 )
 enabled = true
 cast_to = Vector3( 0, -1.5, 0 )
 
 [node name="Area" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6036, 0 )
 collision_layer = 8
 collision_mask = 16
 
