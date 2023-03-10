@@ -1,9 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://_Game/UI/Themes/BO_Video_Menu.tres" type="Theme" id=1]
-[ext_resource path="res://test/Scripts/UI/Video_Menu_Button.gd" type="Script" id=2]
+[ext_resource path="res://test/Scenes/UI/UI_Theme_test_scene.gd" type="Script" id=2]
 
 [node name="test" type="Control"]
+script = ExtResource( 2 )
 
 [node name="Panel" type="Panel" parent="."]
 margin_right = 181.0
@@ -14,13 +15,13 @@ rect_scale = Vector2( 1.00173, 1 )
 margin_right = 192.0
 margin_bottom = 58.0
 theme = ExtResource( 1 )
+text = "$$Englanti"
 
 [node name="Button2" type="Button" parent="Panel"]
-margin_top = 61.0
+margin_top = 126.0
 margin_right = 192.0
-margin_bottom = 119.0
+margin_bottom = 184.0
 theme = ExtResource( 1 )
-script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="Panel/Button2"]
 anchor_left = 0.5
@@ -40,10 +41,13 @@ align = 1
 valign = 1
 
 [node name="Button3" type="Button" parent="Panel"]
-margin_top = 122.0
+margin_top = 63.0
 margin_right = 192.0
-margin_bottom = 180.0
+margin_bottom = 121.0
 theme = ExtResource( 1 )
+text = "$$Suomi"
 
-[connection signal="focus_entered" from="Panel/Button2" to="Panel/Button2" method="_on_Button2_focus_entered"]
-[connection signal="focus_exited" from="Panel/Button2" to="Panel/Button2" method="_on_Button2_focus_exited"]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_english_pressed"]
+[connection signal="focus_entered" from="Panel/Button2" to="." method="_on_Button2_focus_entered"]
+[connection signal="focus_exited" from="Panel/Button2" to="." method="_on_Button2_focus_exited"]
+[connection signal="pressed" from="Panel/Button3" to="." method="_on_finnish_pressed"]

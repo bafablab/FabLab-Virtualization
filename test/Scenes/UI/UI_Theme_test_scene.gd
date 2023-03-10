@@ -1,4 +1,4 @@
-extends Button
+extends Control
 
 
 # Declare member variables here. Examples:
@@ -7,7 +7,8 @@ extends Button
 export (String) var label_str
 export (PackedScene) var videoplayer = preload("res://test/Scenes/UI/VideoPlayer_test_scene_1.tscn")
 var videoplayer_scene
-onready var label = $Label
+onready var panel = $Panel
+onready var label = $Panel/Button2/Label
 onready var pos_x_orig=label.rect_position.x
 onready var scale_orig=label.rect_scale
 
@@ -19,7 +20,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
 
 func _on_Button2_focus_entered():
 	play_video()
@@ -38,17 +38,19 @@ func play_video():
 	create_video_panel()
 	
 func create_video_panel():
-	var parent = get_parent()
 	videoplayer_scene=videoplayer.instance()
-	parent.add_child(videoplayer_scene)
+	panel.add_child(videoplayer_scene)
 	#$self/Panel.rect_size_x=4
 	#print_debug($self.get_children())
 	#print_debug(get_children())
 	#print_debug($Panel.get_children())
 	#$Container.rect_size_x=1
 	
+	pass
+
+
 func _on_english_pressed():
-	TranslationServer.set_locale("en")
+	TranslationServer.set_locale("en")	
 
 func _on_finnish_pressed():
 	TranslationServer.set_locale("fi")

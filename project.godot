@@ -87,7 +87,7 @@ move_right={
 
 [locale]
 
-translations=PoolStringArray( "res://localization/translations.fi.translation" )
+translations=PoolStringArray( "res://localization/translations.fi.translation", "res://localization/translations.en.translation" )
 
 [mono]
 
