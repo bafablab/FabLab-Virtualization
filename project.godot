@@ -54,9 +54,17 @@ config/name="FabLab-Virtualization"
 run/main_scene="res://test/Scenes/UI/UI_Theme_test_scene.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/fullscreen=true
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/string_keys/plugin.cfg" )
+
+[global]
+
+batching=true
 
 [gui]
 

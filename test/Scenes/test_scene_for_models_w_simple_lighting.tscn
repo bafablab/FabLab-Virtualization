@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://test/Environment/env_test_01.tres" type="Environment" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_chair_bar_stool_01.tscn" type="PackedScene" id=2]
@@ -6,7 +6,8 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll.tscn" type="PackedScene" id=4]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=5]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=6]
-
+[ext_resource path="res://_Game/Scenes/Models/mdl_sofa_long_sofa_prt_hull.tscn" type="PackedScene" id=7]
+[ext_resource path="res://_Game/Scenes/Models/mdl_sofa_long_sofa_prt_mattress.tscn" type="PackedScene" id=8]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -25,6 +26,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.633333, 0.204272, 0 )
 
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.590972, 0.806692, 0, -0.806692, 0.590972, 0.20753, 2.32279, 2.28399 )
+visible = false
 light_indirect_energy = 1.154
 light_specular = 3.443
 shadow_enabled = true
@@ -46,6 +48,24 @@ transform = Transform( 1, 1.49012e-08, -2.98023e-08, 0, 0.895269, 0.445526, 0, -
 
 [node name="model" parent="." instance=ExtResource( 5 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 0.980742, 0, -0.931111, 0, -4.07002e-08, -3.9819, 2.38419e-07, -8.50175 )
+visible = false
 
 [node name="model2" parent="." instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4 )
+
+[node name="sofa" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.746996, 0.00564539, -0.756522 )
+
+[node name="mdl_sofa_long_sofa_prt_hull" parent="sofa" instance=ExtResource( 7 )]
+
+[node name="mdl_sofa_long_sofa_prt_hull2" parent="sofa" instance=ExtResource( 7 )]
+transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="mdl_sofa_long_sofa_prt_mattress" parent="sofa" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33509, 0.456316, -0.325346 )
+
+[node name="mdl_sofa_long_sofa_prt_mattress2" parent="sofa" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0293521, 0.456316, -0.325346 )
+
+[node name="mdl_sofa_long_sofa_prt_mattress3" parent="sofa" instance=ExtResource( 8 )]
+transform = Transform( 0.969518, 0, 0, 0, 1, 0, 0, 0, 1, 2.35624, 0.456316, -0.329496 )

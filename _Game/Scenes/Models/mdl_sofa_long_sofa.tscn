@@ -1,0 +1,207 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://_Game/Scenes/Models/mdl_sofa_long_sofa_prt_pole.tscn" type="PackedScene" id=1]
+[ext_resource path="res://_Game/Scenes/Models/mdl_sofa_long_sofa_prt_hull.tscn" type="PackedScene" id=2]
+[ext_resource path="res://_Game/Scenes/Models/mdl_sofa_long_sofa_prt_mattress.tscn" type="PackedScene" id=3]
+
+[node name="mdl_long_sofa" type="Spatial"]
+
+[node name="mdl_sofa_long_sofa_prt_hull" parent="." instance=ExtResource( 2 )]
+
+[node name="mdl_sofa_long_sofa_prt_hull2" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="mdl_sofa_long_sofa_prt_mattress" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1.00805, 0, 0, 0, 1, 0, 0, 0, 1, -2.33969, 0.44745, -0.325682 )
+
+[node name="mdl_sofa_long_sofa_prt_mattress2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.997363, 0, 0, 0, 1, 0, 0, 0, 1, 0.00383663, 0.44745, -0.325682 )
+
+[node name="mdl_sofa_long_sofa_prt_mattress3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.998389, 0, 0, 0, 1, 0, 0, 0, 1, 2.3379, 0.44745, -0.326409 )
+
+[node name="mdl_sofa_long_sofa_prt_pole" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.0565769 )
+
+[node name="mdl_sofa_long_sofa_prt_pole2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.166973 )
+
+[node name="mdl_sofa_long_sofa_prt_pole3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.282734 )
+
+[node name="mdl_sofa_long_sofa_prt_pole4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.390929 )
+
+[node name="mdl_sofa_long_sofa_prt_pole5" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.502286 )
+
+[node name="mdl_sofa_long_sofa_prt_pole6" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.610916 )
+
+[node name="mdl_sofa_long_sofa_prt_pole7" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.718673 )
+
+[node name="mdl_sofa_long_sofa_prt_pole8" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.74059, 0, -0.831748 )
+
+[node name="mdl_sofa_long_sofa_prt_pole9" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 3.69224, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole10" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 3.52891, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole11" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 3.38369, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole12" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 3.24828, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole13" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 3.11198, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole14" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.97489, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole15" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.83059, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole16" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.69236, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole17" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.57489, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole18" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.43699, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole19" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.29828, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole20" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.16607, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole21" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 2.03312, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole22" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 1.31798, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole23" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 1.18453, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole24" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 1.04284, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole25" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 0.908067, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole26" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 0.77277, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole27" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 0.636912, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole28" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 0.51452, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole29" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 0.368455, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole30" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 0.240663, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole31" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 0.111794, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole32" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -0.109395, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole33" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -0.2349, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole34" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -0.381585, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole35" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -0.514861, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole36" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -0.648944, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole37" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -0.788795, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole38" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -0.919736, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole39" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -1.05115, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole40" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -1.1833, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole41" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -1.31679, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole42" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.03365, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole43" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.1757, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole44" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.31315, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole45" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.44092, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole46" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.58443, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole47" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.70255, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole48" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.84687, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole49" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -2.97452, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole50" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -3.1076, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole51" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -3.25118, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole52" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -3.39012, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole53" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -3.52424, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole54" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -3.65895, 0, -0.905162 )
+
+[node name="mdl_sofa_long_sofa_prt_pole55" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75305, 0, -0.843488 )
+
+[node name="mdl_sofa_long_sofa_prt_pole56" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75305, 0, -0.736139 )
+
+[node name="mdl_sofa_long_sofa_prt_pole57" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75305, 0, -0.618488 )
+
+[node name="mdl_sofa_long_sofa_prt_pole58" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75305, 0, -0.509964 )
+
+[node name="mdl_sofa_long_sofa_prt_pole59" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75305, 0, -0.395629 )
+
+[node name="mdl_sofa_long_sofa_prt_pole60" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75305, 0, -0.281292 )
+
+[node name="mdl_sofa_long_sofa_prt_pole61" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75305, 0, -0.177569 )
+
+[node name="mdl_sofa_long_sofa_prt_pole62" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 3.17865e-08, 0, 1, 0, -3.17865e-08, 0, -1, -3.75245, 0.00324202, -0.0716847 )
