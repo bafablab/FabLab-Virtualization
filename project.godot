@@ -113,5 +113,6 @@ common/enable_pause_aware_picking=true
 [rendering]
 
 quality/driver/driver_name="GLES2"
+quality/filters/msaa=5
 quality/filters/use_fxaa=true
 environment/default_environment="res://default_env.tres"

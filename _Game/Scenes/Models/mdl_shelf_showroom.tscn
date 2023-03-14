@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://_Game/Models/shelf_showroom/mdl_shelf_showroom.glb" type="PackedScene" id=1]
+[ext_resource path="res://_Game/Models/shelf_showroom/mat_shelf_showroom_metal_shroud.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Models/shelf_showroom/mat_shelf_showroom.tres" type="Material" id=3]
+
+[node name="mdl_shelf_showroom" instance=ExtResource( 1 )]
+
+[node name="mdl_shelf_showroom" parent="." index="0"]
+material/0 = ExtResource( 3 )
+material/1 = ExtResource( 2 )
