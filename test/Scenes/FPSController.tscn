@@ -52,7 +52,6 @@ enabled = true
 cast_to = Vector3( 0, 0, -5 )
 collision_mask = 16
 collide_with_areas = true
-collide_with_bodies = false
 
 [node name="GroundCheck" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.252088, 0 )

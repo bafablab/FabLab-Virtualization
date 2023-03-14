@@ -25,7 +25,7 @@ lightmap_scale = 1
 [node name="static_floor" type="StaticBody" parent="stage_collision" index="0"]
 
 [node name="CollisionShape" type="CollisionShape" parent="stage_collision/static_floor" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79204, -0.171614, -12.0302 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79204, 0.0223464, -12.0302 )
 shape = SubResource( 1 )
 
 [node name="static_floor2" type="StaticBody" parent="stage_collision" index="1"]
