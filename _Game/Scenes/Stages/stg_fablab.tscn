@@ -10,11 +10,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_mch_3dprinter_shindow_3dwox_1_lq.tscn" type="PackedScene" id=8]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_multicolor_long.tscn" type="PackedScene" id=9]
 [ext_resource path="res://_Game/Scenes/Models/mdl_sofa_long_sofa.tscn" type="PackedScene" id=10]
-<<<<<<< Updated upstream
 [ext_resource path="res://_Game/Scenes/UI/UI_Crosshair.tscn" type="PackedScene" id=11]
-=======
-[ext_resource path="res://_Game/Scenes/Models/mdl_shelf_showroom.tscn" type="PackedScene" id=11]
->>>>>>> Stashed changes
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -69,9 +65,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.88175, 0, -14.3485 )
 
 [node name="mdl_long_sofa" parent="stg_fablab" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.57742, 0, -4.56769 )
-
-[node name="mdl_shelf_showroom" parent="stg_fablab" instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7971, 0, -11.4885 )
 
 [node name="collision_test_object" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
