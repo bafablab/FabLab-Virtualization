@@ -27,13 +27,10 @@ onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect
 
-signal object_targeted
-
-#func _ready():
-	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
-	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
 			if !selected_object:

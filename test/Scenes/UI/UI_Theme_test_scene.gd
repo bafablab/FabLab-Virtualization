@@ -1,9 +1,6 @@
 extends Control
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 export (String) var label_str
 export (PackedScene) var videoplayer = preload("res://test/Scenes/UI/VideoPlayer_test_scene_1.tscn")
 var videoplayer_scene
@@ -11,15 +8,15 @@ onready var panel = $Panel
 onready var label = $Panel/Button2/Label
 onready var pos_x_orig=label.rect_position.x
 onready var scale_orig=label.rect_scale
+var device
+var inFocus
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	label.text = device.model
+	
+func init(dev):
+	device = dev
 
 func _on_Button2_focus_entered():
 	play_video()
@@ -39,18 +36,25 @@ func play_video():
 	
 func create_video_panel():
 	videoplayer_scene=videoplayer.instance()
+	videoplayer_scene.init(device)
 	panel.add_child(videoplayer_scene)
-	#$self/Panel.rect_size_x=4
-	#print_debug($self.get_children())
-	#print_debug(get_children())
-	#print_debug($Panel.get_children())
-	#$Container.rect_size_x=1
-	
-	pass
-
 
 func _on_english_pressed():
 	TranslationServer.set_locale("en")	
 
 func _on_finnish_pressed():
 	TranslationServer.set_locale("fi")
+
+func _on_mouse_entered():
+	inFocus = true
+
+func _on_mouse_exited():
+	inFocus = false
+
+func _input(event):
+	if (event is InputEventMouseButton) and event.pressed:
+		var evLocal = make_input_local(event)
+		if !Rect2(panel.rect_position,panel.rect_size).has_point(evLocal.position):
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			queue_free()
+		

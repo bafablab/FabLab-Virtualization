@@ -47,6 +47,8 @@ margin_bottom = 121.0
 theme = ExtResource( 1 )
 text = "$$Suomi"
 
+[connection signal="mouse_entered" from="Panel" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Panel" to="." method="_on_mouse_exited"]
 [connection signal="pressed" from="Panel/Button" to="." method="_on_english_pressed"]
 [connection signal="focus_entered" from="Panel/Button2" to="." method="_on_Button2_focus_entered"]
 [connection signal="focus_exited" from="Panel/Button2" to="." method="_on_Button2_focus_exited"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://_Game/Models/mch_3dprinter_sindoh_3dwox_1_lq/mch_3dprinter_shindow_3dwox_1_lq.glb" type="PackedScene" id=1]
-[ext_resource path="res://_Game/Scenes/Models/scr_mch_3dprinter_shindow_3dwox_1_lq.gd" type="Script" id=2]
-[ext_resource path="res://_Game/Shaders/outline3D.shader" type="Shader" id=3]
+[ext_resource path="res://test/Scripts/scr_device.gd" type="Script" id=2]
+[ext_resource path="res://_Game/Shaders/outline3D_smooth_normals_color.shader" type="Shader" id=3]
+[ext_resource path="res://test/Scripts/res_mch_3dprinter_shindow_3dwox_1_lq.tres" type="Resource" id=4]
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 3 )
@@ -14,6 +15,7 @@ extents = Vector3( 0.212827, 0.204123, 0.205139 )
 
 [node name="mch_3dprinter_shindow_3dwox_1_lq" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+device = ExtResource( 4 )
 
 [node name="3dprinter_shindoh_3dwox_1_lq" parent="." index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.197646 )
@@ -27,5 +29,5 @@ collision_mask = 9
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
 shape = SubResource( 1 )
 
-[connection signal="mouse_entered" from="StaticBody" to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="StaticBody" to="." method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody" to="." method="enter_focus"]
+[connection signal="mouse_exited" from="StaticBody" to="." method="exit_focus"]
