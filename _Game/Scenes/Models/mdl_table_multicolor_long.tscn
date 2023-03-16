@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://_Game/Models/table_multicolor_long/mdl_table_printer.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/table_multicolor_long/wood_side.material" type="Material" id=2]
@@ -8,10 +8,6 @@
 [ext_resource path="res://_Game/Models/table_multicolor_long/grey.material" type="Material" id=6]
 [ext_resource path="res://_Game/Models/table_multicolor_long/Pattern.material" type="Material" id=7]
 [ext_resource path="res://_Game/Models/table_multicolor_long/leg.material" type="Material" id=8]
-
-[sub_resource type="SpatialMaterial" id=5]
-render_priority = 1
-albedo_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "mdl_table_printer_Cube001"
@@ -126,9 +122,14 @@ extents = Vector3( 0.513782, 0.566071, 1.92892 )
 [node name="StaticBody" type="StaticBody" parent="." index="0"]
 
 [node name="Cube" type="MeshInstance" parent="StaticBody" index="0"]
-material_override = SubResource( 5 )
 mesh = SubResource( 1 )
 skeleton = NodePath("../..")
+material/0 = ExtResource( 5 )
+material/1 = ExtResource( 6 )
+material/2 = ExtResource( 4 )
+material/3 = ExtResource( 3 )
+material/4 = ExtResource( 7 )
+material/5 = ExtResource( 2 )
 
 [node name="Cube001" type="MeshInstance" parent="StaticBody" index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0824952, 0, 0 )
