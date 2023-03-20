@@ -60,19 +60,19 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.22312
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.20983, 0.903169, -16.3775 )
 
 [node name="stg_obj_metal_shroud" parent="stg_fablab" instance=ExtResource( 1 )]
-transform = Transform( -4.13073e-08, 0, 1, 0, 0.957, 0, -0.945, 0, -4.37114e-08, 0, 0, -12.4823 )
+transform = Transform( -4.13073e-08, 0, 1, 0, 0.985563, 0, -0.974015, 0, -4.50535e-08, 0, 0, -12.4398 )
 
 [node name="mdl_table_printer" parent="stg_fablab" instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.83877, 0, -14.4603 )
 
 [node name="mdl_long_sofa" parent="stg_fablab" instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72792, 0, -4.56769 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.64718, 0, -4.67476 )
 
 [node name="mdl_shelf_showroom" parent="stg_fablab" instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.82366, 0, -11.4941 )
 
 [node name="mdl_door_triplets_01" parent="stg_fablab" instance=ExtResource( 13 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.30867, 0, -10.8947 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.30867, 0, -10.8805 )
 
 [node name="collision_test_object" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
