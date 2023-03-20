@@ -5,7 +5,5 @@
 
 [node name="mdl_door_triplets_01" instance=ExtResource( 2 )]
 
-[node name="Cube" parent="." index="0"]
-cast_shadow = 0
-generate_lightmap = false
+[node name="mdl_door_triplets_prt_door_3" parent="." index="0"]
 material/0 = ExtResource( 1 )
