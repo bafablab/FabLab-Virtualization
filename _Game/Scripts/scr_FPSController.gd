@@ -26,9 +26,11 @@ export var selected_object_position_yScale = 1.5
 onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect
+onready var camera = $Head/Camera
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	print_debug(camera)
 
 func _input(event):
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:

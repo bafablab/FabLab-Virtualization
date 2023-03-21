@@ -7,7 +7,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_chair_bar_stool_01.tscn" type="PackedScene" id=5]
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll.tscn" type="PackedScene" id=6]
 [ext_resource path="res://_Game/Scenes/FPSController.tscn" type="PackedScene" id=7]
-[ext_resource path="res://_Game/Scenes/Models/mdl_mch_3dprinter_shindow_3dwox_1_lq.tscn" type="PackedScene" id=8]
+[ext_resource path="res://_Game/Scenes/Models/mdl_mch_3dprinter_sindoh_3dwox_1_lq.tscn" type="PackedScene" id=8]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_multicolor_long.tscn" type="PackedScene" id=9]
 [ext_resource path="res://_Game/Scenes/Models/mdl_sofa_long_sofa.tscn" type="PackedScene" id=10]
 [ext_resource path="res://_Game/Scenes/UI/UI_Crosshair.tscn" type="PackedScene" id=11]
@@ -50,13 +50,13 @@ transform = Transform( 0.942932, 0, 0.332984, 0, 1, 0, -0.332984, 0, 0.942932, 0
 [node name="box_filament_pack_closed4" parent="stg_fablab" instance=ExtResource( 4 )]
 transform = Transform( 0.412864, -0.010908, 0.910727, 0.0512117, 0.998624, -0.0112553, -0.909352, 0.0512868, 0.412854, 0.15438, 0.277273, -15.0141 )
 
-[node name="mch_3dprinter_shindow_3dwox_1_lq" parent="stg_fablab" instance=ExtResource( 8 )]
+[node name="mch_3dprinter_sindoh_3dwox_1_lq" parent="stg_fablab" instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.22203, 0.903169, -15.3065 )
 
-[node name="mch_3dprinter_shindow_3dwox_1_lq2" parent="stg_fablab" instance=ExtResource( 8 )]
+[node name="mch_3dprinter_sindoh_3dwox_1_lq2" parent="stg_fablab" instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.22312, 0.903169, -15.8264 )
 
-[node name="mch_3dprinter_shindow_3dwox_1_lq3" parent="stg_fablab" instance=ExtResource( 8 )]
+[node name="mch_3dprinter_sindoh_3dwox_1_lq3" parent="stg_fablab" instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.20983, 0.903169, -16.3775 )
 
 [node name="stg_obj_metal_shroud" parent="stg_fablab" instance=ExtResource( 1 )]
