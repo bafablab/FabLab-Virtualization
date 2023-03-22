@@ -4,6 +4,7 @@ var overlay_material
 export(Resource) var device
 export (PackedScene) var videoScene = preload("res://test/Scenes/UI/UI_Theme_test_scene.tscn")
 export (PackedScene) var deviceLabel = preload("res://_Game/Scenes/UI/UI_DeviceLabel.tscn")
+onready var collisionShape  = $StaticBody/CollisionShape
 var inFocus = false
 var staticBody
 var infoLabel
@@ -14,10 +15,11 @@ func _ready():
 	staticBody = get_node("StaticBody")
 	staticBody.connect("mouse_entered", self, "enter_focus")
 	staticBody.connect("mouse_exited", self, "exit_focus")
-	print_debug(infoLabel)
+	print_debug(device.model)
+	print_debug(collisionShape.shape)
 	self.add_child(infoLabel)
 	infoLabel.text = device.model
-	infoLabel.global_transform.origin.y += 0.5
+	infoLabel.global_transform.origin.y += collisionShape.shape.extents.y + 0.2
 	infoLabel.visible = false
 	overlay_material = get_child(0).get_material_overlay()
 	get_child(0).set_material_overlay(null)

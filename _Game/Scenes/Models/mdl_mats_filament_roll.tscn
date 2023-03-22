@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://_Game/Models/mats_filament_roll/mats_filament_roll.glb" type="PackedScene" id=1]
-[ext_resource path="res://test/Scripts/scr_device.gd" type="Script" id=2]
+[ext_resource path="res://_Game/Scripts/scr_device.gd" type="Script" id=2]
 [ext_resource path="res://test/Scripts/res_filament_roll.tres" type="Resource" id=3]
 [ext_resource path="res://_Game/Shaders/outline3D_smooth_normals_color.shader" type="Shader" id=4]
 

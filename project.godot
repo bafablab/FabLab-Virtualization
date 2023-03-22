@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "DeviceInfo",
 "language": "GDScript",
-"path": "res://test/Scripts/scr_DeviceInfo.gd"
+"path": "res://_Game/Scripts/scr_DeviceInfo.gd"
 }, {
 "base": "Reference",
 "class": "SkCsvWriter",
@@ -62,6 +62,7 @@ config/icon="res://icon.png"
 
 [display]
 
+window/size/resizable=false
 window/size/fullscreen=true
 
 [editor_plugins]
@@ -109,6 +110,14 @@ mouse_click={
  ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="Player body collision"
+3d_physics/layer_2="Furniture"
+3d_physics/layer_3="Walls"
+3d_physics/layer_4="Player interaction area"
+3d_physics/layer_5="Interactable objects"
+
 [locale]
 
 translations=PoolStringArray( "res://localization/translations.fi.translation", "res://localization/translations.en.translation" )
@@ -124,6 +133,5 @@ common/enable_pause_aware_picking=true
 [rendering]
 
 quality/driver/driver_name="GLES2"
-quality/filters/msaa=5
 quality/filters/use_fxaa=true
 environment/default_environment="res://default_env.tres"

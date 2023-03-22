@@ -1,6 +1,5 @@
 extends Control
 
-
 export (String) var label_str
 export (PackedScene) var videoplayer = preload("res://test/Scenes/UI/VideoPlayer_test_scene_1.tscn")
 var videoplayer_scene
