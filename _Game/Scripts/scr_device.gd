@@ -5,22 +5,21 @@ export(Resource) var device
 export (PackedScene) var videoScene = preload("res://test/Scenes/UI/UI_Theme_test_scene.tscn")
 export (PackedScene) var deviceLabel = preload("res://_Game/Scenes/UI/UI_DeviceLabel.tscn")
 onready var collisionShape  = $StaticBody/CollisionShape
+onready var hoverText = $HoverTextPosition
 var inFocus = false
 var staticBody
 var infoLabel
-
+var gameManager
+ 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	gameManager = get_node("/root/FabLab")
+	print_debug(gameManager)
 	infoLabel = deviceLabel.instance()
 	staticBody = get_node("StaticBody")
 	staticBody.connect("mouse_entered", self, "enter_focus")
 	staticBody.connect("mouse_exited", self, "exit_focus")
-	print_debug(device.model)
-	print_debug(collisionShape.shape)
-	self.add_child(infoLabel)
-	infoLabel.text = device.model
-	infoLabel.global_transform.origin.y += collisionShape.shape.extents.y + 0.2
-	infoLabel.visible = false
+	set_infoLabel()
 	overlay_material = get_child(0).get_material_overlay()
 	get_child(0).set_material_overlay(null)
 
@@ -36,8 +35,19 @@ func exit_focus():
 
 func _input(_event):
 	if inFocus:
-		if Input.is_action_pressed("mouse_click"):
+		if Input.is_action_just_pressed("mouse_click"):
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			var deviceVideoScene=videoScene.instance()
 			deviceVideoScene.init(device)
 			self.add_child(deviceVideoScene)
+			# set inFocus false to prevent re-click when closing menu
+			inFocus = false
+
+func set_infoLabel():
+	self.add_child(infoLabel)
+	infoLabel.text = device.model
+	if hoverText:
+		infoLabel.transform.origin = hoverText.transform.origin
+	else:
+		infoLabel.global_transform.origin.y += collisionShape.shape.extents.y + 0.2
+	infoLabel.visible = false

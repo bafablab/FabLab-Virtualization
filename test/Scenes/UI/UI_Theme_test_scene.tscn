@@ -4,11 +4,20 @@
 [ext_resource path="res://test/Scenes/UI/UI_Theme_test_scene.gd" type="Script" id=2]
 
 [node name="test" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="Panel" type="Panel" parent="."]
-margin_right = 181.0
-margin_bottom = 266.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -186.0
+margin_top = -131.0
+margin_right = 14.0
+margin_bottom = 69.0
+rect_min_size = Vector2( 200, 200 )
 rect_scale = Vector2( 1.00173, 1 )
 
 [node name="Button" type="Button" parent="Panel"]

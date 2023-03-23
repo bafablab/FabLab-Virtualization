@@ -20,8 +20,6 @@ var objects_in_range = []
 var selected_object = null
 var selected_object_transform
 var targeted_object = null
-export var selected_object_position_zScale = 1.7
-export var selected_object_position_yScale = 1.5
 
 onready var head = $Head
 onready var ground_check = $GroundCheck
@@ -38,9 +36,9 @@ func _input(event):
 				rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 				head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
 				head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
-			else:
-				selected_object.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity * object_rotation_scale))
-				selected_object.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * object_rotation_scale))
+
+	# Change mouse mode for debug
+	toggle_mouse()
 	
 func _physics_process(delta):
 
@@ -49,6 +47,7 @@ func _physics_process(delta):
 		if !object_select.enabled:
 			object_select.enabled = true
 		if object_select.is_colliding():
+			# Do not emit signal again if targeted object hasn't changed
 			if object_select.get_collider() != targeted_object:
 				if targeted_object != null:
 					targeted_object.emit_signal("mouse_exited")
@@ -104,14 +103,7 @@ func _physics_process(delta):
 		move_and_slide(movement, Vector3.UP)
 	else:
 		h_velocity = Vector3.ZERO
-		
-	# Change mouse mode
-	if Input.is_action_just_pressed("mouse_toggle"):
-		print_debug(Input.mouse_mode)
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
 
 func _on_Area_body_entered(body):
 	objects_in_range.append(body)
@@ -129,3 +121,9 @@ func _on_Area_area_exited(area):
 	objects_in_range.erase(area)
 	print(objects_in_range)
 
+func toggle_mouse():
+	if Input.is_action_just_pressed("mouse_toggle"):
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
