@@ -8,7 +8,7 @@ func _ready():
 	print_debug("test scene")
 	print_debug("Viewport size is" + str(size))
 	#rect_size=size/4
-	rect_position=size/4
+	rect_position=size/8
 	#rect_position=Vector2(0,0)
 	print_debug("Container size: " + str(rect_size))
 	print_debug("Container position: " + str(rect_position))
