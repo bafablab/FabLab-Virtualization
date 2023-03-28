@@ -4,6 +4,8 @@
 
 [resource]
 flags_transparent = true
+flags_unshaded = true
+flags_do_not_receive_shadows = true
 params_cull_mode = 2
 albedo_texture = ExtResource( 1 )
 uv1_scale = Vector3( 10.885, 12.567, 20 )

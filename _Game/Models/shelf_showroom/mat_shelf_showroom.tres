@@ -3,4 +3,6 @@
 [ext_resource path="res://_Game/Models/shelf_showroom/Textures/txt_shelf_showroom_dif_1024_no_denoise.png" type="Texture" id=1]
 
 [resource]
+flags_unshaded = true
+flags_do_not_receive_shadows = true
 albedo_texture = ExtResource( 1 )

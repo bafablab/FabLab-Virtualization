@@ -3,5 +3,6 @@
 [ext_resource path="res://_Game/Models/stg_fablab/Textures/txt_fablab_hull_dif_baked.png" type="Texture" id=1]
 
 [resource]
+flags_unshaded = true
+flags_do_not_receive_shadows = true
 albedo_texture = ExtResource( 1 )
-roughness = 0.14
