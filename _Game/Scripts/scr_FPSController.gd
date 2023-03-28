@@ -25,10 +25,15 @@ onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect
 onready var camera = $Head/Camera
+var device_info_menu
+var item_info_menu
+
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
+	device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
+	item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
+	
 func _input(event):
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
@@ -39,6 +44,9 @@ func _input(event):
 
 	# Change mouse mode for debug
 	toggle_mouse()
+	
+func _process(delta):
+	moving = !(item_info_menu.visible or device_info_menu.visible)
 	
 func _physics_process(delta):
 	# Check if interactable objects in range
@@ -80,7 +88,7 @@ func _physics_process(delta):
 	else:
 		gravity_vec = -get_floor_normal()
 	
-	moving = !selected_object
+
 	if moving:
 #		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 #			gravity_vec = Vector3.UP * jump

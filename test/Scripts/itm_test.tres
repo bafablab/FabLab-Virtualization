@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource( 1 )
 name = "Filamenttidiipadaa"
-infoText = "Ei oikeasti mikään tuloste, vaan filamenttia"
-itemType = 0
+info_text = ""
+item_type = 0
