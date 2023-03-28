@@ -41,7 +41,6 @@ func _input(event):
 	toggle_mouse()
 	
 func _physics_process(delta):
-
 	# Check if interactable objects in range
 	if objects_in_range.size() > 0 and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if !object_select.enabled:
@@ -67,6 +66,7 @@ func _physics_process(delta):
 		selected_object = null
 
 	# ------- Object selection code ends -------
+	
 	direction = Vector3()
 	if ground_check.is_colliding():
 		full_contact = true

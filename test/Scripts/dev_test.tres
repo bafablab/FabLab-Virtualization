@@ -4,7 +4,30 @@
 
 [resource]
 script = ExtResource( 1 )
-model = ""
+name = "Sindoh test"
 videos = [  ]
-infoText = [  ]
-deviceType = 0
+info_text = [ "Print Technology:	FFF
+Print head:	Single Nozzle
+Nozzle Diameter:	0.4mm
+Max Build size (WxDxH):	210 x 200 x 195 mm
+Material:	Sindoh Filament : PLA, ABS
+Open Source Filament PLA, ABS, ASA, PETG, etc
+Connectivity:	USB 2.0 Device / 2.0 Host, Ethernet (1G), Wi-Fi
+Layer Thickness:	0.05 ~ 0.40 mm
+Filament Diameter:	1.75mm
+Size (W×D×H):	421 × 433 × 439mm (16.5”x17”x17.2”)
+User Interface:	5-inch Full Color Touch Screen
+Leveling:	Auto Leveling Measurement + Manual Adjustment
+Auto-loading Cartridge:	Automatically loads filament to nozzle
+LED Lamp:	Internally Installed
+Monitoring Camera:	Check print status remotely with laptop or smartphone via WiFi connection
+Slicer:	3DWOX Desktop Slicer
+Sindoh Cloud Slicer
+Simplify3D Ver.4.1
+Software Compatibility:	Solidworks Add-in 2016 or above
+Solidworks Apps for Kids
+AutoDesk TinkerCAD
+Operating System:	Window 7 or above
+Mac OSX 10.10 above
+Note:	Standard VGA driver on operating system, or a graphics card doesn't support OpenGL 2.0, may cause unknown error in 3DWOX Desktop." ]
+device_type = 0

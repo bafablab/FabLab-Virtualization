@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource( 1 )
-model = "Filament Roll"
+name = ""
 videos = [ ExtResource( 2 ) ]
-infoText = [ "$$Filamenttirulla" ]
-deviceType = -1
+info_text = [  ]
+device_type = 0

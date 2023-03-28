@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -13,7 +13,9 @@
 [ext_resource path="res://_Game/Scenes/UI/UI_Crosshair.tscn" type="PackedScene" id=11]
 [ext_resource path="res://_Game/Scenes/Models/mdl_shelf_showroom.tscn" type="PackedScene" id=12]
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_triplets.tscn" type="PackedScene" id=13]
+[ext_resource path="res://test/Scenes/UI/UI_item_info_scene.tscn" type="PackedScene" id=14]
 [ext_resource path="res://_Game/Scenes/Stages/stg_fablab.gd" type="Script" id=15]
+[ext_resource path="res://test/Scenes/UI/UI_device_info_menu.tscn" type="PackedScene" id=16]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -25,6 +27,12 @@ radius = 0.188198
 script = ExtResource( 15 )
 
 [node name="UI_Crosshair" parent="." instance=ExtResource( 11 )]
+
+[node name="UI_DeviceInfoMenu" parent="." instance=ExtResource( 16 )]
+visible = false
+
+[node name="UI_ItemInfoMenu" parent="." instance=ExtResource( 14 )]
+visible = false
 
 [node name="FPSController" parent="." instance=ExtResource( 7 )]
 transform = Transform( 0.139087, 0, 0.99028, 0, 1, 0, -0.99028, 0, 0.139087, 3.73036, 0, -15.3207 )
