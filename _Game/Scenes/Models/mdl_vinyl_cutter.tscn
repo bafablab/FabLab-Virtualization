@@ -1,9 +1,37 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://_Game/Models/vinyl_cutter/mdl_vinyl_cutter.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/vinyl_cutter/mat_vinyl_cutter.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=3]
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=4]
+[ext_resource path="res://_Game/Shaders/outline3D.shader" type="Shader" id=5]
 
-[node name="mdl_vinyl_cutter" instance=ExtResource( 1 )]
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+name = "Vinyl Cutter"
+videos = [  ]
+info_text = [ "Testi" ]
+device_type = 0
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 5 )
+shader_param/thickness = 0.002
+shader_param/outline_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.431212, 0.112276, 0.144545 )
+
+[node name="mdl_vinyl_cutter" groups=["Device"] instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+interactable = SubResource( 3 )
 
 [node name="mdl_vinyylileikkuri" parent="." index="0"]
+material_overlay = SubResource( 4 )
 material/0 = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="1"]
+collision_layer = 16
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00823897, 0.109868, 0 )
+shape = SubResource( 2 )
