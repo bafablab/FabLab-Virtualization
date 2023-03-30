@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://_Game/Models/mats_filament_roll/mats_filament_roll.glb" type="PackedScene" id=1]
-[ext_resource path="res://test/Scripts/itm_test.tres" type="Resource" id=2]
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=3]
 [ext_resource path="res://_Game/Shaders/outline3D_smooth_normals_color.shader" type="Shader" id=4]
 
@@ -15,7 +14,6 @@ extents = Vector3( 0.0593195, 0.100104, 0.096578 )
 
 [node name="mdl_mats_filament_roll" groups=["Item"] instance=ExtResource( 1 )]
 script = ExtResource( 3 )
-interactable = ExtResource( 2 )
 
 [node name="mats_filament_roll" parent="." index="0"]
 transform = Transform( 0.115257, 0, 0, 0, 0.115257, 0, 0, 0, 0.115257, 0, 0, 0 )

@@ -20,8 +20,10 @@ func init(dev):
 	tab_container.set_tab_title(0, "Tietoja")
 	print_debug(("Device menu visible"))
 	info_text.text = device.info_text[0]
-	
 	self.visible = true
+	# Consumes the event so it is not triggered in other
+	# scripts. For example close the window immidiately.
+	get_tree().get_root().set_input_as_handled()
 	
 	
 #func _on_Button2_focus_entered():

@@ -45,7 +45,7 @@ func _input(event):
 	# Change mouse mode for debug
 	toggle_mouse()
 	
-func _process(delta):
+func _process(_delta):
 	moving = !(item_info_menu.visible or device_info_menu.visible)
 	
 func _physics_process(delta):
@@ -64,7 +64,7 @@ func _physics_process(delta):
 		else:
 			if targeted_object != null:
 				targeted_object.emit_signal("mouse_exited")
-				print_debug("no targeted object")
+#				print_debug("no targeted object")
 				targeted_object = null
 			#print_debug("object_detected")
 	# if no interactable objects in range, disable object_select raycast
@@ -115,19 +115,19 @@ func _physics_process(delta):
 
 func _on_Area_body_entered(body):
 	objects_in_range.append(body)
-	print(objects_in_range)
+#	print(objects_in_range)
 
 func _on_Area_body_exited(body):
 	objects_in_range.erase(body)
-	print(objects_in_range)
+#	print(objects_in_range)
 	
 func _on_Area_area_entered(area):
 	objects_in_range.append(area)
-	print(objects_in_range)
+#	print(objects_in_range)
 
 func _on_Area_area_exited(area):
 	objects_in_range.erase(area)
-	print(objects_in_range)
+#	print(objects_in_range)
 
 func toggle_mouse():
 	if Input.is_action_just_pressed("mouse_toggle"):

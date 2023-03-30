@@ -4,6 +4,9 @@ var overlay_material
 export(Resource) var interactable
 export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_Hover_Text_Label.tscn")
 onready var collision_shape  = $StaticBody/CollisionShape
+var empty_device_resource = preload("res://_Game/Resources/dev_empty_device_info.tres")
+var empty_item_resource = preload("res://_Game/Resources/itm_empty_item_info.tres")
+var mesh_instance
 var menu
 var hover_text
 var hover_text_position
@@ -21,18 +24,39 @@ func _ready():
 	static_body = get_node("StaticBody")
 	static_body.connect("mouse_entered", self, "enter_focus")
 	static_body.connect("mouse_exited", self, "exit_focus")
+	
+	
+	#   Find MeshInstance and get highlight shader
+	for child in get_children():
+		if child is MeshInstance:
+			overlay_material = child.get_material_overlay()
+			if overlay_material == null:
+				print_debug("No overlay material! (highlight shader)")
+			child.set_material_overlay(null)
+			mesh_instance = child
+			break
+			
+	if interactable == null:
+		if self.is_in_group(("Device")):
+			print_debug("Empty device")
+			interactable = empty_device_resource
+		elif self.is_in_group("Item"):
+			print_debug("Empty")
+			interactable = empty_item_resource
+			
 	set_hover_text()
-	overlay_material = get_child(0).get_material_overlay()
-	get_child(0).set_material_overlay(null)
 
 func enter_focus():
 	in_focus = true
 	hover_text.visible = true
-	get_child(0).set_material_overlay(overlay_material)	
+	if overlay_material:
+		mesh_instance.set_material_overlay(overlay_material)	
+	else:
+		print_debug("No overlay material! (highlight shader)")
 
 func exit_focus():
 	in_focus = false
-	get_child(0).set_material_overlay(null)
+	mesh_instance.set_material_overlay(null)
 	hover_text.visible = false
 
 func _input(_event):

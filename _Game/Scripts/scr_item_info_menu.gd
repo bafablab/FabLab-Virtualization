@@ -19,6 +19,9 @@ func init(itm):
 	print_debug(("Device menu visible"))
 	info_text.text = item.info_text
 	self.visible = true
+	# Consumes the event so it is not triggered in other
+	# scripts. For example close the window immidiately.
+	get_tree().get_root().set_input_as_handled()
 	
 func _on_mouse_entered():
 	inFocus = true
