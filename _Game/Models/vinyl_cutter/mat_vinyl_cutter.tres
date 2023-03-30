@@ -1,6 +1,6 @@
 [gd_resource type="SpatialMaterial" load_steps=2 format=2]
 
-[ext_resource path="res://_Game/Models/vinyl_cutter/txt_vinyl_cutter_dif_2k_03_lq_color.png" type="Texture" id=1]
+[ext_resource path="res://_Game/Models/vinyl_cutter/txt_vinyl_cutter_dif.png" type="Texture" id=1]
 
 [resource]
 flags_unshaded = true
