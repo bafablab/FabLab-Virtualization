@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll.tscn" type="PackedScene" id=1]
+[ext_resource path="res://default_env.tres" type="Environment" id=2]
+[ext_resource path="res://test/Scripts/scr_item_3d_view.gd" type="Script" id=3]
+
+[sub_resource type="World" id=1]
+environment = ExtResource( 2 )
+
+[node name="Item3DView" type="ViewportContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 3 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 494, 450 )
+own_world = true
+world = SubResource( 1 )
+handle_input_locally = false
+fxaa = true
+render_target_update_mode = 3
+
+[node name="Spatial" type="Spatial" parent="Viewport"]
+
+[node name="Item" type="Spatial" parent="Viewport/Spatial"]
+transform = Transform( 0.810502, 0, -0.585736, 0, 1, 0, 0.585736, 0, 0.810502, 0, 0, 0 )
+
+[node name="mdl_mats_filament_roll" parent="Viewport/Spatial/Item" instance=ExtResource( 1 )]
+
+[node name="Camera" type="Camera" parent="Viewport/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.92317 )
+near = 0.01

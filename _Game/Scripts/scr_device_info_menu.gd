@@ -3,10 +3,10 @@ extends Control
 export (String) var label_str
 export (PackedScene) var videoplayer = preload("res://test/Scenes/UI/VideoPlayer_test_scene_1.tscn")
 var videoplayer_scene
-onready var panel = $Panel
-onready var tab_container = $Panel/TabContainer
-onready var device_name_label = $Panel/DeviceNameLabel
-onready var info_text = $Panel/TabContainer/Panel/InfoText
+onready var menu_window = $VBoxContainer
+onready var tab_container = $VBoxContainer/Panel/TabContainer
+onready var device_name_label = $VBoxContainer/Panel/NameLabel
+onready var info_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
 var device
 var inFocus
 
@@ -62,7 +62,7 @@ func _on_mouse_exited():
 func _input(event):
 	if (event is InputEventMouseButton) and event.pressed:
 		var evLocal = make_input_local(event)
-		if !Rect2(panel.rect_position, panel.rect_size).has_point(evLocal.position):
+		if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			self.visible = false
 		

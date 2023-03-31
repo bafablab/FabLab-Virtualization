@@ -64,7 +64,10 @@ func _input(_event):
 		if Input.is_action_just_pressed("mouse_click"):
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			print_debug("Clicked interactable!")
-			menu.init(interactable)
+			if self.is_in_group("Item"):
+				menu.init(interactable, mesh_instance)
+			elif self.is_in_group("Device"):
+				menu.init(interactable)
 			# set in_focus false to prevent re-click when closing menu
 			in_focus = false
 
