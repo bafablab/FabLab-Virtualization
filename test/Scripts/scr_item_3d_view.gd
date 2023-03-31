@@ -1,13 +1,18 @@
 extends ViewportContainer
 
 onready var item = $Viewport/Spatial/Item
-#var mesh_instance
+onready var mesh_instance = $Viewport/Spatial/Item/MeshInstance
+var mouse_sensitivity = 1
 
 func _ready():
 	pass
 
 func init(mesh):
-	print_debug(mesh)
-	var mesh_instance = MeshInstance.new()
 	mesh_instance.mesh = mesh.mesh
-	item.add_child(mesh_instance)
+
+func _input(event):
+	if(is_visible_in_tree()):
+		if Input.is_action_pressed("mouse_click"):
+			if event is InputEventMouseMotion:
+				item.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
+				item.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity ))

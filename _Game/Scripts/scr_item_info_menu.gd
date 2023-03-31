@@ -37,8 +37,7 @@ func _input(event):
 		var evLocal = make_input_local(event)
 		if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			self.visible = false
-		
+			self.visible = false		
 
 
 func _on_TabContainer_tab_selected(tab):

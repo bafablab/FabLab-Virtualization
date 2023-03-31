@@ -7,7 +7,7 @@
 [node name="UI_ItemInfoMenu" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 
-[node name="Item3DTab" type="Panel" parent="VBoxContainer/Panel/TabContainer" index="1"]
+[node name="$$3D näkymä" type="VBoxContainer" parent="VBoxContainer/Panel/TabContainer" index="1"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -16,6 +16,11 @@ margin_top = 32.0
 margin_right = 4.0
 margin_bottom = 32.0
 
-[node name="Item3DView" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="0" instance=ExtResource( 3 )]
+[node name="Item3DView" parent="VBoxContainer/Panel/TabContainer/$$3D näkymä" index="0" instance=ExtResource( 3 )]
+
+[node name="Label" type="Label" parent="VBoxContainer/Panel/TabContainer/$$3D näkymä" index="1"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "$$Pyöritä esinettä raahaamalla hiirtä ikkunan päällä."
 
 [connection signal="tab_selected" from="VBoxContainer/Panel/TabContainer" to="." method="_on_TabContainer_tab_selected"]
