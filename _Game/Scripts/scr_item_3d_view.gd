@@ -12,7 +12,7 @@ func init(mesh):
 
 func _input(event):
 	if(is_visible_in_tree()):
-		if Input.is_action_pressed("mouse_click"):
-			if event is InputEventMouseMotion:
+		if event is InputEventMouseMotion:
+			if Input.is_action_pressed("mouse_click"):
 				item.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 				item.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity ))

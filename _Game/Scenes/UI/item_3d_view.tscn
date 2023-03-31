@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://test/Scripts/scr_item_3d_view.gd" type="Script" id=3]
+[ext_resource path="res://_Game/Scripts/scr_item_3d_view.gd" type="Script" id=3]
 
 [sub_resource type="Environment" id=2]
 ambient_light_color = Color( 1, 1, 1, 1 )
