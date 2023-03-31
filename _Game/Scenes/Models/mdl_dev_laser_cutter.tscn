@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="mdl_dev_laser_cutter" type="Spatial"]
+transform = Transform( 1.59247, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.545239, 0 )
+mesh = SubResource( 1 )

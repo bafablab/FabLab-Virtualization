@@ -8,7 +8,7 @@
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.431212, 0.112276, 0.144545 )
 
-[node name="mdl_vinyl_cutter" groups=["Device"] instance=ExtResource( 1 )]
+[node name="mdl_dev_vinyl_cutter" groups=["Device"] instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 interactable = ExtResource( 4 )
 
