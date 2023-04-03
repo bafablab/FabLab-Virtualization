@@ -45,7 +45,7 @@ transform = Transform( 0.139087, 0, 0.99028, 0, 1, 0, -0.99028, 0, 0.139087, 3.7
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
 
 [node name="mdl_bar_stool_01" parent="stg_fablab" instance=ExtResource( 5 )]
-transform = Transform( 0.574706, 0, 0.81836, 0, 1, 0, -0.81836, 0, 0.574706, 1.14325, 0, -14.0436 )
+transform = Transform( 0.574706, 0, 0.81836, 0, 1, 0, -0.81836, 0, 0.574706, 1.14325, 0, -14.0786 )
 
 [node name="mdl_bar_stool_02" parent="stg_fablab" instance=ExtResource( 5 )]
 transform = Transform( 0.0147652, 0, 0.999891, 0, 1, 0, -0.999891, 0, 0.0147652, 1.29559, 0, -15.1697 )
@@ -78,10 +78,10 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.30722
 transform = Transform( -4.43671e-08, 0, 1, 0, 1, 0, -1.015, 0, -4.37114e-08, 0, 0, -12.221 )
 
 [node name="mdl_table_multicolor_long_printer" parent="stg_fablab" instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81347, 0, -15.8612 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79479, 0, -15.8392 )
 
 [node name="mdl_table_multicolor_long_printer2" parent="stg_fablab" instance=ExtResource( 9 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.09756, 0, -20.6179 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.74734, 0, -20.3958 )
 
 [node name="mdl_long_sofa" parent="stg_fablab" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.96339, 0.00620852, -5.37632 )
@@ -90,28 +90,28 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.96339, 0.00620852, -5.37632 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.82366, 0, -11.4941 )
 
 [node name="mdl_door_triplets_01" parent="stg_fablab" instance=ExtResource( 13 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.30867, 0, -10.8805 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.30302, -0.000226378, -10.8909 )
 
 [node name="mdl_table_multicolor_square" parent="stg_fablab" instance=ExtResource( 17 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81231, 0, -13.9038 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79186, 0, -13.887 )
 
 [node name="mdl_table_multicolor_square2" parent="stg_fablab" instance=ExtResource( 17 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.107824, 0, -20.6217 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.19473, 0, -21.2456 )
 
 [node name="mdl_table_multicolor_square3" parent="stg_fablab" instance=ExtResource( 17 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.866576, 0, -20.6217 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.37191, 0, -21.2488 )
 
 [node name="adjust_multicolor_table_heigtht" type="Spatial" parent="stg_fablab"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15, 0 )
 
 [node name="mdl_table_multicolor_long_pc_03" parent="stg_fablab/adjust_multicolor_table_heigtht" instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.11427, 0, -3.37725 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.98636, 0, -3.32181 )
 
 [node name="mdl_table_multicolor_long_pc_02" parent="stg_fablab/adjust_multicolor_table_heigtht" instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.758, 0, -7.886 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.36089, 0, -8.13363 )
 
 [node name="mdl_table_multicolor_long_ompelu" parent="stg_fablab/adjust_multicolor_table_heigtht" instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.67349, 0, -7.886 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.35911, 0, -7.87622 )
 
 [node name="mdl_dev_vinyl_cutter" parent="stg_fablab" instance=ExtResource( 14 )]
 transform = Transform( -5.46392e-08, 0, -1.25, 0, 1.25, 0, 1.25, 0, -5.46392e-08, 1.44237, 0.911384, -15.5253 )
