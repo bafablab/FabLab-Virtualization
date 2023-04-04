@@ -4,7 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Vinyl cutter"
+name = "Roland CAMM-1 GS-24"
 videos = [  ]
-info_text = [ "jonkummoinen vinyylileikkuri" ]
+info_text = [ "device_roland_camm$$Vinyylileikkuri
+Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin" ]
 device_type = 0

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Epilog Fusion Pro 48 120w"
+videos = [  ]
+info_text = [ "device_epilog$$Laserleikkuri
+Leikkaa muotoja tarkasti eri materiaaleihin" ]
+device_type = 0

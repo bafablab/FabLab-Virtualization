@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Rensi REU900"
+videos = [  ]
+info_text = [ "device_rensi$$CNC-jyrsin
+Työstöalue 900×700 mm
+materiaalit:
+puu
+muovi" ]
+device_type = 0

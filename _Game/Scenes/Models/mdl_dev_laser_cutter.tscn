@@ -1,10 +1,28 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=1]
+[ext_resource path="res://_Game/Resources/dev_epilog_fusion_pro_48_120w.tres" type="Resource" id=2]
 
 [sub_resource type="CubeMesh" id=1]
 
-[node name="mdl_dev_laser_cutter" type="Spatial"]
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.5, 0.5, 0.5 )
+
+[node name="mdl_dev_laser_cutter" type="Spatial" groups=["Device"]]
 transform = Transform( 1.59247, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+script = ExtResource( 1 )
+interactable = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.545239, 0 )
 mesh = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.545, 0 )
+shape = SubResource( 2 )
+
+[node name="HoverTextPosition" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32089, 0 )
