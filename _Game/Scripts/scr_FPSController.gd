@@ -131,6 +131,7 @@ func _on_Area_area_exited(area):
 
 func toggle_mouse():
 	if Input.is_action_just_pressed("mouse_toggle"):
+		TranslationServer.set_locale("fi")
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		else:

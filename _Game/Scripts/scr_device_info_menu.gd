@@ -17,9 +17,10 @@ var inFocus
 func init(dev):
 	device = dev
 	device_name_label.text = device.name
-	tab_container.set_tab_title(0, "Tietoja")
+	tab_container.set_tab_title(0, "$$Tietoja")
 	print_debug(("Device menu visible"))
-	info_text.text = device.info_text[0]
+	# tr() funktio hakee käännöksen .translationista
+	info_text.text = tr(device.info_text[0])
 	self.visible = true
 	# Consumes the event so it is not triggered in other
 	# scripts. For example close the window immidiately.
