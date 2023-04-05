@@ -1,3 +1,5 @@
+# $$-etuliitteellä olevat tekstit ovat avaimia StringKeys lisäosaa varten
+
 extends Control
 
 export (String) var label_str
@@ -18,8 +20,9 @@ func init(itm, mesh):
 	item = itm
 	mesh_instance = mesh
 	item_name_label.text = item.name
-	tab_container.set_tab_title(0, "Tietoja")
-	print_debug(("Item menu visible"))
+	tab_container.set_tab_title(0, "$$Tietoja")
+	tab_container.set_tab_title(1, "$$3D-malli")
+	#print_debug(("Item menu visible"))
 	info_text.text = item.info_text
 	self.visible = true
 	# Consumes the event so it is not triggered in other

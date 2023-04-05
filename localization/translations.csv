@@ -1,26 +1,90 @@
 key,fi
-"$$Hiekkapuhallin
-Puhdista, siloita ja muotoile kovia pintoja pienten kiinteiden hiukkasten ja paineilman avulla.","Hiekkapuhallin
-Puhdista, siloita ja muotoile kovia pintoja pienten kiinteiden hiukkasten ja paineilman avulla."
+$$3D-malli,3D-malli
 $$Pyöritä kappaletta raahaamalla hiirtä ikkunassa.,Pyöritä kappaletta raahaamalla hiirtä ikkunassa.
 $$Tietoja,Tietoja
-"device_epilog$$Laserleikkuri
-Leikkaa muotoja tarkasti eri materiaaleihin","Laserleikkuri
-Leikkaa muotoja tarkasti eri materiaaleihin"
-"device_rensi$$CNC-jyrsin
+"dev_epilog$$Laserleikkuri
+Leikkaa muotoja tarkasti eri materiaaleihin
+
+Työstoalue n. 1200 × 900 mm
+
+Tulostus suoraan Inkscape-ohjelmasta.
+
+.svg tiedostomuoto
+leikkauslinjan paksuus 0.033–0.077 mm
+muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
+laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
+Työstämiseen käyvät materiaalit: Epilog Fusion Pro CO2 Material Compatibility
+
+Laserilla EI VOI työstää seuraavia materiaaleja: PVC-, Vinyyli- ja ABS-muovit","Laserleikkuri
+Leikkaa muotoja tarkasti eri materiaaleihin
+
+Työstoalue n. 1200 × 900 mm
+
+Tulostus suoraan Inkscape-ohjelmasta.
+
+.svg tiedostomuoto
+leikkauslinjan paksuus 0.033–0.077 mm
+muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
+laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
+Työstämiseen käyvät materiaalit: Epilog Fusion Pro CO2 Material Compatibility
+
+Laserilla EI VOI työstää seuraavia materiaaleja: PVC-, Vinyyli- ja ABS-muovit"
+"dev_nova$$Hiekkapuhallin
+Puhdista, siloita ja muotoile kovia pintoja pienten kiinteiden hiukkasten ja paineilman avulla.","Hiekkapuhallin
+Puhdista, siloita ja muotoile kovia pintoja pienten kiinteiden hiukkasten ja paineilman avulla."
+"dev_rensi$$CNC-jyrsin
+
 Työstöalue 900×700 mm
 materiaalit:
 puu
 muovi","CNC-jyrsin
+
 Työstöalue 900×700 mm
 materiaalit:
 puu
 muovi"
-"device_roland_camm$$Vinyylileikkuri
-Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin","Vinyylileikkuri
-Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin"
-"device_sindoh$$3D-tulostin
+"dev_roland_camm$$Vinyylileikkuri
+Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin.
+
+Työstöalueen leveys n. 610 mm
+Tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
+-svg tai .cv -tiedostomuodot
+Materiaalia saatavilla BusinessAsemalla:
+erivärisiä vinyylejä
+kuumasiirtovinyyli valkoinen/musta/punainen
+hiekkapuhallusmaski","Vinyylileikkuri
+Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin.
+
+Työstöalueen leveys n. 610 mm
+Tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
+-svg tai .cv -tiedostomuodot
+Materiaalia saatavilla BusinessAsemalla:
+erivärisiä vinyylejä
+kuumasiirtovinyyli valkoinen/musta/punainen
+hiekkapuhallusmaski"
+"dev_sindoh$$3D-tulostin
 Tee kolmiulotteisia esineitä ja muotoja.
+
+3 kpl
+tulostusmateriaali: biohajoava PLA, ABS
+kerrospaksuus 0.05-0.4 mm
+suositeltu tiedostomuoto .stl
+ohjelmia 3D-mallinnukseen:
+Tinkercad
+Blender
+Fusion360
 ","3D-tulostin
 Tee kolmiulotteisia esineitä ja muotoja.
+
+3 kpl
+tulostusmateriaali: biohajoava PLA, ABS
+kerrospaksuus 0.05-0.4 mm
+suositeltu tiedostomuoto .stl
+ohjelmia 3D-mallinnukseen:
+Tinkercad
+Blender
+Fusion360
 "
+dev_sindoh$$Joku jannu hiihtää bussin yli niin kuin mielipuoli.,Joku jannu hiihtää bussin yli niin kuin mielipuoli.
+device_menu$$Tietoja,Tietoja
+device_menu$$Videot,Videot

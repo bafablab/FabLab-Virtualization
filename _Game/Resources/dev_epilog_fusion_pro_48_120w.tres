@@ -6,6 +6,18 @@
 script = ExtResource( 1 )
 name = "Epilog Fusion Pro 48 120w"
 videos = [  ]
-info_text = [ "device_epilog$$Laserleikkuri
-Leikkaa muotoja tarkasti eri materiaaleihin" ]
-device_type = 0
+info_text = [ "dev_epilog$$Laserleikkuri
+Leikkaa muotoja tarkasti eri materiaaleihin
+
+Työstoalue n. 1200 × 900 mm
+
+Tulostus suoraan Inkscape-ohjelmasta.
+
+.svg tiedostomuoto
+leikkauslinjan paksuus 0.033–0.077 mm
+muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
+laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
+Työstämiseen käyvät materiaalit: Epilog Fusion Pro CO2 Material Compatibility
+
+Laserilla EI VOI työstää seuraavia materiaaleja: PVC-, Vinyyli- ja ABS-muovit" ]
+device_type = 1

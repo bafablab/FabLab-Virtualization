@@ -63,7 +63,7 @@ func _input(_event):
 	if in_focus:
 		if Input.is_action_just_pressed("mouse_click"):
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			print_debug("Clicked interactable!")
+			#print_debug("Clicked interactable!")
 			if self.is_in_group("Item"):
 				menu.init(interactable, mesh_instance)
 			elif self.is_in_group("Device"):

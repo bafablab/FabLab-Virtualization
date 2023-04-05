@@ -1,3 +1,5 @@
+# $$-etuliitteellä olevat tekstit ovat avaimia StringKeys lisäosaa varten
+
 extends Control
 
 export (String) var label_str
@@ -7,6 +9,7 @@ onready var menu_window = $VBoxContainer
 onready var tab_container = $VBoxContainer/Panel/TabContainer
 onready var device_name_label = $VBoxContainer/Panel/NameLabel
 onready var info_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
+var video_tab
 var device
 var inFocus
 
@@ -17,28 +20,21 @@ var inFocus
 func init(dev):
 	device = dev
 	device_name_label.text = device.name
-	tab_container.set_tab_title(0, "$$Tietoja")
+	tab_container.set_tab_title(0, "device_menu$$Tietoja")
+	
 	print_debug(("Device menu visible"))
-	# tr() funktio hakee käännöksen .translationista
+	
+	# tr() funktio hakee käännöksen translation.fi.translation-tiedostosta
 	info_text.text = tr(device.info_text[0])
 	self.visible = true
+	
 	# Consumes the event so it is not triggered in other
 	# scripts. For example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
-	
-	
-#func _on_Button2_focus_entered():
-#	play_video()
-#	label.rect_position.x +=10
-#	label.rect_pivot_offset=rect_scale/2
-#	label.rect_scale+=Vector2(0.05,0.05)
-#
-#func _on_Button2_focus_exited():
-#	label.rect_position.x = pos_x_orig
-#	label.rect_scale = scale_orig
-#	label.rect_pivot_offset=Vector2(0,0)
-#	if videoplayer_scene!=null:
-#		videoplayer_scene.queue_free()
+	clear_video_menu()
+	if len(device.videos) != 0:
+		create_video_menu()
+
 
 func play_video():
 	create_video_panel()
@@ -66,4 +62,39 @@ func _input(event):
 		if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			self.visible = false
+
+func create_video_menu():
+	video_tab = VBoxContainer.new()
+	print_debug(video_tab)
+	tab_container.add_child(video_tab)
+	tab_container.set_tab_title(1, "device_menu$$Videot")
+	for i in range(len(device.videos)):
+		var button = Button.new()
 		
+		# info_text[0] is shown on first tab.
+		# info_text[1]... are for videos 0-
+		# text before "|" is shown in the button,
+		# text after "|"  is in the video description
+		button.text = "Video " + str(i+1)
+		button.connect("pressed", self, "_button_pressed", [i])
+		video_tab.add_child(button)
+		if len(device.info_text[i+1]) > 0:
+			var label = Label.new()
+			label.text = device.info_text[i+1]
+			video_tab.add_child(label)
+
+func clear_video_menu():
+	if videoplayer_scene != null:
+		if videoplayer_scene.is_inside_tree():
+			self.remove_child(videoplayer_scene)
+			
+	if video_tab != null:
+		tab_container.remove_child(video_tab)
+		print_debug(video_tab)
+		video_tab.queue_free()
+		video_tab = null
+
+func _button_pressed(video_number):
+	videoplayer_scene = videoplayer.instance()
+	videoplayer_scene.init(device, video_number)
+	self.add_child(videoplayer_scene)

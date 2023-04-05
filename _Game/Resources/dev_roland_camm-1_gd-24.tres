@@ -1,11 +1,20 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+[ext_resource path="res://test/Video/test files/bus.ogv" type="VideoStream" id=2]
 
 [resource]
 script = ExtResource( 1 )
 name = "Roland CAMM-1 GS-24"
-videos = [  ]
-info_text = [ "device_roland_camm$$Vinyylileikkuri
-Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin" ]
-device_type = 0
+videos = [ ExtResource( 2 ) ]
+info_text = [ "dev_roland_camm$$Vinyylileikkuri
+Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin.
+
+Työstöalueen leveys n. 610 mm
+Tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
+-svg tai .cv -tiedostomuodot
+Materiaalia saatavilla BusinessAsemalla:
+erivärisiä vinyylejä
+kuumasiirtovinyyli valkoinen/musta/punainen
+hiekkapuhallusmaski", "Joku video" ]
+device_type = 2
