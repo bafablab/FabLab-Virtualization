@@ -1,4 +1,6 @@
 extends Spatial
 
+export var language = "fi"
+
 func _ready():
-	pass
+	TranslationServer.set_locale(language)	
