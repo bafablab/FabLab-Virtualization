@@ -36,11 +36,12 @@ func _on_mouse_exited():
 	inFocus = false
 
 func _input(event):
-	if (event is InputEventMouseButton) and event.pressed:
-		var evLocal = make_input_local(event)
-		if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			self.visible = false		
+	if self.visible:
+		if (event is InputEventMouseButton) and event.pressed:
+			var evLocal = make_input_local(event)
+			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+				self.visible = false
 
 
 func _on_TabContainer_tab_selected(tab):
