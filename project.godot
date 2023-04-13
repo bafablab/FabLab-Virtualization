@@ -137,6 +137,7 @@ escape={
 
 [locale]
 
+fallback="fi"
 translations=PoolStringArray( "res://localization/translations.fi.translation", "res://localization/translations.en.translation" )
 
 [mono]
