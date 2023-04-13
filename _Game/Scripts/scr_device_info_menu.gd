@@ -35,15 +35,6 @@ func init(dev):
 	if len(device.videos) > 0:
 		create_video_menu()
 
-
-
-
-func _on_english_pressed():
-	TranslationServer.set_locale("en")	
-
-func _on_finnish_pressed():
-	TranslationServer.set_locale("fi")
-
 func _on_mouse_entered():
 	inFocus = true
 

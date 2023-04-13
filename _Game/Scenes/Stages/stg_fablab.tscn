@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://_Game/Scenes/UI/UI_device_info_menu.tscn" type="PackedScene" id=19]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_laser_cutter.tscn" type="PackedScene" id=20]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_sandblaster.tscn" type="PackedScene" id=21]
+[ext_resource path="res://_Game/Scenes/UI/UI_main_menu.tscn" type="PackedScene" id=22]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -30,6 +31,8 @@ radius = 0.188198
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
+
+[node name="UI_MainMenu" parent="." instance=ExtResource( 22 )]
 
 [node name="UI_Crosshair" parent="." instance=ExtResource( 11 )]
 
@@ -41,6 +44,7 @@ visible = false
 
 [node name="FPSController" parent="." instance=ExtResource( 7 )]
 transform = Transform( 0.139087, 0, 0.99028, 0, 1, 0, -0.99028, 0, 0.139087, 3.73036, 0, -15.3207 )
+inverse_mouse = 1
 
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
 

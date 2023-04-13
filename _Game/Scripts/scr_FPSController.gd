@@ -30,7 +30,7 @@ var item_info_menu
 
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 	item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	
