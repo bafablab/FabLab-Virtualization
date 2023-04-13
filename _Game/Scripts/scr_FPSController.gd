@@ -21,7 +21,6 @@ var selected_object = null
 var selected_object_transform
 var targeted_object = null
 
-
 onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect

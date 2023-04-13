@@ -7,6 +7,7 @@ func _ready():
 	show()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	fps_controller = get_node("/root/FabLab/FPSController")
+	
 
 func change_language():
 	var group = button_finnish.group
@@ -19,13 +20,11 @@ func change_language():
 		"Button_English":
 			TranslationServer.set_locale("en")
 
-
 func _on_CheckBox_toggled(button_pressed):
 	if button_pressed == false:
 		fps_controller.inverse_mouse = 1
 	else:
 		fps_controller.inverse_mouse = -1
-
 
 func start_game():
 	self.hide()
