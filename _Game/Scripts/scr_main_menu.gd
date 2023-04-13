@@ -1,9 +1,10 @@
-extends Panel
+extends Control
 
-onready var button_finnish = $Panel/Button_Finnish
+onready var button_finnish = $Panel/Panel/Button_Finnish
 var fps_controller
 
 func _ready():
+	show()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	fps_controller = get_node("/root/FabLab/FPSController")
 
@@ -13,13 +14,10 @@ func change_language():
 	match group.get_pressed_button().name:
 		"Button_Finnish":
 			TranslationServer.set_locale("fi")
-			print_debug(("Suomi"))
 		"Button_Swedish":
 			TranslationServer.set_locale("se")
-			print_debug(("Ruotsi"))
 		"Button_English":
 			TranslationServer.set_locale("en")
-			print_debug(("Englanti"))
 
 
 func _on_CheckBox_toggled(button_pressed):
@@ -27,7 +25,6 @@ func _on_CheckBox_toggled(button_pressed):
 		fps_controller.inverse_mouse = 1
 	else:
 		fps_controller.inverse_mouse = -1
-	print_debug(button_pressed)
 
 
 func start_game():
@@ -35,7 +32,8 @@ func start_game():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
-	if Input.is_action_pressed("escape"):
-		self.show()
+	if !self.visible:
+		if Input.is_action_pressed("escape"):
+			self.show()
 	if self.visible:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

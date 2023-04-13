@@ -21,18 +21,21 @@ var selected_object = null
 var selected_object_transform
 var targeted_object = null
 
+
 onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect
 onready var camera = $Head/Camera
 var device_info_menu
 var item_info_menu
+var main_menu
 
 
 func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 	item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
+	main_menu = get_node("/root/FabLab/UI_MainMenu")
 	
 func _input(event):
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
@@ -43,10 +46,13 @@ func _input(event):
 				head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
 
 	# Change mouse mode for debug
-	toggle_mouse()
+	if Input.is_action_just_pressed("mouse_toggle"):
+		toggle_mouse()
 	
 func _process(_delta):
-	moving = !(item_info_menu.visible or device_info_menu.visible)
+	moving = !(main_menu.visible or item_info_menu.visible or device_info_menu.visible)
+	#print_debug(moving)
+	
 	
 func _physics_process(delta):
 	# Check if interactable objects in range
@@ -129,10 +135,8 @@ func _on_Area_area_exited(area):
 	objects_in_range.erase(area)
 #	print(objects_in_range)
 
-func toggle_mouse():
-	if Input.is_action_just_pressed("mouse_toggle"):
-		TranslationServer.set_locale("fi")
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+func toggle_mouse():	
+	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

@@ -16,11 +16,12 @@ font_data = ExtResource( 1 )
 [sub_resource type="Theme" id=2]
 default_font = SubResource( 1 )
 
-[node name="Control" type="Control"]
+[node name="UI_main_menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 9 )
 
-[node name="UI_main_menu" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -30,9 +31,8 @@ margin_top = -150.0
 margin_right = 150.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 300, 200 )
-script = ExtResource( 9 )
 
-[node name="Label" type="Label" parent="UI_main_menu"]
+[node name="Label" type="Label" parent="Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -150.5
@@ -42,7 +42,7 @@ theme = SubResource( 2 )
 text = "main_menu$$FabLab Virtuaalimalli"
 align = 1
 
-[node name="Button" type="Button" parent="UI_main_menu"]
+[node name="Button" type="Button" parent="Panel"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -56,7 +56,7 @@ text = "main_menu$$Aloita"
 icon_align = 1
 expand_icon = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="UI_main_menu"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -66,18 +66,18 @@ margin_top = -80.0
 margin_right = 150.0
 margin_bottom = -56.0
 
-[node name="CheckBox" type="CheckBox" parent="UI_main_menu/HBoxContainer"]
+[node name="CheckBox" type="CheckBox" parent="Panel/HBoxContainer"]
 margin_right = 24.0
 margin_bottom = 24.0
 
-[node name="Label" type="Label" parent="UI_main_menu/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/HBoxContainer"]
 margin_left = 28.0
 margin_top = 5.0
 margin_right = 258.0
 margin_bottom = 19.0
 text = "main_menu$$Käännä hiiren y-akseli"
 
-[node name="Panel" type="Panel" parent="UI_main_menu"]
+[node name="Panel" type="Panel" parent="Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -85,7 +85,7 @@ anchor_bottom = 1.0
 margin_left = -150.5
 margin_right = 150.5
 
-[node name="Button_Finnish" type="TextureButton" parent="UI_main_menu/Panel"]
+[node name="Button_Finnish" type="TextureButton" parent="Panel/Panel"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -38.0
@@ -98,7 +98,7 @@ texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 7 )
 expand = true
 
-[node name="Button_Swedish" type="TextureButton" parent="UI_main_menu/Panel"]
+[node name="Button_Swedish" type="TextureButton" parent="Panel/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -113,7 +113,7 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 6 )
 expand = true
 
-[node name="Button_English" type="TextureButton" parent="UI_main_menu/Panel"]
+[node name="Button_English" type="TextureButton" parent="Panel/Panel"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -127,8 +127,8 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 5 )
 expand = true
 
-[connection signal="pressed" from="UI_main_menu/Button" to="UI_main_menu" method="start_game"]
-[connection signal="toggled" from="UI_main_menu/HBoxContainer/CheckBox" to="UI_main_menu" method="_on_CheckBox_toggled"]
-[connection signal="pressed" from="UI_main_menu/Panel/Button_Finnish" to="UI_main_menu" method="change_language"]
-[connection signal="pressed" from="UI_main_menu/Panel/Button_Swedish" to="UI_main_menu" method="change_language"]
-[connection signal="pressed" from="UI_main_menu/Panel/Button_English" to="UI_main_menu" method="change_language"]
+[connection signal="pressed" from="Panel/Button" to="." method="start_game"]
+[connection signal="toggled" from="Panel/HBoxContainer/CheckBox" to="." method="_on_CheckBox_toggled"]
+[connection signal="pressed" from="Panel/Panel/Button_Finnish" to="." method="change_language"]
+[connection signal="pressed" from="Panel/Panel/Button_Swedish" to="." method="change_language"]
+[connection signal="pressed" from="Panel/Panel/Button_English" to="." method="change_language"]
