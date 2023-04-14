@@ -1,19 +1,28 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=1]
+[ext_resource path="res://_Game/Resources/dev_shining3d_einstar.tres" type="Resource" id=2]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 0.251, 0.092, 0.217 )
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.12683, 0.0471727, 0.126722 )
+extents = Vector3( 0.12683, 0.0452584, 0.1047 )
 
-[node name="mdl_dev_shining3d_einstar" type="Spatial"]
+[node name="mdl_dev_shining3d_einstar" type="Spatial" groups=["Device"]]
+script = ExtResource( 1 )
+interactable = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0498002, 0 )
 mesh = SubResource( 1 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
+collision_layer = 17
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00484163, 0.0506062, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000435193, 0.0506062, 0 )
 shape = SubResource( 2 )
+
+[node name="HoverTextPosition" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.226501, 0 )

@@ -21,6 +21,6 @@ margin_bottom = 32.0
 [node name="Label" type="Label" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="1"]
 margin_right = 40.0
 margin_bottom = 14.0
-text = "$$Pyöritä kappaletta raahaamalla hiirtä ikkunassa."
+text = "$$Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla."
 
 [connection signal="tab_selected" from="VBoxContainer/Panel/TabContainer" to="." method="_on_TabContainer_tab_selected"]

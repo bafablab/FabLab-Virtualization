@@ -1,7 +1,40 @@
 key,fi,en
 $$3D-malli,3D-malli, 3D model
-$$Pyöritä kappaletta raahaamalla hiirtä ikkunassa.,Pyöritä kappaletta raahaamalla hiirtä ikkunassa.,
+$$Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.,Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.,
 $$Tietoja,Tietoja,
+"dev_elegoo_mars$$3D-tulostin
+
+ELEGOO Mars 2 MSLA Resin 3D Printer with 2K Mono LCD
+
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+1 kpl
+tulostusmateriaali: hartsi/resin
+kerrospaksuus 0.01-0.2 mm
+suositeltu tiedostomuoto .stl
+","3D-tulostin
+
+ELEGOO Mars 2 MSLA Resin 3D Printer with 2K Mono LCD
+
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+1 kpl
+tulostusmateriaali: hartsi/resin
+kerrospaksuus 0.01-0.2 mm
+suositeltu tiedostomuoto .stl
+",
+"dev_elna$$Ompelukone
+Toteuta käsityöprojekteja.","Ompelukone
+Toteuta käsityöprojekteja.",
+"dev_ender$$Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista.
+3 kpl
+tulostusmateriaali: biohajoava PLA
+kerrospaksuus 0.05-0.35 mm
+suositeltu tiedostomuoto .stl","Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista.
+3 kpl
+tulostusmateriaali: biohajoava PLA
+kerrospaksuus 0.05-0.35 mm
+suositeltu tiedostomuoto .stl",
 "dev_epilog$$Laserleikkuri
 Leikkaa muotoja tarkasti eri materiaaleihin
 
@@ -29,9 +62,42 @@ laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
 Työstämiseen käyvät materiaalit: Epilog Fusion Pro CO2 Material Compatibility
 
 Laserilla EI VOI työstää seuraavia materiaaleja: PVC-, Vinyyli- ja ABS-muovit",
+"dev_innov$$Brodeerauskone
+Brodeeraa kuvio valmiiseen tuotteeseen.","Brodeerauskone
+Brodeeraa kuvio valmiiseen tuotteeseen.",
+"dev_juki_mo$$Saumuri
+Toteuta käsityöprojekteja.","Saumuri
+Toteuta käsityöprojekteja.",
+"dev_juki_msc$$Saumuri
+Toteuta käsityöprojekteja,","Saumuri
+Toteuta käsityöprojekteja,",
 "dev_nova$$Hiekkapuhallin
 Puhdista, siloita ja muotoile kovia pintoja pienten kiinteiden hiukkasten ja paineilman avulla.","Hiekkapuhallin
 Puhdista, siloita ja muotoile kovia pintoja pienten kiinteiden hiukkasten ja paineilman avulla.",
+"dev_phrozen$$
+Post Curing UV Lamp UV-jälkikovetuskaappi
+
+sisätilamitta: 29.5 x 29.5 x 45 cm
+hartsitulosteiden jälkikovetukseen","
+Post Curing UV Lamp UV-jälkikovetuskaappi
+
+sisätilamitta: 29.5 x 29.5 x 45 cm
+hartsitulosteiden jälkikovetukseen",
+"dev_phrozen_sonic$$Large High Resolution Resin 3D Printer
+3D-tulostin
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+1 kpl
+tulostusmateriaali: hartsi/resin
+kerrospaksuus 0.01-0.30 mm
+suositeltu tiedostomuoto .stl","Large High Resolution Resin 3D Printer
+3D-tulostin
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+1 kpl
+tulostusmateriaali: hartsi/resin
+kerrospaksuus 0.01-0.30 mm
+suositeltu tiedostomuoto .stl",
 "dev_rensi$$CNC-jyrsin
 
 Työstöalue 900×700 mm
@@ -62,6 +128,23 @@ Materiaalia saatavilla BusinessAsemalla:
 erivärisiä vinyylejä
 kuumasiirtovinyyli valkoinen/musta/punainen
 hiekkapuhallusmaski",
+"dev_shining3d$$Käsiskanneri
+Kolmiulotteisten esineiden skannaukseen
+
+1 kpl
+sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
+Tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
+3D-suunnitteluohjelmistojen kanssa.
+lisätietoja:
+Shining3D Einstar","Käsiskanneri
+Kolmiulotteisten esineiden skannaukseen
+
+1 kpl
+sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
+Tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
+3D-suunnitteluohjelmistojen kanssa.
+lisätietoja:
+Shining3D Einstar",
 "dev_sindoh$$3D-tulostin
 Tee kolmiulotteisia esineitä ja muotoja.
 

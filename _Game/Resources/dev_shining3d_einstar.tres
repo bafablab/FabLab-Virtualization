@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Shining3D Einstar"
+videos = [  ]
+info_text = [ "dev_shining3d$$Käsiskanneri
+Kolmiulotteisten esineiden skannaukseen
+
+1 kpl
+sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
+Tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
+3D-suunnitteluohjelmistojen kanssa.
+lisätietoja:
+Shining3D Einstar" ]
+device_type = -1

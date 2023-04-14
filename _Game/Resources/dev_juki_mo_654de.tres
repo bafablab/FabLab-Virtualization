@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "JUKI MO-654DE"
+videos = [  ]
+info_text = [ "dev_juki_mo$$Saumuri
+Toteuta käsityöprojekteja." ]
+device_type = -1

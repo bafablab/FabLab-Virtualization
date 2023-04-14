@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "ELEGOO Mars 2 MSLA"
+videos = [  ]
+info_text = [ "dev_elegoo_mars$$3D-tulostin
+
+ELEGOO Mars 2 MSLA Resin 3D Printer with 2K Mono LCD
+
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+1 kpl
+tulostusmateriaali: hartsi/resin
+kerrospaksuus 0.01-0.2 mm
+suositeltu tiedostomuoto .stl
+" ]
+device_type = 0

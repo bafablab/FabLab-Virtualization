@@ -2,6 +2,7 @@ extends ViewportContainer
 
 onready var item = $Viewport/Spatial/Item
 onready var mesh_instance = $Viewport/Spatial/Item/MeshInstance
+onready var camera = $Viewport/Spatial/Camera
 var mouse_sensitivity = 1
 
 func _ready():
@@ -15,4 +16,6 @@ func _input(event):
 		if event is InputEventMouseMotion:
 			if Input.is_action_pressed("mouse_click"):
 				item.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
-				item.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity ))
+				item.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
+			elif Input.is_action_pressed("right_mouse_click"):
+				camera.transform.origin.z += -event.relative.y * mouse_sensitivity * 0.2

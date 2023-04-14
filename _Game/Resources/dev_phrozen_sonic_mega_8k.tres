@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Phrozen Sonic Mega 8K"
+videos = [  ]
+info_text = [ "dev_phrozen_sonic$$Large High Resolution Resin 3D Printer
+3D-tulostin
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+1 kpl
+tulostusmateriaali: hartsi/resin
+kerrospaksuus 0.01-0.30 mm
+suositeltu tiedostomuoto .stl" ]
+device_type = 0

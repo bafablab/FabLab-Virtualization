@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Phrozen Cure XL"
+videos = [  ]
+info_text = [ "dev_phrozen$$
+Post Curing UV Lamp UV-jälkikovetuskaappi
+
+sisätilamitta: 29.5 x 29.5 x 45 cm
+hartsitulosteiden jälkikovetukseen" ]
+device_type = -1

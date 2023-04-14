@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Innov-is V3"
+videos = [  ]
+info_text = [ "dev_innov$$Brodeerauskone
+Brodeeraa kuvio valmiiseen tuotteeseen." ]
+device_type = 4
