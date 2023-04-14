@@ -13,6 +13,7 @@ script = ExtResource( 3 )
 interactable = ExtResource( 4 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1.71725, 0, 0, 0, 1.71725, 0, 0, 0, 1, 0, 0, 0 )
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 1 )
 

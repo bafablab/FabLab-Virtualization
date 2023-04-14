@@ -140,7 +140,7 @@ transform = Transform( 1, 0, 0, 0, 1.50936, 0, 0, 0, 1, -4.3052, 0, -19.4888 )
 transform = Transform( 1.22624, 0, 0, 0, 1.50936, 0, 0, 0, 1, 0, 0, -23.1338 )
 
 [node name="mdl_sign_lc_cutter_wooden_sign" parent="stg_fablab" instance=ExtResource( 23 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.92872, 1.13773, -23.2469 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.14005, -23.2477 )
 
 [node name="mdl_dev_ender_3_v2_neo" parent="stg_fablab" instance=ExtResource( 24 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09979, 0.898575, -13.9199 )
