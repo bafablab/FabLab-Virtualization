@@ -23,7 +23,8 @@ func init(itm, mesh):
 	tab_container.set_tab_title(0, "$$Tietoja")
 	tab_container.set_tab_title(1, "$$3D-malli")
 	#print_debug(("Item menu visible"))
-	info_text.text = item.info_text
+	# tr() is used when godot doesn't automatically detect translatable text
+	info_text.text = tr(item.info_text)
 	self.visible = true
 	# Consumes the event so it is not triggered in other
 	# scripts. For example close the window immidiately.
@@ -42,6 +43,7 @@ func _input(event):
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 				self.visible = false
+				tab_container.current_tab = 0
 
 
 func _on_TabContainer_tab_selected(tab):
