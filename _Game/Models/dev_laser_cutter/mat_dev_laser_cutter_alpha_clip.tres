@@ -5,4 +5,8 @@
 [resource]
 flags_unshaded = true
 flags_do_not_receive_shadows = true
+flags_disable_ambient_light = true
+params_specular_mode = 4
+params_use_alpha_scissor = true
+params_alpha_scissor_threshold = 0.56
 albedo_texture = ExtResource( 1 )

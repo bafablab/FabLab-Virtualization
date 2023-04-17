@@ -131,7 +131,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.35911, 0, -7.87622 )
 transform = Transform( -5.46392e-08, 0, -1.25, 0, 1.25, 0, 1.25, 0, -5.46392e-08, 1.44237, 0.911384, -15.5253 )
 
 [node name="mdl_dev_laser_cutter" parent="stg_fablab" instance=ExtResource( 20 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50554, 0.0380655, -22.7691 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50554, 0.010805, -22.8262 )
 
 [node name="mdl_dev_router_rensi" parent="stg_fablab" instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1.50936, 0, 0, 0, 1, -4.3052, 0, -19.4888 )
@@ -140,7 +140,7 @@ transform = Transform( 1, 0, 0, 0, 1.50936, 0, 0, 0, 1, -4.3052, 0, -19.4888 )
 transform = Transform( 1.22624, 0, 0, 0, 1.50936, 0, 0, 0, 1, 0, 0, -23.1338 )
 
 [node name="mdl_sign_lc_cutter_wooden_sign" parent="stg_fablab" instance=ExtResource( 23 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.14005, -23.2477 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.11064, -23.2477 )
 
 [node name="mdl_dev_ender_3_v2_neo" parent="stg_fablab" instance=ExtResource( 24 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09979, 0.898575, -13.9199 )

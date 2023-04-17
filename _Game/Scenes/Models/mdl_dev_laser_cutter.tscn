@@ -12,6 +12,7 @@ script = ExtResource( 1 )
 interactable = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0129445, 0 )
 mesh = ExtResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
