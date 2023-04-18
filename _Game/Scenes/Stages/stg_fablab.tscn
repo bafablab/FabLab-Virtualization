@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_elegoo_mars_2.tscn" type="PackedScene" id=31]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_phrozen_sonic_mega_8k.tscn" type="PackedScene" id=32]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_polygon_owl.tscn" type="PackedScene" id=33]
+[ext_resource path="res://_Game/Scenes/Models/mdl_dev_basic_pc.tscn" type="PackedScene" id=34]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -147,7 +148,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.11064, -23.2477 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09979, 0.898575, -13.9199 )
 
 [node name="mdl_dev_shining3d_einstar" parent="stg_fablab" instance=ExtResource( 28 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02508, 0.752129, -6.98023 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02508, 0.752129, -6.79534 )
 
 [node name="mdl_dev_innov_is_v3" parent="stg_fablab" instance=ExtResource( 30 )]
 transform = Transform( -0.0202445, 0, -0.999795, 0, 1, 0, 0.999795, 0, -0.0202445, 5.04136, 0.737793, -8.57363 )
@@ -172,6 +173,30 @@ transform = Transform( -0.011327, 0, -0.999936, 0, 1, 0, 0.999936, 0, -0.011327,
 
 [node name="mdl_itm_polygon_owl" parent="stg_fablab" instance=ExtResource( 33 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.64025, 1.38606, -11.543 )
+
+[node name="mdl_dev_basic_pc" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( -1.74418e-05, 0, -1, 0, 1, 0, 1, 0, -1.74418e-05, 2.07837, 0.754658, -7.42502 )
+
+[node name="mdl_dev_basic_pc2" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( -1.74418e-05, 0, -1, 0, 1, 0, 1, 0, -1.74418e-05, 2.07837, 0.754658, -8.50674 )
+
+[node name="mdl_dev_basic_pc3" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728, 2.52882, 0.754658, -8.25225 )
+
+[node name="mdl_dev_basic_pc4" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728, 2.58852, 0.754658, -7.19693 )
+
+[node name="mdl_dev_basic_pc5" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728, 7.27175, 0.754658, -4.1628 )
+
+[node name="mdl_dev_basic_pc7" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( 0.0896243, 0, -0.995976, 0, 1, 0, 0.995976, 0, 0.0896243, 6.68394, 0.754658, -4.1628 )
+
+[node name="mdl_dev_basic_pc8" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( 0.0896243, 0, -0.995976, 0, 1, 0, 0.995976, 0, 0.0896243, 6.68394, 0.754658, -3.01001 )
+
+[node name="mdl_dev_basic_pc6" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728, 7.28563, 0.754658, -2.98796 )
 
 [node name="collision_test_object" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
