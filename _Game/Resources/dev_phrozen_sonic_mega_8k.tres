@@ -5,13 +5,8 @@
 [resource]
 script = ExtResource( 1 )
 name = "Phrozen Sonic Mega 8K"
+info_text = ""
 videos = [  ]
-info_text = [ "dev_phrozen_sonic$$Large High Resolution Resin 3D Printer
-3D-tulostin
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
-
-1 kpl
-tulostusmateriaali: hartsi/resin
-kerrospaksuus 0.01-0.30 mm
-suositeltu tiedostomuoto .stl" ]
-device_type = 0
+video_titles = [  ]
+video_descriptions = [  ]
+example_items = [  ]

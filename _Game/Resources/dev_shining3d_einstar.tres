@@ -5,14 +5,8 @@
 [resource]
 script = ExtResource( 1 )
 name = "Shining3D Einstar"
+info_text = ""
 videos = [  ]
-info_text = [ "dev_shining3d$$Käsiskanneri
-Kolmiulotteisten esineiden skannaukseen
-
-1 kpl
-sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
-Tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
-3D-suunnitteluohjelmistojen kanssa.
-lisätietoja:
-Shining3D Einstar" ]
-device_type = -1
+video_titles = [  ]
+video_descriptions = [  ]
+example_items = [  ]

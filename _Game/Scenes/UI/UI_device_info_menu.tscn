@@ -5,3 +5,15 @@
 
 [node name="UI_DeviceInfoMenu" instance=ExtResource( 2 )]
 script = ExtResource( 3 )
+
+[node name="VBoxContainer" parent="." index="0"]
+margin_bottom = 316.0
+
+[node name="InfoText" parent="VBoxContainer/Panel/TabContainer/Panel" index="0"]
+margin_bottom = -100.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel/TabContainer/Panel" index="1"]
+margin_left = 6.0
+margin_top = 455.0
+margin_right = 46.0
+margin_bottom = 495.0

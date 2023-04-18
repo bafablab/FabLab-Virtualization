@@ -18,6 +18,7 @@ onready var item_3d_view = $VBoxContainer/Panel/TabContainer/Item3DTab/Item3DVie
 	
 func init(itm, mesh):
 	item = itm
+	item.mesh = mesh
 	mesh_instance = mesh
 	item_name_label.text = item.name
 	tab_container.set_tab_title(0, "$$Tietoja")

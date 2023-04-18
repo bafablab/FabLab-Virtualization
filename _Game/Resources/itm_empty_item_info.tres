@@ -7,4 +7,3 @@ script = ExtResource( 1 )
 name = "Empty Item Info!"
 info_text = "This item does not have ItemInfo resource set. Add a correct one."
 manu_time = 0
-device_used = ""

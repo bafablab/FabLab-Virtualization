@@ -5,7 +5,8 @@
 [resource]
 script = ExtResource( 1 )
 name = "JUKI MCS-1500"
+info_text = ""
 videos = [  ]
-info_text = [ "dev_juki_msc$$Saumuri
-Toteuta käsityöprojekteja," ]
-device_type = -1
+video_titles = [  ]
+video_descriptions = [  ]
+example_items = [  ]

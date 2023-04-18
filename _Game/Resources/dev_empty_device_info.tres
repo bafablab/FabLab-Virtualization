@@ -5,7 +5,8 @@
 [resource]
 script = ExtResource( 1 )
 name = "Empty Device Info!"
+info_text = ""
 videos = [  ]
-info_text = [ "This device does not have DeviceInfo resource set.
-Add  a correct one!" ]
-device_type = 0
+video_titles = [  ]
+video_descriptions = [  ]
+example_items = [  ]

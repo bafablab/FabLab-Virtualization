@@ -5,11 +5,8 @@
 [resource]
 script = ExtResource( 1 )
 name = "Rensi REU900"
+info_text = ""
 videos = [  ]
-info_text = [ "dev_rensi$$CNC-jyrsin
-
-Työstöalue 900×700 mm
-materiaalit:
-puu
-muovi" ]
-device_type = 3
+video_titles = [  ]
+video_descriptions = [  ]
+example_items = [  ]
