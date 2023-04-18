@@ -10,6 +10,8 @@ func _ready():
 
 func init(mesh):
 	mesh_instance.mesh = mesh.mesh
+	item.transform.basis = Basis()
+	camera.translation = Vector3(0,0,2.9)
 
 func _input(event):
 	if(is_visible_in_tree()):
@@ -18,4 +20,4 @@ func _input(event):
 				item.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 				item.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
 			elif Input.is_action_pressed("right_mouse_click"):
-				camera.transform.origin.z += -event.relative.y * mouse_sensitivity * 0.2
+				camera.transform.origin.z += -event.relative.y * mouse_sensitivity * 0.1

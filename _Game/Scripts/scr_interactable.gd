@@ -36,6 +36,9 @@ func _ready():
 				print_debug("No overlay material! (highlight shader)")
 			child.set_material_overlay(null)
 			mesh_instance = child
+			if self.is_in_group("Item"):
+				print_debug(self.name)
+				interactable.mesh_instance = child
 			break
 			
 	if interactable == null:

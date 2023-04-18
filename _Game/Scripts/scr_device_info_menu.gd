@@ -69,7 +69,10 @@ func create_video_menu():
 			var label = Label.new()
 			label.text = tr(device.video_descriptions[i])
 			video_tab.add_child(label)
-	
+			
+	for button in item_list.get_children():
+		item_list.remove_child(button)
+		
 	for item in device.example_items:
 		print_debug(item.name)
 		var button = Button.new()
@@ -89,6 +92,9 @@ func clear_video_menu():
 		print_debug(video_tab)
 		video_tab.queue_free()
 		video_tab = null
+		
+	for button in item_list.get_children():
+		item_list.remove_child(button)
 
 func _button_pressed(video_number):
 	videoplayer_scene = videoplayer.instance()
@@ -96,4 +102,4 @@ func _button_pressed(video_number):
 	self.add_child(videoplayer_scene)
 
 func _item_button_pressed(item):
-	item_menu.init(item, item.mesh)
+	item_menu.init(item, item.mesh_instance)

@@ -22,7 +22,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_laser_cutter.tscn" type="PackedScene" id=20]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_sandblaster.tscn" type="PackedScene" id=21]
 [ext_resource path="res://_Game/Scenes/UI/UI_main_menu.tscn" type="PackedScene" id=22]
-[ext_resource path="res://_Game/Scenes/Models/mdl_sign_lc_wooden_sign.tscn" type="PackedScene" id=23]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_sign_lc_wooden_sign.tscn" type="PackedScene" id=23]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_ender_3_v2_neo.tscn" type="PackedScene" id=24]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_juki_msc_1500.tscn" type="PackedScene" id=25]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_elna_experience_520_s.tscn" type="PackedScene" id=26]
@@ -140,7 +140,7 @@ transform = Transform( 1, 0, 0, 0, 1.50936, 0, 0, 0, 1, -4.3052, 0, -19.4888 )
 [node name="mdl_dev_sandblaster" parent="stg_fablab" instance=ExtResource( 21 )]
 transform = Transform( 1.22624, 0, 0, 0, 1.50936, 0, 0, 0, 1, 0, 0, -23.1338 )
 
-[node name="mdl_sign_lc_cutter_wooden_sign" parent="stg_fablab" instance=ExtResource( 23 )]
+[node name="mdl_sign_lc_itm_cutter_wooden_sign" parent="stg_fablab" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.11064, -23.2477 )
 
 [node name="mdl_dev_ender_3_v2_neo" parent="stg_fablab" instance=ExtResource( 24 )]

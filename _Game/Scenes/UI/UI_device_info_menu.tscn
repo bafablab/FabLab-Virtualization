@@ -9,11 +9,18 @@ script = ExtResource( 3 )
 [node name="VBoxContainer" parent="." index="0"]
 margin_bottom = 316.0
 
+[node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
+margin_bottom = 424.0
+
+[node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
+margin_bottom = -104.0
+rect_min_size = Vector2( 492, 300 )
+
 [node name="InfoText" parent="VBoxContainer/Panel/TabContainer/Panel" index="0"]
-margin_bottom = -100.0
+margin_bottom = -4.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel/TabContainer/Panel" index="1"]
 margin_left = 6.0
-margin_top = 455.0
+margin_top = 319.0
 margin_right = 46.0
-margin_bottom = 495.0
+margin_bottom = 359.0
