@@ -5,4 +5,5 @@
 [resource]
 flags_unshaded = true
 flags_do_not_receive_shadows = true
+flags_disable_ambient_light = true
 albedo_texture = ExtResource( 1 )
