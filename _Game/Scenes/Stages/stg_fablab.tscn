@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -34,6 +34,8 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_phrozen_sonic_mega_8k.tscn" type="PackedScene" id=32]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_polygon_owl.tscn" type="PackedScene" id=33]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_basic_pc.tscn" type="PackedScene" id=34]
+[ext_resource path="res://_Game/Scenes/Models/mdl_table_large_round_table.tscn" type="PackedScene" id=35]
+[ext_resource path="res://_Game/Scenes/Models/mdl_chair_low_chair_green.tscn" type="PackedScene" id=36]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -197,6 +199,36 @@ transform = Transform( 0.0896243, 0, -0.995976, 0, 1, 0, 0.995976, 0, 0.0896243,
 
 [node name="mdl_dev_basic_pc6" parent="stg_fablab" instance=ExtResource( 34 )]
 transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728, 7.28563, 0.754658, -2.98796 )
+
+[node name="mdl_table_large_round_table" parent="stg_fablab" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.73047, 0, -2.38075 )
+
+[node name="mdl_table_large_round_table2" parent="stg_fablab" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72127, 0, -4.12413 )
+
+[node name="mdl_table_large_round_table5" parent="stg_fablab" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.66718, 0.00397015, -2.43402 )
+
+[node name="mdl_chair_low_chair_green" parent="stg_fablab" instance=ExtResource( 36 )]
+transform = Transform( 0.952177, 0, 0.305546, 0, 1, 0, -0.305546, 0, 0.952177, 2.35405, 0, -3.32342 )
+
+[node name="mdl_chair_low_chair_green2" parent="stg_fablab" instance=ExtResource( 36 )]
+transform = Transform( -0.197863, 0, 0.98023, 0, 1, 0, -0.98023, 0, -0.197863, 4.09718, 0, -4.07557 )
+
+[node name="mdl_chair_low_chair_green3" parent="stg_fablab" instance=ExtResource( 36 )]
+transform = Transform( 0.44462, 0, 0.89572, 0, 1, 0, -0.89572, 0, 0.44462, 4.09718, 0, -2.6424 )
+
+[node name="mdl_chair_low_chair_green4" parent="stg_fablab" instance=ExtResource( 36 )]
+transform = Transform( -0.454395, 0, -0.8908, 0, 1, 0, 0.8908, 0, -0.454395, 3.2026, 0, -2.12259 )
+
+[node name="mdl_chair_low_chair_green5" parent="stg_fablab" instance=ExtResource( 36 )]
+transform = Transform( -0.454395, 0, -0.8908, 0, 1, 0, 0.8908, 0, -0.454395, 5.41145, 0, -2.03541 )
+
+[node name="mdl_chair_low_chair_green6" parent="stg_fablab" instance=ExtResource( 36 )]
+transform = Transform( 0.777815, 0, -0.628493, 0, 1, 0, 0.628493, 0, 0.777815, 5.2097, 0, -2.88483 )
+
+[node name="mdl_chair_low_chair_green7" parent="stg_fablab" instance=ExtResource( 36 )]
+transform = Transform( 0.124762, 0, -0.992187, 0, 1, 0, 0.992187, 0, 0.124762, 5.28541, 0, -4.27961 )
 
 [node name="collision_test_object" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
