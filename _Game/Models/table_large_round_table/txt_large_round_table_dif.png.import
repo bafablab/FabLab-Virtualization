@@ -17,7 +17,7 @@ dest_files=[ "res://.import/txt_large_round_table_dif.png-26325bc254a7d635e8dcdb
 [params]
 
 compress/mode=2
-compress/lossy_quality=0.7
+compress/lossy_quality=0.97
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
