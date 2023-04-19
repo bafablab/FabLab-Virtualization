@@ -1,10 +1,9 @@
-[gd_resource type="Resource" load_steps=7 format=2]
+[gd_resource type="Resource" load_steps=6 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
 [ext_resource path="res://test/Video/test files/bus.ogv" type="VideoStream" id=2]
 [ext_resource path="res://test/Video/test files/media-source_webm_test-vp9.webm" type="VideoStream" id=3]
 [ext_resource path="res://test/Video/test files/V208 WEBM - VP8 1080p 24fps 8bit - VORBIS2.0.webm" type="VideoStream" id=4]
-[ext_resource path="res://_Game/Resources/itm_lasercut_firehazard.tres" type="Resource" id=5]
 [ext_resource path="res://_Game/Resources/itm_polygon_owl.tres" type="Resource" id=6]
 
 [resource]
@@ -24,4 +23,4 @@ Fusion360"
 videos = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ]
 video_titles = [ "dev_sindoh$$Hiihtovideo" ]
 video_descriptions = [ "dev_sindoh$$Mies hiihtää bussin yli" ]
-example_items = [ ExtResource( 5 ), ExtResource( 6 ) ]
+example_items = [ ExtResource( 6 ) ]

@@ -20,4 +20,4 @@ func _input(event):
 				item.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 				item.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
 			elif Input.is_action_pressed("right_mouse_click"):
-				camera.transform.origin.z += -event.relative.y * mouse_sensitivity * 0.1
+				camera.transform.origin.z += event.relative.y * mouse_sensitivity * 0.1

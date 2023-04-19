@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=1]
-[ext_resource path="res://_Game/Resources/dev_ender_3_v3.tres" type="Resource" id=2]
+[ext_resource path="res://_Game/Resources/dev_ender_3_v2.tres" type="Resource" id=2]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 0.3, 0.3, 0.3 )

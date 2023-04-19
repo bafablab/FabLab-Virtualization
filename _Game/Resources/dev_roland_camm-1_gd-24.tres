@@ -6,7 +6,18 @@
 [resource]
 script = ExtResource( 1 )
 name = "Roland CAMM-1 GS-24"
-info_text = ""
+info_text = "dev_roland_camm$$Vinyylileikkuri
+
+Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin.
+
+työstöalueen leveys n. 610 mm
+tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
+-svg tai .cv -tiedostomuodot
+Materiaalia saatavilla BusinessAsemalla:
+
+erivärisiä vinyylejä
+kuumasiirtovinyyli valkoinen/musta/punainen
+hiekkapuhallusmaski"
 videos = [ ExtResource( 2 ) ]
 video_titles = [  ]
 video_descriptions = [  ]

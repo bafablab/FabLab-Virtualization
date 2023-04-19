@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "JUKI MO-654DE"
-info_text = ""
+info_text = "dev_juki_mo$$Saumuri"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]
