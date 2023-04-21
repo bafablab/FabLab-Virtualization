@@ -2,9 +2,7 @@
 
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=1]
 [ext_resource path="res://_Game/Resources/dev_shining3d_einstar.tres" type="Resource" id=2]
-
-[sub_resource type="CubeMesh" id=1]
-size = Vector3( 0.251, 0.092, 0.217 )
+[ext_resource path="res://_Game/Models/dev_3d_scanner/mdl_dev_3d_scanner_mdl.mesh" type="ArrayMesh" id=3]
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.12683, 0.0452584, 0.1047 )
@@ -15,7 +13,7 @@ interactable = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0498002, 0 )
-mesh = SubResource( 1 )
+mesh = ExtResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 collision_layer = 17
