@@ -150,7 +150,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.11064, -23.2477 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09979, 0.898575, -13.9199 )
 
 [node name="mdl_dev_shining3d_einstar" parent="stg_fablab" instance=ExtResource( 28 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02508, 0.752129, -6.79534 )
+transform = Transform( 0.916265, 0, 0.400573, 0, 1, 0, -0.400573, 0, 0.916265, 1.89662, 0.752129, -6.79534 )
 
 [node name="mdl_dev_innov_is_v3" parent="stg_fablab" instance=ExtResource( 30 )]
 transform = Transform( -0.0202445, 0, -0.999795, 0, 1, 0, 0.999795, 0, -0.0202445, 5.04136, 0.737793, -8.57363 )
