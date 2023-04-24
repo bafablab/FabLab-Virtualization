@@ -28,23 +28,38 @@ transform = Transform( -0.999564, -0.0151446, 0.0253338, 0.00694773, 0.713476, 0
 [node name="mdl_pillow_multicolor_A3" parent="pillows" index="1" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.29692, 0.545928, -0.529813 )
 
-[node name="mdl_pillow_multicolor_A2" parent="pillows" index="2" instance=ExtResource( 5 )]
+[node name="mdl_pillow_multicolor_A4" parent="pillows" index="2" instance=ExtResource( 5 )]
+transform = Transform( 0.98992, 0, 0.141627, 0, 1, 0, -0.141627, 0, 0.98992, 1.75046, 0.503818, -0.518768 )
+
+[node name="mdl_pillow_multicolor_A6" parent="pillows" index="3" instance=ExtResource( 5 )]
+transform = Transform( 0.13423, -0.955959, -0.261006, -0.0619599, 0.254778, -0.965013, 0.989011, 0.145706, -0.0250323, 0.671079, 0.579101, -0.518768 )
+
+[node name="mdl_pillow_multicolor_A5" parent="pillows" index="4" instance=ExtResource( 5 )]
+transform = Transform( -0.0202768, 0.511338, -0.85914, 0.0120648, 0.85938, 0.511196, 0.999722, 0, -0.0235946, 2.85594, 0.616976, -0.275364 )
+
+[node name="mdl_pillow_multicolor_A2" parent="pillows" index="5" instance=ExtResource( 5 )]
 transform = Transform( -0.983333, 0.181812, -0.000986574, 0.180335, 0.974629, -0.132581, -0.0231431, -0.130549, -0.991172, -1.34439, 0.559406, -0.464977 )
 
-[node name="mdl_pillow_square_yellow3" parent="pillows" index="3" instance=ExtResource( 3 )]
+[node name="mdl_pillow_square_yellow3" parent="pillows" index="6" instance=ExtResource( 3 )]
 transform = Transform( 0.546657, 0.837356, 0, -0.837356, 0.546657, 0, 0, 0, 1, -2.87462, 0.674496, -0.462578 )
 
-[node name="mdl_pillow_square_yellow4" parent="pillows" index="4" instance=ExtResource( 3 )]
+[node name="mdl_pillow_square_yellow4" parent="pillows" index="7" instance=ExtResource( 3 )]
 transform = Transform( 0.869857, 0, -0.493304, 0, 1, 0, 0.493304, 0, 0.869857, -1.67623, 0.513495, -0.480429 )
 
-[node name="mdl_pillow_square_yellow5" parent="pillows" index="5" instance=ExtResource( 3 )]
+[node name="mdl_pillow_square_yellow6" parent="pillows" index="8" instance=ExtResource( 3 )]
+transform = Transform( 0.869857, 0, -0.493304, 0, 1, 0, 0.493304, 0, 0.869857, 2.68482, 0.513495, -0.345833 )
+
+[node name="mdl_pillow_square_yellow5" parent="pillows" index="9" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 0.218143, -0.975917, 0, 0.975917, 0.218143, -0.444775, 0.664321, -0.609334 )
 
-[node name="mdl_pillow_square_black" parent="pillows" index="6" instance=ExtResource( 4 )]
+[node name="mdl_pillow_square_black" parent="pillows" index="10" instance=ExtResource( 4 )]
 transform = Transform( 0.979116, 0.118253, -0.165369, -0.202109, 0.654105, -0.728902, 0.0219739, 0.747103, 0.664345, -0.946117, 0.695887, -0.561317 )
 
-[node name="mdl_pillow_square_black2" parent="pillows" index="7" instance=ExtResource( 4 )]
+[node name="mdl_pillow_square_black2" parent="pillows" index="11" instance=ExtResource( 4 )]
 transform = Transform( 0.989653, -0.057025, -0.131661, -0.00698496, 0.897391, -0.44118, 0.14331, 0.437535, 0.887708, -1.93004, 0.591203, -0.330134 )
 
-[node name="mdl_pillow_square_black3" parent="pillows" index="8" instance=ExtResource( 4 )]
-transform = Transform( 0.982847, -0.108938, -0.148808, -0.0810793, 0.469486, -0.879209, 0.165642, 0.876194, 0.4526, 1.47497, 0.673952, -0.568151 )
+[node name="mdl_pillow_square_black3" parent="pillows" index="12" instance=ExtResource( 4 )]
+transform = Transform( 0.922329, -0.264096, 0.282068, 0.370851, 0.399976, -0.838146, 0.10853, 0.877652, 0.46685, 1.47497, 0.693819, -0.568151 )
+
+[node name="mdl_pillow_square_black4" parent="pillows" index="13" instance=ExtResource( 4 )]
+transform = Transform( -0.595137, -0.480702, -0.644001, -0.101226, 0.839829, -0.533329, 0.797223, -0.252215, -0.548473, 2.62089, 0.631825, -0.485407 )
