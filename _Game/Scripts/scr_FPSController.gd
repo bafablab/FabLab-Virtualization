@@ -23,7 +23,7 @@ var targeted_object = null
 
 onready var head = $Head
 onready var ground_check = $GroundCheck
-onready var object_select = $Head/ObjectSelect
+onready var object_select = $Head/ObjectSelect 		# raycast for detecting interactables
 onready var camera = $Head/Camera
 var device_info_menu
 var item_info_menu
@@ -44,11 +44,12 @@ func _input(event):
 				head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
 				head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
 
-	# Change mouse mode for debug
+	# Change mouse mode for debug. MOUSE_MODE_CAPTURED and MOUSE_MODE_VISIBLE - mouse_toggle currently "-"
 	if Input.is_action_just_pressed("mouse_toggle"):
 		toggle_mouse()
 	
 func _process(_delta):
+	# disable player movement if any menu is visible
 	moving = !(main_menu.visible or item_info_menu.visible or device_info_menu.visible)
 	#print_debug(moving)
 	
@@ -62,24 +63,27 @@ func _physics_process(delta):
 			# Do not emit signal again if targeted object hasn't changed
 			if object_select.get_collider() != targeted_object:
 				if targeted_object != null:
-					targeted_object.emit_signal("mouse_exited")
+					# unselect previous interactable
+					targeted_object.emit_signal("mouse_exited")		# same signal than godot's own mouse cursor
+				# select currently targeted object
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
-				print_debug(targeted_object, object_select.get_collider())
+				#print_debug(targeted_object, object_select.get_collider())
 		else:
+			# clear targeted object if raycast isn't colliding and unselect it
 			if targeted_object != null:
 				targeted_object.emit_signal("mouse_exited")
 #				print_debug("no targeted object")
 				targeted_object = null
 			#print_debug("object_detected")
-	# if no interactable objects in range, disable object_select raycast
+	# if no interactable objects in range, disable object_select raycast. 
 	else:
 		if object_select.enabled:
 			object_select.enabled = false
 		selected_object = null
-
 	# ------- Object selection code ends -------
 	
+	# Movement code from tutorial
 	direction = Vector3()
 	if ground_check.is_colliding():
 		full_contact = true
@@ -97,7 +101,6 @@ func _physics_process(delta):
 	if moving:
 #		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 #			gravity_vec = Vector3.UP * jump
-		
 		if Input.is_action_pressed("move_forward"):
 			direction -= transform.basis.z
 		elif Input.is_action_pressed("move_backward"):
@@ -115,7 +118,7 @@ func _physics_process(delta):
 		
 		move_and_slide(movement, Vector3.UP)
 	else:
-		h_velocity = Vector3.ZERO
+		h_velocity = Vector3.ZERO # stop player if menu is open
 
 
 func _on_Area_body_entered(body):
@@ -125,15 +128,17 @@ func _on_Area_body_entered(body):
 func _on_Area_body_exited(body):
 	objects_in_range.erase(body)
 #	print(objects_in_range)
-	
-func _on_Area_area_entered(area):
-	objects_in_range.append(area)
-#	print(objects_in_range)
 
-func _on_Area_area_exited(area):
-	objects_in_range.erase(area)
-#	print(objects_in_range)
+# Not in use (I think)
+#func _on_Area_area_entered(area):
+#	objects_in_range.append(area)
+##	print(objects_in_range)
+#
+#func _on_Area_area_exited(area):
+#	objects_in_range.erase(area)
+##	print(objects_in_range)
 
+# toggle mouse mode for debug purposes
 func toggle_mouse():	
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
