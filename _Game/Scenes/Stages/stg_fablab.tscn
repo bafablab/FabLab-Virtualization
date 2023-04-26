@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_basic_pc.tscn" type="PackedScene" id=34]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_large_round_table.tscn" type="PackedScene" id=35]
 [ext_resource path="res://_Game/Scenes/Models/mdl_chair_low_chair_green.tscn" type="PackedScene" id=36]
+[ext_resource path="res://_Game/Scenes/Models/mdl_dev_3dprinter_sindoh_3dwox_1_lq_skinned.tscn" type="PackedScene" id=37]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -229,6 +230,9 @@ transform = Transform( 0.777815, 0, -0.628493, 0, 1, 0, 0.628493, 0, 0.777815, 5
 
 [node name="mdl_chair_low_chair_green7" parent="stg_fablab" instance=ExtResource( 36 )]
 transform = Transform( 0.124762, 0, -0.992187, 0, 1, 0, 0.992187, 0, 0.124762, 5.28541, 0, -4.27961 )
+
+[node name="mch_3dprinter_shindow_3dwox_1_lq_skinned" parent="stg_fablab" instance=ExtResource( 37 )]
+transform = Transform( -0.236584, 0, 0.971611, 0, 1, 0, -0.971611, 0, -0.236584, 2.07547, 0.909852, -14.6281 )
 
 [node name="collision_test_object" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
