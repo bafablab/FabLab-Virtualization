@@ -1,23 +1,21 @@
 extends KinematicBody
 
+# 
 var speed = 10
 var h_acceleration = 6
 var gravity = 20
 var jump = 10
 var full_contact = false
-
-export var mouse_sensitivity = 0.06
-export var object_rotation_scale = 2
-export var inverse_mouse = -1
-export var moving = true
-
 var direction = Vector3()
 var h_velocity = Vector3()
 var movement = Vector3()
 var gravity_vec = Vector3()
 
+export var mouse_sensitivity = 0.06
+export var inverse_mouse = -1
+export var moving = true
+
 var objects_in_range = []
-var selected_object = null
 var selected_object_transform
 var targeted_object = null
 
@@ -29,20 +27,17 @@ var device_info_menu
 var item_info_menu
 var main_menu
 
-
 func _ready():
-	#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 	item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	main_menu = get_node("/root/FabLab/UI_MainMenu")
-	
+
 func _input(event):
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
-			if !selected_object:
-				rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
-				head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
-				head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
+			rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
+			head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
+			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
 
 	# Change mouse mode for debug. MOUSE_MODE_CAPTURED and MOUSE_MODE_VISIBLE - mouse_toggle currently "-"
 	if Input.is_action_just_pressed("mouse_toggle"):
@@ -52,11 +47,11 @@ func _process(_delta):
 	# disable player movement if any menu is visible
 	moving = !(main_menu.visible or item_info_menu.visible or device_info_menu.visible)
 	#print_debug(moving)
-	
-	
+
 func _physics_process(delta):
 	# Check if interactable objects in range
 	if objects_in_range.size() > 0 and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		# enable object_select raycast if objects near
 		if !object_select.enabled:
 			object_select.enabled = true
 		if object_select.is_colliding():
@@ -80,7 +75,6 @@ func _physics_process(delta):
 	else:
 		if object_select.enabled:
 			object_select.enabled = false
-		selected_object = null
 	# ------- Object selection code ends -------
 	
 	# Movement code from tutorial
@@ -129,7 +123,7 @@ func _on_Area_body_exited(body):
 	objects_in_range.erase(body)
 #	print(objects_in_range)
 
-# Not in use (I think)
+# Not in use (I think), Sami 26.4.2023
 #func _on_Area_area_entered(area):
 #	objects_in_range.append(area)
 ##	print(objects_in_range)

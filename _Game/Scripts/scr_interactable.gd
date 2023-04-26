@@ -31,7 +31,7 @@ func _ready():
 	
 	# connect signals that are emitted when mouse enters and exits static body
 	# FPSController emits same signals when objectSelect raycast is colliding with static body
-	# Mouse over signals are currently used only while debugging, but may be useful if
+	# Mouse over is currently used only while debugging, but may be useful if
 	# different movement controls are added.
 	static_body.connect("mouse_entered", self, "enter_focus")
 	static_body.connect("mouse_exited", self, "exit_focus")	
@@ -49,7 +49,7 @@ func _ready():
 			break
 			
 	# if interactable doesn't have DeviceInfo- or ItemInfo-resource add empty-resource that
-	# notifies to add correct one. empty-resource is only during runtime
+	# notifies to add a correct one. 
 	if interactable == null:
 		if self.is_in_group(("Device")):
 			print_debug("Empty device")
