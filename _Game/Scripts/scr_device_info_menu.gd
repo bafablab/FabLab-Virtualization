@@ -33,43 +33,46 @@ func init(dev):
 	# consumes the event so it is not triggered in other
 	# scripts. For example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
+	# clear video menu so that previous device's videos are not shown on it
 	clear_video_menu()
 	if len(device.videos) > 0:
 		create_video_menu()
 
-func _on_mouse_entered():
-	inFocus = true
-
-func _on_mouse_exited():
-	inFocus = false
-
 func _input(event):
+	# Hide menu if clicked outside of it
 	if self.visible:
 		if (event is InputEventMouseButton) and event.pressed:
 			var evLocal = make_input_local(event)
+			# Do not close if videoplayer scene is open
 			if videoplayer_scene == null and !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 				self.visible = false
+				# set first tab active when menu is closed so next time it is opened it is on the first tab
 				tab_container.current_tab = 0
 
 func create_video_menu():
 	video_tab = VBoxContainer.new()
 	tab_container.add_child(video_tab)
 	tab_container.set_tab_title(1, "device_menu$$Videot")
+	# Create buttons for videos in the device's DeviceInfo resource.
 	for i in range(len(device.videos)):
 		var button = Button.new()
-		# info_textis shown on first tab.
+		# if video has a corresponding title set use it for the button text.
 		if len(device.video_titles) > i and len(device.video_titles[i]) > 0:
 			button.text = tr(device.video_titles[i])
+		# if the video doesn't have title set use "Video {video number}" for the text
 		else:
 			button.text = "Video " + str(i+1)
+		# Connect the button signal to _button_pressed(video_number) function
 		button.connect("pressed", self, "_button_pressed", [i])
 		video_tab.add_child(button)
+		# add description to video if it has one.
 		if len(device.video_descriptions) > i and len(device.video_descriptions[i]) > 0:
 			var label = Label.new()
 			label.text = tr(device.video_descriptions[i])
 			video_tab.add_child(label)
-			
+	
+	# clear the example item before adding current device's example items
 	for button in item_list.get_children():
 		item_list.remove_child(button)
 		
@@ -89,17 +92,19 @@ func clear_video_menu():
 			
 	if video_tab != null:
 		tab_container.remove_child(video_tab)
-		print_debug(video_tab)
+		#print_debug(video_tab)
 		video_tab.queue_free()
 		video_tab = null
 		
 	for button in item_list.get_children():
 		item_list.remove_child(button)
 
+# open videoplayer scene and initialize it with current device's resource, selected video number and reference to self
 func _button_pressed(video_number):
 	videoplayer_scene = videoplayer.instance()
 	videoplayer_scene.init(device, video_number, self)
 	self.add_child(videoplayer_scene)
 
+# open item menu and initialize it with 
 func _item_button_pressed(item):
-	item_menu.init(item, item.mesh_instance)
+	item_menu.init(item)

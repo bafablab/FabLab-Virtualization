@@ -1,6 +1,8 @@
 extends Control
 
 onready var button_finnish = $Panel/Panel/Button_Finnish
+onready var device_menu = $"../UI_DeviceInfoMenu"
+onready var item_menu = $"../UI_ItemInfoMenu"
 var fps_controller
 
 func _ready():
@@ -28,7 +30,8 @@ func _on_CheckBox_toggled(button_pressed):
 
 func start_game():
 	self.hide()
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	if !(device_menu.visible or item_menu.visible):
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
 	if !self.visible:

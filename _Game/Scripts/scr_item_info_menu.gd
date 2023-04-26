@@ -16,10 +16,10 @@ onready var item_3d_view = $VBoxContainer/Panel/TabContainer/Item3DTab/Item3DVie
 #func _ready():
 	
 	
-func init(itm, mesh):
+func init(itm):
 	item = itm
-	item.mesh_instance = mesh
-	mesh_instance = mesh
+	#item.mesh_instance = mesh
+	mesh_instance = item.mesh_instance
 	item_name_label.text = item.name
 	tab_container.set_tab_title(0, "$$Tietoja")
 	tab_container.set_tab_title(1, "$$3D-malli")
@@ -30,12 +30,7 @@ func init(itm, mesh):
 	# Consumes the event so it is not triggered in other
 	# scripts. For example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
-	
-func _on_mouse_entered():
-	inFocus = true
 
-func _on_mouse_exited():
-	inFocus = false
 
 func _input(event):
 	if self.visible:
