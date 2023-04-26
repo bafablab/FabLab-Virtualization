@@ -31,7 +31,7 @@ func init(dev):
 	self.visible = true
 	# set_input_as_handled()
 	# consumes the event so it is not triggered in other
-	# scripts. For example close the window immidiately.
+	# scripts, for example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
 	# clear video menu so that previous device's videos are not shown on it
 	clear_video_menu()
