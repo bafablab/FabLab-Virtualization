@@ -1,0 +1,41 @@
+Mahdollisia taskeja: 
+
+ 
+
+resurssien sijoittelun ohjeen päivitys. 
+
+itemien sijoittelun ohje. 
+
+ohje lokalisaation käyttöön. 
+
+  
+
+  
+
+staattisten valikoiden muutto responsiivisiksi(kuvasuhde) 
+
+laitteiden toiminnallisuus 
+
+response laitteille kun tulee lähelle. 
+
+ovien toiminnallisuus 
+
+ 
+
+  
+
+lokaalisaation korjaus. 
+
+  
+
+videon info boksi 
+
+  
+
+  
+
+videoden koko, miten vaikuttaa pelin latausaikoihin. 
+
+  
+
+videoiden formaatti(Theora ogg) 
