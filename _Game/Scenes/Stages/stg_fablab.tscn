@@ -231,7 +231,7 @@ transform = Transform( 0.777815, 0, -0.628493, 0, 1, 0, 0.628493, 0, 0.777815, 5
 [node name="mdl_chair_low_chair_green7" parent="stg_fablab" instance=ExtResource( 36 )]
 transform = Transform( 0.124762, 0, -0.992187, 0, 1, 0, 0.992187, 0, 0.124762, 5.28541, 0, -4.27961 )
 
-[node name="mch_3dprinter_shindow_3dwox_1_lq_skinned" parent="stg_fablab" instance=ExtResource( 37 )]
+[node name="mch_3dprinter_sindoh_3dwox_1_lq_skinned" parent="stg_fablab" instance=ExtResource( 37 )]
 transform = Transform( -0.236584, 0, 0.971611, 0, 1, 0, -0.971611, 0, -0.236584, 2.07547, 0.909852, -14.6281 )
 
 [node name="collision_test_object" type="RigidBody" parent="."]

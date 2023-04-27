@@ -54,7 +54,7 @@ func create_video_menu():
 	video_tab = VBoxContainer.new()
 	tab_container.add_child(video_tab)
 	tab_container.set_tab_title(1, "device_menu$$Videot")
-	# Create buttons for videos in the device's DeviceInfo resource.
+	# Create buttons for videos from the device's DeviceInfo resource.
 	for i in range(len(device.videos)):
 		var button = Button.new()
 		# if video has a corresponding title set use it for the button text.

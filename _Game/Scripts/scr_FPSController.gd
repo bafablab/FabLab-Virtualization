@@ -1,6 +1,6 @@
 extends KinematicBody
 
-# 
+# These variables are from the FPSController tutorial
 var speed = 10
 var h_acceleration = 6
 var gravity = 20
@@ -10,29 +10,28 @@ var direction = Vector3()
 var h_velocity = Vector3()
 var movement = Vector3()
 var gravity_vec = Vector3()
-
 export var mouse_sensitivity = 0.06
 export var inverse_mouse = -1
-export var moving = true
-
-var objects_in_range = []
-var selected_object_transform
-var targeted_object = null
-
 onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect 		# raycast for detecting interactables
 onready var camera = $Head/Camera
-var device_info_menu
-var item_info_menu
-var main_menu
 
-func _ready():
-	device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
-	item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
-	main_menu = get_node("/root/FabLab/UI_MainMenu")
+# These variables are specific for the project
+export var moving = true
+var objects_in_range = []
+var selected_object_transform
+var targeted_object = null
+onready var device_info_menu = $"../UI_DeviceInfoMenu"
+onready var item_info_menu = $"../UI_ItemInfoMenu"
+onready var main_menu = $"../UI_MainMenu"
 
+# Called when the node enters the scene tree for the first time.
+#func _ready():
+
+# Called when any input is detected
 func _input(event):
+	# Do not rotate the player when mouse is visible ie. some menu is open
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
 			rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
@@ -42,7 +41,8 @@ func _input(event):
 	# Change mouse mode for debug. MOUSE_MODE_CAPTURED and MOUSE_MODE_VISIBLE - mouse_toggle currently "-"
 	if Input.is_action_just_pressed("mouse_toggle"):
 		toggle_mouse()
-	
+
+
 func _process(_delta):
 	# disable player movement if any menu is visible
 	moving = !(main_menu.visible or item_info_menu.visible or device_info_menu.visible)
@@ -103,7 +103,6 @@ func _physics_process(delta):
 			direction -= transform.basis.x
 		elif Input.is_action_pressed("move_right"):
 			direction += transform.basis.x
-			
 		direction = direction.normalized()
 		h_velocity = h_velocity.linear_interpolate(direction * speed, h_acceleration * delta)
 		movement.z = h_velocity.z + gravity_vec.z
@@ -114,7 +113,7 @@ func _physics_process(delta):
 	else:
 		h_velocity = Vector3.ZERO # stop player if menu is open
 
-
+# Add nearby intaractables to a list
 func _on_Area_body_entered(body):
 	objects_in_range.append(body)
 #	print(objects_in_range)

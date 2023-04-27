@@ -60,6 +60,7 @@ func _ready():
 			
 	set_hover_text()
 
+# this function is called when mouse or crosshair is over the interactable
 func enter_focus():
 	in_focus = true
 	hover_text.visible = true
@@ -68,22 +69,23 @@ func enter_focus():
 	else:
 		print_debug("No overlay material! (highlight shader)")
 
+# THis function is called when mouse or crosshair moves away from the interactable
 func exit_focus():
 	in_focus = false
 	mesh_instance.set_material_overlay(null)
 	hover_text.visible = false
 
+
 func _input(_event):
-	if main_menu.visible:
+	if main_menu.visible:			#Do not read mouse clicks here if main menu is visible
 		in_focus = false
 	if in_focus:
 		if Input.is_action_just_pressed("mouse_click"):
+			# Reveal mouse pointer to interact with the menu
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			#print_debug("Clicked interactable!")
-			if self.is_in_group("Item"):
-				menu.init(interactable)
-			elif self.is_in_group("Device"):
-				menu.init(interactable)
+			# initialize menu with interactable's information
+			menu.init(interactable)
 			# set in_focus false to prevent re-click when closing menu
 			in_focus = false
 

@@ -8,18 +8,15 @@ onready var tab_container = $VBoxContainer/Panel/TabContainer
 onready var item_name_label = $VBoxContainer/Panel/NameLabel
 onready var info_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
 var item
-var mesh_instance
 var inFocus
 onready var item_3d_view = $VBoxContainer/Panel/TabContainer/Item3DTab/Item3DView
 
 # Called when the node enters the scene tree for the first time.
 #func _ready():
 	
-	
+
 func init(itm):
 	item = itm
-	#item.mesh_instance = mesh
-	mesh_instance = item.mesh_instance
 	item_name_label.text = item.name
 	tab_container.set_tab_title(0, "$$Tietoja")
 	tab_container.set_tab_title(1, "$$3D-malli")
@@ -36,12 +33,14 @@ func _input(event):
 	if self.visible:
 		if (event is InputEventMouseButton) and event.pressed:
 			var evLocal = make_input_local(event)
+			# Close the menu by clicking anywhere outside of it
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 				self.visible = false
+				# select first tab when item-menu is closed so it is selected when it is opened again
 				tab_container.current_tab = 0
 
 
 func _on_TabContainer_tab_selected(tab):
 	if tab == 1:
-		item_3d_view.init(mesh_instance)
+		item_3d_view.init(item.mesh_instance)

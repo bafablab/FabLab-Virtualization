@@ -9,10 +9,10 @@ var device_info_menu
 
 
 func _ready():
-	#var size=get_viewport().size
 	play_video()
-	
 
+
+# called from scr_device_info_menu before scene is added to the tree. so before _ready()
 func init(dev, vid_num, dev_menu):
 	device = dev
 	video_number = vid_num
@@ -32,6 +32,7 @@ func _button_pressed(video):
 	video_number = video
 	play_video()
 
+# clear any trace of video menu so previous device's videos don't show
 func _button_pressed_x():
 	get_parent().remove_child(self)
 	self.queue_free()
@@ -39,6 +40,8 @@ func _button_pressed_x():
 	
 func play_video():
 	video_player.stream=device.videos[video_number]
+	# Get video dimensions from video texture and set the width to 
+	# default_video_width 
 	var texture = video_player.get_video_texture()
 	var video_dimensions = texture.get_size()
 	var video_scale = default_video_width / video_dimensions[0]
