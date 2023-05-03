@@ -4,7 +4,7 @@
 [ext_resource path="res://_Game/Models/stg_fablab/Materials/mat_fablab_hull_dif.tres" type="Material" id=2]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 7.8297, 0.0219595, 12.2335 )
+extents = Vector3( 7.83, 0.037, 12.233 )
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 5.12464, 1, 0.1 )
@@ -49,7 +49,7 @@ material/2 = ExtResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.64599, 0, -11.4586 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/StaticBody" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.464375 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0236983, -0.464375 )
 shape = SubResource( 1 )
 
 [node name="wall_1" type="StaticBody" parent="Collisions" index="1"]
