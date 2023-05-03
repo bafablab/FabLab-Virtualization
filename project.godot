@@ -144,6 +144,7 @@ Jump={
 3d_physics/layer_3="Walls"
 3d_physics/layer_4="Player interaction area"
 3d_physics/layer_5="Interactable objects"
+3d_physics/layer_6="Rigid objects"
 
 [locale]
 
