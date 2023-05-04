@@ -62,9 +62,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -150.0
+margin_left = -145.0
 margin_top = -80.0
-margin_right = 150.0
+margin_right = 145.0
 margin_bottom = -56.0
 
 [node name="CheckBox" type="CheckBox" parent="Panel/HBoxContainer"]
@@ -89,14 +89,16 @@ margin_right = 150.5
 [node name="Button_Finnish" type="TextureButton" parent="Panel/Panel"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -38.0
-margin_right = 56.0
+margin_left = 10.5
+margin_top = -45.0
+margin_right = 66.5
+margin_bottom = -7.0
 rect_min_size = Vector2( 56, 38 )
 toggle_mode = true
 pressed = true
 group = ExtResource( 8 )
 texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 7 )
 expand = true
 
 [node name="Button_Swedish" type="TextureButton" parent="Panel/Panel"]
@@ -105,13 +107,14 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -28.0
-margin_top = -38.0
+margin_top = -45.0
 margin_right = 28.0
+margin_bottom = -7.0
 rect_min_size = Vector2( 56, 38 )
 toggle_mode = true
 group = ExtResource( 8 )
 texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
 expand = true
 
 [node name="Button_English" type="TextureButton" parent="Panel/Panel"]
@@ -119,13 +122,15 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -56.0
-margin_top = -38.0
+margin_left = -65.0
+margin_top = -45.0
+margin_right = -9.0
+margin_bottom = -7.0
 rect_min_size = Vector2( 56, 38 )
 toggle_mode = true
 group = ExtResource( 8 )
 texture_normal = ExtResource( 2 )
-texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
 expand = true
 
 [connection signal="pressed" from="Panel/Button" to="." method="start_game"]
