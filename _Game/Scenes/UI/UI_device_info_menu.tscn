@@ -6,17 +6,30 @@
 [node name="UI_DeviceInfoMenu" instance=ExtResource( 2 )]
 script = ExtResource( 3 )
 
+[node name="Panel" parent="VBoxContainer" index="0"]
+margin_bottom = 60.0
+rect_min_size = Vector2( 500, 60 )
+
+[node name="NameLabel" parent="VBoxContainer/Panel" index="0"]
+margin_top = 5.0
+margin_bottom = 25.0
+valign = 1
+
 [node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
+margin_top = 29.0
 margin_bottom = 424.0
 
 [node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
 rect_min_size = Vector2( 492, 300 )
 
 [node name="InfoText" parent="VBoxContainer/Panel/TabContainer/Panel" index="0"]
-margin_bottom = -4.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel/TabContainer/Panel" index="1"]
 margin_left = 6.0
 margin_top = 319.0
 margin_right = 46.0
-margin_bottom = 359.0
+margin_bottom = 354.0

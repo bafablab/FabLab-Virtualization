@@ -17,20 +17,20 @@ rect_min_size = Vector2( 500, 500 )
 
 [node name="Panel" type="Panel" parent="VBoxContainer"]
 margin_right = 500.0
-margin_bottom = 50.0
+margin_bottom = 55.0
 rect_min_size = Vector2( 500, 50 )
 
 [node name="NameLabel" type="Label" parent="VBoxContainer/Panel"]
-margin_top = 4.0
 margin_right = 500.0
-margin_bottom = 18.0
+margin_bottom = 20.0
 text = "Item Name"
 align = 1
+valign = 1
 
 [node name="TabContainer" type="TabContainer" parent="VBoxContainer/Panel"]
 margin_top = 22.0
 margin_right = 500.0
-margin_bottom = 558.0
+margin_bottom = 561.0
 
 [node name="Panel" type="Panel" parent="VBoxContainer/Panel/TabContainer"]
 anchor_right = 1.0
