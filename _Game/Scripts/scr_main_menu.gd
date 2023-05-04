@@ -18,7 +18,7 @@ func change_language():
 		"Button_Finnish":
 			TranslationServer.set_locale("fi")
 		"Button_Swedish":
-			TranslationServer.set_locale("se")
+			TranslationServer.set_locale("sv")
 		"Button_English":
 			TranslationServer.set_locale("en")
 

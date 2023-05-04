@@ -72,10 +72,6 @@ window/size/resizable=false
 window/size/fullscreen=true
 window/stretch/aspect="expand"
 
-[editor_plugins]
-
-enabled=PoolStringArray( "res://addons/string_keys/plugin.cfg" )
-
 [global]
 
 batching=true
@@ -149,7 +145,8 @@ Jump={
 [locale]
 
 fallback="fi"
-translations=PoolStringArray( "res://localization/translations.fi.translation", "res://localization/translations.en.translation" )
+translations=PoolStringArray( "res://localization/translations_proper.en.translation", "res://localization/translations_proper.fi.translation", "res://localization/translations_proper.sv.translation" )
+locale_filter=[ 1, [ "en", "fi", "sv" ] ]
 
 [mono]
 

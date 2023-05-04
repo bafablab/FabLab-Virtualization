@@ -4,8 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "JUKI MCS-1500"
-info_text = "dev_juki_msc$$Saumuri"
+name = "DEV_NAME_JUKI_MSC"
+info_text = "DEV_DESC_JUKI_MSC"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

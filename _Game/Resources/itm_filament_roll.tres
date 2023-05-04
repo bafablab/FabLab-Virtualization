@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Filamentti"
-info_text = ""
+name = "ITEM_NAME_FILAMENT_ROLL"
+info_text = "ITEM_DESC_FILAMENT_ROLL"
 manu_time = 0
 device_used = ""

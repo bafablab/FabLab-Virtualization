@@ -4,10 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Nova SBC 350"
-info_text = "dev_nova$$Hiekkapuhallin
-
-Siloita, muotoile ja puhdista kovia pintoja."
+name = "DEV_NAME_NOVA"
+info_text = "DEV_DESC_NOVA"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

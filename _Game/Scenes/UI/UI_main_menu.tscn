@@ -39,7 +39,7 @@ margin_left = -150.5
 margin_right = 150.5
 margin_bottom = 19.0
 theme = SubResource( 2 )
-text = "main_menu$$FabLab Virtuaalimalli"
+text = "MAIN_MENU_TITLE"
 align = 1
 
 [node name="Button" type="Button" parent="Panel"]
@@ -52,7 +52,7 @@ margin_top = -29.0
 margin_right = 150.0
 margin_bottom = -9.0
 rect_min_size = Vector2( 60, 0 )
-text = "main_menu$$Aloita"
+text = "MAIN_MENU_START"
 icon_align = 1
 expand_icon = true
 
@@ -73,9 +73,9 @@ margin_bottom = 24.0
 [node name="Label" type="Label" parent="Panel/HBoxContainer"]
 margin_left = 28.0
 margin_top = 5.0
-margin_right = 258.0
+margin_right = 173.0
 margin_bottom = 19.0
-text = "main_menu$$Käännä hiiren y-akseli"
+text = "MAIN_MENU_REVERT_Y"
 
 [node name="Panel" type="Panel" parent="Panel"]
 anchor_left = 0.5

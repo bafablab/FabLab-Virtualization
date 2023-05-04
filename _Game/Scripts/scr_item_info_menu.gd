@@ -18,8 +18,8 @@ onready var item_3d_view = $VBoxContainer/Panel/TabContainer/Item3DTab/Item3DVie
 func init(itm):
 	item = itm
 	item_name_label.text = item.name
-	tab_container.set_tab_title(0, "$$Tietoja")
-	tab_container.set_tab_title(1, "$$3D-malli")
+	tab_container.set_tab_title(0, "ITEM_INFO_TITLE")
+	tab_container.set_tab_title(1, "ITEM_INFO_3D_MODEL_TITLE")
 	#print_debug(("Item menu visible"))
 	# tr() is used when godot doesn't automatically detect translatable text
 	info_text.text = tr(item.info_text)

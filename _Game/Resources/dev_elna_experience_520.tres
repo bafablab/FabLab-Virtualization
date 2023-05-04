@@ -4,10 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "ELNA eXperience 520 S"
-info_text = "dev_elna$$Ompelukone
-
-Toteuta käsityöprojekteja tai brodeeraa kuvio valmiiseen tuotteeseen."
+name = "DEV_NAME_ELNA"
+info_text = "DEV_DESC_ELNA"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

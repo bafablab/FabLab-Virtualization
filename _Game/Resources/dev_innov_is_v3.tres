@@ -4,10 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Innov-is V3"
-info_text = "dev_innov$$Brodeerauskone
-
-Toteuta käsityöprojekteja tai brodeeraa kuvio valmiiseen tuotteeseen."
+name = "DEV_NAME_INNOV"
+info_text = "DEV_DESC_INNOV"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

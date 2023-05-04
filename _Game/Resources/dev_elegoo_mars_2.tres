@@ -4,15 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "ELEGOO Mars 2 MSLA"
-info_text = "dev_elegoo$$3D-resiinitulostin
-
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista.
-
-1 kpl
-tulostusmateriaali: hartsi/resin
-kerrospaksuus 0.01-0.2 mm
-suositeltu tiedostomuoto .stl."
+name = "DEV_NAME_ELEGOO"
+info_text = "DEV_DESC_ELEGOO"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

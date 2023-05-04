@@ -1,0 +1,45 @@
+keys,en,fi,sv
+MAIN_MENU_TITLE,FabLab Virtualization,Virtuaalinen FabLab,Virtuell FabLab
+MAIN_MENU_START,Start,Aloita,Start
+MAIN_MENU_REVERT_Y,Revert mouse Y-axis,Käännä hiiren Y-akseli,Vänd musens Y-axel
+DEV_MENU_INFO,Information,Tietoja,Information
+DEV_MENU_VIDEOS,Videos,Videot,Videoklipp
+ITEM_NAME_OWL,Polygon Owl,Polygonipöllö,Polygon-uggla
+ITEM_NAME_FIREHAZARD,Fire hazard,Tulipalovaara,Brändrisk
+ITEM_NAME_FILAMENT_ROLL,Filament roll,Filamenttirulla,Rilamentrull
+ITEM_DESC_OWL,3D-printed owl,3D-tulostettu pöllö,3D-utskriven uggla
+ITEM_DESC_FIREHAZARD,"”Laser Cutter, fire hazard!”","”Laserleikkuri, palovaara!”","”Laserskärare, brandrisk!”"
+ITEM_DESC_FILAMENT_ROLL,Filament roll,Filamenttirulla,Filamentrull
+ITEM_INFO_3D_MODEL_TITLE,3D-Model,3D-malli,3D-modell
+ITEM_INFO_TITLE,Information,Tietoja,Information
+ITEM_INFO_3D_HELP,”Spin the object by dragging the mouse in the window. Zoom with right mouse button.”,”Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.”,”ITEM_INFO_3D_HELP på svenska”
+DEV_NAME_ELEGOO,ELEGOO Mars 2 MSLA,ELEGOO Mars 2 MSLA,ELEGOO Mars 2 MSLA
+DEV_NAME_ELNA,ELNA eXperience 520 S,ELNA eXperience 520 S,ELNA eXperience 520 S
+DEV_NAME_ENDER,Ender-3 V2 Neo,Ender-3 V2 Neo,Ender-3 V2 Neo
+DEV_NAME_EPILOG,Epilog Fusion Pro 48 120w,Epilog Fusion Pro 48 120w,Epilog Fusion Pro 48 120w
+DEV_NAME_INNOV,Innov-is V3,Innov-is V3,Innov-is V3
+DEV_NAME_JUKI_MO,JUKI MO-654DE,JUKI MO-654DE,JUKI MO-654DE
+DEV_NAME_JUKI_MSC,JUKI MCS-1500,JUKI MCS-1500,JUKI MCS-1500
+DEV_NAME_NOVA,Nova SBC 350,Nova SBC 350,Nova SBC 350
+DEV_NAME_PHROZEN_CURE,Phrozen Cure XL,Phrozen Cure XL,Phrozen Cure XL
+DEV_NAME_PHROZEN_SONIC,Phrozen Sonic Mega 8K,Phrozen Sonic Mega 8K,Phrozen Sonic Mega 8K
+DEV_NAME_RENSI,Rensi REU900,Rensi REU900,Rensi REU900
+DEV_NAME_ROLAND_CAMM,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24
+DEV_NAME_SHINING3D,Shining3D Einstar,Shining3D Einstar,Shining3D Einstar
+DEV_NAME_SINDOH,Sindoh Wox dp201,Sindoh Wox dp201,Sindoh Wox dp201
+DEV_DESC_ELEGOO,”3D Resin printer desc”,”3D-resiinitulostin selite”,”3D Resin printer desc”
+DEV_DESC_ELNA,”Sowing machine desc”,”Ompelukone selite”,”Sowing machine desc”
+DEV_DESC_ENDER,”3D Printer desc”,”3D-tulostin selite”,”3D Printer desc”
+DEV_DESC_EPILOG,”Laser cutter desc”,”Laserleikkuri selite”,”Laser cutter desc”
+DEV_DESC_INNOV,”Embroidering machine desc”,”Brodeerauskone selite”,”Embroidering machine desc”
+DEV_DESC_JUKI_MO,”Overlocker MO desc”,”Saumuri MO selite”,”Overlocker MO desc”
+DEV_DESC_JUKI_MSC,”Overlocker MSC desc”,”Saumuri MSC selite”,”Overlocker MSC desc”
+DEV_DESC_NOVA,”Sand blaster desc”,”Hiekkapuhallin selite”,”Sand blaster desc”
+DEV_DESC_PHROZEN_CURE,”UV hardening lamp desc”,”UV-kovetuskaappi selite”,”UV hardening lamp desc”
+DEV_DESC_PHROZEN_SONIC,”3D Resin printer desc”,”3D-resiinitulostin selite”,”3D Resin printer desc”
+DEV_DESC_RENSI,”CNC mill desc”,”CNC-jyrsin selite”,”CNC mill desc”
+DEV_DESC_ROLAND_CAMM,”Vinyl cutter desc”,”Vinyylileikkuri selite”,”Vinyl cutter desc”
+DEV_DESC_SHINING3D,”3D scanner desc”,”3D-skanneri selite”,”3D scanner desc”
+DEV_DESC_SINDOH,”3D Printer desc”,”3D-tulostin selite”,”3D Printer desc”
+DEV_VIDEO_TEST1,Ski video,Hiihtovideo,Hiihtovideo ruotsi
+DEV_VIDEO_TEST2,”Man flies over a bus”,”Mies hiihtää bussin yli”,”Mies lentää ruotsi”

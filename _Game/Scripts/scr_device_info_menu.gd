@@ -22,7 +22,7 @@ var inFocus
 func init(dev):
 	device = dev
 	device_name_label.text = device.name
-	tab_container.set_tab_title(0, "device_menu$$Tietoja")
+	tab_container.set_tab_title(0, "DEV_MENU_INFO")
 	item_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	#print_debug(("Device menu visible"))
 	
@@ -53,7 +53,7 @@ func _input(event):
 func create_video_menu():
 	video_tab = VBoxContainer.new()
 	tab_container.add_child(video_tab)
-	tab_container.set_tab_title(1, "device_menu$$Videot")
+	tab_container.set_tab_title(1, "DEV_MENU_VIDEOS")
 	# Create buttons for videos from the device's DeviceInfo resource.
 	for i in range(len(device.videos)):
 		var button = Button.new()

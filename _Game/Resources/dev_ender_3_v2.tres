@@ -4,15 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Ender-3 V2 Neo"
-info_text = "dev_ender$$3D-tulostin
-
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista.
-
-3 kpl
-tulostusmateriaali: biohajoava PLA
-kerrospaksuus 0.05-0.35 mm
-suositeltu tiedostomuoto .stl"
+name = "DEV_NAME_ENDER"
+info_text = "DEV_DESC_ENDER"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

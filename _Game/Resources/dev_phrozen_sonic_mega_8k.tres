@@ -4,15 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Phrozen Sonic Mega 8K"
-info_text = "dev_phrozen_sonic$$3D-resiinitulostin
-
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista.
-
-1 kpl
-tulostusmateriaali: hartsi/resin
-kerrospaksuus 0.01-0.30 mm
-suositeltu tiedostomuoto .stl"
+name = "DEV_NAME_PHROZEN_SONIC"
+info_text = "DEV_DESC_PHROZEN_SONIC"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

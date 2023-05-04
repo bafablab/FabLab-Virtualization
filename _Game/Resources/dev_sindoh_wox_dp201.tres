@@ -8,19 +8,9 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Sindoh Wox dp201"
-info_text = "dev_sindoh$$3D-tulostin
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista. 
-
-3 kpl
-tulostusmateriaali: biohajoava PLA, ABS
-kerrospaksuus 0.05-0.4 mm
-suositeltu tiedostomuoto .stl
-ohjelmia 3D-mallinnukseen:
-Tinkercad
-Blender
-Fusion360"
+name = "DEV_NAME_SINDOH"
+info_text = "DEV_DESC_SINDOH"
 videos = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ]
-video_titles = [ "dev_sindoh$$Hiihtovideo" ]
-video_descriptions = [ "dev_sindoh$$Mies hiihtää bussin yli" ]
+video_titles = [ "DEV_VIDEO_TEST1" ]
+video_descriptions = [ "DEV_VIDEO_TEST2" ]
 example_items = [ ExtResource( 6 ) ]

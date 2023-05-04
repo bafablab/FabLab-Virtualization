@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Polygon Owl"
-info_text = "itm_owl$$Pöllö"
+name = "ITEM_NAME_OWL"
+info_text = "ITEM_DESC_OWL"
 manu_time = 0
 device_used = ""

@@ -12,7 +12,7 @@ ohje lokalisaation käyttöön.
 
   
 
-staattisten valikoiden muutto responsiivisiksi(kuvasuhde) 
+ONNI staattisten valikoiden muutto responsiivisiksi(kuvasuhde) 
 
 laitteiden toiminnallisuus 
 
@@ -24,7 +24,7 @@ ovien toiminnallisuus
 
   
 
-lokaalisaation korjaus. 
+DONE lokaalisaation korjaus. 
 
   
 

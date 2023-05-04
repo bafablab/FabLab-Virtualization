@@ -4,8 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "TULIPALOVAARA"
-info_text = "itm_tulipalovaara$$Laserleikkaus
-Tulipalovaara!"
+name = "ITEM_NAME_FIREHAZARD"
+info_text = "ITEM_DESC_FIREHAZARD"
 manu_time = 0
 device_used = ""

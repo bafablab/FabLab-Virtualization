@@ -4,11 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Phrozen Cure XL"
-info_text = "dev_phrozen_cure$$UV-jälkikovetuskaappi
-
-sisätilamitta: 29.5 x 29.5 x 45 cm
-hartsitulosteiden jälkikovetukseen"
+name = "DEV_NAME_PHROZEN_CURE"
+info_text = "DEV_DESC_PHROZEN_CURE"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]
