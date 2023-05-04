@@ -1,0 +1,162 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://_Game/Models/door_simple/mdl_door_simple_door.mesh" type="ArrayMesh" id=1]
+
+[sub_resource type="Skin" id=1]
+resource_name = "Skin"
+bind_count = 6
+bind/0/name = "root"
+bind/0/bone = -1
+bind/0/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bind/1/name = "door"
+bind/1/bone = -1
+bind/1/pose = Transform( 0, -1, 7.54979e-08, 1, 0, 0, 0, 7.54979e-08, 1, 1.00227, 0.568867, -7.56692e-08 )
+bind/2/name = "handle_woodwork"
+bind/2/bone = -1
+bind/2/pose = Transform( -6.52702e-15, -1, -7.54979e-08, -1, 0, 8.6453e-08, -8.6453e-08, 7.54979e-08, -1, 0.984591, 0.453315, -0.115153 )
+bind/3/name = "handle_woodwork_end"
+bind/3/bone = -1
+bind/3/pose = Transform( 0, -1, -7.54979e-08, -1, -2.43919e-29, -1.84154e-36, 0, 7.54979e-08, -1, 0.984591, 0.280953, -0.115153 )
+bind/4/name = "handle_fablab"
+bind/4/bone = -1
+bind/4/pose = Transform( 4.32265e-08, 1.19209e-07, -1, -1, 4.32265e-08, -4.32265e-08, 4.32265e-08, 1, 1.19209e-07, 0.106631, 0.453315, -0.984591 )
+bind/5/name = "handle_fablab_end"
+bind/5/bone = -1
+bind/5/pose = Transform( 1.60029e-15, 2.38419e-07, -1, -1, 3.81538e-22, -1.60029e-15, -3.81538e-22, 1, 2.38419e-07, 0.106631, 0.280953, -0.984591 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "00_default_pose"
+length = 0.0416667
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:handle_woodwork_end")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 8.6938e-09, 0, -1.71227e-10, 0, 0, -1.21959e-29, 1, 1, 1, 1, 0.0416667, 1, 8.6938e-09, 0, -1.71227e-10, 0, 0, -1.21959e-29, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:handle_woodwork")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 9.31323e-09, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 9.31323e-09, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:handle_fablab_end")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, -3.6737e-09, 0, 2.54229e-08, 0, 0, -8.00143e-16, 1, 1, 1, 1, 0.0416667, 1, -3.6737e-09, 0, 2.54229e-08, 0, 0, -8.00143e-16, 1, 1, 1, 1 )
+tracks/3/type = "transform"
+tracks/3/path = NodePath("Armature/Skeleton:handle_fablab")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = PoolRealArray( 0, 1, -7.45058e-09, 0, -2.79397e-08, -6.24072e-16, 1.42109e-14, -1.77636e-15, 1, 1, 1, 1, 0.0416667, 1, -7.45058e-09, 0, -2.79397e-08, -6.24072e-16, 1.42109e-14, -1.77636e-15, 1, 1, 1, 1 )
+tracks/4/type = "transform"
+tracks/4/path = NodePath("Armature/Skeleton:door")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = PoolRealArray( 0, 1, 0, 0, 0, 3.55271e-15, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 3.55271e-15, 0, 0, 1, 1, 1, 1 )
+tracks/5/type = "transform"
+tracks/5/path = NodePath("Armature/Skeleton:root")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "01_open_door"
+length = 1.25
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:handle_woodwork_end")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 8.6938e-09, 0, -1.71227e-10, 0, 0, -1.21959e-29, 1, 1, 1, 1, 1.25, 1, -9.07455e-08, -8.9407e-08, 1.47299e-08, 1.17549e-38, -2.64698e-23, 4.44089e-16, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:handle_woodwork")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 9.31323e-09, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0666667, 1, -6.14673e-08, 1.19209e-07, -7.45058e-09, -7.28313e-12, -0.00389335, -0.0442001, 0.999015, 1, 1, 1, 0.133333, 1, 9.31323e-09, 0, 0, -5.86487e-11, -0.0107411, -0.12194, 0.992479, 1, 1, 1, 0.2, 1, 7.45058e-09, 0, 0, -1.32342e-08, -0.0150338, -0.170674, 0.985213, 1, 1, 1, 0.266667, 1, 7.45058e-09, -1.19209e-07, 1.49012e-08, -1.57208e-08, -0.0151964, -0.17252, 0.984889, 1, 1, 1, 0.333333, 1, 7.45058e-09, 0, -7.45058e-09, -1.45257e-08, -0.0147473, -0.167422, 0.985775, 1, 1, 1, 0.4, 1, 1.67638e-08, 0, 0, -6.01409e-09, -0.0139873, -0.158794, 0.987213, 1, 1, 1, 0.533333, 1, -8.9407e-08, 0, -1.49012e-08, -3.33077e-08, -0.0118265, -0.134263, 0.990875, 1, 1, 1, 1.13333, 1, 1.06171e-07, 0, 7.45058e-09, -1.54246e-08, -0.000544114, -0.00617718, 0.999981, 1, 1, 1, 1.2, 1, 1.30385e-08, -1.19209e-07, 5.96046e-08, -9.05128e-09, -0.000113183, -0.00128495, 0.999999, 1, 1, 1, 1.25, 1, -9.12696e-08, -1.19209e-07, -1.49012e-08, 0, 0, -4.44089e-16, 1, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:handle_fablab_end")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, -3.6737e-09, 0, 2.54229e-08, 0, 0, -8.00143e-16, 1, 1, 1, 1, 1.25, 1, 5.59309e-08, -2.98023e-08, -2.75952e-08, -1.77636e-15, 1.42134e-30, -8.00143e-16, 1, 1, 1, 1 )
+tracks/3/type = "transform"
+tracks/3/path = NodePath("Armature/Skeleton:handle_fablab")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = PoolRealArray( 0, 1, -7.45058e-09, 0, -2.79397e-08, -6.24072e-16, 1.42109e-14, -1.77636e-15, 1, 1, 1, 1, 0.0666667, 1, 0, 1.19209e-07, 4.28408e-08, -0.0530487, -0.00467266, 7.30087e-09, 0.998581, 1, 1, 1, 0.133333, 1, -7.45058e-09, 0, -2.6077e-08, -0.146336, -0.01289, 1.41231e-08, 0.989151, 1, 1, 1, 0.2, 1, 0, 0, -2.42144e-08, -0.20456, -0.0180185, 3.65178e-08, 0.978688, 1, 1, 1, 0.266667, 1, 7.45058e-09, -1.19209e-07, -2.23517e-08, -0.20676, -0.0182123, 5.0221e-08, 0.978222, 1, 1, 1, 0.333333, 1, 2.23517e-08, 0, -1.67638e-08, -0.200689, -0.0176776, 4.89672e-08, 0.979496, 1, 1, 1, 0.4, 1, -1.49012e-08, -1.19209e-07, -8.3819e-08, -0.190402, -0.0167715, 6.2266e-08, 0.981563, 1, 1, 1, 0.533333, 1, -3.72529e-08, 0, 9.68575e-08, -0.161095, -0.0141899, 4.03451e-08, 0.986837, 1, 1, 1, 1.13333, 1, -5.21541e-08, 0, -1.06171e-07, -0.00740443, -0.000652153, 1.75399e-08, 0.999972, 1, 1, 1, 1.2, 1, -5.21541e-08, 0, -1.11759e-08, -0.00153996, -0.00013566, 2.86575e-08, 0.999999, 1, 1, 1, 1.25, 1, -1.19209e-07, 0, 6.89179e-08, -6.24072e-16, 1.42109e-14, -1.77636e-15, 1, 1, 1, 1 )
+tracks/4/type = "transform"
+tracks/4/path = NodePath("Armature/Skeleton:door")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = PoolRealArray( 0, 1, 0, 0, 0, 3.55271e-15, 0, 0, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.00173577, -8.60253e-11, 1.49318e-13, 0.999999, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.014099, -4.35228e-10, 6.13692e-12, 0.999901, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0401521, 1.69227e-09, 2.97584e-08, 0.999194, 1, 1, 1, 0.266667, 1, 0, 0, 0, 0.0789824, 4.94502e-10, -3.91794e-11, 0.996876, 1, 1, 1, 0.333333, 1, 0, 0, 0, 0.128866, -7.18912e-09, -5.91716e-08, 0.991662, 1, 1, 1, 0.466667, 1, 0, 0, 0, 0.260134, 7.67305e-09, -2.06719e-09, 0.965572, 1, 1, 1, 0.6, 1, 0, 0, 0, 0.415324, -3.34367e-08, 1.5266e-08, 0.909673, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.566639, 6.54775e-09, -4.50287e-09, 0.823966, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.688715, 1.65654e-08, -1.57356e-08, 0.725032, 1, 1, 1, 1, 1, 0, 0, 0, 0.771248, 1.45434e-08, -1.76213e-08, 0.636535, 1, 1, 1, 1.06667, 1, 0, 0, 0, 0.797737, 1.37774e-08, -1.82265e-08, 0.603006, 1, 1, 1, 1.13333, 1, 0, 0, 0, 0.816088, 1.32044e-08, -1.86458e-08, 0.577928, 1, 1, 1, 1.2, 1, 0, 0, 0, 0.826225, 4.47666e-09, -6.56571e-09, 0.56334, 1, 1, 1, 1.25, 1, 0, 0, 0, 0.828799, -9.4354e-08, -7.32893e-08, 0.559547, 1, 1, 1 )
+tracks/5/type = "transform"
+tracks/5/path = NodePath("Armature/Skeleton:root")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1.25, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+
+[node name="mdl_door_simple" type="Spatial"]
+
+[node name="Armature" type="Spatial" parent="."]
+
+[node name="Skeleton" type="Skeleton" parent="Armature"]
+bones/0/name = "root"
+bones/0/parent = -1
+bones/0/rest = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bones/0/enabled = true
+bones/0/bound_children = [  ]
+bones/1/name = "door"
+bones/1/parent = 0
+bones/1/rest = Transform( 0, 1, -3.55271e-15, -1, 0, 7.54979e-08, 7.54979e-08, -3.55271e-15, 1, -0.568867, 1.00227, 0 )
+bones/1/enabled = true
+bones/1/bound_children = [  ]
+bones/2/name = "handle_woodwork"
+bones/2/parent = 1
+bones/2/rest = Transform( 1, 6.52702e-15, -1.50996e-07, -6.52702e-15, -1, -8.6453e-08, -1.50996e-07, 8.6453e-08, -1, 0.0176778, 1.02218, -0.115153 )
+bones/2/enabled = true
+bones/2/bound_children = [  ]
+bones/3/name = "handle_woodwork_end"
+bones/3/parent = 2
+bones/3/rest = Transform( 1, 6.52702e-15, -2.8214e-22, -6.52702e-15, 1, -8.6453e-08, -2.8214e-22, 8.6453e-08, 1, 8.6938e-09, 0.172361, -2.10875e-09 )
+bones/3/enabled = true
+bones/3/bound_children = [  ]
+bones/4/name = "handle_fablab"
+bones/4/parent = 1
+bones/4/rest = Transform( -3.57628e-07, -4.32265e-08, -1, 4.32265e-08, -1, 4.32265e-08, -1, -4.32265e-08, 3.57628e-07, 0.0176778, 1.02218, 0.106631 )
+bones/4/enabled = true
+bones/4/bound_children = [  ]
+bones/5/name = "handle_fablab_end"
+bones/5/parent = 4
+bones/5/rest = Transform( 1, -4.32265e-08, -1.19209e-07, 4.32265e-08, 1, 4.32265e-08, 1.19209e-07, -4.32265e-08, 1, -4.59339e-09, 0.172361, 2.48561e-08 )
+bones/5/enabled = true
+bones/5/bound_children = [  ]
+
+[node name="door" type="MeshInstance" parent="Armature/Skeleton"]
+mesh = ExtResource( 1 )
+skin = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/00_default_pose = SubResource( 2 )
+anims/01_open_door = SubResource( 3 )
