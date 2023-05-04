@@ -18,46 +18,10 @@ _global_script_classes=[ {
 "class": "ItemInfo",
 "language": "GDScript",
 "path": "res://_Game/Scripts/scr_ItemInfo.gd"
-}, {
-"base": "Reference",
-"class": "SkCsvWriter",
-"language": "GDScript",
-"path": "res://addons/string_keys/csv_writer.gd"
-}, {
-"base": "Reference",
-"class": "SkFileFinder",
-"language": "GDScript",
-"path": "res://addons/string_keys/file_finder.gd"
-}, {
-"base": "Reference",
-"class": "SkKeyFinder",
-"language": "GDScript",
-"path": "res://addons/string_keys/key_finder.gd"
-}, {
-"base": "Reference",
-"class": "SkModifiedFileTracker",
-"language": "GDScript",
-"path": "res://addons/string_keys/modified_file_tracker.gd"
-}, {
-"base": "Reference",
-"class": "StringKeys",
-"language": "GDScript",
-"path": "res://addons/string_keys/string_keys.gd"
-}, {
-"base": "Resource",
-"class": "StringKeysOptions",
-"language": "GDScript",
-"path": "res://addons/string_keys/string_keys_options.gd"
 } ]
 _global_script_class_icons={
 "DeviceInfo": "",
-"ItemInfo": "",
-"SkCsvWriter": "",
-"SkFileFinder": "",
-"SkKeyFinder": "",
-"SkModifiedFileTracker": "",
-"StringKeys": "",
-"StringKeysOptions": ""
+"ItemInfo": ""
 }
 
 [application]
