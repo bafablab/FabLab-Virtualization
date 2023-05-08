@@ -27,14 +27,14 @@ DEV_NAME_RENSI,Rensi REU900,Rensi REU900,Rensi REU900
 DEV_NAME_ROLAND_CAMM,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24
 DEV_NAME_SHINING3D,Shining3D Einstar,Shining3D Einstar,Shining3D Einstar
 DEV_NAME_SINDOH,Sindoh Wox dp201,Sindoh Wox dp201,Sindoh Wox dp201
-DEV_DESC_ELEGOO,"”3D resin printer
+DEV_DESC_ELEGOO,"”[b]3D resin printer[/b]
 
 Print three-dimensional objects and shapes
 
 - 1 machine
 - printing material: resin
 - layer thickness 0.01-0.2 mm
-- preferred file format .stl”","”3D-resiinitulostin
+- preferred file format .stl”","”[b]3D-resiinitulostin[/b]
 
 Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 
@@ -43,14 +43,14 @@ Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 - kerrospaksuus 0.01-0.2 mm
 - suositeltu tiedostomuoto .stl”",”3D Resin printer desc”
 DEV_DESC_ELNA,”Sowing machine desc”,”Ompelukone selite”,”Sowing machine desc”
-DEV_DESC_ENDER,"”3D Printer
+DEV_DESC_ENDER,"”[b]3D Printer[/b]
 
 Print three-dimensional objects and shapes from biodegradable material
 
 - 3 machines
 - printing material: biodegradable PLA
 - layer thickness 0.05-0.35 mm
-- preferred file format .stl”","”3D-tulostin
+- preferred file format .stl”","”[b]3D-tulostin[/b]
 
 Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 
@@ -58,7 +58,7 @@ Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 - tulostusmateriaali: biohajoava PLA
 - kerrospaksuus 0.05-0.35 mm
 - suositeltu tiedostomuoto .stl”",”3D Printer desc”
-DEV_DESC_EPILOG,"”Laser cutter
+DEV_DESC_EPILOG,"”[b]Laser cutter[/b]
 
 Cut precise shapes with different materials
 
@@ -69,7 +69,7 @@ Printing directly from Inkscape software.
 - SVG file format
 - cutting line width 0.033–0.077 mm
 - other line widths, patterns and images are carved
-- laser groove depth ca. 0.15 mm, varies a little depending on the material”","”Laserleikkuri
+- laser groove depth ca. 0.15 mm, varies a little depending on the material”","”[b]Laserleikkuri[/b]
 
 Leikkaa muotoja tarkasti eri materiaaleihin
 
@@ -85,21 +85,21 @@ DEV_DESC_INNOV,”Embroidering machine desc”,”Brodeerauskone selite”,”Em
 DEV_DESC_JUKI_MO,”Overlocker MO desc”,”Saumuri MO selite”,”Overlocker MO desc”
 DEV_DESC_JUKI_MSC,”Overlocker MSC desc”,”Saumuri MSC selite”,”Overlocker MSC desc”
 DEV_DESC_NOVA,”Sand blaster desc”,”Hiekkapuhallin selite”,”Sand blaster desc”
-DEV_DESC_PHROZEN_CURE,"”Post curing UV lamp
+DEV_DESC_PHROZEN_CURE,"”[b]Post curing UV lamp[/b]
 
 - inner measurements: 29.5 x 29.5 x 45 cm
-- post curing for resin prints”","”UV-jälkikovetuskaappi
+- post curing for resin prints”","”[b]UV-jälkikovetuskaappi[/b]
 
 - sisätilamitta: 29.5 x 29.5 x 45 cm
 - hartsitulosteiden jälkikovetukseen”",”UV hardening lamp desc”
-DEV_DESC_PHROZEN_SONIC,"”3D resin printer
+DEV_DESC_PHROZEN_SONIC,"”[b]3D resin printer[/b]
 
 Print three-dimensional objects and shapes
 
 - 1 machine
 - printing material: resin
 - layer thickness 0.01-0.30 mm
-- preferred file format .stl”","”3D-resiinitulostin
+- preferred file format .stl”","”[b]3D-resiinitulostin[/b]
 
 Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 

@@ -13,7 +13,6 @@ rect_min_size = Vector2( 500, 60 )
 [node name="NameLabel" parent="VBoxContainer/Panel" index="0"]
 margin_top = 5.0
 margin_bottom = 25.0
-valign = 1
 
 [node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
 margin_top = 29.0
@@ -27,6 +26,7 @@ margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
 margin_bottom = -5.0
+bbcode_enabled = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel/TabContainer/Panel" index="1"]
 margin_left = 6.0

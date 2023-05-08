@@ -7,12 +7,17 @@
 [node name="UI_ItemInfoMenu" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 
+[node name="Panel" parent="VBoxContainer" index="0"]
+margin_bottom = 50.0
+
 [node name="InfoText" parent="VBoxContainer/Panel/TabContainer/Panel" index="0"]
 margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
 margin_bottom = -5.0
-text = "InfoText"
+bbcode_enabled = true
+bbcode_text = "Item Info Text"
+text = "Item Info Text"
 
 [node name="Item3DTab" type="VBoxContainer" parent="VBoxContainer/Panel/TabContainer" index="1"]
 visible = false
