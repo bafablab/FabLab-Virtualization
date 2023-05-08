@@ -22,7 +22,7 @@ func init(itm):
 	tab_container.set_tab_title(1, "ITEM_INFO_3D_MODEL_TITLE")
 	#print_debug(("Item menu visible"))
 	# tr() is used when godot doesn't automatically detect translatable text
-	info_text.text = tr(item.info_text)
+	info_text.bbcode_text = tr(item.info_text)
 	self.visible = true
 	# Consumes the event so it is not triggered in other
 	# scripts. For example close the window immidiately.
