@@ -27,19 +27,153 @@ DEV_NAME_RENSI,Rensi REU900,Rensi REU900,Rensi REU900
 DEV_NAME_ROLAND_CAMM,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24
 DEV_NAME_SHINING3D,Shining3D Einstar,Shining3D Einstar,Shining3D Einstar
 DEV_NAME_SINDOH,Sindoh Wox dp201,Sindoh Wox dp201,Sindoh Wox dp201
-DEV_DESC_ELEGOO,”3D Resin printer desc”,”3D-resiinitulostin selite”,”3D Resin printer desc”
+DEV_DESC_ELEGOO,"”3D resin printer
+
+Print three-dimensional objects and shapes
+
+- 1 machine
+- printing material: resin
+- layer thickness 0.01-0.2 mm
+- preferred file format .stl”","”3D-resiinitulostin
+
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+- 1 kpl
+- tulostusmateriaali: hartsi/resiini
+- kerrospaksuus 0.01-0.2 mm
+- suositeltu tiedostomuoto .stl”",”3D Resin printer desc”
 DEV_DESC_ELNA,”Sowing machine desc”,”Ompelukone selite”,”Sowing machine desc”
-DEV_DESC_ENDER,”3D Printer desc”,”3D-tulostin selite”,”3D Printer desc”
-DEV_DESC_EPILOG,”Laser cutter desc”,”Laserleikkuri selite”,”Laser cutter desc”
+DEV_DESC_ENDER,"”3D Printer
+
+Print three-dimensional objects and shapes from biodegradable material
+
+- 3 machines
+- printing material: biodegradable PLA
+- layer thickness 0.05-0.35 mm
+- preferred file format .stl”","”3D-tulostin
+
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+- 3 kpl
+- tulostusmateriaali: biohajoava PLA
+- kerrospaksuus 0.05-0.35 mm
+- suositeltu tiedostomuoto .stl”",”3D Printer desc”
+DEV_DESC_EPILOG,"”Laser cutter
+
+Cut precise shapes with different materials
+
+Machining area ca. 1200 x 900 mm
+
+Printing directly from Inkscape software.
+
+- SVG file format
+- cutting line width 0.033–0.077 mm
+- other line widths, patterns and images are carved
+- laser groove depth ca. 0.15 mm, varies a little depending on the material”","”Laserleikkuri
+
+Leikkaa muotoja tarkasti eri materiaaleihin
+
+Työstoalue n. 1200 × 900 mm
+
+Tulostus suoraan Inkscape-ohjelmasta.
+
+- SVG-tiedostomuoto
+- leikkauslinjan paksuus 0.033–0.077 mm
+- muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
+- laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.”",”Laser cutter desc”
 DEV_DESC_INNOV,”Embroidering machine desc”,”Brodeerauskone selite”,”Embroidering machine desc”
 DEV_DESC_JUKI_MO,”Overlocker MO desc”,”Saumuri MO selite”,”Overlocker MO desc”
 DEV_DESC_JUKI_MSC,”Overlocker MSC desc”,”Saumuri MSC selite”,”Overlocker MSC desc”
 DEV_DESC_NOVA,”Sand blaster desc”,”Hiekkapuhallin selite”,”Sand blaster desc”
-DEV_DESC_PHROZEN_CURE,”UV hardening lamp desc”,”UV-kovetuskaappi selite”,”UV hardening lamp desc”
-DEV_DESC_PHROZEN_SONIC,”3D Resin printer desc”,”3D-resiinitulostin selite”,”3D Resin printer desc”
-DEV_DESC_RENSI,”CNC mill desc”,”CNC-jyrsin selite”,”CNC mill desc”
-DEV_DESC_ROLAND_CAMM,”Vinyl cutter desc”,”Vinyylileikkuri selite”,”Vinyl cutter desc”
-DEV_DESC_SHINING3D,”3D scanner desc”,”3D-skanneri selite”,”3D scanner desc”
-DEV_DESC_SINDOH,”3D Printer desc”,”3D-tulostin selite”,”3D Printer desc”
+DEV_DESC_PHROZEN_CURE,"”Post curing UV lamp
+
+- inner measurements: 29.5 x 29.5 x 45 cm
+- post curing for resin prints”","”UV-jälkikovetuskaappi
+
+- sisätilamitta: 29.5 x 29.5 x 45 cm
+- hartsitulosteiden jälkikovetukseen”",”UV hardening lamp desc”
+DEV_DESC_PHROZEN_SONIC,"”3D resin printer
+
+Print three-dimensional objects and shapes
+
+- 1 machine
+- printing material: resin
+- layer thickness 0.01-0.30 mm
+- preferred file format .stl”","”3D-resiinitulostin
+
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+- 1 kpl
+- tulostusmateriaali: hartsi/resin
+- kerrospaksuus 0.01-0.30 mm
+- suositeltu tiedostomuoto .stl”",”3D Resin printer desc”
+DEV_DESC_RENSI,"”CNC milling machine
+
+Machining area 900×700 mm
+
+Materials:
+
+- wood
+- plastic”","”CNC-jyrsin
+
+työstöalue 900×700 mm
+
+Materiaalit:
+- puu
+- muovi”",”CNC mill desc”
+DEV_DESC_ROLAND_CAMM,"”Vinyl cutter
+
+Cut stickers for transferring onto fabric with heat press
+
+- machining area width ca. 610 mm
+- printing using either Roland Cut Studio or Inkscape software
+- SVG or CV file formats
+
+Materials available at BusinessAsema:
+
+- vinyls in different colours
+- heat transfer vinyl white/black/red
+- sand blasting mask”","”Vinyylileikkuri
+
+Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin
+
+- työstöalueen leveys n. 610 mm
+- tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
+- SVG tai CV -tiedostomuodot
+
+Materiaalia saatavilla BusinessAsemalla:
+
+- erivärisiä vinyylejä
+- kuumasiirtovinyyli valkoinen/musta/punainen
+- hiekkapuhallusmaski”",”Vinyl cutter desc”
+DEV_DESC_SHINING3D,"”3D scanner
+
+Scanner for three-dimensional objects and shapes
+
+- 1 machine
+- built-in RGB color camera. 3D data with authentic colors.
+- supports multiple data format outputs, compatible with 3D printers and 3D design softwares.”","”3D-skanneri
+
+Kolmiulotteisten esineiden skannaukseen
+
+- 1 kpl
+- sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
+- tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
+3D-suunnitteluohjelmistojen kanssa.”",”3D scanner desc”
+DEV_DESC_SINDOH,"”3D Printer
+
+Print three-dimensional objects and shapes from biodegradable material
+
+- 3 machines
+- printing material: biodegradable PLA
+- smallest layer thickness 0.05 mm
+- preferred file format .stl”","”3D-tulostin
+
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
+
+- 3 kpl
+- tulostusmateriaali: biohajoava PLA, ABS
+- kerrospaksuus 0.05-0.4 mm
+- suositeltu tiedostomuoto .stl”",”3D Printer desc”
 DEV_VIDEO_TEST1,Ski video,Hiihtovideo,Hiihtovideo ruotsi
 DEV_VIDEO_TEST2,”Man flies over a bus”,”Mies hiihtää bussin yli”,”Mies lentää ruotsi”
