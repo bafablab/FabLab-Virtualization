@@ -13,6 +13,7 @@ ITEM_DESC_FILAMENT_ROLL,Filament roll,Filamenttirulla,Filamentrull
 ITEM_INFO_3D_MODEL_TITLE,3D-Model,3D-malli,3D-modell
 ITEM_INFO_TITLE,Information,Tietoja,Information
 ITEM_INFO_3D_HELP,”Spin the object by dragging the mouse in the window. Zoom with right mouse button.”,”Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.”,”ITEM_INFO_3D_HELP på svenska”
+OBJECT_DOOR, "Door", "Ovi", "Dörr"
 DEV_NAME_ELEGOO,ELEGOO Mars 2 MSLA,ELEGOO Mars 2 MSLA,ELEGOO Mars 2 MSLA
 DEV_NAME_ELNA,ELNA eXperience 520 S,ELNA eXperience 520 S,ELNA eXperience 520 S
 DEV_NAME_ENDER,Ender-3 V2 Neo,Ender-3 V2 Neo,Ender-3 V2 Neo

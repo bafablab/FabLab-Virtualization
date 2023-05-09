@@ -2,6 +2,7 @@ extends Spatial
 
 
 export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_hover_text_label.tscn")
+export(Resource) var interactable
 onready var collision_shape  = $StaticBody/CollisionShape
 var static_body
 var hover_text
@@ -54,9 +55,9 @@ func set_hover_text():
 	hover_text_position = get_node_or_null("HoverTextPosition")
 	hover_text = hover_text_scene.instance()
 	self.add_child(hover_text)
-	hover_text.text = "Door"
+	hover_text.text = interactable.name
 	if self.is_in_group("Door"):
-		hover_text.text = "Door"
+		hover_text.text = interactable.name
 	if hover_text_position:
 		hover_text.transform.origin = hover_text_position.transform.origin
 	else:
@@ -71,4 +72,5 @@ func set_hover_text():
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	hover_text.transform.origin = hover_text_position.transform.origin
-	hover_text.visible = true
+	if in_focus:
+		hover_text.visible = true
