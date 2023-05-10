@@ -8,12 +8,12 @@ ITEM_NAME_OWL,Polygon Owl,Polygonipöllö,Polygon-uggla
 ITEM_NAME_FIREHAZARD,Fire hazard,Tulipalovaara,Brändrisk
 ITEM_NAME_FILAMENT_ROLL,Filament roll,Filamenttirulla,Rilamentrull
 ITEM_DESC_OWL,3D-printed owl,3D-tulostettu pöllö,3D-utskriven uggla
-ITEM_DESC_FIREHAZARD,"”Laser Cutter, fire hazard!”","”Laserleikkuri, palovaara!”","”Laserskärare, brandrisk!”"
+ITEM_DESC_FIREHAZARD,"Laser Cutter, fire hazard!","Laserleikkuri, palovaara!","Laserskärare, brandrisk!"
 ITEM_DESC_FILAMENT_ROLL,Filament roll,Filamenttirulla,Filamentrull
 ITEM_INFO_3D_MODEL_TITLE,3D-Model,3D-malli,3D-modell
 ITEM_INFO_TITLE,Information,Tietoja,Information
-ITEM_INFO_3D_HELP,”Spin the object by dragging the mouse in the window. Zoom with right mouse button.”,”Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.”,”ITEM_INFO_3D_HELP på svenska”
-OBJECT_DOOR, "Door", "Ovi", "Dörr"
+ITEM_INFO_3D_HELP,Spin the object by dragging the mouse in the window. Zoom with right mouse button.,Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.,ITEM_INFO_3D_HELP på svenska
+OBJECT_DOOR,Door,Ovi,Dörr
 DEV_NAME_ELEGOO,ELEGOO Mars 2 MSLA,ELEGOO Mars 2 MSLA,ELEGOO Mars 2 MSLA
 DEV_NAME_ELNA,ELNA eXperience 520 S,ELNA eXperience 520 S,ELNA eXperience 520 S
 DEV_NAME_ENDER,Ender-3 V2 Neo,Ender-3 V2 Neo,Ender-3 V2 Neo
@@ -28,38 +28,38 @@ DEV_NAME_RENSI,Rensi REU900,Rensi REU900,Rensi REU900
 DEV_NAME_ROLAND_CAMM,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24,Roland CAMM-1 GS-24
 DEV_NAME_SHINING3D,Shining3D Einstar,Shining3D Einstar,Shining3D Einstar
 DEV_NAME_SINDOH,Sindoh Wox dp201,Sindoh Wox dp201,Sindoh Wox dp201
-DEV_DESC_ELEGOO,"”[b]3D resin printer[/b]
+DEV_DESC_ELEGOO,"[b]3D resin printer[/b]
 
 Print three-dimensional objects and shapes
 
 - 1 machine
 - printing material: resin
 - layer thickness 0.01-0.2 mm
-- preferred file format .stl”","”[b]3D-resiinitulostin[/b]
+- preferred file format .stl","[b]3D-resiinitulostin[/b]
 
 Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 
 - 1 kpl
 - tulostusmateriaali: hartsi/resiini
 - kerrospaksuus 0.01-0.2 mm
-- suositeltu tiedostomuoto .stl”",”3D Resin printer desc”
-DEV_DESC_ELNA,”Sowing machine desc”,”Ompelukone selite”,”Sowing machine desc”
-DEV_DESC_ENDER,"”[b]3D Printer[/b]
+- suositeltu tiedostomuoto .stl",3D Resin printer desc
+DEV_DESC_ELNA,[b]Sowing machine desc[/b],[b]Ompelukone[/b] selite,Sowing machine desc
+DEV_DESC_ENDER,"[b]3D Printer[/b]
 
 Print three-dimensional objects and shapes from biodegradable material
 
 - 3 machines
 - printing material: biodegradable PLA
 - layer thickness 0.05-0.35 mm
-- preferred file format .stl”","”[b]3D-tulostin[/b]
+- preferred file format .stl","[b]3D-tulostin[/b]
 
 Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 
 - 3 kpl
 - tulostusmateriaali: biohajoava PLA
 - kerrospaksuus 0.05-0.35 mm
-- suositeltu tiedostomuoto .stl”",”3D Printer desc”
-DEV_DESC_EPILOG,"”[b]Laser cutter[/b]
+- suositeltu tiedostomuoto .stl",3D Printer desc
+DEV_DESC_EPILOG,"[b]Laser cutter[/b]
 
 Cut precise shapes with different materials
 
@@ -70,7 +70,7 @@ Printing directly from Inkscape software.
 - SVG file format
 - cutting line width 0.033–0.077 mm
 - other line widths, patterns and images are carved
-- laser groove depth ca. 0.15 mm, varies a little depending on the material”","”[b]Laserleikkuri[/b]
+- laser groove depth ca. 0.15 mm, varies a little depending on the material","[b]Laserleikkuri[/b]
 
 Leikkaa muotoja tarkasti eri materiaaleihin
 
@@ -81,48 +81,48 @@ Tulostus suoraan Inkscape-ohjelmasta.
 - SVG-tiedostomuoto
 - leikkauslinjan paksuus 0.033–0.077 mm
 - muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
-- laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.”",”Laser cutter desc”
-DEV_DESC_INNOV,”Embroidering machine desc”,”Brodeerauskone selite”,”Embroidering machine desc”
-DEV_DESC_JUKI_MO,”Overlocker MO desc”,”Saumuri MO selite”,”Overlocker MO desc”
-DEV_DESC_JUKI_MSC,”Overlocker MSC desc”,”Saumuri MSC selite”,”Overlocker MSC desc”
-DEV_DESC_NOVA,”Sand blaster desc”,”Hiekkapuhallin selite”,”Sand blaster desc”
-DEV_DESC_PHROZEN_CURE,"”[b]Post curing UV lamp[/b]
+- laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.",Laser cutter desc
+DEV_DESC_INNOV,[b]Embroidering machine[/b] desc,[b]Brodeerauskone[/b] selite,Embroidering machine desc
+DEV_DESC_JUKI_MO,[b]Overlocker MO[/b] desc,[b]Saumuri MO[/b] selite,Overlocker MO desc
+DEV_DESC_JUKI_MSC,[b]Overlocker MSC[/b] desc,[b]Saumuri MSC[/b] selite,Overlocker MSC desc
+DEV_DESC_NOVA,[b]Sand blaster[/b] desc,[b]Hiekkapuhallin[/b] selite,Sand blaster desc
+DEV_DESC_PHROZEN_CURE,"[b]Post curing UV lamp[/b]
 
 - inner measurements: 29.5 x 29.5 x 45 cm
-- post curing for resin prints”","”[b]UV-jälkikovetuskaappi[/b]
+- post curing for resin prints","[b]UV-jälkikovetuskaappi[/b]
 
 - sisätilamitta: 29.5 x 29.5 x 45 cm
-- hartsitulosteiden jälkikovetukseen”",”UV hardening lamp desc”
-DEV_DESC_PHROZEN_SONIC,"”[b]3D resin printer[/b]
+- hartsitulosteiden jälkikovetukseen",UV hardening lamp desc
+DEV_DESC_PHROZEN_SONIC,"[b]3D resin printer[/b]
 
 Print three-dimensional objects and shapes
 
 - 1 machine
 - printing material: resin
 - layer thickness 0.01-0.30 mm
-- preferred file format .stl”","”[b]3D-resiinitulostin[/b]
+- preferred file format .stl","[b]3D-resiinitulostin[/b]
 
 Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 
 - 1 kpl
 - tulostusmateriaali: hartsi/resin
 - kerrospaksuus 0.01-0.30 mm
-- suositeltu tiedostomuoto .stl”",”3D Resin printer desc”
-DEV_DESC_RENSI,"”CNC milling machine
+- suositeltu tiedostomuoto .stl",3D Resin printer desc
+DEV_DESC_RENSI,"[b]CNC milling machine[/b]
 
 Machining area 900×700 mm
 
 Materials:
 
 - wood
-- plastic”","”CNC-jyrsin
+- plastic","[b]CNC-jyrsin[/b]
 
 työstöalue 900×700 mm
 
 Materiaalit:
 - puu
-- muovi”",”CNC mill desc”
-DEV_DESC_ROLAND_CAMM,"”Vinyl cutter
+- muovi",CNC mill desc
+DEV_DESC_ROLAND_CAMM,"[b]Vinyl cutter[/b]
 
 Cut stickers for transferring onto fabric with heat press
 
@@ -134,7 +134,7 @@ Materials available at BusinessAsema:
 
 - vinyls in different colours
 - heat transfer vinyl white/black/red
-- sand blasting mask”","”Vinyylileikkuri
+- sand blasting mask","[b]Vinyylileikkuri[/b]
 
 Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin
 
@@ -146,35 +146,35 @@ Materiaalia saatavilla BusinessAsemalla:
 
 - erivärisiä vinyylejä
 - kuumasiirtovinyyli valkoinen/musta/punainen
-- hiekkapuhallusmaski”",”Vinyl cutter desc”
-DEV_DESC_SHINING3D,"”3D scanner
+- hiekkapuhallusmaski",Vinyl cutter desc
+DEV_DESC_SHINING3D,"[b]3D scanner[/b]
 
 Scanner for three-dimensional objects and shapes
 
 - 1 machine
 - built-in RGB color camera. 3D data with authentic colors.
-- supports multiple data format outputs, compatible with 3D printers and 3D design softwares.”","”3D-skanneri
+- supports multiple data format outputs, compatible with 3D printers and 3D design softwares.","[b]3D-skanneri[/b]
 
 Kolmiulotteisten esineiden skannaukseen
 
 - 1 kpl
 - sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
 - tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
-3D-suunnitteluohjelmistojen kanssa.”",”3D scanner desc”
-DEV_DESC_SINDOH,"”3D Printer
+3D-suunnitteluohjelmistojen kanssa.",3D scanner desc
+DEV_DESC_SINDOH,"[b]3D Printer[/b]
 
 Print three-dimensional objects and shapes from biodegradable material
 
 - 3 machines
 - printing material: biodegradable PLA
 - smallest layer thickness 0.05 mm
-- preferred file format .stl”","”3D-tulostin
+- preferred file format .stl","[b]3D-tulostin[/b]
 
 Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
 
 - 3 kpl
 - tulostusmateriaali: biohajoava PLA, ABS
 - kerrospaksuus 0.05-0.4 mm
-- suositeltu tiedostomuoto .stl”",”3D Printer desc”
+- suositeltu tiedostomuoto .stl",3D Printer desc
 DEV_VIDEO_TEST1,Ski video,Hiihtovideo,Hiihtovideo ruotsi
-DEV_VIDEO_TEST2,”Man flies over a bus”,”Mies hiihtää bussin yli”,”Mies lentää ruotsi”
+DEV_VIDEO_TEST2,Man flies over a bus,Mies hiihtää bussin yli,Mies lentää ruotsi

@@ -1,0 +1,23 @@
+How to edit translations CSV in LibreOffice Calc:
+
+-Import settings:
+--Character encoding UTF-8
+--Language doesn't matter, english or finnish is fine
+--Separator is comma/pilkku
+--IMPORTANT: Other options: Check the box about quote marks "Lainausmerkit muotoilevat tekstinä"
+
+-After saving from LibreOffice Calc you might want to check the CSV file in a text editor (Notepad++) to check that no mystery quote marks or anything else has broken the file
+
+
+About the strings themselves:
+-Current string key model is ALL_CAPS_WITH_UNDERSCORE
+-Supported languages are en, fi, sv
+-Devices have DEV_NAME_ and DEV_DESC_, other items have ITEM_NAME_ and ITEM_DESC_, if more strings are needed, name them in a similar fashion
+-UI strings are named NAME_OF_WINDOW_WHATSTRINGISIT, like MAIN_MENU_TITLE or DEV_MENU_INFO
+
+Usage in Godot:
+-Godot translation server should automatically translate keys when it sees them in attributes or in code, if not, you can use tr("NAME_OF_STRING") in scripts to force it
+
+More:
+https://docs.godotengine.org/en/3.5/tutorials/i18n/internationalizing_games.html
+https://docs.godotengine.org/en/3.5/tutorials/assets_pipeline/importing_translations.html

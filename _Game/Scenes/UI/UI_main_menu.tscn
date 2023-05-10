@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://_Game/UI/Themes/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://_Game/Images/flag-uk.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://_Game/Images/flag-finland-selected.png" type="Texture" id=7]
 [ext_resource path="res://_Game/Resources/buttongroup_language.tres" type="ButtonGroup" id=8]
 [ext_resource path="res://_Game/Scripts/scr_main_menu.gd" type="Script" id=9]
+[ext_resource path="res://_Game/UI/Themes/FabLab_Theme.tres" type="Theme" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -19,6 +20,7 @@ default_font = SubResource( 1 )
 [node name="UI_main_menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource( 10 )
 script = ExtResource( 9 )
 
 [node name="Panel" type="Panel" parent="."]
@@ -73,9 +75,8 @@ margin_bottom = 24.0
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer"]
 margin_left = 28.0
-margin_top = 5.0
-margin_right = 173.0
-margin_bottom = 19.0
+margin_right = 197.0
+margin_bottom = 23.0
 text = "MAIN_MENU_REVERT_Y"
 
 [node name="Panel" type="Panel" parent="Panel"]
