@@ -16,6 +16,7 @@ var hover_text_position
 var in_focus = false
 var static_body
 var game_manager
+var animation
 
  
 # Called when the node enters the scene tree for the first time.
@@ -64,6 +65,7 @@ func _ready():
 func enter_focus():
 	in_focus = true
 	hover_text.visible = true
+	play_animation()
 	if overlay_material:
 		mesh_instance.set_material_overlay(overlay_material)	
 	else:
@@ -100,3 +102,10 @@ func set_hover_text():
 	else:
 		hover_text.global_transform.origin.y += collision_shape.shape.extents.y + 0.2
 	hover_text.visible = false
+	
+func play_animation():
+	animation = get_node_or_null("AnimationPlayer")
+	if animation:
+		print_debug("Animation detected!")
+		if interactable.animationNames:
+			$AnimationPlayer.play(interactable.animationNames[0])
