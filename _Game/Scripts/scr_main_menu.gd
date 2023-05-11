@@ -35,7 +35,7 @@ func start_game():
 	if !(device_menu.visible or item_menu.visible):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-func _input(event):
+func _input(_event):
 	if !self.visible:
 		if Input.is_action_pressed("escape"):
 			self.show()

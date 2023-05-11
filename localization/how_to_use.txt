@@ -7,6 +7,11 @@ How to edit translations CSV in LibreOffice Calc:
 --IMPORTANT: Other options: Check the box about quote marks "Lainausmerkit muotoilevat tekstinä"
 
 -After saving from LibreOffice Calc you might want to check the CSV file in a text editor (Notepad++) to check that no mystery quote marks or anything else has broken the file
+-The CSV file should look like this, note the type of quotes used:
+"DEV_DESC_INNOV","[b]Embroidering machine[/b] desc","[b]Brodeerauskone[/b] selite","Embroidering machine desc"
+"DEV_DESC_JUKI_MO","[b]Overlocker MO[/b] desc","[b]Saumuri MO[/b] selite","Overlocker MO desc"
+"DEV_DESC_JUKI_MSC","[b]Overlocker MSC[/b] desc","[b]Saumuri MSC[/b] selite","Overlocker MSC desc"
+"DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc"
 
 
 About the strings themselves:
