@@ -1,5 +1,3 @@
-# $$-etuliitteellä olevat tekstit ovat avaimia StringKeys lisäosaa varten
-
 extends Control
 
 export (String) var label_str
@@ -77,7 +75,7 @@ func create_video_menu():
 		item_list.remove_child(button)
 		
 	for item in device.example_items:
-		print_debug(item.name)
+		# print_debug(item.name)
 		var button = Button.new()
 		button.text = item.name
 		item_list.add_child(button)

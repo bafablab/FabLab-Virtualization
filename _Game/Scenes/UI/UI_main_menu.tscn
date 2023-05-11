@@ -135,6 +135,7 @@ texture_hover = ExtResource( 5 )
 expand = true
 
 [connection signal="pressed" from="Panel/Button" to="." method="start_game"]
+[connection signal="gui_input" from="Panel/HBoxContainer" to="." method="_on_HBoxContainer_gui_input"]
 [connection signal="toggled" from="Panel/HBoxContainer/CheckBox" to="." method="_on_CheckBox_toggled"]
 [connection signal="pressed" from="Panel/Panel/Button_Finnish" to="." method="change_language"]
 [connection signal="pressed" from="Panel/Panel/Button_Swedish" to="." method="change_language"]
