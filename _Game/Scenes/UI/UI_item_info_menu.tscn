@@ -12,7 +12,18 @@ script = ExtResource( 2 )
 [node name="Panel" parent="VBoxContainer" index="0"]
 margin_bottom = 50.0
 
+[node name="NameLabel" parent="VBoxContainer/Panel" index="0"]
+margin_bottom = 26.0
+
+[node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
+margin_top = 30.0
+margin_bottom = 430.0
+
+[node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
+rect_min_size = Vector2( 492, 300 )
+
 [node name="InfoText" parent="VBoxContainer/Panel/TabContainer/Panel" index="0"]
+visible = false
 margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
@@ -27,17 +38,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 32.0
-margin_right = 4.0
-margin_bottom = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
 
 [node name="Item3DView" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="0" instance=ExtResource( 3 )]
-margin_right = 502.0
+margin_right = 494.0
 margin_bottom = 450.0
 
 [node name="Label" type="Label" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="1"]
 margin_top = 454.0
-margin_right = 502.0
-margin_bottom = 468.0
+margin_right = 494.0
+margin_bottom = 477.0
 text = "ITEM_INFO_3D_HELP"
 
 [connection signal="tab_selected" from="VBoxContainer/Panel/TabContainer" to="." method="_on_TabContainer_tab_selected"]

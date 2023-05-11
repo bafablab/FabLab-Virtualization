@@ -6,7 +6,7 @@ resurssien sijoittelun ohjeen päivitys.
 
 itemien sijoittelun ohje. 
 
-ohje lokalisaation käyttöön. 
+DONE ohje lokalisaation käyttöön. 
 
   
 

@@ -20,8 +20,8 @@ margin_top = 5.0
 margin_bottom = 25.0
 
 [node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
-margin_top = 29.0
-margin_bottom = 424.0
+margin_top = 30.0
+margin_bottom = 430.0
 
 [node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
 rect_min_size = Vector2( 492, 300 )
