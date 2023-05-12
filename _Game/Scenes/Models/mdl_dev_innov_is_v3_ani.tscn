@@ -37,6 +37,7 @@ shape = SubResource( 1 )
 material/0 = ExtResource( 5 )
 
 [node name="screen" parent="Armature/Skeleton" index="1"]
+visible = false
 material_overlay = SubResource( 3 )
 material/0 = ExtResource( 5 )
 
