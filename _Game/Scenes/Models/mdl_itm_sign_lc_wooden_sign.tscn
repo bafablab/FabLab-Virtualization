@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://_Game/Models/sign_lc_wooden_signs/mat_sign_lc_cutter_wooden_sign.tres" type="Material" id=1]
 [ext_resource path="res://_Game/Models/sign_lc_wooden_signs/mdl_sign_lc_wooden_sign_Cube002.mesh" type="ArrayMesh" id=2]
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=3]
 [ext_resource path="res://_Game/Resources/itm_lasercut_firehazard.tres" type="Resource" id=4]
@@ -14,6 +15,7 @@ interactable = ExtResource( 4 )
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1.71725, 0, 0, 0, 1.71725, 0, 0, 0, 1, 0, 0, 0 )
 mesh = ExtResource( 2 )
+material/0 = ExtResource( 1 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 collision_layer = 17
