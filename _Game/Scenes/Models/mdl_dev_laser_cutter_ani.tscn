@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://_Game/Models/dev_laser_cutter/mat_dev_laser_cutter.tres" type="Material" id=1]
+[ext_resource path="res://_Game/Models/dev_laser_cutter/mat_dev_laser_cutter_alpha_clip.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Models/dev_laser_cutter_ani/mdl_dev_laser_cutter_ani.glb" type="PackedScene" id=3]
+[ext_resource path="res://_Game/Shared/Material/mat_screen_red.tres" type="Material" id=4]
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=5]
+[ext_resource path="res://_Game/Resources/dev_epilog_fusion_pro_48_120w.tres" type="Resource" id=6]
+
+[sub_resource type="PlaneMesh" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.854581, 0.55409, 0.629067 )
+
+[node name="mdl_dev_laser_cutter_ani" groups=["Device"] instance=ExtResource( 3 )]
+script = ExtResource( 5 )
+interactable = ExtResource( 6 )
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="0"]
+visible = false
+mesh = SubResource( 2 )
+
+[node name="device" parent="Armature/Skeleton" index="0"]
+material/0 = ExtResource( 1 )
+material/1 = ExtResource( 2 )
+
+[node name="mdl_plywood" parent="Armature/Skeleton" index="1"]
+material/0 = ExtResource( 1 )
+
+[node name="screen" parent="Armature/Skeleton" index="2"]
+visible = false
+material_overlay = ExtResource( 4 )
+cast_shadow = 0
+material/0 = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0479593, 0 )
+collision_layer = 17
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.514196, 0 )
+shape = SubResource( 1 )
+
+[node name="HoverTextPosition" type="Spatial" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.37002, 0 )
