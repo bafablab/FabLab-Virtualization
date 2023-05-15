@@ -19,7 +19,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_multicolor_square.tscn" type="PackedScene" id=17]
 [ext_resource path="res://_Game/Scenes/UI/UI_item_info_menu.tscn" type="PackedScene" id=18]
 [ext_resource path="res://_Game/Scenes/UI/UI_device_info_menu.tscn" type="PackedScene" id=19]
-[ext_resource path="res://_Game/Scenes/Models/mdl_dev_laser_cutter.tscn" type="PackedScene" id=20]
+[ext_resource path="res://_Game/Scenes/Models/mdl_dev_laser_cutter_ani.tscn" type="PackedScene" id=20]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_sandblaster.tscn" type="PackedScene" id=21]
 [ext_resource path="res://_Game/Scenes/UI/UI_main_menu.tscn" type="PackedScene" id=22]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_sign_lc_wooden_sign.tscn" type="PackedScene" id=23]
@@ -147,9 +147,6 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.35911
 [node name="mdl_dev_vinyl_cutter" parent="stg_fablab" instance=ExtResource( 14 )]
 transform = Transform( -5.46392e-08, 0, -1.25, 0, 1.25, 0, 1.25, 0, -5.46392e-08, 1.44237, 0.911384, -15.5253 )
 
-[node name="mdl_dev_laser_cutter" parent="stg_fablab" instance=ExtResource( 20 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50554, 0.010805, -22.8262 )
-
 [node name="mdl_dev_router_rensi" parent="stg_fablab" instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1.50936, 0, 0, 0, 1, -4.3052, 0, -19.4888 )
 
@@ -248,6 +245,9 @@ transform = Transform( -0.00216417, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00216
 
 [node name="mdl_vinyl_cutter_skinned" parent="stg_fablab" instance=ExtResource( 38 )]
 transform = Transform( 0.347247, 0, -0.937774, 0, 1, 0, 0.937774, 0, 0.347247, 1.54488, 0.908719, -13.9353 )
+
+[node name="mdl_dev_laser_cutter_ani" parent="stg_fablab" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50365, -0.00203678, -22.8161 )
 
 [node name="collision_test_object" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
