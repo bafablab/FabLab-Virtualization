@@ -17,7 +17,7 @@ rect_min_size = Vector2( 500, 500 )
 
 [node name="Panel" type="Panel" parent="VBoxContainer"]
 margin_right = 500.0
-margin_bottom = 55.0
+margin_bottom = 50.0
 rect_min_size = Vector2( 500, 50 )
 
 [node name="NameLabel" type="Label" parent="VBoxContainer/Panel"]

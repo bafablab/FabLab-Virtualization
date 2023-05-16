@@ -16,7 +16,7 @@ margin_bottom = 50.0
 margin_bottom = 26.0
 
 [node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
-margin_top = 30.0
+margin_top = 26.0
 margin_bottom = 430.0
 
 [node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
