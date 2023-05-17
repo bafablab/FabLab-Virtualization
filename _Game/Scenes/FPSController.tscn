@@ -48,6 +48,9 @@ far = 25.0
 transform = Transform( 0.212, 0, 0, 0, 0.142, 0, 0, 0, 0.172, 0, 0, -0.192387 )
 mesh = SubResource( 5 )
 
+[node name="HoldPosition" type="Spatial" parent="Head/Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.955747 )
+
 [node name="ObjectSelect" type="RayCast" parent="Head"]
 enabled = true
 cast_to = Vector3( 0, 0, -5 )

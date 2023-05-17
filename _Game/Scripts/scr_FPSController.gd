@@ -16,15 +16,20 @@ onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect 		# raycast for detecting interactables
 onready var camera = $Head/Camera
+onready var holdposition = $Head/Camera/HoldPosition
+var held_object : Object
 
 # These variables are specific for the project
 export var moving = true
 var objects_in_range = []
 var selected_object_transform
 var targeted_object = null
+var draggable_object = null
+var dragging = false
 onready var device_info_menu = $"../UI_DeviceInfoMenu"
 onready var item_info_menu = $"../UI_ItemInfoMenu"
 onready var main_menu = $"../UI_MainMenu"
+var draggable = false
 
 # Called when the node enters the scene tree for the first time.
 #func _ready():
@@ -64,6 +69,17 @@ func _physics_process(delta):
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
 				#print_debug(targeted_object, object_select.get_collider())
+				if targeted_object.is_in_group(("Draggable")):
+					targeted_object.mode = RigidBody.MODE_KINEMATIC
+					#targeted_object.collision_mask = 5
+					draggable_object = targeted_object
+					draggable = true
+					print_debug("Draggable selected")
+				else:
+					draggable = false
+					
+				
+			
 		else:
 			# clear targeted object if raycast isn't colliding and unselect it
 			if targeted_object != null:
@@ -76,6 +92,33 @@ func _physics_process(delta):
 		if object_select.enabled:
 			object_select.enabled = false
 	# ------- Object selection code ends -------
+	
+	if draggable_object && draggable == true:
+		if Input.is_action_just_pressed("mouse_click"):
+			if dragging == true:				
+				draggable_object.mode = RigidBody.MODE_RIGID
+				draggable_object = null
+				dragging = false
+			elif dragging == false:	
+				dragging = true
+			
+		if dragging == true:
+			draggable_object.global_transform.origin = holdposition.global_transform.origin
+				
+			
+			
+	
+#	if Input.is_action_just_pressed("mouse_click"):
+#		if object_select.get_collider():				
+#			held_object = object_select.get_collider()
+#			print_debug("Draggable selected")
+#			if held_object.is_in_group(("Draggable")):
+#				held_object.mode = RigidBody.MODE_KINEMATIC
+#				held_object.collision_mask = 0
+#				print_debug("Draggable selected 2")
+#	
+#	if held_object:
+#		held_object.global_transform.origin = holdposition.global_transform.origin
 	
 	# Movement code from tutorial
 	direction = Vector3()
