@@ -9,9 +9,6 @@
 theme = ExtResource( 4 )
 script = ExtResource( 2 )
 
-[node name="Panel" parent="VBoxContainer" index="0"]
-margin_bottom = 50.0
-
 [node name="NameLabel" parent="VBoxContainer/Panel" index="0"]
 margin_bottom = 26.0
 
@@ -23,7 +20,6 @@ margin_bottom = 430.0
 rect_min_size = Vector2( 492, 300 )
 
 [node name="InfoText" parent="VBoxContainer/Panel/TabContainer/Panel" index="0"]
-visible = false
 margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
