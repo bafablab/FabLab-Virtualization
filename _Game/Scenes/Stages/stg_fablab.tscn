@@ -63,6 +63,7 @@ visible = false
 
 [node name="FPSController" parent="." instance=ExtResource( 7 )]
 transform = Transform( 0.997071, 0, -0.0764757, 0, 1, 0, 0.0764757, 0, 0.997071, 3.73036, 0, -15.3207 )
+collision_layer = 1
 inverse_mouse = 1
 
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
@@ -251,8 +252,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50365, -0.00203678, -22.8161
 
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
-collision_layer = 2147483664
-collision_mask = 2147483673
+collision_layer = 2147483665
+collision_mask = 2147483649
 can_sleep = false
 
 [node name="MeshInstance" type="MeshInstance" parent="collision_test_object"]

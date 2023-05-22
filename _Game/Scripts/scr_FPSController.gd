@@ -69,9 +69,7 @@ func _physics_process(delta):
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
 				#print_debug(targeted_object, object_select.get_collider())
-				if targeted_object.is_in_group(("Draggable")):
-					targeted_object.mode = RigidBody.MODE_KINEMATIC
-					#targeted_object.collision_mask = 5
+				if targeted_object.is_in_group(("Draggable")):					
 					draggable_object = targeted_object
 					draggable = true
 					print_debug("Draggable selected")
@@ -97,9 +95,14 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("mouse_click"):
 			if dragging == true:				
 				draggable_object.mode = RigidBody.MODE_RIGID
+				draggable_object.collision_mask = 1
+				draggable_object.set_collision_layer_bit(0, true)
 				draggable_object = null
 				dragging = false
 			elif dragging == false:	
+				draggable_object.mode = RigidBody.MODE_KINEMATIC
+				draggable_object.collision_mask = 0
+				draggable_object.set_collision_layer_bit(0, false)
 				dragging = true
 			
 		if dragging == true:
