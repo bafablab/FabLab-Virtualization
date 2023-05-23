@@ -14,7 +14,7 @@ margin_bottom = 40.0
 script = ExtResource( 3 )
 
 [node name="Viewport" type="Viewport" parent="."]
-size = Vector2( 494, 450 )
+size = Vector2( 490, 354 )
 own_world = true
 world = SubResource( 1 )
 handle_input_locally = false

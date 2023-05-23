@@ -9,21 +9,43 @@
 theme = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="VBoxContainer" parent="." index="0"]
+margin_bottom = 190.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
+
+[node name="Panel" parent="VBoxContainer" index="0"]
+margin_bottom = 60.0
+rect_min_size = Vector2( 300, 60 )
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
 [node name="NameLabel" parent="VBoxContainer/Panel" index="0"]
-margin_bottom = 26.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 25 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
 
 [node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
-margin_top = 26.0
+margin_top = 30.0
 margin_bottom = 430.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
 
 [node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
-rect_min_size = Vector2( 492, 300 )
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
 
 [node name="InfoText" parent="VBoxContainer/Panel/TabContainer/Panel" index="0"]
 margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
 margin_bottom = -5.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
 bbcode_enabled = true
 bbcode_text = "Item Info Text"
 text = "Item Info Text"
@@ -36,15 +58,22 @@ margin_left = 4.0
 margin_top = 32.0
 margin_right = -4.0
 margin_bottom = -4.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
 
 [node name="Item3DView" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="0" instance=ExtResource( 3 )]
 margin_right = 494.0
-margin_bottom = 450.0
+margin_bottom = 354.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
 
 [node name="Label" type="Label" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="1"]
-margin_top = 454.0
+margin_top = 358.0
 margin_right = 494.0
-margin_bottom = 477.0
+margin_bottom = 381.0
+size_flags_horizontal = 7
+size_flags_vertical = 5
 text = "ITEM_INFO_3D_HELP"
+autowrap = true
 
 [connection signal="tab_selected" from="VBoxContainer/Panel/TabContainer" to="." method="_on_TabContainer_tab_selected"]
