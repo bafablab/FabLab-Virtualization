@@ -35,19 +35,14 @@ func _input(event):
 			var evLocal = make_input_local(event)
 			# Close the menu by clicking anywhere outside of it
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
-				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-				self.visible = false
-				# select first tab when item-menu is closed so it is selected when it is opened again
-				tab_container.current_tab = 0
+				exit_window()
 
+func exit_window():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	self.visible = false
+	# set first tab active when menu is closed so next time it is opened it is on the first tab
+	tab_container.current_tab = 0
 
 func _on_TabContainer_tab_selected(tab):
 	if tab == 1:
 		item_3d_view.init(item.mesh_instance)
-
-
-func _on_CloseButton_pressed():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	self.visible = false
-	# select first tab when item-menu is closed so it is selected when it is opened again
-	tab_container.current_tab = 0

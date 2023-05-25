@@ -90,5 +90,5 @@ size_flags_vertical = 5
 text = "ITEM_INFO_3D_HELP"
 autowrap = true
 
-[connection signal="pressed" from="VBoxContainer/Panel/CloseButton" to="." method="_on_CloseButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/Panel/CloseButton" to="." method="exit_window"]
 [connection signal="tab_selected" from="VBoxContainer/Panel/TabContainer" to="." method="_on_TabContainer_tab_selected"]

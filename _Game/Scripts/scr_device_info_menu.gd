@@ -43,10 +43,13 @@ func _input(event):
 			var evLocal = make_input_local(event)
 			# Do not close if videoplayer scene is open
 			if videoplayer_scene == null and !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
-				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-				self.visible = false
-				# set first tab active when menu is closed so next time it is opened it is on the first tab
-				tab_container.current_tab = 0
+				exit_window()
+
+func exit_window():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	self.visible = false
+	# set first tab active when menu is closed so next time it is opened it is on the first tab
+	tab_container.current_tab = 0
 
 func create_video_menu():
 	video_tab = VBoxContainer.new()
@@ -106,10 +109,3 @@ func _button_pressed(video_number):
 # open item menu and initialize it with 
 func _item_button_pressed(item):
 	item_menu.init(item)
-
-
-func _on_CloseButton_pressed():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	self.visible = false
-	# set first tab active when menu is closed so next time it is opened it is on the first tab
-	tab_container.current_tab = 0

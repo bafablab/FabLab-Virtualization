@@ -79,4 +79,4 @@ margin_right = 46.0
 margin_bottom = -10.0
 rect_min_size = Vector2( 40, 35 )
 
-[connection signal="pressed" from="VBoxContainer/Panel/CloseButton" to="." method="_on_CloseButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/Panel/CloseButton" to="." method="exit_window"]
