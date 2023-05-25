@@ -30,9 +30,12 @@ onready var device_info_menu = $"../UI_DeviceInfoMenu"
 onready var item_info_menu = $"../UI_ItemInfoMenu"
 onready var main_menu = $"../UI_MainMenu"
 var draggable = false
+var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
+var collisions
 
 # Called when the node enters the scene tree for the first time.
 #func _ready():
+		
 
 # Called when any input is detected
 func _input(event):
@@ -52,6 +55,7 @@ func _process(_delta):
 	# disable player movement if any menu is visible
 	moving = !(main_menu.visible or item_info_menu.visible or device_info_menu.visible)
 	#print_debug(moving)
+	
 
 func _physics_process(delta):
 	# Check if interactable objects in range
@@ -69,12 +73,13 @@ func _physics_process(delta):
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
 				#print_debug(targeted_object, object_select.get_collider())
-				if targeted_object.is_in_group(("Draggable")):					
+				if targeted_object.is_in_group(("Draggable")):							
 					draggable_object = targeted_object
 					draggable = true
-					print_debug("Draggable selected")
+					print_debug("Mouse on draggable")
 				else:
-					draggable = false
+					if !dragging:
+						draggable = false
 					
 				
 			
@@ -97,31 +102,28 @@ func _physics_process(delta):
 				draggable_object.mode = RigidBody.MODE_RIGID
 				draggable_object.collision_mask = 1
 				draggable_object.set_collision_layer_bit(0, true)
-				draggable_object = null
+				#draggable_object = null
 				dragging = false
 			elif dragging == false:	
-				draggable_object.mode = RigidBody.MODE_KINEMATIC
-				draggable_object.collision_mask = 0
+				draggable_object.mode = RigidBody.MODE_RIGID
+				draggable_object.collision_mask = 1
 				draggable_object.set_collision_layer_bit(0, false)
+				draggable_object.connect("body_entered", self, "pickup_collision")		
 				dragging = true
 			
+		if Input.is_action_just_pressed("right_mouse_click"):
+			if dragging == true:
+				draggable_object.mode = RigidBody.MODE_RIGID
+				draggable_object.collision_mask = 1
+				draggable_object.set_collision_layer_bit(0, true)
+				var direction = self.get_transform().basis.z
+				draggable_object.add_central_force(direction * -1000)
+				dragging = false
+				draggable = false
+			
 		if dragging == true:
+			draggable_object.contact_monitor = true
 			draggable_object.global_transform.origin = holdposition.global_transform.origin
-				
-			
-			
-	
-#	if Input.is_action_just_pressed("mouse_click"):
-#		if object_select.get_collider():				
-#			held_object = object_select.get_collider()
-#			print_debug("Draggable selected")
-#			if held_object.is_in_group(("Draggable")):
-#				held_object.mode = RigidBody.MODE_KINEMATIC
-#				held_object.collision_mask = 0
-#				print_debug("Draggable selected 2")
-#	
-#	if held_object:
-#		held_object.global_transform.origin = holdposition.global_transform.origin
 	
 	# Movement code from tutorial
 	direction = Vector3()
@@ -158,6 +160,9 @@ func _physics_process(delta):
 		move_and_slide(movement, Vector3.UP)
 	else:
 		h_velocity = Vector3.ZERO # stop player if menu is open
+
+func pickup_collision(body):
+	pass
 
 # Add nearby intaractables to a list
 func _on_Area_body_entered(body):
