@@ -44,3 +44,10 @@ func _input(event):
 func _on_TabContainer_tab_selected(tab):
 	if tab == 1:
 		item_3d_view.init(item.mesh_instance)
+
+
+func _on_CloseButton_pressed():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	self.visible = false
+	# select first tab when item-menu is closed so it is selected when it is opened again
+	tab_container.current_tab = 0

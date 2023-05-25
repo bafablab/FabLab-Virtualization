@@ -27,12 +27,26 @@ rect_min_size = Vector2( 300, 25 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
 
-[node name="TabContainer" parent="VBoxContainer/Panel" index="1"]
+[node name="CloseButton" type="Button" parent="VBoxContainer/Panel" index="1"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -29.0
+margin_top = 5.0
+margin_right = -4.0
+margin_bottom = 30.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "X"
+
+[node name="TabContainer" parent="VBoxContainer/Panel" index="2"]
 margin_top = 30.0
 margin_bottom = 430.0
 rect_min_size = Vector2( 300, 0 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
 rect_min_size = Vector2( 300, 0 )
@@ -62,18 +76,19 @@ size_flags_horizontal = 7
 size_flags_vertical = 7
 
 [node name="Item3DView" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="0" instance=ExtResource( 3 )]
-margin_right = 494.0
+margin_right = 492.0
 margin_bottom = 354.0
 size_flags_horizontal = 7
 size_flags_vertical = 7
 
 [node name="Label" type="Label" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="1"]
 margin_top = 358.0
-margin_right = 494.0
+margin_right = 492.0
 margin_bottom = 381.0
 size_flags_horizontal = 7
 size_flags_vertical = 5
 text = "ITEM_INFO_3D_HELP"
 autowrap = true
 
+[connection signal="pressed" from="VBoxContainer/Panel/CloseButton" to="." method="_on_CloseButton_pressed"]
 [connection signal="tab_selected" from="VBoxContainer/Panel/TabContainer" to="." method="_on_TabContainer_tab_selected"]

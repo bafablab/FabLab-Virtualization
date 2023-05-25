@@ -106,3 +106,10 @@ func _button_pressed(video_number):
 # open item menu and initialize it with 
 func _item_button_pressed(item):
 	item_menu.init(item)
+
+
+func _on_CloseButton_pressed():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	self.visible = false
+	# set first tab active when menu is closed so next time it is opened it is on the first tab
+	tab_container.current_tab = 0
