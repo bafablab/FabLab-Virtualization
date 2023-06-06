@@ -25,6 +25,7 @@ func init(dev):
 	#print_debug(("Device menu visible"))
 	
 	# tr() funktio hakee käännöksen translation-tiedostosta
+	# attribuutti bbcode_text mahdollistaa rikkaamman tekstin näytön (esim lihavointi)
 	info_text.bbcode_text = tr(device.info_text)
 	self.visible = true
 	# set_input_as_handled()

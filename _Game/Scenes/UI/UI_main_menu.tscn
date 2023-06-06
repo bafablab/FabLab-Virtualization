@@ -134,9 +134,19 @@ texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 5 )
 expand = true
 
+[node name="ExitButton" type="Button" parent="Panel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -30.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = 20.0
+text = "X"
+
 [connection signal="pressed" from="Panel/Button" to="." method="start_game"]
 [connection signal="gui_input" from="Panel/HBoxContainer" to="." method="_on_HBoxContainer_gui_input"]
 [connection signal="toggled" from="Panel/HBoxContainer/CheckBox" to="." method="_on_CheckBox_toggled"]
 [connection signal="pressed" from="Panel/Panel/Button_Finnish" to="." method="change_language"]
 [connection signal="pressed" from="Panel/Panel/Button_Swedish" to="." method="change_language"]
 [connection signal="pressed" from="Panel/Panel/Button_English" to="." method="change_language"]
+[connection signal="pressed" from="Panel/ExitButton" to="." method="_on_ExitButton_pressed"]

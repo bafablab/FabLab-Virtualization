@@ -1,54 +1,110 @@
-Virtuaalisen FabLabin suunnittelua/tehtävälistaa
+----------------------------------------------
+Virtuaalisen FabLabin suunnitelma/tehtävälista
+----------------------------------------------
 
+------------------------------------------------
+Pelin käsikirjoitus ja projektin punainen lanka:
+------------------------------------------------
+
+-Pelin perusidea, eli FabLabin ja sen laitteiden esittely:
+
+--Tarkoituksena olisi valmistaa virtuaalisesti peliympäristöön mallinnetuilla laitteilla tuotteita, esim 3d-tulosteita, laserleikattuja asioita jne. Tämä tutustuttaisi käyttäjän FabLabiin, sen mahdollisuuksiin ja opettaisi jo hieman etukäteen laitteiden käyttöä
+
+--Realismin taso on alkuun aika matala, mutta jos aikaa ja resursseja on, voidaan tasoa nostaa
+
+--Tehtävässä olisi jokunen määrä askelia, yksinkertaisimmillaan esim: "1) nappaa materiaali 2) laita materiaali laitteeseen 3) laitteesta ilmestyy lyhyen animaation jälkeen valmis tuote"
+
+--Lisäaskelia voi lisätä resurssien mukaan, esim. ensimmäinen askel olisikin mennä tietokoneelle, jossa "suunnitellaan" tai "haetaan" malli, käytännössä tämä toteutettaisiin vaikkapa valikoita käyttämällä, voisi olla esim. kuvakaappaus Thingiversestä jossa tiettyä kohtaa klikkaamalla malli olisi "haettu" ja valmis tuotettavaksi laitteilla
+
+--Pelin progressiota voisi kuvata esimerkiksi niin, että jokainen valmistettu tuote ilmestyy FabLabin esimerkkihyllyyn.
+
+--Hyllyssä voisi aluksi näkyä tyhjiä kohtia, yksinkertaisimmillaan jollain tavalla ilmaistu paikka ja teksti, mitä siihen kuuluisi valmistaa. Jos on helppoa, vielä valmistamattoman tuotteen läpinäkyvä "haamu" voisi olla hyllyssä, ja se muuttuisi "oikeaksi" kun se on valmistettu
+---Ainakin alkuun valmiit tuotteet vain ilmestyvät hyllyyn, mukavampi tapa olisi se, että käyttäjä kantaa itse tuotteen hyllyyn omalle paikalleen, tämä olisi jokaisen valmistustehtävän päättävä askel.
+
+--Hylly voisi toimia myös valmistustehtävän aloituspaikkana!
+
+--Ainakin alkuun valmistustehtäviä olisi yksi per laite, eli yksi 3d-tulostettava asia, yksi laserleikattava/kaiverrettava, jne.
+
+--Jos aikaa ja resursseja on, valmistustehtäviä voisi olla useampiakin per laite, jolloin käyttäjä voisi valita muutamasta vaihtoehdosta, mitä valmistaa.
+---Käytännössä tämä on kuitenkin hieman "filleriä" eikä tuo hirveästi lisäarvoa.
+
+--Ruudulla näkyvän tehtäväaskeleiden ja tekstiohjeiden sijaan voitaisiin luoda jonkinlainen kommunikoiva hahmo, joka neuvoisi tuotteen valmistuksessa (käytännössä näyttäisi tekstinä mitä tässä vaiheessa tehtävää pitää tehdä) tai toimisi ns. questgiverinä
+---Vaatinee paljon aikaa mallinnuksen, animoinnin ja peliohjelmoinnin osalta
+
+
+----------------------------
 Pelin mallinnettu ympäristö:
+----------------------------
+
 -Mallinnettuna tulisi olla kaikki käytössä olevat laitteet
+
 -Kaikissa laitteissa olisi hyvä olla ainakin yksi animaatio, mielellään pari
 --Luukku auki/kiinni tai vastaava
 --Kone työstämässä materiaalia
 --Muuta? Näytöissä vaihtuva tekstuuri tms.?
+
 -Virtuaalinen FabLab on tällä hetkellä aika "synkkä", vaikka toki tila on todellisuudessakin tummasävyinen
 --Valaistusta voi säätää
 --"Pirteämpää fiilistä" saa aikaan myös käyttöliittymän (esim fontit) ja tekstisisältöjen avulla
 
+-Äänimaailma
+--Tällä hetkellä peli on täysin äänetön, mutta voisihan FabLabin laitteita äänittää, ja liittää tämä ääni kuulumaan aina, kun laitteen työstöanimaatio on käynnissä
+
+
+---------------------
 Pelin käyttöliittymä:
+---------------------
+
 -Ikkunat ovat vielä aika karuja, mutta toimivia
 --Tehdään valikoista nätimmät ja kirkkaammat, kenties sopimaan Oukan/BusinessAseman värimaailmaan?
 --Fontit pitää valita, nyt käytössä placeholderina Segoe UI (saako käyttää vapaasti?)
+
 -Valikoille ja muille UI-elementeille on tehty teema, jota muuttamalla kaikki UI-elementit muuttuvat halutunlaisiksi yhdestä paikasta
+
 -Pelin tekstit on mahdollista kääntää Godotin käännösmoottorilla, tähän valmiudet tehty ja suomen- ja englanninkieliset tekstit löytyvät useimmille laitteille ja objekteille
 --Jokainen tekstistring on pelimoottorissa ilmaistu "avaimella", esim DEVICE_DESCRIPTION_SINDOH, näille avaimille on varsinaiset vastaavat tekstit CSV-tiedostossa ja Godot hoitaa ne paikoilleen automaattisesti
--Peli on tällä hetkellä tarkoitettu näppäimistöllä ja hiirellä pelattavaksi
+
+-Peli on tällä hetkellä tarkoitettu näppäimistöllä ja hiirellä pelattavaksi (WASD, hiiren liike ja hiiren ykkösnappi)
+--Kohteena ilmeisesti selaimessa toimiva HTML5-versio. Millaiset resurssirajat tälle asetetaan? Esim. tällä hetkellä pelin koko on n. 266 Mt lähinnä isojen tekstuurien vuoksi
 --Jos halutaan mobiiliversio, tarvitaan ohjainnapit ruudulle ja rajusti käyttöliittymän muokkausta esim. ikkunoiden osalta. Matalan prioriteetin asia tässä vaiheessa.
---Godotista pelin voi exportata ihan tavallisen Windows/Mac/Linux-sovellukseksi todennäköisesti ilman suurempia vaikeuksia
--Pelin resoluutio on ajateltu tietokoneella ajettavaksi, eli n. 16:9 kuvasuhde, vaaka
+--Godotista pelin voi exportata myös ihan tavalliseksi Windows/Mac/Linux-sovellukseksi todennäköisesti ilman suurempia vaikeuksia
+
+-Pelin resoluutio on ajateltu tietokoneella ajettavaksi, eli esim. 16:9 kuvasuhde, vaaka
+
 -Valikoiden responsiivisuutta oltiin toivottu, mutta Godot ei oikein taivu siihen
 --Käytännössä peli lukitaan johonkin kohderesoluutioon, esim 1280x720 tai 1920x1080 ja suhteutetaan valikoiden ja UI-elementtien koko siihen sopivaksi
--Pelin tehtävien askeleet voisivat olla ruudun nurkassa listana, pitää siis luoda ns. HUD
 
+-Pelin tehtävien askeleet voisivat olla ruudun nurkassa listana, pitää siis luoda ns. HUD-overlay jonka sisältöä päivitellään tarvittaessa
+
+
+---------------------------------
 Peliskriptit ja toimintalogiikka:
+---------------------------------
+
 -Ympäristössä pitää pystyä liikkumaan
+
 -Laitteita ja objekteja klikkaamalla voi lukea selostuksen ko. laitteesta tai esineestä
 --Tehty määrittämällä osa objekteista "interactable"-ryhmään
 --Nämä tekstit ovat tällä hetkellä samat kuin BusinessAseman nettisivuilla
 --Videoiden käyttö selosteissa on mahdollista, mutta aika kankeaa johtuen Godotin surkeasta videotuesta
 --Videoita ei oikeastaan tarvi, jos laitteet on animoitu
+
 -Tiettyjä esineitä pitää pystyä "kantamaan" ja pudottamaan, esimerkiksi laittaa vanerilevy laserleikkuriin, filamenttikela 3d-tulostimeen jne.
 --Tässäkin käytetään objektien ryhmittämistä, jotkin objektit ovat "draggable"
--Pelin tehtävät pitää toteuttaa
---Tehtävissä on vaiheet, jotka tehdään tietyssä järjestyksessä
+--Näiden esineiden ja laitteiden välisistä törmäyksistä tulevat signaalit napataan tehtäväskriptissä, ks. alla
 
-Pelin käsikirjoitus:
--Pelin perusidea, eli tuotteiden valmistustehtävät:
-	-Tarkoituksena olisi valmistaa peliympäristöön mallinnetuilla laitteilla tuotteita, esim 3d-tulosteita, laserleikattuja asioita jne. Tämä tutustuttaisi käyttäjän FabLabiin, sen mahdollisuuksiin ja opettaisi jo hieman etukäteen laitteiden käyttöä
-	-Realismin taso on alkuun aika matala, mutta jos aikaa ja resursseja on, voidaan tasoa nostaa
-	-Tehtävässä olisi jokunen määrä askelia, yksinkertaisimmillaan esim: "1) nappaa materiaali 2) laita materiaali laitteeseen 3) laitteesta ilmestyy lyhyen animaation jälkeen valmis tuote"
-	-Lisäaskelia voi lisätä resurssien mukaan, esim. ensimmäinen askel olisikin mennä tietokoneelle, jossa "suunnitellaan" tai "haetaan" malli, käytännössä tämä toteutettaisiin vaikkapa valikoita käyttämällä, voisi olla esim. kuvakaappaus Thingiversestä jossa tiettyä kohtaa klikkaamalla malli olisi "haettu" ja valmis tuotettavaksi laitteilla
-	-Pelin progressiota voisi kuvata esimerkiksi niin, että jokainen valmistettu tuote ilmestyy FabLabin esimerkkihyllyyn.
-	-Hyllyssä voisi aluksi näkyä tyhjiä kohtia, yksinkertaisimmillaan jollain tavalla ilmaistu paikka ja teksti, mitä siihen kuuluisi valmistaa. Jos on helppoa, vielä valmistamattoman tuotteen läpinäkyvä "haamu" voisi olla hyllyssä, ja se muuttuisi "oikeaksi" kun se on valmistettu
-	--Ainakin alkuun valmiit tuotteet vain ilmestyvät hyllyyn, mukavampi tapa olisi se, että käyttäjä kantaa itse tuotteen hyllyyn omalle paikalleen, tämä olisi jokaisen valmistustehtävän päättävä askel.
-	-Hylly voisi toimia myös valmistustehtävän aloituspaikkana!
-	-Ainakin alkuun valmistustehtäviä olisi yksi per laite, eli yksi 3d-tulostettava asia, yksi laserleikattava/kaiverrettava, jne.
-	-Jos aikaa ja resursseja on, valmistustehtäviä voisi olla useampiakin per laite, jolloin käyttäjä voisi valita muutamasta vaihtoehdosta, mitä valmistaa.
-	--Käytännössä tämä on kuitenkin hieman "filleriä" eikä tuo hirveästi lisäarvoa.
-	-Ruudulla näkyvän tehtäväaskeleiden ja tekstiohjeiden sijaan voitaisiin luoda ns. virtuaali-Jari, joka neuvoisi tuotteen valmistuksessa
-	--Vaatinee paljon aikaa mallinnuksen, animoinnin ja peliohjelmoinnin osalta
+-Pelin tehtävät pitää toteuttaa
+--Hahmotelma tehtäväskriptiksi (Task.gd?):
+---Tehtävillä on aloittaja (esimerkiksi objekti), joka lähettää signaalin tehtäväskriptille, mikä tehtävä aloitetaan
+---Tehtävä voisi olla esim Task-nimisen luokan olio, luokassa on:
+----Tehtävän nimi ("3d-tulosta pöllö!")
+----Tehtävän vaiheet jotka suoritetaan järjestyksessä ("1. Hae tietokoneelta 3d-malli ja slaissaa se 2. Laita filamenttia tulostimeen 3. Käynnistä tulostin 4. Ota 3d-tuloste tulostimesta ja aseta se hyllyyn 5. Tehtävä valmis")
+-----Onko kaikilla tehtävillä sama määrä vaiheita jotka vastaavat toisiaan? Tällöin se voi olla aika kovakoodattua ja helpompaa toteuttaa? 1. vaihe olisi aina tietokone, 2. vaihe materiaalin raahaaminen laitteeseen, 3. laite valmistaa tuotteen 4. raahataan tuote hyllyyn
+----Funktio tehtävän aloitukselle
+----Funktio tehtävävaiheiden näyttämiselle UI:ssa ja hoitaa sen päivityksen
+----Funktio, joka hoitaa tehtävän etenemislogiikan, esimerkiksi kun filamenttirulla törmää tulostimeen, on täytetty vaiheen 2 ehto, siirrytään vaiheeseen 3
+----Funktio, joka lopettaa tehtävän, lähettää signaalin hyllylle tai muulle progressiomittarille ja tappaa olion
+
+-Jos hyllyä käytettäisiin progressiomittarina, sille pitää luoda skripti, joka pitää listaa valmiista tehtävistä ja enabloi/disabloi tehtävien aloitusobjekteja sen mukaan
+--Alussa kaikki tekemättä, tehtäväolion lopetusfunktio lähettää signaalin hyllylle, että tehtävä x on valmis, näytetään valmis objekti hyllyssä ja disabloidaan sen tehtävän aloittaja
+--Käytännössä jonkinlainen array jossa esim. liput isNotComplete, isInProgress, isComplete

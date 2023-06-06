@@ -43,6 +43,10 @@ func start_game():
 	self.hide()
 	if !(device_menu.visible or item_menu.visible):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		
+# Quit the game
+func _on_ExitButton_pressed():
+	get_tree().quit()
 
 func _input(_event):
 	if !self.visible:
@@ -50,6 +54,3 @@ func _input(_event):
 			self.show()
 	if self.visible:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-
-
-
