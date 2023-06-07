@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -42,6 +42,17 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_simple.tscn" type="PackedScene" id=40]
 [ext_resource path="res://_Game/Resources/object_door.tres" type="Resource" id=41]
 [ext_resource path="res://_Game/Scripts/scr_pickup.gd" type="Script" id=42]
+[ext_resource path="res://_Game/UI/Themes/FabLab_Theme.tres" type="Theme" id=43]
+[ext_resource path="res://_Game/Scripts/scr_HUD.gd" type="Script" id=44]
+[ext_resource path="res://_Game/UI/Themes/Fonts/segoeui.ttf" type="DynamicFontData" id=45]
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+font_data = ExtResource( 45 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 45 )
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -51,6 +62,57 @@ radius = 0.188198
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
+
+[node name="HUD" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 44 )
+
+[node name="TaskTextBackground" type="ColorRect" parent="HUD"]
+modulate = Color( 1, 1, 1, 0.745098 )
+margin_left = 15.0
+margin_top = 10.0
+margin_right = 315.0
+margin_bottom = 250.0
+rect_rotation = 2.0
+color = Color( 1, 1, 0.6, 1 )
+
+[node name="TaskText" type="RichTextLabel" parent="HUD"]
+margin_left = 20.0
+margin_top = 15.0
+margin_right = 310.0
+margin_bottom = 245.0
+rect_rotation = 2.0
+theme = ExtResource( 43 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "TaskText"
+text = "TaskText"
+
+[node name="DebugText" type="RichTextLabel" parent="HUD"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = -310.0
+margin_right = 410.0
+margin_bottom = -10.0
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "DebugText"
+text = "DebugText"
+
+[node name="HelpText" type="RichTextLabel" parent="HUD"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -315.0
+margin_top = 15.0
+margin_right = -15.0
+margin_bottom = 205.0
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "HelpText"
+text = "HelpText"
 
 [node name="UI_Crosshair" parent="." instance=ExtResource( 11 )]
 

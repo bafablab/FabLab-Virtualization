@@ -29,6 +29,7 @@ var dragging = false
 onready var device_info_menu = $"../UI_DeviceInfoMenu"
 onready var item_info_menu = $"../UI_ItemInfoMenu"
 onready var main_menu = $"../UI_MainMenu"
+onready var HUD = $"../HUD"
 var draggable = false
 var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
 var collisions
@@ -72,22 +73,19 @@ func _physics_process(delta):
 				# select currently targeted object
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
+				HUD.append_debugtext("Mouse on " + targeted_object.to_string())
 				#print_debug(targeted_object, object_select.get_collider())
 				if targeted_object.is_in_group(("Draggable")):							
 					draggable_object = targeted_object
 					draggable = true
-					print_debug("Mouse on draggable")
+					HUD.append_debugtext("Mouse on draggable")
 				else:
 					if !dragging:
 						draggable = false
-					
-				
-			
 		else:
 			# clear targeted object if raycast isn't colliding and unselect it
 			if targeted_object != null:
 				targeted_object.emit_signal("mouse_exited")
-#				print_debug("no targeted object")
 				targeted_object = null
 			#print_debug("object_detected")
 	# if no interactable objects in range, disable object_select raycast. 
@@ -98,7 +96,7 @@ func _physics_process(delta):
 	
 	if draggable_object && draggable == true:
 		if Input.is_action_just_pressed("mouse_click"):
-			if dragging == true:				
+			if dragging == true:		
 				draggable_object.mode = RigidBody.MODE_RIGID
 				draggable_object.collision_mask = 1
 				draggable_object.set_collision_layer_bit(0, true)

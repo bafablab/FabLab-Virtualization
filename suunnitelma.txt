@@ -108,3 +108,14 @@ Peliskriptit ja toimintalogiikka:
 -Jos hyllyä käytettäisiin progressiomittarina, sille pitää luoda skripti, joka pitää listaa valmiista tehtävistä ja enabloi/disabloi tehtävien aloitusobjekteja sen mukaan
 --Alussa kaikki tekemättä, tehtäväolion lopetusfunktio lähettää signaalin hyllylle, että tehtävä x on valmis, näytetään valmis objekti hyllyssä ja disabloidaan sen tehtävän aloittaja
 --Käytännössä jonkinlainen array jossa esim. liput isNotComplete, isInProgress, isComplete
+
+
+-----------
+0.5. Muokkaa infoikkunoista videot pois ja jaa teksti kahteen tabiin
+
+1. HUD
+-debug-viestit
+-tehtävävaihelista
+-käyttäjän ohjeistus
+
+2. Tehtäväjärjestelmä

@@ -8,6 +8,7 @@ onready var tab_container = $VBoxContainer/Panel/TabContainer
 onready var device_name_label = $VBoxContainer/Panel/NameLabel
 onready var info_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
 onready var item_list = $VBoxContainer/Panel/TabContainer/Panel/HBoxContainer
+onready var HUD = $"../HUD"
 var item_menu
 var video_tab
 var device
