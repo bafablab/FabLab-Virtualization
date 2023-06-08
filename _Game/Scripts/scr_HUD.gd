@@ -3,7 +3,9 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	clear_all()
+	#clear_all()
+	clear_debugtext()
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -53,6 +55,12 @@ func set_helptext(text):
 func clear_helptext():
 	$HelpText.bbcode_text =""
 
+func toggle_debug():
+	if $DebugText.visible:
+		$DebugText.hide()
+	else:
+		$DebugText.show()
+
 # Set and clear methods for debugtext
 func set_debugtext(text):
 	$DebugText.bbcode_text = text
@@ -60,5 +68,7 @@ func set_debugtext(text):
 func clear_debugtext():
 	$DebugText.bbcode_text = ""
 	
+# Appends the debug text window and autoscrolls it to bottom
 func append_debugtext(text):
 	$DebugText.append_bbcode("\n" + text)
+	$DebugText.scroll_to_line($DebugText.get_line_count() - 1)

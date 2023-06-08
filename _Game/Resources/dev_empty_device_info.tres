@@ -5,7 +5,8 @@
 [resource]
 script = ExtResource( 1 )
 name = "Empty Device Info!"
-info_text = ""
+info_text = "Empty info text"
+details_text = "Empty details text"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

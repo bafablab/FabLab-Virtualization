@@ -6,7 +6,8 @@ var videoplayer_scene
 onready var menu_window = $VBoxContainer
 onready var tab_container = $VBoxContainer/Panel/TabContainer
 onready var device_name_label = $VBoxContainer/Panel/NameLabel
-onready var info_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
+onready var intro_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
+onready var details_text = $VBoxContainer/Panel/TabContainer/Panel2/InfoText
 onready var item_list = $VBoxContainer/Panel/TabContainer/Panel/HBoxContainer
 onready var HUD = $"../HUD"
 var item_menu
@@ -22,12 +23,14 @@ func init(dev):
 	device = dev
 	device_name_label.text = device.name
 	tab_container.set_tab_title(0, "DEV_MENU_INFO")
+	tab_container.set_tab_title(1, "DEV_MENU_DETAILS")
 	item_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	#print_debug(("Device menu visible"))
 	
 	# tr() funktio hakee käännöksen translation-tiedostosta
 	# attribuutti bbcode_text mahdollistaa rikkaamman tekstin näytön (esim lihavointi)
-	info_text.bbcode_text = tr(device.info_text)
+	intro_text.bbcode_text = tr(device.info_text)
+	details_text.bbcode_text = tr(device.details_text)
 	self.visible = true
 	# set_input_as_handled()
 	# consumes the event so it is not triggered in other
@@ -56,7 +59,7 @@ func exit_window():
 func create_video_menu():
 	video_tab = VBoxContainer.new()
 	tab_container.add_child(video_tab)
-	tab_container.set_tab_title(1, "DEV_MENU_VIDEOS")
+	tab_container.set_tab_title(2, "DEV_MENU_VIDEOS")
 	# Create buttons for videos from the device's DeviceInfo resource.
 	for i in range(len(device.videos)):
 		var button = Button.new()

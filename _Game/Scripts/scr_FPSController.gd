@@ -50,6 +50,10 @@ func _input(event):
 	# Change mouse mode for debug. MOUSE_MODE_CAPTURED and MOUSE_MODE_VISIBLE - mouse_toggle currently "-"
 	if Input.is_action_just_pressed("mouse_toggle"):
 		toggle_mouse()
+		
+	# Toggles debug text visibility
+	if Input.is_action_just_pressed("toggle_debug"):
+		HUD.toggle_debug()
 
 
 func _process(_delta):
@@ -100,13 +104,15 @@ func _physics_process(delta):
 				draggable_object.mode = RigidBody.MODE_RIGID
 				draggable_object.collision_mask = 1
 				draggable_object.set_collision_layer_bit(0, true)
+				HUD.append_debugtext("Dropped object")
 				#draggable_object = null
 				dragging = false
 			elif dragging == false:	
 				draggable_object.mode = RigidBody.MODE_RIGID
 				draggable_object.collision_mask = 1
 				draggable_object.set_collision_layer_bit(0, false)
-				draggable_object.connect("body_entered", self, "pickup_collision")		
+				draggable_object.connect("body_entered", self, "pickup_collision")
+				HUD.append_debugtext("Picked up object")
 				dragging = true
 			
 		if Input.is_action_just_pressed("right_mouse_click"):

@@ -6,6 +6,7 @@
 script = ExtResource( 1 )
 name = "DEV_NAME_RENSI"
 info_text = "DEV_DESC_RENSI"
+details_text = "DEV_DETAILS_RENSI"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

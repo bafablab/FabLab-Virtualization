@@ -39,6 +39,7 @@ func _integrate_forces(state):
 func pickup_body_entered(body):
 	if player.dragging:
 		if body.get_name() != "FPSController":
+			
 			pass
 			#print_debug("pickup collided with")
 			#print_debug(body.get_name())

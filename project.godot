@@ -96,6 +96,11 @@ Jump={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":32,"unicode":0,"echo":false,"script":null)
  ]
 }
+toggle_debug={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777244,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [layer_names]
 
@@ -108,8 +113,8 @@ Jump={
 
 [locale]
 
-fallback="fi"
-translations=PoolStringArray( "res://localization/translations_proper.en.translation", "res://localization/translations_proper.fi.translation", "res://localization/translations_proper.sv.translation" )
+test="fi"
+translations=PoolStringArray( "res://localization/translations.en.translation", "res://localization/translations.fi.translation", "res://localization/translations.sv.translation" )
 locale_filter=[ 1, [ "en", "fi", "sv" ] ]
 
 [mono]

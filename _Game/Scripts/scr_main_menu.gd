@@ -5,8 +5,10 @@ onready var checkbox_inverty = $Panel/HBoxContainer/CheckBox
 onready var device_menu = $"../UI_DeviceInfoMenu"
 onready var item_menu = $"../UI_ItemInfoMenu"
 onready var fps_controller = $"../FPSController"
+onready var HUD = $"../HUD"
 
 func _ready():
+	HUD.hide_all()
 	show()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
@@ -41,6 +43,8 @@ func _on_HBoxContainer_gui_input(event:InputEvent):
 # Hide main menu. Hide mouse pointer if no menu is open.
 func start_game():
 	self.hide()
+	#show HUD with debug on
+	HUD.show_hud(true)
 	if !(device_menu.visible or item_menu.visible):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		

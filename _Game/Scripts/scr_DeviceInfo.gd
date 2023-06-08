@@ -4,6 +4,7 @@ class_name DeviceInfo
 
 export(String) var name
 export(String, MULTILINE) var info_text
+export(String, MULTILINE) var details_text
 export(Array, VideoStream) var videos
 export(Array, String, MULTILINE) var video_titles
 export(Array, String, MULTILINE) var video_descriptions

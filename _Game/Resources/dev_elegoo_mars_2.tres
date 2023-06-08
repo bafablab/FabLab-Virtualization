@@ -6,6 +6,7 @@
 script = ExtResource( 1 )
 name = "DEV_NAME_ELEGOO"
 info_text = "DEV_DESC_ELEGOO"
+details_text = "DEV_DETAILS_ELEGOO"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

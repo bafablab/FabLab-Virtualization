@@ -7,6 +7,7 @@
 script = ExtResource( 1 )
 name = "DEV_NAME_ROLAND_CAMM"
 info_text = "DEV_DESC_ROLAND_CAMM"
+details_text = "DEV_DETAILS_ROLAND_CAMM"
 videos = [ ExtResource( 2 ) ]
 video_titles = [  ]
 video_descriptions = [  ]

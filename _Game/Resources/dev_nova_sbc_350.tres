@@ -6,6 +6,7 @@
 script = ExtResource( 1 )
 name = "DEV_NAME_NOVA"
 info_text = "DEV_DESC_NOVA"
+details_text = "DEV_DETAILS_NOVA"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

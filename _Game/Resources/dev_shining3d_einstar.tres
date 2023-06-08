@@ -6,6 +6,7 @@
 script = ExtResource( 1 )
 name = "DEV_NAME_SHINING3D"
 info_text = "DEV_DESC_SHINING3D"
+details_text = "DEV_DETAILS_SHINING3D"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

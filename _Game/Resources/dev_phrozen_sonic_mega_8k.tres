@@ -6,6 +6,7 @@
 script = ExtResource( 1 )
 name = "DEV_NAME_PHROZEN_SONIC"
 info_text = "DEV_DESC_PHROZEN_SONIC"
+details_text = "DEV_DETAILS_SONIC"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]

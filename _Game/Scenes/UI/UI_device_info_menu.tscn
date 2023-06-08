@@ -66,8 +66,8 @@ rect_min_size = Vector2( 300, 0 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
 bbcode_enabled = true
-bbcode_text = "Device info text"
-text = "Device info text"
+bbcode_text = "Device introduction text"
+text = "Device introduction text"
 fit_content_height = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel/TabContainer/Panel" index="1"]
@@ -78,5 +78,31 @@ margin_top = -45.0
 margin_right = 46.0
 margin_bottom = -10.0
 rect_min_size = Vector2( 40, 35 )
+
+[node name="Panel2" type="Panel" parent="VBoxContainer/Panel/TabContainer" index="1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
+
+[node name="InfoText" type="RichTextLabel" parent="VBoxContainer/Panel/TabContainer/Panel2" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
+bbcode_enabled = true
+bbcode_text = "Device detailed info text"
+text = "Device detailed info text"
+fit_content_height = true
 
 [connection signal="pressed" from="VBoxContainer/Panel/CloseButton" to="." method="exit_window"]
