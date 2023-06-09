@@ -7,29 +7,18 @@ Pelin käsikirjoitus ja projektin punainen lanka:
 ------------------------------------------------
 
 -Pelin perusidea, eli FabLabin ja sen laitteiden esittely:
-
 --Tarkoituksena olisi valmistaa virtuaalisesti peliympäristöön mallinnetuilla laitteilla tuotteita, esim 3d-tulosteita, laserleikattuja asioita jne. Tämä tutustuttaisi käyttäjän FabLabiin, sen mahdollisuuksiin ja opettaisi jo hieman etukäteen laitteiden käyttöä
-
 --Realismin taso on alkuun aika matala, mutta jos aikaa ja resursseja on, voidaan tasoa nostaa
-
 --Tehtävässä olisi jokunen määrä askelia, yksinkertaisimmillaan esim: "1) nappaa materiaali 2) laita materiaali laitteeseen 3) laitteesta ilmestyy lyhyen animaation jälkeen valmis tuote"
-
 --Lisäaskelia voi lisätä resurssien mukaan, esim. ensimmäinen askel olisikin mennä tietokoneelle, jossa "suunnitellaan" tai "haetaan" malli, käytännössä tämä toteutettaisiin vaikkapa valikoita käyttämällä, voisi olla esim. kuvakaappaus Thingiversestä jossa tiettyä kohtaa klikkaamalla malli olisi "haettu" ja valmis tuotettavaksi laitteilla
-
 --Pelin progressiota voisi kuvata esimerkiksi niin, että jokainen valmistettu tuote ilmestyy FabLabin esimerkkihyllyyn.
-
 --Hyllyssä voisi aluksi näkyä tyhjiä kohtia, yksinkertaisimmillaan jollain tavalla ilmaistu paikka ja teksti, mitä siihen kuuluisi valmistaa. Jos on helppoa, vielä valmistamattoman tuotteen läpinäkyvä "haamu" voisi olla hyllyssä, ja se muuttuisi "oikeaksi" kun se on valmistettu
 ---Ainakin alkuun valmiit tuotteet vain ilmestyvät hyllyyn, mukavampi tapa olisi se, että käyttäjä kantaa itse tuotteen hyllyyn omalle paikalleen, tämä olisi jokaisen valmistustehtävän päättävä askel.
-
---Mitä jos esineiden vieressä olisi post-it-lappu, jossa työvaiheet, tämä napattaisiin ja se jäisi "kiinni" HUDiin ja aloittaisi tehtävän
-
 --Hylly voisi toimia myös valmistustehtävän aloituspaikkana!
-
+---Mitä jos esineiden vieressä olisi post-it-lappu, jossa työvaiheet, tämä napattaisiin ja se jäisi "kiinni" HUDiin (näytetään TaskText-kohta) ja aloittaisi tehtävän
 --Ainakin alkuun valmistustehtäviä olisi yksi per laite, eli yksi 3d-tulostettava asia, yksi laserleikattava/kaiverrettava, jne.
-
 --Jos aikaa ja resursseja on, valmistustehtäviä voisi olla useampiakin per laite, jolloin käyttäjä voisi valita muutamasta vaihtoehdosta, mitä valmistaa.
 ---Käytännössä tämä on kuitenkin hieman "filleriä" eikä tuo hirveästi lisäarvoa.
-
 --Ruudulla näkyvän tehtäväaskeleiden ja tekstiohjeiden sijaan voitaisiin luoda jonkinlainen kommunikoiva hahmo, joka neuvoisi tuotteen valmistuksessa (käytännössä näyttäisi tekstinä mitä tässä vaiheessa tehtävää pitää tehdä) tai toimisi ns. questgiverinä
 ---Vaatinee paljon aikaa mallinnuksen, animoinnin ja peliohjelmoinnin osalta
 
@@ -113,9 +102,9 @@ Peliskriptit ja toimintalogiikka:
 
 
 -----------
-0.5. Muokkaa infoikkunoista videot pois ja jaa teksti kahteen tabiin
+0.5. Muokkaa infoikkunoista videot pois ja jaa teksti kahteen tabiin -- Lisätty toinen tabi, videoita ei vielä piilotettu Onni090623
 
-1. HUD
+1. HUD -- Raakaversio tehty Onni090623
 -debug-viestit
 -tehtävävaihelista
 -käyttäjän ohjeistus

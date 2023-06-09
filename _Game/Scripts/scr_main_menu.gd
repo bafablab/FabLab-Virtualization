@@ -5,10 +5,9 @@ onready var checkbox_inverty = $Panel/HBoxContainer/CheckBox
 onready var device_menu = $"../UI_DeviceInfoMenu"
 onready var item_menu = $"../UI_ItemInfoMenu"
 onready var fps_controller = $"../FPSController"
-onready var HUD = $"../HUD"
+onready var firststart = true
 
 func _ready():
-	HUD.hide_all()
 	show()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
@@ -40,21 +39,29 @@ func _on_HBoxContainer_gui_input(event:InputEvent):
 		else:
 			checkbox_inverty.pressed = false
 
-# Hide main menu. Hide mouse pointer if no menu is open.
+# Pause game. Hide main menu. Hide mouse pointer if no menu is open.
 func start_game():
+	# Change the button text from Start to Continue after first press
+	if firststart:
+		firststart = false
+		$Panel/Button.text = "MAIN_MENU_CONTINUE"
+	get_tree().paused = false
 	self.hide()
-	#show HUD with debug on
-	HUD.show_hud(true)
+	
 	if !(device_menu.visible or item_menu.visible):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		
+
+
 # Quit the game
 func _on_ExitButton_pressed():
 	get_tree().quit()
 
+# Pressing escape pauses the game and shows the main menu
 func _input(_event):
 	if !self.visible:
 		if Input.is_action_pressed("escape"):
 			self.show()
+			get_tree().paused = true
+			
 	if self.visible:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

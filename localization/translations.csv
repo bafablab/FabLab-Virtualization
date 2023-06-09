@@ -1,7 +1,9 @@
 "keys","en","fi","sv"
 "MAIN_MENU_TITLE","FabLab Virtualization","Virtuaalinen FabLab","Virtuell FabLab"
 "MAIN_MENU_START","Start","Aloita","Start"
+"MAIN_MENU_CONTINUE","Continue","Jatka","Fortsätta"
 "MAIN_MENU_REVERT_Y","Invert mouse Y-axis","Käännä hiiren Y-akseli","Vänd musens Y-axel"
+"MAIN_MENU_EXIT","Exit","Lopeta","Sluta"
 "DEV_MENU_DETAILS","Details","Tietoja","Information"
 "WELCOME_HEADER","Welcome!","Tervetuloa!","Välkommen!"
 "WELCOME_TEXT","You have arrived to BusinessAsema’s virtual Fablab.

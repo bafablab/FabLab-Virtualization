@@ -12,12 +12,19 @@
 [ext_resource path="res://_Game/UI/Themes/FabLab_Theme.tres" type="Theme" id=10]
 
 [sub_resource type="DynamicFont" id=1]
-size = 20
+size = 30
 font_data = ExtResource( 1 )
 
 [node name="UI_main_menu" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+pause_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
 theme = ExtResource( 10 )
 script = ExtResource( 9 )
 
@@ -27,22 +34,25 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -180.0
-margin_top = -100.0
+margin_top = -140.0
 margin_right = 180.0
-margin_bottom = 100.0
+margin_bottom = 140.0
 rect_min_size = Vector2( 300, 200 )
 
 [node name="Label" type="Label" parent="Panel"]
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-margin_left = -150.5
-margin_top = 10.0
-margin_right = 150.5
-margin_bottom = 19.0
+anchor_bottom = 0.5
+margin_left = -180.0
+margin_top = -115.0
+margin_right = 180.0
+margin_bottom = -75.0
 theme = ExtResource( 10 )
 custom_fonts/font = SubResource( 1 )
 text = "MAIN_MENU_TITLE"
 align = 1
+valign = 1
 
 [node name="Button" type="Button" parent="Panel"]
 anchor_left = 0.5
@@ -50,9 +60,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -150.0
-margin_top = -29.0
+margin_top = -54.0
 margin_right = 150.0
-margin_bottom = 1.0
+margin_bottom = -24.0
 rect_min_size = Vector2( 60, 0 )
 text = "MAIN_MENU_START"
 icon_align = 1
@@ -60,35 +70,36 @@ expand_icon = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
+anchor_bottom = 0.5
 margin_left = -145.0
-margin_top = -80.0
+margin_top = -14.0
 margin_right = 145.0
-margin_bottom = -56.0
+margin_bottom = 14.0
 
 [node name="CheckBox" type="CheckBox" parent="Panel/HBoxContainer"]
 margin_right = 24.0
-margin_bottom = 24.0
+margin_bottom = 28.0
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer"]
 margin_left = 28.0
+margin_top = 4.0
 margin_right = 197.0
-margin_bottom = 23.0
+margin_bottom = 24.0
 text = "MAIN_MENU_REVERT_Y"
 
 [node name="Panel" type="Panel" parent="Panel"]
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
+anchor_bottom = 0.5
 margin_left = -150.5
+margin_top = 70.0
 margin_right = 150.5
+margin_bottom = 70.0
 
 [node name="Button_Finnish" type="TextureButton" parent="Panel/Panel"]
-anchor_top = 1.0
-anchor_bottom = 1.0
 margin_left = 10.5
 margin_top = -45.0
 margin_right = 66.5
@@ -134,13 +145,15 @@ texture_hover = ExtResource( 5 )
 expand = true
 
 [node name="ExitButton" type="Button" parent="Panel"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -30.0
-margin_top = 5.0
-margin_right = -5.0
-margin_bottom = 20.0
-text = "X"
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -150.0
+margin_top = -55.0
+margin_right = 150.0
+margin_bottom = -25.0
+text = "MAIN_MENU_EXIT"
 
 [connection signal="pressed" from="Panel/Button" to="." method="start_game"]
 [connection signal="gui_input" from="Panel/HBoxContainer" to="." method="_on_HBoxContainer_gui_input"]
