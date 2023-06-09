@@ -21,6 +21,8 @@ Pelin käsikirjoitus ja projektin punainen lanka:
 --Hyllyssä voisi aluksi näkyä tyhjiä kohtia, yksinkertaisimmillaan jollain tavalla ilmaistu paikka ja teksti, mitä siihen kuuluisi valmistaa. Jos on helppoa, vielä valmistamattoman tuotteen läpinäkyvä "haamu" voisi olla hyllyssä, ja se muuttuisi "oikeaksi" kun se on valmistettu
 ---Ainakin alkuun valmiit tuotteet vain ilmestyvät hyllyyn, mukavampi tapa olisi se, että käyttäjä kantaa itse tuotteen hyllyyn omalle paikalleen, tämä olisi jokaisen valmistustehtävän päättävä askel.
 
+--Mitä jos esineiden vieressä olisi post-it-lappu, jossa työvaiheet, tämä napattaisiin ja se jäisi "kiinni" HUDiin ja aloittaisi tehtävän
+
 --Hylly voisi toimia myös valmistustehtävän aloituspaikkana!
 
 --Ainakin alkuun valmistustehtäviä olisi yksi per laite, eli yksi 3d-tulostettava asia, yksi laserleikattava/kaiverrettava, jne.

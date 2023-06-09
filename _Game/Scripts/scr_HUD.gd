@@ -5,7 +5,6 @@ extends Control
 func _ready():
 	#clear_all()
 	clear_debugtext()
-	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
