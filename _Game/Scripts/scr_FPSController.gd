@@ -54,6 +54,10 @@ func _input(event):
 	# Toggles debug text visibility
 	if Input.is_action_just_pressed("toggle_debug"):
 		HUD.toggle_debug()
+		
+	# Toggle whole HUD visibility
+	if Input.is_action_just_pressed("toggle_hud"):
+		HUD.toggle_hud()
 
 
 func _process(_delta):

@@ -3,13 +3,19 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#clear_all()
-	clear_debugtext()
+	hide_all()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+# Toggle HUD visibility
+func toggle_hud():
+	if $TaskText.visible && $HelpText.visible:
+		hide_all()
+	else:
+		show_hud(true)
 
 # Show HUD elements, and DebugText too if parameter is true
 func show_hud(debug):
