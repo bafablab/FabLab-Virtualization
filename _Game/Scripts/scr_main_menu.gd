@@ -50,6 +50,7 @@ func start_game():
 	get_tree().paused = false
 	self.hide()
 	
+	# BUG!
 	if !(device_menu.visible or item_menu.visible or welcome_window.visible):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 

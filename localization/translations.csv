@@ -6,13 +6,22 @@
 "MAIN_MENU_EXIT","Exit","Lopeta","Sluta"
 "DEV_MENU_DETAILS","Details","Tietoja","Information"
 "WELCOME_HEADER","Welcome!","Tervetuloa!","Välkommen!"
-"WELCOME_TEXT","You have arrived to BusinessAsema’s virtual Fablab.
-Here you can explore FabLab’s devices and the possibilities they bring.
+"WELCOME_TEXT","You have arrived to BusinessAsema Oulu’s virtual FabLab.
+In this virtual environment you can explore FabLab’s facilities and equipment.
 
-Move in the environment with the W, S, A and D keys and the mouse. Click on the devices to learn what they are, and what you can do with them.","Olet saapunut BusinessAseman FabLabin virtuaalimalliin.
-Täällä voit tutustua FabLabin laitteisiin ja niiden tuomiin mahdollisuuksiin.
+Move in the environment with the W, S, A and D keys and the mouse. Feel free to click on the different devices to learn what they are, and what you can do with them.
 
-Liiku ympäristössä W, S, A ja D-näppäimillä ja hiirellä. Klikkaamalla laitteita saat tietoa siitä, mitä ne ovat ja mitä niillä voi tehdä.","Welcome-text in Swedish"
+The real BusinessAsema FabLab is located at Hallituskatu 36, Oulu.","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
+Tämän virtuaaliympäristön avulla voit tutustua FabLabin tiloihin ja laitteisiin.
+
+Liiku ympäristössä W, S, A ja D-näppäimillä ja hiirellä. Klikkaamalla laitteita saat tietoa siitä, mitä ne ovat ja mitä niillä voi tehdä.
+
+Todellinen FabLab sijaitsee osoitteessa Hallituskatu 36, Oulu.","Du har kommit till Uleåborgs BusinessAsemas virtuella FabLab.
+I denna virtuella miljö kan du utforska FabLabs faciliteter och utrustning.
+
+Rör dig i miljön med tangenterna W, S, A och D och musen. Klicka gärna på de olika enheterna för att lära dig vad de är och vad du kan göra med dem.
+
+Den riktiga BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "WELCOME_BUTTON","Continue","Jatka","Fortsätta"
 "DEV_MENU_INFO","Description","Esittely","Beskrivning"
 "DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
@@ -42,103 +51,93 @@ Liiku ympäristössä W, S, A ja D-näppäimillä ja hiirellä. Klikkaamalla lai
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
 "DEV_DESC_ELEGOO","[b]3D resin printer[/b]
 
-Print three-dimensional objects and shapes
+Print three-dimensional objects and shapes","[b]3D-resiinitulostin[/b]
 
-- 1 machine
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista","3D Resin printer desc"
+"DEV_DETAILS_ELEGOO","- 1 machine
 - printing material: resin
 - layer thickness 0.01-0.2 mm
-- preferred file format .stl","[b]3D-resiinitulostin[/b]
-
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
-
-- 1 kpl
+- preferred file format .stl","- 1 kpl
 - tulostusmateriaali: hartsi/resiini
 - kerrospaksuus 0.01-0.2 mm
-- suositeltu tiedostomuoto .stl","3D Resin printer desc"
+- suositeltu tiedostomuoto .stl","3D resin printer details"
 "DEV_DESC_ELNA","[b]Sowing machine desc[/b]","[b]Ompelukone[/b] selite","Sowing machine desc"
+"DEV_DETAILS_ELNA","Elna details","Elna tiedot","Sowing machine details"
 "DEV_DESC_ENDER","[b]3D Printer[/b]
 
-Print three-dimensional objects and shapes from biodegradable material
+With a 3D printer you can literally print real three-dimensional objects.
+The object is designed with a 3d modeling program, converted into a printable form (”sliced”) and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.","[b]3D-tulostin[/b]
 
-- 3 machines
+3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.","3D Printer desc"
+"DEV_DETAILS_ENDER","- 3 machines
 - printing material: biodegradable PLA
 - layer thickness 0.05-0.35 mm
-- preferred file format .stl","[b]3D-tulostin[/b]
-
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
-
-- 3 kpl
+- preferred file format .stl","- 3 kpl
 - tulostusmateriaali: biohajoava PLA
 - kerrospaksuus 0.05-0.35 mm
-- suositeltu tiedostomuoto .stl","3D Printer desc"
+- suositeltu tiedostomuoto .stl",
 "DEV_DESC_EPILOG","[b]Laser cutter[/b]
 
-Cut precise shapes with different materials
+Precisely cut and engrave shapes with different materials","[b]Laserleikkuri[/b]
 
-Machining area ca. 1200 x 900 mm
-
-Printing directly from Inkscape software.
+Leikkaa muotoja tarkasti eri materiaaleihin","Laser cutter desc"
+"DEV_DETAILS_EPILOG","Printing directly from Inkscape software.
 
 - SVG file format
 - cutting line width 0.033–0.077 mm
-- other line widths, patterns and images are carved
-- laser groove depth ca. 0.15 mm, varies a little depending on the material","[b]Laserleikkuri[/b]
-
-Leikkaa muotoja tarkasti eri materiaaleihin
-
-Työstoalue n. 1200 × 900 mm
+- other line widths, patterns and images are engraved
+- laser groove depth ca. 0.15 mm, varies a little depending on the material","Työstoalue n. 1200 × 900 mm
 
 Tulostus suoraan Inkscape-ohjelmasta.
 
 - SVG-tiedostomuoto
 - leikkauslinjan paksuus 0.033–0.077 mm
 - muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
-- laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.","Laser cutter desc"
-"DEV_DESC_INNOV","[b]Embroidering machine[/b] desc","[b]Brodeerauskone[/b] selite","Embroidering machine desc"
+- laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.",
+"DEV_DESC_INNOV","[b]Embroidery machine[/b]","[b]Brodeerauskone[/b] selite","Embroidering machine desc"
+"DEV_DETAILS_INNOV",,,
 "DEV_DESC_JUKI_MO","[b]Overlocker MO[/b] desc","[b]Saumuri MO[/b] selite","Overlocker MO desc"
+"DEV_DETAILS_JUKI_MO",,,
 "DEV_DESC_JUKI_MSC","[b]Overlocker MSC[/b] desc","[b]Saumuri MSC[/b] selite","Overlocker MSC desc"
+"DEV_DETAILS_JUKI_MSC",,,
 "DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc"
+"DEV_DETAILS_NOVA",,,
 "DEV_DESC_PHROZEN_CURE","[b]Post curing UV lamp[/b]
 
-- inner measurements: 29.5 x 29.5 x 45 cm
-- post curing for resin prints","[b]UV-jälkikovetuskaappi[/b]
+After printing, resin prints have to be hardened with ultraviolet light. With this device it can be done quickly and safely.","[b]UV-jälkikovetuskaappi[/b]
 
-- sisätilamitta: 29.5 x 29.5 x 45 cm
-- hartsitulosteiden jälkikovetukseen","UV hardening lamp desc"
+Hartsitulosteet tulee tulostuksen jälkeen kovettaa ultraviolettivalolla. Tällä jälkikovetuskaapilla se onnistuu nopeasti ja turvallisesti.","UV hardening lamp desc"
+"DEV_DETAILS_PHROZEN_CURE","- Inner measurements: 29.5 x 29.5 x 45 cm","- Sisätilamitat: 29.5 x 29.5 x 45 cm","UV lamp details"
 "DEV_DESC_PHROZEN_SONIC","[b]3D resin printer[/b]
 
-Print three-dimensional objects and shapes
+Print three-dimensional objects and shapes","[b]3D-hartsitulostin[/b]
 
-- 1 machine
-- printing material: resin
-- layer thickness 0.01-0.30 mm
-- preferred file format .stl","[b]3D-resiinitulostin[/b]
-
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
-
-- 1 kpl
-- tulostusmateriaali: hartsi/resin
-- kerrospaksuus 0.01-0.30 mm
-- suositeltu tiedostomuoto .stl","3D Resin printer desc"
-"DEV_DESC_RENSI","[b]CNC milling machine[/b]
-
-Machining area 900×700 mm
+Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista","3D Resin printer desc"
+"DEV_DETAILS_PHROZEN_SONIC","- One machine at the FabLab
+- Printing material: resin
+- Layer thickness 0.01-0.30 mm
+- Preferred file format .stl","- Yksi tulostin FabLabilla
+- Tulostusmateriaali: hartsi/resiini
+- Kerrospaksuus 0.01-0.30 mm
+- Suositeltu tiedostomuoto .stl","Phrozen Sonic details"
+"DEV_DESC_RENSI","[b]CNC milling machine[/b]","[b]CNC-jyrsin[/b]","CNC mill desc"
+"DEV_DETAILS_RENSI","Machining area 900×700 mm
 
 Materials:
-
 - wood
-- plastic","[b]CNC-jyrsin[/b]
-
-työstöalue 900×700 mm
+- plastic","Työstöalue 900×700 mm
 
 Materiaalit:
 - puu
-- muovi","CNC mill desc"
+- muovi","CNC details"
 "DEV_DESC_ROLAND_CAMM","[b]Vinyl cutter[/b]
 
-Cut stickers for transferring onto fabric with heat press
+Using the vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.","[b]Vinyylileikkuri[/b]
 
-- machining area width ca. 610 mm
+Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion paitaan.
+Tarra tai painatus suunnitellaan tietokoneella vektorigrafiikkaohjelmalla (esim. Inkscape).","Vinyl cutter desc"
+"DEV_DETAILS_ROLAND_CAMM","- machining area width ca. 610 mm
 - printing using either Roland Cut Studio or Inkscape software
 - SVG or CV file formats
 
@@ -146,11 +145,7 @@ Materials available at BusinessAsema:
 
 - vinyls in different colours
 - heat transfer vinyl white/black/red
-- sand blasting mask","[b]Vinyylileikkuri[/b]
-
-Leikkaa tarroja, joita voidaan lämpöprässillä siirtää kankaisiin
-
-- työstöalueen leveys n. 610 mm
+- sand blasting mask","- työstöalueen leveys n. 610 mm
 - tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
 - SVG tai CV -tiedostomuodot
 
@@ -158,36 +153,32 @@ Materiaalia saatavilla BusinessAsemalla:
 
 - erivärisiä vinyylejä
 - kuumasiirtovinyyli valkoinen/musta/punainen
-- hiekkapuhallusmaski","Vinyl cutter desc"
+- hiekkapuhallusmaski",
 "DEV_DESC_SHINING3D","[b]3D scanner[/b]
 
-Scanner for three-dimensional objects and shapes
+Scanner for three-dimensional objects and shapes","[b]3D-skanneri[/b]
 
-- 1 machine
+Kolmiulotteisten esineiden skannaukseen","3D scanner desc"
+"DEV_DETAILS_SHINING3D","- 1 machine
 - built-in RGB color camera. 3D data with authentic colors.
-- supports multiple data format outputs, compatible with 3D printers and 3D design softwares.","[b]3D-skanneri[/b]
-
-Kolmiulotteisten esineiden skannaukseen
-
-- 1 kpl
+- supports multiple data format outputs, compatible with 3D printers and 3D design softwares.","- 1 kpl
 - sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
 - tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
-3D-suunnitteluohjelmistojen kanssa.","3D scanner desc"
+3D-suunnitteluohjelmistojen kanssa.",
 "DEV_DESC_SINDOH","[b]3D Printer[/b]
 
-Print three-dimensional objects and shapes from biodegradable material
+With a 3D printer you can literally print real three-dimensional objects.
+The object is designed with a 3d modeling program, converted into a printable form (”sliced”) and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.","[b]3D-tulostin[/b]
 
-- 3 machines
-- printing material: biodegradable PLA
+3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.","3D Printer desc"
+"DEV_DETAILS_SINDOH","- 3 machines at the FabLab
+- printing material: biodegradable PLA-plastic, ABS-plastic
 - smallest layer thickness 0.05 mm
-- preferred file format .stl","[b]3D-tulostin[/b]
-
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista
-
-- 3 kpl
-- tulostusmateriaali: biohajoava PLA, ABS
+- preferred file format .stl","- FabLabilla 3 kpl
+- tulostusmateriaali: biohajoava PLA-muovi, ABS-muovi
 - kerrospaksuus 0.05-0.4 mm
-- suositeltu tiedostomuoto .stl","3D Printer desc"
+- suositeltu tiedostomuoto .stl",
 "DEV_VIDEO_TITLE_1","Ski video","Hiihtovideo","Hiihtovideo ruotsi"
 "DEV_VIDEO_DESC_1","Man flies over a bus","Mies hiihtää bussin yli","Mies lentää ruotsi"
 "DEV_VIDEO_TITLE_2","Video number 2","Video numero 2","Video nummer 2"
