@@ -6,6 +6,7 @@ onready var device_menu = $"../UI_DeviceInfoMenu"
 onready var item_menu = $"../UI_ItemInfoMenu"
 onready var fps_controller = $"../FPSController"
 onready var firststart = true
+onready var welcome_window = $"../UI_WelcomeWindow"
 
 func _ready():
 	show()
@@ -45,10 +46,11 @@ func start_game():
 	if firststart:
 		firststart = false
 		$Panel/Button.text = "MAIN_MENU_CONTINUE"
+		welcome_window.show()
 	get_tree().paused = false
 	self.hide()
 	
-	if !(device_menu.visible or item_menu.visible):
+	if !(device_menu.visible or item_menu.visible or welcome_window.visible):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 
