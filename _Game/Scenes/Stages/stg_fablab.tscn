@@ -64,10 +64,9 @@ visible = false
 [node name="UI_ItemInfoMenu" parent="." instance=ExtResource( 18 )]
 visible = false
 
-[node name="UI_MainMenu" parent="." instance=ExtResource( 22 )]
-
 [node name="UI_WelcomeWindow" parent="." instance=ExtResource( 44 )]
-visible = false
+
+[node name="UI_MainMenu" parent="." instance=ExtResource( 22 )]
 
 [node name="FPSController" parent="." instance=ExtResource( 7 )]
 transform = Transform( 0.997071, 0, -0.0764757, 0, 1, 0, 0.0764757, 0, 0.997071, 3.73036, 0, -15.3207 )

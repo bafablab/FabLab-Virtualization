@@ -8,10 +8,10 @@ func _ready():
 	$VBoxContainer/Panel/WelcomeText.bbcode_text = tr("WELCOME_TEXT")
 	self.hide()
 
-# Recapture mouse and close this window instance
+# Recapture mouse and hide window
 func close():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	self.queue_free()
+	self.hide()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
