@@ -153,8 +153,6 @@ func _physics_process(delta):
 	else:
 		gravity_vec = -get_floor_normal()
 	
-	
-	
 	if moving:
 #		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 #			gravity_vec = Vector3.UP * jump
@@ -174,7 +172,7 @@ func _physics_process(delta):
 		
 		move_and_slide(movement, Vector3.UP)
 	else:
-		h_velocity = Vector3.ZERO # stop player if menu is open
+		h_velocity = Vector3.ZERO # stop player if any menu is open
 
 func pickup_collision(body):
 	pass

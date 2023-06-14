@@ -6,6 +6,7 @@ export(Resource) var interactable
 export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_hover_text_label.tscn")
 onready var collision_shape  = $StaticBody/CollisionShape
 onready var main_menu = $"../../UI_MainMenu"
+onready var HUD = $"../../HUD"
 # Empty resources are shown when interactable doesn't have any resource added. 
 var empty_device_resource = preload("res://_Game/Resources/dev_empty_device_info.tres")
 var empty_item_resource = preload("res://_Game/Resources/itm_empty_item_info.tres")
@@ -42,8 +43,8 @@ func _ready():
 	for child in get_children():
 		if child is MeshInstance:
 			overlay_material = child.get_material_overlay()
-			if overlay_material == null:
-				print_debug("No overlay material! (highlight shader)")
+			#if overlay_material == null:
+				#HUD.append_debugtext("No overlay material (highlight shader)")
 			child.set_material_overlay(null)
 			mesh_instance = child
 			if self.is_in_group("Item"):
@@ -54,10 +55,10 @@ func _ready():
 	# notifies to add a correct one. 
 	if interactable == null:
 		if self.is_in_group(("Device")):
-			print_debug("Empty device")
+			HUD.append_debugtext("Empty device")
 			interactable = empty_device_resource
 		elif self.is_in_group("Item"):
-			print_debug("Empty")
+			HUD.append_debugtext("Empty")
 			interactable = empty_item_resource
 			
 	set_hover_text()
@@ -70,7 +71,7 @@ func enter_focus():
 	if overlay_material:
 		mesh_instance.set_material_overlay(overlay_material)	
 	else:
-		print_debug("No overlay material! (highlight shader)")
+		HUD.append_debugtext("Hovered object has no overlay material")
 
 # THis function is called when mouse or crosshair moves away from the interactable
 func exit_focus():

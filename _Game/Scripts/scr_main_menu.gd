@@ -2,8 +2,6 @@ extends Control
 
 onready var button_finnish = $Panel/Panel/Button_Finnish
 onready var checkbox_inverty = $Panel/HBoxContainer/CheckBox
-onready var device_menu = $"../UI_DeviceInfoMenu"
-onready var item_menu = $"../UI_ItemInfoMenu"
 onready var fps_controller = $"../FPSController"
 onready var firststart = true
 onready var welcome_window = $"../UI_WelcomeWindow"
