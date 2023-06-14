@@ -29,6 +29,7 @@ var dragging = false
 onready var device_info_menu = $"../UI_DeviceInfoMenu"
 onready var item_info_menu = $"../UI_ItemInfoMenu"
 onready var main_menu = $"../UI_MainMenu"
+onready var welcome_window = $"../UI_WelcomeWindow"
 onready var HUD = $"../HUD"
 var draggable = false
 var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
@@ -62,7 +63,12 @@ func _input(event):
 
 func _process(_delta):
 	# disable player movement if any menu is visible
-	moving = !(main_menu.visible or item_info_menu.visible or device_info_menu.visible)
+	if (main_menu.visible or item_info_menu.visible or device_info_menu.visible or welcome_window.visible):
+		moving = false
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	else:
+		moving = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	#print_debug(moving)
 	
 
@@ -147,7 +153,8 @@ func _physics_process(delta):
 	else:
 		gravity_vec = -get_floor_normal()
 	
-
+	
+	
 	if moving:
 #		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 #			gravity_vec = Vector3.UP * jump

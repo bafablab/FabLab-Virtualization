@@ -38,6 +38,7 @@ func _ready():
 	static_body.connect("mouse_exited", self, "exit_focus")	
 	
 	#   Find MeshInstance and add it to ItemInfo-resource and get highlight shader 
+	### TODO: FIX to not use MeshInstance
 	for child in get_children():
 		if child is MeshInstance:
 			overlay_material = child.get_material_overlay()

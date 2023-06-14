@@ -40,7 +40,7 @@ func _on_HBoxContainer_gui_input(event:InputEvent):
 		else:
 			checkbox_inverty.pressed = false
 
-# Pause game. Hide main menu. Hide mouse pointer if no menu is open.
+# Pause game. Hide main menu. Change mouse to captured.
 func start_game():
 	# Change the button text from Start to Continue after first press
 	if firststart:
@@ -49,11 +49,10 @@ func start_game():
 		welcome_window.show()
 	get_tree().paused = false
 	self.hide()
-	
-	# BUG!
-	if !(device_menu.visible or item_menu.visible or welcome_window.visible):
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
+func pause_game():
+	self.show()
+	get_tree().paused = true
 
 # Quit the game
 func _on_ExitButton_pressed():
@@ -61,10 +60,11 @@ func _on_ExitButton_pressed():
 
 # Pressing escape pauses the game and shows the main menu
 func _input(_event):
-	if !self.visible:
-		if Input.is_action_pressed("escape"):
-			self.show()
-			get_tree().paused = true
-			
 	if self.visible:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
+	if Input.is_action_pressed("escape"):
+		if !self.visible:
+			pause_game()
+		else:
+			start_game()
