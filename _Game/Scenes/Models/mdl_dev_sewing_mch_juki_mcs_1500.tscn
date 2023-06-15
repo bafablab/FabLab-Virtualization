@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://_Game/Models/dev_sewing_mch_juki_mcs_1500/mdl.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/dev_sewing_mch_juki_mcs_1500/txt_dev_juki_mcs_1500_dif_1K.png" type="Texture" id=2]
 [ext_resource path="res://_Game/Models/dev_sewing_mch_juki_mcs_1500/mat_dev_sewing_mch_juki_mcs_1500.tres" type="Material" id=3]
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=4]
+[ext_resource path="res://_Game/Resources/dev_juki_msc_1500.tres" type="Resource" id=5]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -14,7 +16,14 @@ load_path = "res://.import/txt_dev_juki_mcs_1500_dif_tr_1K.png-f3bb30c1162fd0312
 [sub_resource type="SpatialMaterial" id=3]
 albedo_texture = SubResource( 2 )
 
-[node name="mdl_dev_sewing_mch_juki_mcs_1500" instance=ExtResource( 1 )]
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.0965731, 0.107379, 0.0635925 )
+
+[node name="mdl_dev_sewing_mch_juki_mcs_1500" groups=["Device"] instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+interactable = ExtResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="0"]
 
 [node name="device" parent="Armature/Skeleton" index="0"]
 material/0 = SubResource( 1 )
@@ -22,3 +31,12 @@ material/1 = SubResource( 3 )
 
 [node name="material" parent="Armature/Skeleton" index="1"]
 material/0 = ExtResource( 3 )
+
+[node name="HoverTextPosition" type="Spatial" parent="." index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35961, 0 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125304, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+shape = SubResource( 4 )
