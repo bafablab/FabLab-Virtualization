@@ -1,0 +1,8 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Models/dev_sewing_mch_juki_mcs_1500/txt_dev_juki_mcs_1500_dif_1K.png" type="Texture" id=1]
+
+[resource]
+flags_unshaded = true
+params_specular_mode = 4
+albedo_texture = ExtResource( 1 )
