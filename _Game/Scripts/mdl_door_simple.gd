@@ -49,7 +49,7 @@ func _input(_event):
 				$AnimationPlayer.play_backwards("01_open_door")				
 				hover_text.visible = false			
 				door_open = false;
-			in_focus = false
+			#in_focus = false
 	
 func set_hover_text():
 	hover_text_position = get_node_or_null("HoverTextPosition")

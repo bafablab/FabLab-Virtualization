@@ -109,29 +109,23 @@ func _physics_process(delta):
 	# ------- Object selection code ends -------
 	
 	if draggable_object && draggable == true:
-		if Input.is_action_just_pressed("mouse_click"):
-			if dragging == true:		
-				draggable_object.mode = RigidBody.MODE_RIGID
-				draggable_object.collision_mask = 1
-				draggable_object.set_collision_layer_bit(0, true)
-				HUD.append_debugtext("Dropped object")
-				#draggable_object = null
-				dragging = false
-			elif dragging == false:	
-				draggable_object.mode = RigidBody.MODE_RIGID
-				draggable_object.collision_mask = 1
-				draggable_object.set_collision_layer_bit(0, false)
-				draggable_object.connect("body_entered", self, "pickup_collision")
-				HUD.append_debugtext("Picked up object")
-				dragging = true
-			
+		# Drag object when mouse button is down
+		if Input.is_action_pressed("mouse_click"):
+			dragging = true
+			draggable_object.mode = RigidBody.MODE_RIGID
+			draggable_object.connect("body_entered", self, "pickup_collision")
+			HUD.append_debugtext("Holding object")
+		elif not Input.is_action_pressed("mouse_click"):
+			dragging = false
+		
+		# Throwing object
 		if Input.is_action_just_pressed("right_mouse_click"):
 			if dragging == true:
-				draggable_object.mode = RigidBody.MODE_RIGID
-				draggable_object.collision_mask = 1
-				draggable_object.set_collision_layer_bit(0, true)
+				#draggable_object.mode = RigidBody.MODE_RIGID
+				#draggable_object.collision_mask = 1
+				#draggable_object.set_collision_layer_bit(0, true)
 				var direction = self.get_transform().basis.z
-				draggable_object.add_central_force(direction * -1000)
+				draggable_object.add_central_force(direction * -100)
 				dragging = false
 				draggable = false
 			

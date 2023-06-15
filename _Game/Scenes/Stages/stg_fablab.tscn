@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -44,6 +44,7 @@
 [ext_resource path="res://_Game/Scripts/scr_pickup.gd" type="Script" id=42]
 [ext_resource path="res://_Game/Scenes/UI/UI_HUD.tscn" type="PackedScene" id=43]
 [ext_resource path="res://_Game/Scenes/UI/UI_welcome_window.tscn" type="PackedScene" id=44]
+[ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll_rigid.tscn" type="PackedScene" id=45]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -260,10 +261,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50365, -0.00203678, -22.8161
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
 collision_layer = 2147483777
-collision_mask = 2147483649
+collision_mask = 2147483703
 contacts_reported = 5
 contact_monitor = true
-can_sleep = false
 script = ExtResource( 42 )
 
 [node name="MeshInstance" type="MeshInstance" parent="collision_test_object"]
@@ -273,6 +273,9 @@ skeleton = NodePath("../..")
 
 [node name="CollisionShape" type="CollisionShape" parent="collision_test_object"]
 shape = SubResource( 2 )
+
+[node name="mdl_mats_filament_roll_rigid" parent="." instance=ExtResource( 45 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12347, 0.907771, -11.2043 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )

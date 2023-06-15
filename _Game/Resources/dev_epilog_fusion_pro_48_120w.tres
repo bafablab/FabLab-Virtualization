@@ -1,6 +1,7 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
+[ext_resource path="res://_Game/Resources/itm_lasercut_firehazard.tres" type="Resource" id=2]
 
 [resource]
 script = ExtResource( 1 )
@@ -10,5 +11,5 @@ details_text = "DEV_DETAILS_EPILOG"
 videos = [  ]
 video_titles = [  ]
 video_descriptions = [  ]
-example_items = [  ]
+example_items = [ ExtResource( 2 ) ]
 animationNames = [ "anim_act_star_cut" ]

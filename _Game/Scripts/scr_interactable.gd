@@ -58,7 +58,7 @@ func _ready():
 			HUD.append_debugtext("Empty device")
 			interactable = empty_device_resource
 		elif self.is_in_group("Item"):
-			HUD.append_debugtext("Empty")
+			HUD.append_debugtext("Empty item")
 			interactable = empty_item_resource
 			
 	set_hover_text()
@@ -84,7 +84,7 @@ func _input(_event):
 	if main_menu.visible:			#Do not read mouse clicks here if main menu is visible
 		in_focus = false
 	if in_focus:
-		if Input.is_action_just_pressed("mouse_click"):
+		if Input.is_action_just_pressed("right_mouse_click"):
 			# Reveal mouse pointer to interact with the menu
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			#print_debug("Clicked interactable!")
