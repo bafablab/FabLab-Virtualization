@@ -24,7 +24,7 @@
 [ext_resource path="res://_Game/Scenes/UI/UI_main_menu.tscn" type="PackedScene" id=22]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_sign_lc_wooden_sign.tscn" type="PackedScene" id=23]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_ender_3_v2_neo.tscn" type="PackedScene" id=24]
-[ext_resource path="res://_Game/Scenes/Models/mdl_dev_juki_msc_1500.tscn" type="PackedScene" id=25]
+[ext_resource path="res://_Game/Scenes/Models/mdl_dev_sewing_mch_juki_mcs_1500.tscn" type="PackedScene" id=25]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_elna_experience_520_s.tscn" type="PackedScene" id=26]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_juki_mo_654de.tscn" type="PackedScene" id=27]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_shining3d_einstar.tscn" type="PackedScene" id=28]
@@ -174,8 +174,8 @@ transform = Transform( 0.916265, 0, 0.400573, 0, 1, 0, -0.400573, 0, 0.916265, 1
 [node name="mdl_dev_phrozen_cure_xl" parent="stg_fablab" instance=ExtResource( 29 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02461, 0.906104, -16.9902 )
 
-[node name="mdl_dev_juki_msc_1500" parent="stg_fablab" instance=ExtResource( 25 )]
-transform = Transform( -0.124675, 0, -0.992198, 0, 1, 0, 0.992198, 0, -0.124675, 5.09947, 0.760013, -7.44675 )
+[node name="mdl_dev_sewing_mch_juki_mcs_1500" parent="stg_fablab" instance=ExtResource( 25 )]
+transform = Transform( -0.162078, 0, -1.28986, 0, 1.3, 0, 1.28986, 0, -0.162078, 4.92353, 0.765346, -7.44675 )
 
 [node name="mdl_dev_juki_mo_654de" parent="stg_fablab" instance=ExtResource( 27 )]
 transform = Transform( -0.165908, 0, -0.986141, 0, 1, 0, 0.986141, 0, -0.165908, 4.90147, 0.717215, -8.5377 )
