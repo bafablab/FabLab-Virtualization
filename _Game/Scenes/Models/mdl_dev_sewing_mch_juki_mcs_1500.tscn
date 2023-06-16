@@ -24,7 +24,7 @@ material/1 = ExtResource( 2 )
 material/0 = ExtResource( 3 )
 
 [node name="HoverTextPosition" type="Spatial" parent="." index="3"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35961, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.418944, 0 )
 
 [node name="StaticBody" type="StaticBody" parent="." index="4"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125304, 0 )
