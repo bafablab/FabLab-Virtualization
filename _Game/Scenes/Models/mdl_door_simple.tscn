@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://_Game/Models/door_simple/mdl_door_simple_door.mesh" type="ArrayMesh" id=1]
-[ext_resource path="res://_Game/Scripts/mdl_door_simple.gd" type="Script" id=2]
+[ext_resource path="res://_Game/Scripts/scr_door.gd" type="Script" id=2]
+[ext_resource path="res://_Game/Resources/object_door.tres" type="Resource" id=3]
 
 [sub_resource type="BoxShape" id=4]
 
@@ -223,6 +224,7 @@ tracks/3/keys = {
 
 [node name="mdl_door_simple" type="Spatial" groups=["Device", "Door"]]
 script = ExtResource( 2 )
+interactable = ExtResource( 3 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 
