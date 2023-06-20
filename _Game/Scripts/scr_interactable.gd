@@ -84,7 +84,7 @@ func _input(_event):
 	if main_menu.visible:			#Do not read mouse clicks here if main menu is visible
 		in_focus = false
 	if in_focus:
-		if Input.is_action_just_pressed("right_mouse_click"):
+		if Input.is_action_just_pressed("mouse_click"):
 			# Reveal mouse pointer to interact with the menu
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			#print_debug("Clicked interactable!")
@@ -98,7 +98,15 @@ func set_hover_text():
 	hover_text_position = get_node_or_null("HoverTextPosition")
 	hover_text = hover_text_scene.instance()
 	self.add_child(hover_text)
-	hover_text.text = interactable.name
+	
+	# If a device, show generic name, for items their specific name
+	if self.is_in_group(("Device")):
+		if interactable.generic_name:
+			hover_text.text = interactable.generic_name
+		else:
+			hover_text.text = "No generic name!"
+	else:
+		hover_text.text = interactable.name
 	if hover_text_position:
 		hover_text.transform.origin = hover_text_position.transform.origin
 	else:

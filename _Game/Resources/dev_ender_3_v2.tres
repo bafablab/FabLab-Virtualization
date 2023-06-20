@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "DEV_NAME_ENDER"
+generic_name = "DEV_GENERIC_NAME_3DPRINTER_FILAMENT"
 info_text = "DEV_DESC_ENDER"
 details_text = "DEV_DETAILS_ENDER"
 videos = [  ]

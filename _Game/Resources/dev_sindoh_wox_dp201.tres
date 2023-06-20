@@ -9,6 +9,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "DEV_NAME_SINDOH"
+generic_name = "DEV_GENERIC_NAME_3DPRINTER_FILAMENT"
 info_text = "DEV_DESC_SINDOH"
 details_text = "DEV_DETAILS_SINDOH"
 videos = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ]

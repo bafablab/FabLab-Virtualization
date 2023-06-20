@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "DEV_NAME_SHINING3D"
+generic_name = "DEV_GENERIC_NAME_3DSCANNER"
 info_text = "DEV_DESC_SHINING3D"
 details_text = "DEV_DETAILS_SHINING3D"
 videos = [  ]

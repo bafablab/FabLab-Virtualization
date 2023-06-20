@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "DEV_NAME_PHROZEN_CURE"
+generic_name = "DEV_GENERIC_NAME_UVLAMP"
 info_text = "DEV_DESC_PHROZEN_CURE"
 details_text = "DEV_DETAILS_PHROZEN_CURE"
 videos = [  ]

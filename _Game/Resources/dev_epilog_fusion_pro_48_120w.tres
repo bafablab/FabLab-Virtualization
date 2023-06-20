@@ -6,6 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "DEV_NAME_EPILOG"
+generic_name = "DEV_GENERIC_NAME_LASERCUTTER"
 info_text = "DEV_DESC_EPILOG"
 details_text = "DEV_DETAILS_EPILOG"
 videos = [  ]

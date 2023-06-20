@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "DEV_NAME_ELNA"
+generic_name = "DEV_GENERIC_NAME_SOWING"
 info_text = "DEV_DESC_ELNA"
 details_text = "DEV_DETAILS_ELNA"
 videos = [  ]

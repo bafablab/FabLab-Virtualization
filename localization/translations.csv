@@ -7,16 +7,18 @@
 "DEV_MENU_DETAILS","Details","Tietoja","Information"
 "WELCOME_HEADER","Welcome!","Tervetuloa!","Välkommen!"
 "WELCOME_TEXT","You have arrived to BusinessAsema Oulu’s virtual FabLab.
-In this virtual environment you can explore FabLab’s facilities and equipment.
 
-Move in the environment with the W, S, A and D keys and the mouse. Feel free to click on the different devices to learn what they are, and what you can do with them.
+FabLab is a workspace for small-scale digital manifacturing, where you can make and produce almost anything! You can use FabLab's facilities and equipment free of charge. The personnel at FabLab guides you on how to use the different devices, but the actual making and manufacturing is done by yourself.
 
-The real BusinessAsema FabLab is located at Hallituskatu 36, Oulu.","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
-Tämän virtuaaliympäristön avulla voit tutustua FabLabin tiloihin ja laitteisiin.
+Move in this virtual environment with the WASD-keys and the mouse. Feel free to click on the different devices to learn what they are, and what you can do with them.
 
-Liiku ympäristössä W, S, A ja D-näppäimillä ja hiirellä. Klikkaamalla laitteita saat tietoa siitä, mitä ne ovat ja mitä niillä voi tehdä.
+The real BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) monday to friday from 9 AM to 4 PM. Reservation information and possible exceptions to opening hours can be found from [url=https://businessasema.com/fablab/]FabLab's website[/url].","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
 
-Todellinen FabLab sijaitsee osoitteessa Hallituskatu 36, Oulu.","Du har kommit till Uleåborgs BusinessAsemas virtuella FabLab.
+FabLab on digitaalisen pienvalmistuksen työtila, joka tarjoaa mahdollisuudet tehdä ja valmistaa melkein mitä vain! Voit käyttää FabLabin tiloja ja laitteita maksutta. FabLabin henkilökunta opastaa laitteiden käytössä, mutta varsinaisen valmistuksen hoidat itsenäisesti.
+
+Liiku tässä virtuaaliympäristössä WASD-näppäimillä ja hiirellä. Klikkaamalla eri laitteita opit, mitä ne ovat ja mitä niillä voi tehdä.
+
+Todellinen BusinessAsema FabLab sijaitsee osoitteessa Hallituskatu 36, Oulu. FabLab on auki ajanvarauksella ma-pe klo 9-16. Ajanvaraustiedot ja mahdolliset aukioloaikojen poikkeukset löytyvät [url=https://businessasema.com/fablab/]FabLabin websivuilta[/url].","Du har kommit till Uleåborgs BusinessAsemas virtuella FabLab.
 I denna virtuella miljö kan du utforska FabLabs faciliteter och utrustning.
 
 Rör dig i miljön med tangenterna W, S, A och D och musen. Klicka gärna på de olika enheterna för att lära dig vad de är och vad du kan göra med dem.
@@ -35,6 +37,19 @@ Den riktiga BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "ITEM_INFO_TITLE","Information","Tietoja","Information"
 "ITEM_INFO_3D_HELP","Spin the object by dragging the mouse in the window. Zoom with right mouse button.","Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.","ITEM_INFO_3D_HELP på svenska"
 "OBJECT_DOOR","Door","Ovi","Dörr"
+"DEV_GENERIC_NAME_3DSCANNER","3D Scanner","3D-skanneri","3D-skanner"
+"DEV_GENERIC_NAME_3DPRINTER","3D Printer","3D-tulostin","3D-skrivare"
+"DEV_GENERIC_NAME_3DPRINTER_RESIN","3D Printer (resin)","3D-tulostin (hartsi)","3D-skrivare (harts)"
+"DEV_GENERIC_NAME_3DPRINTER_FILAMENT","3D Printer (filament)","3D-tulostin (filamentti)","3D-skrivare (filament)"
+"DEV_GENERIC_NAME_UVLAMP","UV Lamp","UV-kovetuskaappi","UV-lampa"
+"DEV_GENERIC_NAME_VINYLCUTTER","Vinyl cutter","Vinyylileikkuri","Vinylskärare"
+"DEV_GENERIC_NAME_LASERCUTTER","Laser cutter","Laserleikkuri","Laserskärare"
+"DEV_GENERIC_NAME_EMBROIDERY","Embroidery machine","Brodeerauskone","Broderingsmaskin"
+"DEV_GENERIC_NAME_SOWING","Sowing machine","Ompelukone","Såmaskin"
+"DEV_GENERIC_NAME_OVERLOCKER","Overlocker","Saumuri","Överlockmaskin"
+"DEV_GENERIC_NAME_CNCMILL","CNC milling machine","CNC-jyrsin","CNC fräsmaskin"
+"DEV_GENERIC_NAME_PRECISIONMILL","Precision milling machine","Tarkkuusjyrsin","Precisionsfräsmaskin"
+"DEV_GENERIC_NAME_SANDBLASTER","Sand blaster","Hiekkapuhallin","Sandblåsare"
 "DEV_NAME_ELEGOO","ELEGOO Mars 2 MSLA","ELEGOO Mars 2 MSLA","ELEGOO Mars 2 MSLA"
 "DEV_NAME_ELNA","ELNA eXperience 520 S","ELNA eXperience 520 S","ELNA eXperience 520 S"
 "DEV_NAME_ENDER","Ender-3 V2 Neo","Ender-3 V2 Neo","Ender-3 V2 Neo"

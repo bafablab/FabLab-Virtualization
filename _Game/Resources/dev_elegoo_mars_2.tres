@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "DEV_NAME_ELEGOO"
+generic_name = "DEV_GENERIC_NAME_3DPRINTER_RESIN"
 info_text = "DEV_DESC_ELEGOO"
 details_text = "DEV_DETAILS_ELEGOO"
 videos = [  ]

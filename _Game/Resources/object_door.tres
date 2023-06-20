@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "OBJECT_DOOR"
+generic_name = ""
 info_text = "OBJECT_DOOR"
 details_text = ""
 videos = [  ]
