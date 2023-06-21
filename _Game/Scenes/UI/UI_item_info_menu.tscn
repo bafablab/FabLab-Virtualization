@@ -58,6 +58,7 @@ __meta__ = {
 }
 
 [node name="Panel" parent="VBoxContainer/Panel/TabContainer" index="0"]
+margin_top = 38.0
 rect_min_size = Vector2( 300, 0 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
@@ -86,14 +87,14 @@ size_flags_vertical = 7
 
 [node name="Item3DView" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="0" instance=ExtResource( 3 )]
 margin_right = 492.0
-margin_bottom = 354.0
+margin_bottom = 360.0
 size_flags_horizontal = 7
 size_flags_vertical = 7
 
 [node name="Label" type="Label" parent="VBoxContainer/Panel/TabContainer/Item3DTab" index="1"]
-margin_top = 358.0
+margin_top = 364.0
 margin_right = 492.0
-margin_bottom = 381.0
+margin_bottom = 384.0
 size_flags_horizontal = 7
 size_flags_vertical = 5
 text = "ITEM_INFO_3D_HELP"

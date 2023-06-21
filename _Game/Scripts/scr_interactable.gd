@@ -66,6 +66,8 @@ func _ready():
 # this function is called when mouse or crosshair is over the interactable
 func enter_focus():
 	in_focus = true
+	# Update hover text strings in case the language was switched after init
+	update_hover_text()
 	hover_text.visible = true
 	play_animation()
 	if overlay_material:
@@ -87,7 +89,7 @@ func _input(_event):
 		if Input.is_action_just_pressed("mouse_click"):
 			# Reveal mouse pointer to interact with the menu
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			#print_debug("Clicked interactable!")
+			HUD.append_debugtext("Interactable clicked")
 			# initialize menu with interactable's information
 			menu.init(interactable)
 			# set in_focus false to prevent re-click when closing menu
@@ -99,6 +101,17 @@ func set_hover_text():
 	hover_text = hover_text_scene.instance()
 	self.add_child(hover_text)
 	
+	update_hover_text()
+	
+	# Set the position automatically if it's not specified manually in the node
+	if hover_text_position:
+		hover_text.transform.origin = hover_text_position.transform.origin
+	else:
+		hover_text.global_transform.origin.y += collision_shape.shape.extents.y + 0.2
+	hover_text.visible = false
+
+# Separate function for setting/changing the hover text strings because of clunky localization server
+func update_hover_text():
 	# If a device, show generic name, for items their specific name
 	if self.is_in_group(("Device")):
 		if interactable.generic_name:
@@ -107,12 +120,7 @@ func set_hover_text():
 			hover_text.text = "No generic name!"
 	# Other objects just show their name
 	else:
-		hover_text.text = interactable.name
-	if hover_text_position:
-		hover_text.transform.origin = hover_text_position.transform.origin
-	else:
-		hover_text.global_transform.origin.y += collision_shape.shape.extents.y + 0.2
-	hover_text.visible = false
+		hover_text.text = tr(interactable.name)
 	
 func play_animation():
 	animation = get_node_or_null("AnimationPlayer")

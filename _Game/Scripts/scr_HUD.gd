@@ -11,6 +11,15 @@ func _ready():
 #func _process(delta):
 #	pass
 
+func _input(event):
+		# Toggles debug text visibility
+	if Input.is_action_just_pressed("toggle_debug"):
+		toggle_debug()
+		
+	# Toggle whole HUD visibility
+	if Input.is_action_just_pressed("toggle_hud"):
+		toggle_hud()
+
 # Toggle HUD visibility
 func toggle_hud():
 	if $TaskText.visible && $HelpText.visible:

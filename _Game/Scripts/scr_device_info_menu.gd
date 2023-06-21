@@ -9,7 +9,6 @@ onready var device_name_label = $VBoxContainer/Panel/NameLabel
 onready var intro_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
 onready var details_text = $VBoxContainer/Panel/TabContainer/Panel2/InfoText
 onready var item_list = $VBoxContainer/Panel/TabContainer/Panel/HBoxContainer
-onready var HUD = $"../HUD"
 var item_menu
 #var video_tab
 var device
@@ -25,17 +24,18 @@ func init(dev):
 	tab_container.set_tab_title(0, "DEV_MENU_INFO")
 	tab_container.set_tab_title(1, "DEV_MENU_DETAILS")
 	item_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
-	#print_debug(("Device menu visible"))
 	
 	# tr() funktio hakee käännöksen translation-tiedostosta
 	# attribuutti bbcode_text mahdollistaa rikkaamman tekstin näytön (esim lihavointi)
 	intro_text.bbcode_text = tr(device.info_text)
 	details_text.bbcode_text = tr(device.details_text)
 	self.visible = true
+	
 	# set_input_as_handled()
 	# consumes the event so it is not triggered in other
 	# scripts, for example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
+	
 	# clear video menu so that previous device's videos are not shown on it
 #	clear_video_menu()
 #	if len(device.videos) > 0:

@@ -14,7 +14,6 @@ func _ready():
 
 func change_language():
 	var group = button_finnish.group
-	
 	# match is similar to switch-case
 	match group.get_pressed_button().name:
 		"Button_Finnish":
@@ -23,6 +22,8 @@ func change_language():
 			TranslationServer.set_locale("sv")
 		"Button_English":
 			TranslationServer.set_locale("en")
+	# Call all nodes with troublesome texts and tell them to update their text fields
+	welcome_window.updatetexts()
 
 
 func _on_CheckBox_toggled(button_pressed):

@@ -61,6 +61,7 @@ bbcode_text = "WELCOME_TEXT"
 text = "WELCOME_TEXT"
 
 [node name="Button" type="Button" parent="VBoxContainer/Panel"]
+pause_mode = 2
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5

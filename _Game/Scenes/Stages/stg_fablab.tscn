@@ -57,6 +57,7 @@ script = ExtResource( 15 )
 [node name="UI_Crosshair" parent="." instance=ExtResource( 11 )]
 
 [node name="HUD" parent="." instance=ExtResource( 43 )]
+pause_mode = 2
 
 [node name="UI_DeviceInfoMenu" parent="." instance=ExtResource( 19 )]
 visible = false
@@ -65,6 +66,7 @@ visible = false
 visible = false
 
 [node name="UI_WelcomeWindow" parent="." instance=ExtResource( 44 )]
+pause_mode = 0
 
 [node name="UI_MainMenu" parent="." instance=ExtResource( 22 )]
 

@@ -51,18 +51,10 @@ func _input(event):
 	# Change mouse mode for debug. MOUSE_MODE_CAPTURED and MOUSE_MODE_VISIBLE - mouse_toggle currently "-"
 	if Input.is_action_just_pressed("mouse_toggle"):
 		toggle_mouse()
-		
-	# Toggles debug text visibility
-	if Input.is_action_just_pressed("toggle_debug"):
-		HUD.toggle_debug()
-		
-	# Toggle whole HUD visibility
-	if Input.is_action_just_pressed("toggle_hud"):
-		HUD.toggle_hud()
 
 
 func _process(_delta):
-	# disable player movement if any menu is visible
+	# disable player movement if any menu is visible and show mouse cursor
 	if (main_menu.visible or item_info_menu.visible or device_info_menu.visible or welcome_window.visible):
 		moving = false
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
