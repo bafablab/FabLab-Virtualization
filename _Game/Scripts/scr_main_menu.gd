@@ -5,6 +5,7 @@ onready var checkbox_inverty = $Panel/HBoxContainer/CheckBox
 onready var fps_controller = $"../FPSController"
 onready var firststart = true
 onready var welcome_window = $"../UI_WelcomeWindow"
+onready var HUD = $"../HUD"
 
 func _ready():
 	show()
@@ -46,9 +47,11 @@ func start_game():
 		$Panel/Button.text = "MAIN_MENU_CONTINUE"
 		welcome_window.show()
 	get_tree().paused = false
+	HUD.append_debugtext("Game resumed")
 	self.hide()
 
 func pause_game():
+	HUD.append_debugtext("Game paused")
 	self.show()
 	get_tree().paused = true
 

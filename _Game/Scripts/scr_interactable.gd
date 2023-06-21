@@ -102,9 +102,10 @@ func set_hover_text():
 	# If a device, show generic name, for items their specific name
 	if self.is_in_group(("Device")):
 		if interactable.generic_name:
-			hover_text.text = interactable.generic_name
+			hover_text.text = tr(interactable.generic_name) + "\n" + tr(interactable.name)
 		else:
 			hover_text.text = "No generic name!"
+	# Other objects just show their name
 	else:
 		hover_text.text = interactable.name
 	if hover_text_position:

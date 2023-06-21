@@ -18,7 +18,7 @@ func close():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	self.hide()
 	
-# Function for opening hyperlinks
+# Function for opening hyperlinks in other than HTML5-based exports
 func _on_RichTextLabel_meta_clicked(meta):
 	OS.shell_open(meta)
 

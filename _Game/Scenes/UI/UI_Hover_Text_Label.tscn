@@ -3,7 +3,7 @@
 [ext_resource path="res://_Game/UI/Themes/Fonts/OulunGraadi-Otsikko.otf" type="DynamicFontData" id=1]
 
 [sub_resource type="DynamicFont" id=3]
-size = 48
+size = 36
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
@@ -15,3 +15,4 @@ billboard = 1
 no_depth_test = true
 text = "text"
 font = SubResource( 3 )
+line_spacing = 20.0
