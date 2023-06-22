@@ -38,15 +38,14 @@ func _ready():
 	static_body.connect("mouse_entered", self, "enter_focus")
 	static_body.connect("mouse_exited", self, "exit_focus")	
 	
-	#   Find MeshInstance and add it to ItemInfo-resource and get highlight shader 
-	### TODO: FIX to not use MeshInstance
+	#   Find MeshInstance and add it to ItemInfo-resource so it can be shown in the 3d view
 	for child in get_children():
 		if child is MeshInstance:
-			overlay_material = child.get_material_overlay()
+			#overlay_material = child.get_material_overlay()
 			#if overlay_material == null:
 				#HUD.append_debugtext("No overlay material (highlight shader)")
-			child.set_material_overlay(null)
-			mesh_instance = child
+			#child.set_material_overlay(null)
+			#mesh_instance = child
 			if self.is_in_group("Item"):
 				interactable.mesh_instance = child
 			break
@@ -70,15 +69,15 @@ func enter_focus():
 	update_hover_text()
 	hover_text.visible = true
 	play_animation()
-	if overlay_material:
-		mesh_instance.set_material_overlay(overlay_material)	
-	else:
-		HUD.append_debugtext("Hovered object has no overlay material")
+#	if overlay_material:
+#		mesh_instance.set_material_overlay(overlay_material)	
+#	else:
+#		HUD.append_debugtext("Hovered object has no overlay material")
 
 # THis function is called when mouse or crosshair moves away from the interactable
 func exit_focus():
 	in_focus = false
-	mesh_instance.set_material_overlay(null)
+	#mesh_instance.set_material_overlay(null)
 	hover_text.visible = false
 
 
@@ -125,6 +124,5 @@ func update_hover_text():
 func play_animation():
 	animation = get_node_or_null("AnimationPlayer")
 	if animation:
-		print_debug("Animation detected!")
 		if interactable.animationNames:
 			$AnimationPlayer.play(interactable.animationNames[0])

@@ -285,5 +285,3 @@ environment = ExtResource( 3 )
 
 [node name="Mats_plywood_sheet_separated" parent="." instance=ExtResource( 39 )]
 transform = Transform( -0.0608977, 0.983993, -0.167477, 0.0087624, 0.168309, 0.985695, 0.998106, 0.0585591, -0.0188718, 5.59463, 0.345635, -22.5876 )
-
-[connection signal="body_entered" from="collision_test_object" to="collision_test_object" method="pickup_body_entered"]

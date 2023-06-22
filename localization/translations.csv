@@ -47,6 +47,7 @@ Den riktiga BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "DEV_GENERIC_NAME_EMBROIDERY","Embroidery machine","Brodeerauskone","Broderingsmaskin"
 "DEV_GENERIC_NAME_SOWING","Sowing machine","Ompelukone","Såmaskin"
 "DEV_GENERIC_NAME_OVERLOCKER","Overlocker","Saumuri","Överlockmaskin"
+"DEV_GENERIC_NAME_COVERSTITCH","Cover stitching machine","Peitetikkikone","Täcksömsmaskin"
 "DEV_GENERIC_NAME_CNCMILL","CNC milling machine","CNC-jyrsin","CNC fräsmaskin"
 "DEV_GENERIC_NAME_PRECISIONMILL","Precision milling machine","Tarkkuusjyrsin","Precisionsfräsmaskin"
 "DEV_GENERIC_NAME_SANDBLASTER","Sand blaster","Hiekkapuhallin","Sandblåsare"
@@ -64,11 +65,13 @@ Den riktiga BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "DEV_NAME_ROLAND_CAMM","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24"
 "DEV_NAME_SHINING3D","Shining3D Einstar","Shining3D Einstar","Shining3D Einstar"
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
-"DEV_DESC_ELEGOO","[b]3D resin printer[/b]
+"DEV_DESC_ELEGOO","[b]3D printer[/b]
 
-Print three-dimensional objects and shapes","[b]3D-resiinitulostin[/b]
+With a 3D printer you can literally print real three-dimensional objects.
+The object is designed with a 3d modeling program, converted into a printable form (”sliced”) and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.","[b]3D-tulostin[/b]
 
-Tee kolmiulotteisia esineitä ja muotoja eri materiaaleista","3D Resin printer desc"
+3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.","3D Resin printer desc"
 "DEV_DETAILS_ELEGOO","- 1 machine
 - printing material: resin
 - layer thickness 0.01-0.2 mm
@@ -96,7 +99,9 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoisee
 
 Precisely cut and engrave shapes with different materials","[b]Laserleikkuri[/b]
 
-Leikkaa muotoja tarkasti eri materiaaleihin","Laser cutter desc"
+Laserleikkuri on tehokas työkalu, joka käyttää keskittynyttä lasersädettä leikatakseen tai kaivertaakseen erilaisia materiaaleja, kuten puuta, akryylia, kumia, nahkaa ja huopaa.
+
+Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja erittäin tarkasti ja nopeasti, mikä tekee siitä suositun työkalun esimerkiksi käsityöharrastajille, mainosalan yrityksille, teollisuuteen sekä prototyyppien ja tuotantokappaleiden valmistukseen.","Laser cutter desc"
 "DEV_DETAILS_EPILOG","Printing directly from Inkscape software.
 
 - SVG file format

@@ -24,11 +24,12 @@ surfaces/0 = {
 "vertex_count": 229
 }
 
-[sub_resource type="BoxShape" id=3]
-extents = Vector3( 0.0593195, 0.100104, 0.096578 )
+[sub_resource type="CylinderShape" id=3]
+height = 0.07
+radius = 0.11
 
 [node name="mdl_mats_filament_roll_rigid" type="RigidBody" groups=["Draggable"]]
-collision_layer = 129
+collision_layer = 161
 collision_mask = 55
 contacts_reported = 5
 contact_monitor = true
@@ -41,4 +42,5 @@ mesh = SubResource( 2 )
 skeleton = NodePath("../..")
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
 shape = SubResource( 3 )
