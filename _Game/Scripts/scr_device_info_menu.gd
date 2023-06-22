@@ -27,8 +27,14 @@ func init(dev):
 	
 	# tr() funktio hakee käännöksen translation-tiedostosta
 	# attribuutti bbcode_text mahdollistaa rikkaamman tekstin näytön (esim lihavointi)
-	intro_text.bbcode_text = tr(device.info_text)
+	intro_text.bbcode_text = "[b]" + tr(device.generic_name) + "[/b]\n\n" + tr(device.info_text)
 	details_text.bbcode_text = tr(device.details_text)
+	
+	# Handle clicking hyperlinks in other than HTML5 versions of the game
+	if OS.get_name() != "HTML5":
+		$VBoxContainer/Panel/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+		$VBoxContainer/Panel/TabContainer/Panel2/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+	
 	self.visible = true
 	
 	# set_input_as_handled()
@@ -56,6 +62,10 @@ func exit_window():
 	self.visible = false
 	# set first tab active when menu is closed so next time it is opened it is on the first tab
 	tab_container.current_tab = 0
+
+# Function for opening hyperlinks in other than HTML5-based exports
+func _on_RichTextLabel_meta_clicked(meta):
+	OS.shell_open(meta)
 
 #func create_video_menu():
 #	video_tab = VBoxContainer.new()

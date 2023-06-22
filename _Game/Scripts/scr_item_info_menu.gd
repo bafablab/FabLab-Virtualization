@@ -21,6 +21,11 @@ func init(itm):
 	
 	# tr() is used when godot doesn't automatically detect translatable text
 	info_text.bbcode_text = tr(item.info_text)
+	
+	# Handle clicking hyperlinks in other than HTML5 versions of the game
+	if OS.get_name() != "HTML5":
+		$VBoxContainer/Panel/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+	
 	self.visible = true
 	
 	# Consumes the event so it is not triggered in other
@@ -35,6 +40,10 @@ func _input(event):
 			# Close the menu by clicking anywhere outside of it
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				exit_window()
+
+# Function for opening hyperlinks in other than HTML5-based exports
+func _on_RichTextLabel_meta_clicked(meta):
+	OS.shell_open(meta)
 
 func exit_window():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
