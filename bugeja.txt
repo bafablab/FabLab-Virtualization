@@ -1,2 +1,3 @@
 Tunnettuja bugeja:
 -Jos device info window tai item info window on auki, avataan main menu ja vaihdetaan kieltä, leipätekstit eivät muutu kielen mukaan, syynä RichTextLabel joka ei automaattisesti vaihda lokalisaatiota kuten normaalit Labelit ja muut UI-kontrollit
+-Kannettavat esineet törmäilevät vähän hassusti muihin objekteihin
