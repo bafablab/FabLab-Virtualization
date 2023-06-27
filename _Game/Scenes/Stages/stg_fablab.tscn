@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -40,10 +40,14 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_vinyl_cutter_skinned.tscn" type="PackedScene" id=38]
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_plywood_sheet_separated.tscn" type="PackedScene" id=39]
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_simple.tscn" type="PackedScene" id=40]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_obj_safe_cabinet.tscn" type="PackedScene" id=41]
 [ext_resource path="res://_Game/Scripts/scr_pickup.gd" type="Script" id=42]
 [ext_resource path="res://_Game/Scenes/UI/UI_HUD.tscn" type="PackedScene" id=43]
 [ext_resource path="res://_Game/Scenes/UI/UI_welcome_window.tscn" type="PackedScene" id=44]
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll_rigid.tscn" type="PackedScene" id=45]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_yellow_drawing_boards.tscn" type="PackedScene" id=46]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_table.tscn" type="PackedScene" id=47]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_cloth_hanger.tscn" type="PackedScene" id=48]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -257,6 +261,15 @@ transform = Transform( 0.347247, 0, -0.937774, 0, 1, 0, 0.937774, 0, 0.347247, 1
 [node name="mdl_dev_laser_cutter_ani" parent="stg_fablab" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50365, -0.00203678, -22.8161 )
 
+[node name="mdl_stg_fl_obj_metal_table" parent="stg_fablab" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.266, 0, -12.472 )
+
+[node name="mdl_stg_obj_safe_cabinet" parent="stg_fablab" instance=ExtResource( 41 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54, 0.0156662, -0.0117316 )
+
+[node name="mdl_stg_fl_obj_yellow_drawing_boards" parent="stg_fablab" instance=ExtResource( 46 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.473, 0.0156662, -0.00142872 )
+
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
 collision_layer = 2147483777
@@ -285,3 +298,6 @@ environment = ExtResource( 3 )
 
 [node name="Mats_plywood_sheet_separated" parent="." instance=ExtResource( 39 )]
 transform = Transform( -0.0608977, 0.983993, -0.167477, 0.0087624, 0.168309, 0.985695, 0.998106, 0.0585591, -0.0188718, 5.59463, 0.345635, -22.5876 )
+
+[node name="mdl_stg_fl_obj_cloth_hanger" parent="." instance=ExtResource( 48 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.252, 0, -12.53 )
