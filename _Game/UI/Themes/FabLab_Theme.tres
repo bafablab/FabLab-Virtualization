@@ -359,6 +359,7 @@ corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
+shadow_size = 2
 shadow_offset = Vector2( 2, 2 )
 
 [sub_resource type="Image" id=229]
@@ -506,14 +507,14 @@ border_color = Color( 0.901961, 0, 0.0156863, 1 )
 [sub_resource type="StyleBoxTexture" id=208]
 texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 16, 16 )
-margin_left = 10.0
-margin_right = 10.0
+margin_left = 15.0
+margin_right = 15.0
 
 [sub_resource type="StyleBoxTexture" id=209]
 texture = ExtResource( 6 )
 region_rect = Rect2( 0, 0, 16, 16 )
-margin_left = 10.0
-margin_right = 10.0
+margin_left = 15.0
+margin_right = 15.0
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )

@@ -4,11 +4,10 @@ export (String) var label_str
 #export (PackedScene) var videoplayer = preload("res://_Game/Scenes/UI/VideoPlayerScene.tscn")
 #var videoplayer_scene
 onready var menu_window = $VBoxContainer
-onready var tab_container = $VBoxContainer/Panel/TabContainer
-onready var device_name_label = $VBoxContainer/Panel/NameLabel
-onready var intro_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
-onready var details_text = $VBoxContainer/Panel/TabContainer/Panel2/InfoText
-onready var item_list = $VBoxContainer/Panel/TabContainer/Panel/HBoxContainer
+onready var tab_container = $VBoxContainer/TabContainer
+onready var intro_text = $VBoxContainer/TabContainer/Panel/InfoText
+onready var details_text = $VBoxContainer/TabContainer/Panel2/InfoText
+onready var item_list = $VBoxContainer/TabContainer/Panel/HBoxContainer
 var item_menu
 #var video_tab
 var device
@@ -20,7 +19,6 @@ var inFocus
 
 func init(dev):
 	device = dev
-	device_name_label.text = device.name
 	tab_container.set_tab_title(0, "DEV_MENU_INFO")
 	tab_container.set_tab_title(1, "DEV_MENU_DETAILS")
 	item_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
@@ -32,8 +30,8 @@ func init(dev):
 	
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":
-		$VBoxContainer/Panel/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
-		$VBoxContainer/Panel/TabContainer/Panel2/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+		intro_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+		details_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 	self.visible = true
 	
@@ -42,6 +40,10 @@ func init(dev):
 	# scripts, for example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
 	
+	# Create buttons for example items done with this device, if any
+	if len(device.example_items) > 0:
+		create_example_items()
+		
 	# clear video menu so that previous device's videos are not shown on it
 #	clear_video_menu()
 #	if len(device.videos) > 0:
@@ -88,17 +90,18 @@ func _on_RichTextLabel_meta_clicked(meta):
 #			var label = Label.new()
 #			label.text = tr(device.video_descriptions[i])
 #			video_tab.add_child(label)
-#
-#	# clear the example item before adding current device's example items
-#	for button in item_list.get_children():
-#		item_list.remove_child(button)
-#
-#	for item in device.example_items:
-#		# print_debug(item.name)
-#		var button = Button.new()
-#		button.text = item.name
-#		item_list.add_child(button)
-#		button.connect("pressed", self, "_item_button_pressed", [item])
+
+func create_example_items():
+	# clear the example item before adding current device's example items
+	for button in item_list.get_children():
+		item_list.remove_child(button)
+
+	for item in device.example_items:
+		# print_debug(item.name)
+		var button = Button.new()
+		button.text = item.name
+		item_list.add_child(button)
+		button.connect("pressed", self, "_item_button_pressed", [item])
 #
 #
 #func clear_video_menu():
