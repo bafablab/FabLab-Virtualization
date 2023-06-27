@@ -20,7 +20,7 @@ func init(itm):
 	tab_container.set_tab_title(1, "ITEM_INFO_3D_MODEL_TITLE")
 	
 	# tr() is used when godot doesn't automatically detect translatable text
-	info_text.bbcode_text = tr(item.info_text)
+	info_text.bbcode_text = "[b]" + tr(item.name) + "[/b]\n\n" + tr(item.info_text)
 	
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":

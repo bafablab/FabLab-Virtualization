@@ -27,7 +27,7 @@ func init(dev):
 	
 	# tr() funktio hakee käännöksen translation-tiedostosta
 	# attribuutti bbcode_text mahdollistaa rikkaamman tekstin näytön (esim lihavointi)
-	intro_text.bbcode_text = "[b]" + tr(device.generic_name) + "[/b]\n\n" + tr(device.info_text)
+	intro_text.bbcode_text = "[b]" + tr(device.generic_name) + "[/b] - [b]" + tr(device.name) + "[/b]\n\n" + tr(device.info_text)
 	details_text.bbcode_text = tr(device.details_text)
 	
 	# Handle clicking hyperlinks in other than HTML5 versions of the game

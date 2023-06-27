@@ -2,7 +2,7 @@
 
 [ext_resource path="res://_Game/UI/Themes/Fonts/segoeui.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://_Game/Scripts/scr_HUD.gd" type="Script" id=2]
-[ext_resource path="res://_Game/UI/Themes/FabLab_Theme_grey_backup.tres" type="Theme" id=3]
+[ext_resource path="res://_Game/UI/Themes/FabLab_Theme.tres" type="Theme" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24

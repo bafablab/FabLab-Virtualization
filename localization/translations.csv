@@ -4,7 +4,7 @@
 "MAIN_MENU_CONTINUE","Continue","Jatka","Fortsätta"
 "MAIN_MENU_REVERT_Y","Invert mouse Y-axis","Käännä hiiren Y-akseli","Vänd musens Y-axel"
 "MAIN_MENU_EXIT","Exit","Lopeta","Sluta"
-"DEV_MENU_DETAILS","Details","Tietoja","Information"
+"BUTTON_ClOSE","X","X","X"
 "WELCOME_HEADER","Welcome!","Tervetuloa!","Välkommen!"
 "WELCOME_TEXT","You have arrived to BusinessAsema Oulu’s virtual FabLab.
 
@@ -26,6 +26,7 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "WELCOME_BUTTON","Continue","Jatka","Fortsätta"
 "DEV_MENU_INFO","Description","Esittely","Beskrivning"
+"DEV_MENU_DETAILS","Details","Tietoja","Information"
 "DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
 "ITEM_NAME_OWL","Polygon Owl","Polygonipöllö","Polygon-uggla"
 "ITEM_NAME_FIREHAZARD","Fire hazard","Tulipalovaara","Brändrisk"
@@ -96,9 +97,11 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoisee
 Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
 "DEV_DETAILS_ENDER","- 3 machines available
 - Printing material: biodegradable PLA
+- Maximum print size 220 x 220 x 250 mm
 - Layer thickness 0.05-0.35 mm
 - Preferred file format .STL","- 3 kpl käytettävissä
 - Tulostusmateriaali: biohajoava PLA
+- Tulosteen maksimikoko 220 x 220 x 250 mm
 - Kerrospaksuus 0.05-0.35 mm
 - Suositeltu tiedostomuoto .STL",
 "DEV_DESC_EPILOG","A laser cutter is a powerful tool that uses a laser beam to cut or engrave a variety of materials such as wood, acrylic, rubber, leather and felt.
@@ -146,7 +149,7 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoisee
 - Layer thickness 0.01-0.30 mm
 - Preferred file format .stl","- Yksi tulostin FabLabilla
 - Tulostusmateriaali: hartsi/resiini
-- Tulosteen maksimimitat P33 x L18,5 x K40 cm
+- Tulosteen maksimikoko P33 x L18,5 x K40 cm
 - Kerrospaksuus 0,01-0,30 mm
 - Suositeltu tiedostomuoto .stl","Phrozen Sonic details"
 "DEV_DESC_RENSI","[b]CNC milling machine[/b]","[b]CNC-jyrsin[/b]","CNC mill desc"
@@ -195,12 +198,14 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoisee
 
 Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
 "DEV_DETAILS_SINDOH","- 3 machines at the FabLab
-- printing material: biodegradable PLA-plastic, ABS-plastic
-- smallest layer thickness 0.05 mm
-- preferred file format .stl","- FabLabilla 3 kpl
-- tulostusmateriaali: biohajoava PLA-muovi, ABS-muovi
-- kerrospaksuus 0.05-0.4 mm
-- suositeltu tiedostomuoto .stl",
+- Printing material: biodegradable PLA-plastic, ABS-plastic
+- Maximum print size 210 × 200 × 189 mm
+- Smallest layer thickness 0.05 mm
+- Preferred file format .stl","- FabLabilla 3 kpl
+- Tulostusmateriaali: biohajoava PLA-muovi, ABS-muovi
+- Tulosteen maksimikoko 210 × 200 × 189 mm
+- Kerrospaksuus 0.05-0.4 mm
+- Suositeltu tiedostomuoto .stl",
 "DEV_VIDEO_TITLE_1","Ski video","Hiihtovideo","Hiihtovideo ruotsi"
 "DEV_VIDEO_DESC_1","Man flies over a bus","Mies hiihtää bussin yli","Mies lentää ruotsi"
 "DEV_VIDEO_TITLE_2","Video number 2","Video numero 2","Video nummer 2"
