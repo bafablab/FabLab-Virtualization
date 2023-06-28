@@ -5,22 +5,32 @@ onready var menu_window = $VBoxContainer
 onready var tab_container = $VBoxContainer/TabContainer
 #onready var item_name_label = $VBoxContainer/Panel/NameLabel
 onready var info_text = $VBoxContainer/TabContainer/Panel/InfoText
+onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 var item
 var inFocus
-onready var item_3d_view = $VBoxContainer/TabContainer/Item3DTab/Item3DView
+var wasCalledFromDeviceMenu = false
+onready var item_3d_view = $VBoxContainer/TabContainer/Panel/Item3DView
 
 # Called when the node enters the scene tree for the first time.
 #func _ready():
 	
 
 func init(itm):
+	
+	# This window was opened from a device info window, hide it and show it again after closing
+	if device_info_menu.visible:
+		wasCalledFromDeviceMenu = true
+		device_info_menu.hide()
+	
 	item = itm
 	#item_name_label.text = item.name
 	tab_container.set_tab_title(0, "ITEM_INFO_TITLE")
-	tab_container.set_tab_title(1, "ITEM_INFO_3D_MODEL_TITLE")
 	
 	# tr() is used when godot doesn't automatically detect translatable text
 	info_text.bbcode_text = "[b]" + tr(item.name) + "[/b]\n\n" + tr(item.info_text)
+	
+	# Initialize the object 3d view
+	item_3d_view.init(item.mesh_instance)
 	
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":
@@ -48,9 +58,8 @@ func _on_RichTextLabel_meta_clicked(meta):
 func exit_window():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	self.visible = false
+	if wasCalledFromDeviceMenu:
+		device_info_menu.show()
+		wasCalledFromDeviceMenu = false
 	# set first tab active when menu is closed so next time it is opened it is on the first tab
-	tab_container.current_tab = 0
-
-func _on_TabContainer_tab_selected(tab):
-	if tab == 1:
-		item_3d_view.init(item.mesh_instance)
+	#tab_container.current_tab = 0

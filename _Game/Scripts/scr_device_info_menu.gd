@@ -7,6 +7,7 @@ onready var menu_window = $VBoxContainer
 onready var tab_container = $VBoxContainer/TabContainer
 onready var intro_text = $VBoxContainer/TabContainer/Panel/InfoText
 onready var details_text = $VBoxContainer/TabContainer/Panel2/InfoText
+onready var example_text = $VBoxContainer/TabContainer/Panel/ExampleText
 onready var item_list = $VBoxContainer/TabContainer/Panel/HBoxContainer
 var item_menu
 #var video_tab
@@ -40,9 +41,12 @@ func init(dev):
 	# scripts, for example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
 	
-	# Create buttons for example items done with this device, if any
+	# Create buttons for example items done with this device, if any and show "example products"-text
 	if len(device.example_items) > 0:
+		example_text.bbcode_text = "[b]" + tr("DEV_MENU_EXAMPLES") + "[/b]"
 		create_example_items()
+	else:
+		example_text.bbcode_text = ""
 		
 	# clear video menu so that previous device's videos are not shown on it
 #	clear_video_menu()
@@ -69,6 +73,23 @@ func exit_window():
 func _on_RichTextLabel_meta_clicked(meta):
 	OS.shell_open(meta)
 
+func create_example_items():
+	# clear the example item before adding current device's example items
+	for button in item_list.get_children():
+		item_list.remove_child(button)
+
+	for item in device.example_items:
+		# print_debug(item.name)
+		var button = Button.new()
+		button.text = " " + tr(item.name) + " "
+		item_list.add_child(button)
+		button.connect("pressed", self, "_item_button_pressed", [item])
+
+# open item info window and initialize with the selected example item
+func _item_button_pressed(item):
+	# TODO: Hide self and somehow show self again when Item info window is closed
+	item_menu.init(item)
+
 #func create_video_menu():
 #	video_tab = VBoxContainer.new()
 #	tab_container.add_child(video_tab)
@@ -90,18 +111,6 @@ func _on_RichTextLabel_meta_clicked(meta):
 #			var label = Label.new()
 #			label.text = tr(device.video_descriptions[i])
 #			video_tab.add_child(label)
-
-func create_example_items():
-	# clear the example item before adding current device's example items
-	for button in item_list.get_children():
-		item_list.remove_child(button)
-
-	for item in device.example_items:
-		# print_debug(item.name)
-		var button = Button.new()
-		button.text = item.name
-		item_list.add_child(button)
-		button.connect("pressed", self, "_item_button_pressed", [item])
 #
 #
 #func clear_video_menu():
@@ -124,7 +133,3 @@ func create_example_items():
 #	videoplayer_scene = videoplayer.instance()
 #	videoplayer_scene.init(device, video_number, self)
 #	self.add_child(videoplayer_scene)
-
-# open item menu and initialize it with 
-func _item_button_pressed(item):
-	item_menu.init(item)

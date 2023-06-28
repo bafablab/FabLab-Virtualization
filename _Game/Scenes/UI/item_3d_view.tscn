@@ -3,6 +3,8 @@
 [ext_resource path="res://_Game/Scripts/scr_item_3d_view.gd" type="Script" id=3]
 
 [sub_resource type="Environment" id=2]
+background_mode = 1
+background_color = Color( 0.176471, 0.176471, 0.176471, 1 )
 ambient_light_color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="World" id=1]
@@ -14,7 +16,7 @@ margin_bottom = 40.0
 script = ExtResource( 3 )
 
 [node name="Viewport" type="Viewport" parent="."]
-size = Vector2( 490, 354 )
+size = Vector2( 480, 320 )
 own_world = true
 world = SubResource( 1 )
 handle_input_locally = false

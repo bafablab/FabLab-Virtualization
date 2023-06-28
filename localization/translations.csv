@@ -26,17 +26,24 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "WELCOME_BUTTON","Continue","Jatka","Fortsätta"
 "DEV_MENU_INFO","Description","Esittely","Beskrivning"
-"DEV_MENU_DETAILS","Details","Tietoja","Information"
+"DEV_MENU_DETAILS","Technical specifications","Tekniset tiedot","Tekniska information"
+"DEV_MENU_EXAMPLES","Example products:","Esimerkkituotteita:","Exempelprodukter:"
 "DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
 "ITEM_NAME_OWL","Polygon Owl","Polygonipöllö","Polygon-uggla"
 "ITEM_NAME_FIREHAZARD","Fire hazard","Tulipalovaara","Brändrisk"
 "ITEM_NAME_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
-"ITEM_DESC_OWL","3D-printed owl","3D-tulostettu pöllö","3D-utskriven uggla"
+"ITEM_DESC_OWL","- 3D-printed
+- Material: PLA-filament, 140 grams
+- Material cost: 0,70 €
+- Print time: 5 hours","- 3D-tulostettu pöllö
+- Materiaali: PLA-filamentti, 140 grammaa
+- Materiaalikulut: 0,70 €
+- Tulostusaika: 5 tuntia","3D-utskriven uggla"
 "ITEM_DESC_FIREHAZARD","Laser Cutter, fire hazard!","Laserleikkuri, palovaara!","Laserskärare, brandrisk!"
 "ITEM_DESC_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
 "ITEM_INFO_3D_MODEL_TITLE","3D-Model","3D-malli","3D-modell"
 "ITEM_INFO_TITLE","Information","Tietoja","Information"
-"ITEM_INFO_3D_HELP","Spin the object by dragging the mouse in the window. Zoom with right mouse button.","Pyöritä kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.","ITEM_INFO_3D_HELP på svenska"
+"ITEM_INFO_3D_HELP","You can rotate the object by dragging the mouse in the window. Zoom with right mouse button.","Voit pyörittää kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.","ITEM_INFO_3D_HELP på svenska"
 "OBJECT_DOOR","Door","Ovi","Dörr"
 "DEV_GENERIC_NAME_3DSCANNER","3D Scanner","3D-skanneri","3D-skanner"
 "DEV_GENERIC_NAME_3DPRINTER","3D Printer","3D-tulostin","3D-skrivare"
