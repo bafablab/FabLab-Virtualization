@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://_Game/Models/mats_vinyl_roll_holders/mat_mats_vinyl_roll_holders.tres" type="Material" id=1]
+[ext_resource path="res://_Game/Models/mats_vinyl_roll_holders/mdl_mats_vinyl_roll_holders.glb" type="PackedScene" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.790798, 0.889825, 0.105768 )
+
+[node name="mdl_mats_vinyl_roll_holders" instance=ExtResource( 2 )]
+
+[node name="mdl_mats_vinyl_roll_holders" parent="." index="0"]
+material/0 = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0282398, 0.93262, 0.174625 )
+shape = SubResource( 1 )
