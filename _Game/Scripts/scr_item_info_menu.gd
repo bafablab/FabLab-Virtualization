@@ -2,12 +2,12 @@ extends Control
 
 export (String) var label_str
 onready var menu_window = $VBoxContainer
-onready var tab_container = $VBoxContainer/Panel/TabContainer
-onready var item_name_label = $VBoxContainer/Panel/NameLabel
-onready var info_text = $VBoxContainer/Panel/TabContainer/Panel/InfoText
+onready var tab_container = $VBoxContainer/TabContainer
+#onready var item_name_label = $VBoxContainer/Panel/NameLabel
+onready var info_text = $VBoxContainer/TabContainer/Panel/InfoText
 var item
 var inFocus
-onready var item_3d_view = $VBoxContainer/Panel/TabContainer/Item3DTab/Item3DView
+onready var item_3d_view = $VBoxContainer/TabContainer/Item3DTab/Item3DView
 
 # Called when the node enters the scene tree for the first time.
 #func _ready():
@@ -15,7 +15,7 @@ onready var item_3d_view = $VBoxContainer/Panel/TabContainer/Item3DTab/Item3DVie
 
 func init(itm):
 	item = itm
-	item_name_label.text = item.name
+	#item_name_label.text = item.name
 	tab_container.set_tab_title(0, "ITEM_INFO_TITLE")
 	tab_container.set_tab_title(1, "ITEM_INFO_3D_MODEL_TITLE")
 	
@@ -24,7 +24,7 @@ func init(itm):
 	
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":
-		$VBoxContainer/Panel/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+		$VBoxContainer/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 	self.visible = true
 	

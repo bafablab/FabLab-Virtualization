@@ -116,8 +116,8 @@ func _physics_process(delta):
 				#draggable_object.mode = RigidBody.MODE_RIGID
 				#draggable_object.collision_mask = 1
 				#draggable_object.set_collision_layer_bit(0, true)
-				var direction = self.get_transform().basis.z
-				draggable_object.add_central_force(direction * -200)
+				var throwdirection = self.get_transform().basis.z
+				draggable_object.add_central_force(throwdirection * -200)
 				dragging = false
 				draggable = false
 			
