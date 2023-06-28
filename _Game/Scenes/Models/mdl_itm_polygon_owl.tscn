@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://_Game/Shaders/pixel_perfect_outline3D.shader" type="Shader" id=1]
-[ext_resource path="res://_Game/Models/itm_polygon_owl/mdl_itm_polygon_owl.mesh" type="ArrayMesh" id=2]
+[ext_resource path="res://_Game/Models/itm_polygon_owl/mdl_itm_polygon_owl_mdl.mesh" type="ArrayMesh" id=2]
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=3]
 [ext_resource path="res://_Game/Resources/itm_polygon_owl.tres" type="Resource" id=4]
 
@@ -18,7 +18,6 @@ script = ExtResource( 3 )
 interactable = ExtResource( 4 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.105877, 0 )
 material_overlay = SubResource( 2 )
 cast_shadow = 0
 mesh = ExtResource( 2 )
