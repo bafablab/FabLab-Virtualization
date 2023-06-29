@@ -22,17 +22,17 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -400.0
-margin_top = -250.0
+margin_top = -240.0
 margin_right = 400.0
-margin_bottom = 250.0
+margin_bottom = 240.0
 rect_min_size = Vector2( 300, 0 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
 
 [node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
 margin_right = 800.0
-margin_bottom = 500.0
-rect_min_size = Vector2( 500, 500 )
+margin_bottom = 480.0
+rect_min_size = Vector2( 500, 400 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
@@ -41,18 +41,19 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 30.0
-rect_min_size = Vector2( 500, 470 )
+margin_bottom = -20.0
+rect_min_size = Vector2( 500, 450 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
 
 [node name="InfoText" type="RichTextLabel" parent="VBoxContainer/TabContainer/Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 10.0
+margin_left = 20.0
 margin_top = 20.0
-margin_right = -490.0
-margin_bottom = -50.0
-rect_min_size = Vector2( 300, 400 )
+margin_right = -500.0
+margin_bottom = -110.0
+rect_min_size = Vector2( 200, 200 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
 bbcode_enabled = true
@@ -68,14 +69,19 @@ size_flags_horizontal = 7
 size_flags_vertical = 7
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Panel"]
-margin_left = 310.0
-margin_top = 350.0
-margin_right = 790.0
-margin_bottom = 410.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -300.0
+margin_top = 125.0
+margin_right = 300.0
+margin_bottom = 175.0
 rect_min_size = Vector2( 480, 0 )
 size_flags_horizontal = 7
 size_flags_vertical = 5
 text = "ITEM_INFO_3D_HELP"
+align = 1
 autowrap = true
 
 [node name="CloseButton" type="Button" parent="VBoxContainer/TabContainer/Panel"]

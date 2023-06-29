@@ -31,5 +31,5 @@ transform = Transform( 0.810502, 0, -0.585736, 0, 1, 0, 0.585736, 0, 0.810502, 0
 [node name="MeshInstance" type="MeshInstance" parent="Viewport/Spatial/Item"]
 
 [node name="Camera" type="Camera" parent="Viewport/Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.92317 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
 near = 0.01
