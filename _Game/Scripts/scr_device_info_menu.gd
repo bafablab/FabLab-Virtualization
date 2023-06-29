@@ -47,6 +47,9 @@ func init(dev):
 		create_example_items()
 	else:
 		example_text.bbcode_text = ""
+		# Clear any previous example items shown
+		for button in item_list.get_children():
+			item_list.remove_child(button)
 		
 	# clear video menu so that previous device's videos are not shown on it
 #	clear_video_menu()
