@@ -43,7 +43,9 @@ BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "ITEM_DESC_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
 "ITEM_INFO_3D_MODEL_TITLE","3D-Model","3D-malli","3D-modell"
 "ITEM_INFO_TITLE","Information","Tietoja","Information"
-"ITEM_INFO_3D_HELP","You can rotate the object by dragging the mouse in the window. Zoom with right mouse button.","Voit pyörittää kappaletta raahaamalla hiirtä ikkunassa. Zoomaa oikealla napilla.","ITEM_INFO_3D_HELP på svenska"
+"ITEM_INFO_3D_HELP","You can rotate the object by clicking and dragging the mouse in the window.
+Right button or mouse wheel zooms, middle button moves the object.","Voit pyörittää kappaletta klikkaamalla ja raahaamalla hiirtä ikkunassa.
+Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta.","ITEM_INFO_3D_HELP på svenska"
 "OBJECT_DOOR","Door","Ovi","Dörr"
 "DEV_GENERIC_NAME_3DSCANNER","3D Scanner","3D-skanneri","3D-skanner"
 "DEV_GENERIC_NAME_3DPRINTER","3D Printer","3D-tulostin","3D-skrivare"

@@ -26,7 +26,6 @@ render_target_update_mode = 3
 [node name="Spatial" type="Spatial" parent="Viewport"]
 
 [node name="Item" type="Spatial" parent="Viewport/Spatial"]
-transform = Transform( 0.810502, 0, -0.585736, 0, 1, 0, 0.585736, 0, 0.810502, 0, 0, 0 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Viewport/Spatial/Item"]
 
