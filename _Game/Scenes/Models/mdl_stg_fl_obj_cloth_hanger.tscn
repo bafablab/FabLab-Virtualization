@@ -9,6 +9,7 @@ extents = Vector3( 0.348688, 0.357642, 0.111071 )
 [node name="mdl_stg_fl_obj_cloth_hanger" instance=ExtResource( 2 )]
 
 [node name="mdl_cloth_hanger" parent="." index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 material/0 = ExtResource( 1 )
 
 [node name="StaticBody" type="StaticBody" parent="." index="1"]

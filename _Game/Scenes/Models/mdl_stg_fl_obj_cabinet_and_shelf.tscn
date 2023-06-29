@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_Game/Models/stg_fl_obj_cabinet_and_shelf/mat_stg_fl_obj_cabinet_and_shelf.tres" type="Material" id=1]
+[ext_resource path="res://_Game/Models/stg_fl_obj_cabinet_and_shelf/stg_fl_obj_cabinet_and_shelf.glb" type="PackedScene" id=2]
+
+[node name="mdl_stg_fl_obj_cabinet_and_shelf" instance=ExtResource( 2 )]
+
+[node name="mdl" parent="." index="0"]
+material/0 = ExtResource( 1 )
