@@ -82,7 +82,6 @@ func create_example_items():
 		item_list.remove_child(button)
 
 	for item in device.example_items:
-		# print_debug(item.name)
 		var button = Button.new()
 		button.text = " " + tr(item.name) + " "
 		item_list.add_child(button)
@@ -90,7 +89,6 @@ func create_example_items():
 
 # open item info window and initialize with the selected example item
 func _item_button_pressed(item):
-	# TODO: Hide self and somehow show self again when Item info window is closed
 	item_menu.init(item)
 
 #func create_video_menu():

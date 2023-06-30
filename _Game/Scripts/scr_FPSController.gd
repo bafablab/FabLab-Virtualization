@@ -1,9 +1,9 @@
 extends KinematicBody
 
 # These variables are from the FPSController tutorial
-var speed = 10
-var h_acceleration = 6
-var gravity = 20
+export var speed = 10
+export var h_acceleration = 6
+export var gravity = 20
 var jump = 10
 var full_contact = false
 var direction = Vector3()
@@ -116,8 +116,9 @@ func _physics_process(delta):
 				#draggable_object.mode = RigidBody.MODE_RIGID
 				#draggable_object.collision_mask = 1
 				#draggable_object.set_collision_layer_bit(0, true)
+				HUD.append_debugtext("Throwing object")
 				var throwdirection = self.get_transform().basis.z
-				draggable_object.add_central_force(throwdirection * -200)
+				draggable_object.add_central_force(throwdirection * -500)
 				dragging = false
 				draggable = false
 			

@@ -4,19 +4,19 @@
 [ext_resource path="res://_Game/Models/stg_fablab/Materials/mat_fablab_hull_dif.tres" type="Material" id=2]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 7.83, 0.037, 12.233 )
+extents = Vector3( 7.83, 0.266367, 12.233 )
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 5.12464, 1, 0.1 )
+extents = Vector3( 5.12464, 1.77024, 0.1 )
 
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.1, 1.75855, 6.18299 )
 
 [sub_resource type="BoxShape" id=4]
-extents = Vector3( 0.0336081, 1.44934, 6.51317 )
+extents = Vector3( 0.0336081, 1.84021, 6.51317 )
 
 [sub_resource type="BoxShape" id=5]
-extents = Vector3( 1.6, 1.8, 0.2 )
+extents = Vector3( 1.6, 2.03886, 0.2 )
 
 [sub_resource type="BoxShape" id=6]
 extents = Vector3( 2.09012, 2.19081, 1.8971 )
@@ -28,7 +28,7 @@ extents = Vector3( 3.17019, 2.20099, 0.106308 )
 extents = Vector3( 6.56119, 2.09226, 0.0597285 )
 
 [sub_resource type="BoxShape" id=10]
-extents = Vector3( 6.04939, 1.56437, 0.277829 )
+extents = Vector3( 6.04939, 1.89071, 0.277829 )
 
 [sub_resource type="BoxShape" id=8]
 extents = Vector3( 2.96321, 1.5809, 0.0599842 )
@@ -49,14 +49,14 @@ material/2 = ExtResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.64599, 0, -11.4586 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/StaticBody" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0236983, -0.464375 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, -0.464 )
 shape = SubResource( 1 )
 
 [node name="wall_1" type="StaticBody" parent="Collisions" index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4, 1.4, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/wall_1" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.160226, 0, 0.0533583 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.160226, 0.253711, 0.0533583 )
 shape = SubResource( 2 )
 
 [node name="wall_2" type="StaticBody" parent="Collisions" index="2"]
@@ -70,7 +70,7 @@ shape = SubResource( 3 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.05864, 1.61443, -6.16298 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/wall_3" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.266375, -0.150754, 0.0639687 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.266375, 0.0454307, 0.0639687 )
 shape = SubResource( 4 )
 
 [node name="wall_4" type="StaticBody" parent="Collisions" index="4"]
@@ -84,7 +84,7 @@ shape = SubResource( 5 )
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.43515, 1.2, -13.3049 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/wall_5" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0999999, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0999994, 0.346108, 0 )
 shape = SubResource( 5 )
 
 [node name="wall_6" type="StaticBody" parent="Collisions" index="6"]
