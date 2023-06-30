@@ -77,7 +77,7 @@ shape = SubResource( 4 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6, 1.2, -12 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/wall_4" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0999999, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0999999, 0.279783, 0 )
 shape = SubResource( 5 )
 
 [node name="wall_5" type="StaticBody" parent="Collisions" index="5"]
