@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_door.gd" type="Script" id=1]
+[ext_resource path="res://_Game/Models/stg_fl_doors/mdl_stg_fl_door_fl_narrow_ani.glb" type="PackedScene" id=2]
+[ext_resource path="res://_Game/Models/stg_fl_doors/mat_stg_fl_doors.tres" type="Material" id=3]
+[ext_resource path="res://_Game/Resources/object_door.tres" type="Resource" id=4]
+[ext_resource path="res://_Game/Models/stg_fl_doors/animation_edits/01_open_door.anim" type="Animation" id=5]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("StaticBody:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("HoverTextPosition:translation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -1.30793, 1.49649, -17.7804 ) ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.410399, 1.0978, 0.0317581 )
+
+[node name="mdl_stg_fl_door_fl_narrow_ani" groups=["Device", "Door"] instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+interactable = ExtResource( 4 )
+
+[node name="mdl2" parent="Armature/Skeleton" index="0"]
+material/0 = ExtResource( 3 )
+
+[node name="AnimationPlayer" parent="." index="1"]
+anims/01_open_door = ExtResource( 5 )
+anims/RESET = SubResource( 2 )
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimationPlayer" index="0"]
+tree_root = SubResource( 3 )
+anim_player = NodePath("..")
+
+[node name="StaticBody" type="StaticBody" parent="." index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74848, 0.010914, -17.8085 )
+collision_layer = 17
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.44952, 1.00684, -0.0206013 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="3"]
+
+[node name="HoverTextPosition" type="Spatial" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.30793, 1.49649, -17.7804 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

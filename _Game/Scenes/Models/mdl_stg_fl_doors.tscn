@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_Game/Models/stg_fl_doors/mat_stg_fl_doors.tres" type="Material" id=1]
+[ext_resource path="res://_Game/Models/stg_fl_doors/mdl_stg_fl_doors.glb" type="PackedScene" id=2]
+
+[node name="mdl_stg_fl_doors" instance=ExtResource( 2 )]
+
+[node name="mdl" parent="." index="0"]
+material/0 = ExtResource( 1 )
