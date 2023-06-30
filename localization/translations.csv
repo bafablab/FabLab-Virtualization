@@ -26,7 +26,7 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "WELCOME_BUTTON","Continue","Jatka","Fortsätta"
 "DEV_MENU_INFO","Description","Esittely","Beskrivning"
-"DEV_MENU_DETAILS","Technical specifications","Tekniset tiedot","Tekniska information"
+"DEV_MENU_DETAILS","Technical information","Tekniset tiedot","Tekniska information"
 "DEV_MENU_EXAMPLES","Example products:","Esimerkkituotteita:","Exempelprodukter:"
 "DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
 "ITEM_NAME_OWL","Polygon Owl","Polygonipöllö","Polygon-uggla"
@@ -77,11 +77,11 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
 "DEV_DESC_ELEGOO","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted into a printable form (”sliced”) and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A 3D resin printer uses light from an LCD display to cure liquid resin layer by layer in a process called stereolithography. Resin prints are very highly detailed, but the printing area is usually quite small and the printing time long. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä stereolitografia. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
 "DEV_DETAILS_ELEGOO","- 1 machine available
@@ -97,11 +97,11 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoisee
 "DEV_DETAILS_ELNA","Elna details","Elna tiedot","Sowing machine details"
 "DEV_DESC_ENDER","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted into a printable form (”sliced”) and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
 "DEV_DETAILS_ENDER","- 3 machines available
@@ -145,14 +145,14 @@ Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja
 "DEV_DETAILS_PHROZEN_CURE","- Inner measurements: 29.5 x 29.5 x 45 cm","- Sisätilamitat: 29.5 x 29.5 x 45 cm","UV lamp details"
 "DEV_DESC_PHROZEN_SONIC","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted into a printable form (”sliced”) and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A resin printer uses light from an LCD display to cure liquid resin layer by layer in a process called stereolithography. The resulting print is highly detailed, but the print time is usually longer than with filament depositing 3D-printers. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä stereolitografia. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
-"DEV_DETAILS_PHROZEN_SONIC","- One machine at the FabLab
+"DEV_DETAILS_PHROZEN_SONIC","- One available at the FabLab
 - Printing material: resin
 - Maximum print size L33 x W18.5 x H40 cm
 - Layer thickness 0.01-0.30 mm
@@ -165,45 +165,62 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoisee
 "DEV_DETAILS_RENSI","Machining area 900×700 mm
 
 Materials:
-- wood
-- plastic","Työstöalue 900×700 mm
+- Wood
+- Plastic","Työstöalue 900×700 mm
 
 Materiaalit:
-- puu
-- muovi","CNC details"
+- Puu
+- Muovi","CNC details SWE"
 "DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
-Tarra tai painatus suunnitellaan tietokoneella vektorigrafiikkaohjelmalla (esim. Inkscape).","Vinyl cutter desc"
-"DEV_DETAILS_ROLAND_CAMM","- machining area width ca. 610 mm
-- printing using either Roland Cut Studio or Inkscape software
+Tarra tai painatus suunnitellaan tietokoneella vektorigrafiikkaohjelmalla (esim. Inkscape).","Vinyl cutter desc SWE"
+"DEV_DETAILS_ROLAND_CAMM","- Working area width ca. 610 mm
+- Printing using either Roland Cut Studio or Inkscape software
 - SVG or CV file formats
+- Recognizes crop marks for precise alignment
 
 Materials available at BusinessAsema:
 
-- vinyls in different colours
-- heat transfer vinyl white/black/red
-- sand blasting mask","- työstöalueen leveys n. 610 mm
-- tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
+- Vinyls in different colours
+- Heat transfer vinyl in white/black/red
+- Sand blasting mask","- Työstöalueen leveys n. 610 mm
+- Tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
 - SVG tai CV -tiedostomuodot
+- Tunnistaa paikannusmerkinnät
 
 FabLabilla saatavilla olevat materiaalit:
 
-- erivärisiä vinyylejä
-- kuumasiirtovinyyli valkoinen/musta/punainen
-- hiekkapuhallusmaski",
-"DEV_DESC_SHINING3D","Scanner for three-dimensional objects and shapes","Kolmiulotteisten esineiden skannaukseen","3D scanner desc"
-"DEV_DETAILS_SHINING3D","- 1 machine
-- built-in RGB color camera. 3D data with authentic colors.
-- supports multiple data format outputs, compatible with 3D printers and 3D design softwares.","- 1 kpl
-- sisäänrakennettu RGB-värikamera. 3D-dataa aidoilla väreillä.
-- tukee useita datamuotolähtöjä, jotka ovat yhteensopivia 3D-tulostimien ja
-3D-suunnitteluohjelmistojen kanssa.",
+- Erivärisiä vinyylejä
+- Kuumasiirtovinyyli valkoinen/musta/punainen
+- Hiekkapuhallusmaski","Details Roland SWE"
+"DEV_DESC_SHINING3D","With this handheld scanner you can scan any three dimensional object, space or even people into a computer.
+
+With the help of its cameras and infrared lights the scanner creates an accurate 3D model of the subject. Thanks to its color camera the texture and colors of the subject are also captured.
+
+With a 3D-scanner and a 3D printer you can create a three-dimensional copy of almost anything fairly easily. 3D scanning also enables the use of life-accurate three-dimensional human characters in virtual reality and game development.","Tällä kädessä pidettävällä skannerilla voit skannata tietokoneelle mitä tahansa kolmiulotteisia esineitä, tiloja tai jopa ihmisiä.
+
+Skanneri luo useiden kameroiden ja infrapunavalon avulla tarkan 3D-mallin skannattavasta kohteesta. Värikameran ansiosta myös kohteen pinnan tekstuuri ja väritys saadaan mukaan 3D-malliin.
+
+3D-skannerin avulla esimerkiksi jo olemassa olevien esineen kopioiminen 3D-tulosteeksi onnistuu helposti. 3D-skannaus mahdollistaa myös luonnollisten näköisten kolmiulotteisten ihmishahmojen hyödyntämisen esim. virtuaalitodellisuudessa ja pelinkehityksessä.","3D scanner desc SWE"
+"DEV_DETAILS_SHINING3D","- 1 scanner available at the FabLab
+- Must be tethered to a computer while scanning
+- 3 infrared projectors, two depth cameras, one RGB color camera
+- 0.1-3 mm point distance in scan data
+- 980,000 scanned points/s, up to 14 FPS
+- Scanning distance 160-1400mm
+- Supports multiple data format outputs (OBJ, STL, PLY, P3, 3MF), compatible with different 3D printers and 3D design softwares","- 1 kpl saatavilla Fablabilla
+- Pitää olla kytkettynä tietokoneeseen skannatessa
+- 3 infrapunaprojektoria, kaksi syvyyskameraa, yksi RGB-värikamera
+- 0,1-3 mm pisteväli skannausdatassa
+- 980 000 skannattua pistettä/s, jopa 14 ruutua sekunnissa
+- Skannausetäisyys 160-1400 mm
+- Tukee useita datamuotolähtöjä (OBJ, STL, PLY, P3, 3MF), jotka ovat yhteensopivia erilaisten 3D-tulostimien ja 3D-suunnitteluohjelmistojen kanssa","Details Shining SWE"
 "DEV_DESC_SINDOH","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted into a printable form (”sliced”) and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
 "DEV_DETAILS_SINDOH","- 3 machines at the FabLab
