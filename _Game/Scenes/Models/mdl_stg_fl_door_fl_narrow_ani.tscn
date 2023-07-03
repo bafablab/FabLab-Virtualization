@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_door.gd" type="Script" id=1]
 [ext_resource path="res://_Game/Models/stg_fl_doors/mdl_stg_fl_door_fl_narrow_ani.glb" type="PackedScene" id=2]
@@ -33,8 +33,6 @@ tracks/1/keys = {
 "values": [ Vector3( -1.30793, 1.49649, -17.7804 ) ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=3]
-
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.410399, 1.0978, 0.0317581 )
 
@@ -48,10 +46,6 @@ material/0 = ExtResource( 3 )
 [node name="AnimationPlayer" parent="." index="1"]
 anims/01_open_door = ExtResource( 5 )
 anims/RESET = SubResource( 2 )
-
-[node name="AnimationTree" type="AnimationTree" parent="AnimationPlayer" index="0"]
-tree_root = SubResource( 3 )
-anim_player = NodePath("..")
 
 [node name="StaticBody" type="StaticBody" parent="." index="2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74848, 0.010914, -17.8085 )
