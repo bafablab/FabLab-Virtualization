@@ -32,3 +32,10 @@ render_target_update_mode = 3
 [node name="Camera" type="Camera" parent="Viewport/Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
 near = 0.01
+
+[node name="NoInputTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="visibility_changed" from="." to="." method="_on_Item3DView_visibility_changed"]
+[connection signal="timeout" from="NoInputTimer" to="." method="_on_NoInputTimer_timeout"]

@@ -8,17 +8,22 @@ var min_camera_distance = 0.09 # Minimum camera distance from object
 var max_camera_distance = 0.5 # and maximum
 var max_camera_x = 0.25 # Limits to camera movement
 var max_camera_y = 0.25
+var default_basis = Basis()
+var input_allowed = false # Connected to a 0.5 sec timer to prevent accidental item rotation on opening 3d view
 
 func _ready():
 	pass
 
 func init(mesh):
 	mesh_instance.mesh = mesh.mesh
-	item.transform.basis = Basis()
+	default_basis.x = Vector3(1, 0, 0) # Vector pointing along the X axis
+	default_basis.y = Vector3(0, 1, 0) # Vector pointing along the Y axis
+	default_basis.z = Vector3(0, 0, 1) # Vector pointing along the Z axis
+	item.transform.basis = default_basis
 	camera.translation = Vector3(0,0,0.3)
 
 func _input(event):
-	if(is_visible_in_tree()):
+	if(is_visible_in_tree() and input_allowed):
 		if event is InputEventMouseMotion:
 			if Input.is_action_pressed("mouse_click"):
 				item.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
@@ -51,3 +56,13 @@ func _input(event):
 			camera.transform.origin.y = max_camera_y
 		
 		
+
+# These functions and the timer prevent accidental rotation of the item on the moment of opening the 3d view
+
+func _on_NoInputTimer_timeout():
+	input_allowed = true
+
+func _on_Item3DView_visibility_changed():
+	if self.visible:
+		input_allowed = false
+		$NoInputTimer.start()

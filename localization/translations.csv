@@ -133,13 +133,13 @@ Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja
 - Muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
 - Laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
 - Työstämiseen käyvät materiaalit löytyvät [url=https://www.epiloglaser.com/laser-machines/fusion-pro-laser-series/#pkg-materials]Epilog:n verkkosivuilta[/url]",
-"DEV_DESC_INNOV","[b]Embroidery machine[/b]","[b]Brodeerauskone[/b] selite","Embroidering machine desc"
+"DEV_DESC_INNOV","Embroidering machine desc","Brooderauskone selite","Embroidering machine desc SWE"
 "DEV_DETAILS_INNOV",,,
-"DEV_DESC_JUKI_MO","[b]Overlocker MO[/b] desc","[b]Saumuri MO[/b] selite","Overlocker MO desc"
+"DEV_DESC_JUKI_MO","Overlocker desc","Saumuri selite","Overlocker MO desc SWE"
 "DEV_DETAILS_JUKI_MO",,,
-"DEV_DESC_JUKI_MSC","[b]Overlocker MSC[/b] desc","[b]Saumuri MSC[/b] selite","Overlocker MSC desc"
+"DEV_DESC_JUKI_MSC","Cover stitch machine desc","Peitetikkikone selite","Overlocker MSC desc SWE"
 "DEV_DETAILS_JUKI_MSC",,,
-"DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc"
+"DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc SWE"
 "DEV_DETAILS_NOVA",,,
 "DEV_DESC_PHROZEN_CURE","After printing, resin prints have to be hardened with ultraviolet light. With this device it can be done quickly and safely.","Hartsitulosteet tulee tulostuksen jälkeen kovettaa ultraviolettivalolla. Tällä jälkikovetuskaapilla se onnistuu nopeasti ja turvallisesti.","UV hardening lamp desc"
 "DEV_DETAILS_PHROZEN_CURE","- Inner measurements: 29.5 x 29.5 x 45 cm","- Sisätilamitat: 29.5 x 29.5 x 45 cm","UV lamp details"
