@@ -1,17 +1,60 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://_Game/Models/stg_fl_doors/mdl_stg_fl_door_vault_ani.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/stg_fl_doors/mat_stg_fl_doors.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Resources/object_door.tres" type="Resource" id=3]
+[ext_resource path="res://_Game/Scripts/scr_door.gd" type="Script" id=4]
+[ext_resource path="res://_Game/Models/stg_fl_doors/animation_edits/ft_door_vault_ani_edits/01_open_door.tres" type="Animation" id=5]
+[ext_resource path="res://_Game/Models/stg_fl_doors/animation_edits/ft_door_vault_ani_edits/00_default_pose.tres" type="Animation" id=6]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("HoverTextPosition:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 5.90015, 1.3349, -21.1678 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StaticBody:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.129963, 0.952803, 0.524054 )
 
 [node name="mdl_stg_fl_door_vault_ani" groups=["Device", "Door"] instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+interactable = ExtResource( 3 )
+
+[node name="HoverTextPosition" type="Spatial" parent="." index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.90015, 1.3349, -21.1678 )
 
 [node name="mdl" parent="arm_vault_door/Skeleton" index="0"]
 material/0 = ExtResource( 2 )
 
-[node name="StaticBody" type="StaticBody" parent="." index="2"]
+[node name="AnimationPlayer" parent="." index="2"]
+reset_on_save = false
+method_call_mode = 1
+anims/00_default_pose = ExtResource( 6 )
+anims/01_open_door = ExtResource( 5 )
+anims/RESET = SubResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00861, 0.0883441, -20.7096 )
 collision_layer = 17
 collision_mask = 0
@@ -20,4 +63,4 @@ collision_mask = 0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0817471, 0.840738, -0.501945 )
 shape = SubResource( 1 )
 
-[node name="HoverTextPosition" type="Spatial" parent="." index="3"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
