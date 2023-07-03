@@ -1,0 +1,71 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "01_open_door"
+length = 1.3
+tracks/0/type = "transform"
+tracks/0/path = NodePath("arm_vault_door/Skeleton:door_end")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = PoolRealArray(  )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("arm_vault_door/Skeleton:handle_end")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/keys = PoolRealArray(  )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("arm_vault_door/Skeleton:handle_vault")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 4.09782e-08, 1.41561e-07, -1.49012e-07, -1.19209e-07, -4.47035e-08, 1.19209e-07, 1, 1, 1, 1, 0.0666667, 1, 4.09782e-08, 1.41561e-07, -1.49012e-07, -1.0895e-07, 0.277294, -1.37049e-08, 0.960785, 1, 1, 1, 0.133333, 1, 4.09782e-08, 1.41561e-07, -1.49012e-07, -5.18848e-08, 0.791711, -5.39738e-09, 0.610896, 1, 1, 1, 0.2, 1, 4.09782e-08, 1.41561e-07, -1.49012e-07, -1.00044e-07, 0.987789, -1.7503e-07, -0.155796, 1, 1, 1, 0.266667, 1, 4.09782e-08, 1.37836e-07, -1.49012e-07, -6.3547e-08, -0.603019, 8.64003e-08, 0.797727, 1, 1, 1, 0.333333, 1, 3.72529e-08, 1.3411e-07, -1.19209e-07, -1.16166e-07, -0.107528, 1.09591e-07, 0.994202, 1, 1, 1, 0.4, 1, 3.72529e-08, 1.49012e-07, -1.78814e-07, -1.19209e-07, 4.47035e-08, 1.19209e-07, 1, 1, 1, 1, 1.25, 1, 4.84288e-08, 1.30385e-07, -1.78814e-07, -1.19209e-07, 4.47035e-08, 1.19209e-07, 1, 1, 1, 1 )
+tracks/3/type = "transform"
+tracks/3/path = NodePath("arm_vault_door/Skeleton:door")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = PoolRealArray( 0, 1, 0, 0, -5.96046e-08, -1.42109e-14, -7.6233e-21, 3.38813e-21, 1, 1, 1, 1, 0.2, 1, 0, 0, -5.96046e-08, 5.96046e-08, -9.10561e-21, -3.55271e-15, 1, 1, 1, 1, 0.266667, 1, 0, 0, -5.96046e-08, -3.25323e-10, -2.46664e-10, -0.00216174, 0.999998, 1, 1, 1, 0.333333, 1, 0, 0, -5.96046e-08, -1.22294e-07, -2.15227e-09, -0.0209982, 0.99978, 1, 1, 1, 0.4, 1, 0, 0, -5.96046e-08, -1.28077e-07, -3.52992e-09, -0.0657313, 0.997837, 1, 1, 1, 0.466667, 1, 0, 0, -5.96046e-08, -7.55412e-08, -1.52145e-08, -0.128729, 0.99168, 1, 1, 1, 0.6, 1, 0, 0, -5.96046e-08, -1.45075e-07, -2.70682e-08, -0.296571, 0.955011, 1, 1, 1, 0.666667, 1, 0, 0, -5.96046e-08, -7.27218e-08, -1.95303e-08, -0.390768, 0.920489, 1, 1, 1, 0.733333, 1, 0, 0, -5.96046e-08, -6.70591e-08, -3.96332e-08, -0.485575, 0.874195, 1, 1, 1, 0.8, 1, 0, 0, -5.96046e-08, -1.23784e-07, -5.1121e-08, -0.575583, 0.817744, 1, 1, 1, 0.866667, 1, 0, 0, -5.96046e-08, -1.64828e-07, -3.8096e-08, -0.657, 0.75389, 1, 1, 1, 1, 1, 0, 0, -5.96046e-08, -5.14761e-08, -7.51405e-08, -0.783649, 0.621203, 1, 1, 1, 1.06667, 1, 0, 0, -5.96046e-08, -9.79971e-09, -1.44818e-07, -0.826003, 0.563665, 1, 1, 1, 1.13333, 1, 0, 0, -5.96046e-08, 1.14703e-09, -8.76771e-08, -0.855437, 0.517907, 1, 1, 1, 1.2, 1, 0, 0, -5.96046e-08, 2.03019e-08, 1.12443e-07, 0.871748, -0.489955, 1, 1, 1, 1.25, 1, 0, 0, -5.96046e-08, 6.18102e-09, 1.07692e-07, 0.875892, -0.482507, 1, 1, 1 )
+tracks/4/type = "transform"
+tracks/4/path = NodePath("arm_vault_door/Skeleton:root.001")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/keys = PoolRealArray(  )
+tracks/5/type = "transform"
+tracks/5/path = NodePath("arm_vault_door/Skeleton:root")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1.25, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/6/type = "value"
+tracks/6/path = NodePath("HoverTextPosition:translation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5, 1.2, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 5.90015, 1.3349, -21.1678 ), Vector3( 5.90015, 1.3349, -21.1678 ), Vector3( 5.39395, 1.3349, -20.6777 ), Vector3( 5.39395, 1.3349, -20.6777 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("StaticBody:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, 34.0518, 0 ), Vector3( 0, 87.3057, 0 ), Vector3( 0, 121.828, 0 ) ]
+}

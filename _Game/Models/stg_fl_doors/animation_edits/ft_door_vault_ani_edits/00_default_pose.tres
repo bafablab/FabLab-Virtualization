@@ -1,0 +1,71 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "00_default_pose"
+length = 0.0833333
+tracks/0/type = "transform"
+tracks/0/path = NodePath("arm_vault_door/Skeleton:door_end")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -7.15256e-07, 4.96054e-08, 1.37329e-07, 0, -3.55279e-15, 0, 1, 1, 1, 1, 0.0833333, 1, -7.15256e-07, 4.96054e-08, 1.37329e-07, 0, -3.55279e-15, 0, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("arm_vault_door/Skeleton:handle_end")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray(  )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("arm_vault_door/Skeleton:handle_vault")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 4.09782e-08, 1.41561e-07, -1.49012e-07, -1.19209e-07, -4.47035e-08, 1.19209e-07, 1, 1, 1, 1, 0.0833333, 1, 4.09782e-08, 1.41561e-07, -1.49012e-07, -1.19209e-07, -4.47035e-08, 1.19209e-07, 1, 1, 1, 1 )
+tracks/3/type = "transform"
+tracks/3/path = NodePath("arm_vault_door/Skeleton:door")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = PoolRealArray( 0, 1, 0, 0, -5.96046e-08, -1.42109e-14, -7.6233e-21, 3.38813e-21, 1, 1, 1, 1, 0.0833333, 1, 0, 0, -5.96046e-08, -1.42109e-14, -7.6233e-21, 3.38813e-21, 1, 1, 1, 1 )
+tracks/4/type = "transform"
+tracks/4/path = NodePath("arm_vault_door/Skeleton:root.001")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = PoolRealArray(  )
+tracks/5/type = "transform"
+tracks/5/path = NodePath("arm_vault_door/Skeleton:root")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0833333, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/6/type = "value"
+tracks/6/path = NodePath("StaticBody:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("HoverTextPosition:translation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 5.90015, 1.3349, -21.1678 ), Vector3( 5.90015, 1.3349, -21.1678 ) ]
+}
