@@ -80,7 +80,7 @@ func _physics_process(delta):
 				# select currently targeted object
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
-				crosshair.show_tooltip("Klikkaa!")
+				crosshair.show_tooltip(tr("TOOLTIP_INTERACT"))
 				HUD.append_debugtext("Mouse on " + targeted_object.to_string())
 				#print_debug(targeted_object, object_select.get_collider())
 				if targeted_object.is_in_group(("Draggable")):							
@@ -110,6 +110,7 @@ func _physics_process(delta):
 			draggable_object.mode = RigidBody.MODE_RIGID
 			#draggable_object.connect("body_entered", self, "pickup_collision")
 			#HUD.append_debugtext("Holding object")
+			crosshair.clear_tooltip()
 		else:
 			dragging = false
 		

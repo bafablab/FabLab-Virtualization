@@ -11,4 +11,5 @@ func show_tooltip(text):
 	$Tooltip.set_text(text)
 	
 func clear_tooltip():
-	$Tooltip.set_text("")
+	if $Tooltip.text:
+		$Tooltip.set_text("")

@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://_Game/Shaders/pixel_perfect_outline3D.shader" type="Shader" id=1]
+[ext_resource path="res://_Game/Models/itm_polygon_owl/mdl_itm_polygon_owl_mdl.mesh" type="ArrayMesh" id=2]
+[ext_resource path="res://_Game/Scripts/scr_pickup.gd" type="Script" id=3]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+shader_param/outline_color = Color( 1, 1, 1, 1 )
+shader_param/outline_width = 3.0
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.0649123, 0.0161458, 0.0382301 )
+
+[sub_resource type="CapsuleShape" id=3]
+radius = 0.0639938
+height = 0.137968
+
+[node name="mdl_itm_polygon_owl_rigid" type="RigidBody" groups=["Draggable"]]
+collision_layer = 17
+script = ExtResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+material_overlay = SubResource( 2 )
+cast_shadow = 0
+mesh = ExtResource( 2 )
+skeleton = NodePath("../..")
+software_skinning_transform_normals = false
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.897359, 0, 0.441302, 0, 1, 0, -0.441302, 0, 0.897359, -0.00386778, -0.0909534, -0.00293549 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.169264, -0.985571, 0, 0.985571, -0.169264, -0.0076593, 0.0379656, -0.00208379 )
+shape = SubResource( 3 )

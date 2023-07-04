@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -57,6 +57,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_door_vault_ani.tscn" type="PackedScene" id=55]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_desk_corner.tscn" type="PackedScene" id=56]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_default.tscn" type="PackedScene" id=57]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_polygon_owl_rigid.tscn" type="PackedScene" id=58]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -338,6 +339,9 @@ shape = SubResource( 2 )
 
 [node name="mdl_mats_filament_roll_rigid" parent="." instance=ExtResource( 45 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12347, 0.907771, -11.2043 )
+
+[node name="mdl_itm_polygon_owl_rigid" parent="." instance=ExtResource( 58 )]
+transform = Transform( -0.449303, 0, 0.893379, 0, 1, 0, -0.893379, 0, -0.449303, 1.99632, 0.878661, -9.3117 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )
