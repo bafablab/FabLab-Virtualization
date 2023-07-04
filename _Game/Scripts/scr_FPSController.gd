@@ -107,12 +107,12 @@ func _physics_process(delta):
 			draggable_object.mode = RigidBody.MODE_RIGID
 			#draggable_object.connect("body_entered", self, "pickup_collision")
 			#HUD.append_debugtext("Holding object")
-		elif not Input.is_action_pressed("mouse_click"):
+		else:
 			dragging = false
 		
 		# Throwing object
 		if Input.is_action_just_pressed("right_mouse_click"):
-			if dragging == true:
+			if draggable_object != null and dragging == true:
 				#draggable_object.mode = RigidBody.MODE_RIGID
 				#draggable_object.collision_mask = 1
 				#draggable_object.set_collision_layer_bit(0, true)

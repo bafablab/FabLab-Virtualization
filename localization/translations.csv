@@ -79,11 +79,11 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 
 The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
-A 3D resin printer uses light from an LCD display to cure liquid resin layer by layer in a process called stereolithography. Resin prints are very highly detailed, but the printing area is usually quite small and the printing time long. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
+A 3D resin printer uses light from an LCD display to cure liquid resin layer by layer in a process called [url=https://en.wikipedia.org/wiki/Stereolithography]stereolithography[/url]. Resin prints are very highly detailed, but the printing area is usually quite small and the printing time long. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
 Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
-3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä stereolitografia. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
+3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
 "DEV_DETAILS_ELEGOO","- 1 machine available
 - Printing material: resin
 - Maximum print size L129 x W80 x H150 mm
@@ -147,11 +147,11 @@ Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja
 
 The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
-A resin printer uses light from an LCD display to cure liquid resin layer by layer in a process called stereolithography. The resulting print is highly detailed, but the print time is usually longer than with filament depositing 3D-printers. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
+A resin printer uses light from an LCD display to cure UV-active liquid resin layer by layer in a process called [url=https://en.wikipedia.org/wiki/Stereolithography]stereolithography[/url]. The resulting print is highly detailed, but the print time is usually longer than with filament depositing 3D-printers. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
 Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
-3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä stereolitografia. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
+3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä UV-kovettuvaa hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
 "DEV_DETAILS_PHROZEN_SONIC","- One available at the FabLab
 - Printing material: resin
 - Maximum print size L33 x W18.5 x H40 cm
@@ -161,7 +161,15 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[
 - Tulosteen maksimikoko P33 x L18,5 x K40 cm
 - Kerrospaksuus 0,01-0,30 mm
 - Suositeltu tiedostomuoto .stl","Phrozen Sonic details"
-"DEV_DESC_RENSI","[b]CNC milling machine[/b]","[b]CNC-jyrsin[/b]","CNC mill desc"
+"DEV_DESC_RENSI","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from wood or plastic.
+
+Designing of the workpiece begins in ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in software. The router then moves its rotary cutting tool in along three axis based on these commands. This means the tool movements are very precise and repeatable.
+
+A CNC router can be used to make all kinds of molds, parts, architectural models, even art.","CNC- eli tietokoneohjatulla jyrsimellä voidaan työstää nopeasti ja tarkasti puuta ja muovia.
+
+Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, jonka jälkeen 3D-mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
+
+CNC-jyrsimellä voi tehdä erilaisia muotteja, osia, arkkitehtuurisia malleja, jopa taidetta.","CNC mill desc SWE"
 "DEV_DETAILS_RENSI","Machining area 900×700 mm
 
 Materials:
@@ -171,8 +179,11 @@ Materials:
 Materiaalit:
 - Puu
 - Muovi","CNC details SWE"
-"DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
-Tarra tai painatus suunnitellaan tietokoneella vektorigrafiikkaohjelmalla (esim. Inkscape).","Vinyl cutter desc SWE"
+"DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.
+
+The sticker or print is designed in vector graphics software (such as Inkscape). The vinyl cutter then cuts the chosen design from the material precisely and quickly.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
+
+Tarra tai painatus suunnitellaan tietokoneella vektorigrafiikkaohjelmalla (esim. Inkscape). Vinyylileikkuri leikkaa leikkuuterällään suunnittelemasi kuvion haluamastasi materiaalista tarkasti, mutta ripeästi.","Vinyl cutter desc SWE"
 "DEV_DETAILS_ROLAND_CAMM","- Working area width ca. 610 mm
 - Printing using either Roland Cut Studio or Inkscape software
 - SVG or CV file formats
