@@ -8,6 +8,7 @@ var static_body
 var hover_text
 var in_focus = false
 var door_open = false
+var door_moving = false
 var hover_text_position
 # Declare member variables here. Examples:
 # var a = 2
@@ -40,13 +41,15 @@ func exit_focus():
 
 func _input(_event):
 	if in_focus:
-		if Input.is_action_just_pressed("mouse_click"):
+		if Input.is_action_just_pressed("mouse_click") && !door_moving:
 			if door_open == false:
-				$AnimationPlayer.play("01_open_door")	
+				$AnimationPlayer.play("01_open_door")
+				door_moving = true
 				hover_text.visible = false
 				door_open = true;
 			else:
-				$AnimationPlayer.play_backwards("01_open_door")				
+				$AnimationPlayer.play_backwards("01_open_door")	
+				door_moving = true
 				hover_text.visible = false			
 				door_open = false;
 			#in_focus = false
@@ -71,6 +74,7 @@ func set_hover_text():
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
+	door_moving = false
 	hover_text.transform.origin = hover_text_position.transform.origin
 	if in_focus:
 		hover_text.visible = true
