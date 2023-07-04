@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -55,6 +55,8 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_door_fl_narrow_ani.tscn" type="PackedScene" id=53]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_door_fl_wide_ani.tscn" type="PackedScene" id=54]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_door_vault_ani.tscn" type="PackedScene" id=55]
+[ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_desk_corner.tscn" type="PackedScene" id=56]
+[ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_default.tscn" type="PackedScene" id=57]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -302,6 +304,21 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.00720
 [node name="mdl_stg_fl_door_fl_wide_ani" parent="stg_fablab" instance=ExtResource( 54 )]
 
 [node name="mdl_stg_fl_door_vault_ani" parent="stg_fablab" instance=ExtResource( 55 )]
+
+[node name="mdl_table_electric_default" parent="stg_fablab" instance=ExtResource( 57 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.92151, 0.00589818, -14.9772 )
+
+[node name="mdl_table_electric_default2" parent="stg_fablab" instance=ExtResource( 57 )]
+transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, 1, -4.72647, 0.00589818, -14.9772 )
+
+[node name="mdl_table_electric_default3" parent="stg_fablab" instance=ExtResource( 57 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, -1, -2.92774, 0.00589818, -15.7908 )
+
+[node name="mdl_table_electric_default4" parent="stg_fablab" instance=ExtResource( 57 )]
+transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, -1, -4.73271, 0.00589818, -15.7908 )
+
+[node name="mdl_table_electric_desk_corner" parent="." instance=ExtResource( 56 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.00966, 0.016367, -12.6695 )
 
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )

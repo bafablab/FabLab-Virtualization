@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://_Game/Models/table_electric_desk_corner/mdl_table_electric_desk_corner.glb" type="PackedScene" id=1]
+[ext_resource path="res://_Game/Shared/Material/mat_electric_room_tables.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Scenes/Models/mdl_dev_basic_pc.tscn" type="PackedScene" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.0633745, 0.543369, 0.391637 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.0515089, 0.396622, 0.577406 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.0315144, 0.483024, 0.420104 )
+
+[node name="mdl_table_electric_desk_corner" instance=ExtResource( 1 )]
+
+[node name="Skeleton" parent="Armature" index="0"]
+bones/1/bound_children = [ NodePath("BoneAttachment") ]
+
+[node name="mdl" parent="Armature/Skeleton" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="BoneAttachment" type="BoneAttachment" parent="Armature/Skeleton" index="1"]
+transform = Transform( -1.19209e-07, 1, 3.00135e-14, -1, -1.19209e-07, 1.92167e-07, 1.92167e-07, -7.10543e-15, 1, -0.502147, 0.676381, 0.211474 )
+bone_name = "height_adjust_main"
+
+[node name="StaticBody" type="StaticBody" parent="Armature/Skeleton/BoneAttachment" index="0"]
+transform = Transform( 1, -1.42109e-14, 4.26326e-14, 1.42109e-14, 1, -4.23516e-21, -1.42109e-14, -4.23516e-21, 1, -0.00151753, 5.96046e-08, 1.49012e-08 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00845999, 0.765601, 0.232745 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0188325, 0.0730697, -0.444248 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="2"]
+transform = Transform( 1, 1.35883e-07, -5.62844e-08, -1.35883e-07, 0.707107, -0.707107, -5.62844e-08, 0.707107, 0.707107, -0.0395129, 0.244649, 0.102192 )
+shape = SubResource( 3 )
+
+[node name="mdl_dev_basic_pc" parent="Armature/Skeleton/BoneAttachment" index="1" instance=ExtResource( 3 )]
+transform = Transform( -1.12035e-07, -0.999999, -1.96436e-07, -0.47699, -1.19209e-07, 0.878908, -0.878909, 1.92167e-07, -0.47699, -0.0691626, 0.236093, -0.0192423 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="." index="2"]
+transform = Transform( -0.969046, -0.10976, 0.22114, 0, 0.895735, 0.444588, -0.246881, 0.430826, -0.868008, 0.347355, 0.698337, -1.36342 )
+shadow_enabled = true
