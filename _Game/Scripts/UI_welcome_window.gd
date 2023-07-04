@@ -28,7 +28,10 @@ func _input(event):
 	# Show welcome window again if F3 pressed
 	# Bug: if device or item info windows are open, input handling is out of whack
 	if Input.is_action_just_pressed("show_welcome"):
-		open()
+		if !self.visible:
+			open()
+		else:
+			close()
 
 # show window
 func open():

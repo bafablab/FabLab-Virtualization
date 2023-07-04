@@ -65,7 +65,7 @@ func _input(_event):
 	if self.visible:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		
-	if Input.is_action_pressed("escape"):
+	if Input.is_action_just_pressed("escape"):
 		if !self.visible:
 			pause_game()
 		else:

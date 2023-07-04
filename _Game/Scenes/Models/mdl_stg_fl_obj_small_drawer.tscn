@@ -4,7 +4,7 @@
 [ext_resource path="res://_Game/Models/stg_fl_obj_small_drawer_white/mat_stg_fl_obj_small_drawer_white.tres" type="Material" id=2]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.203995, 0.234782, 0.234998 )
+extents = Vector3( 0.212266, 0.277672, 0.309811 )
 
 [node name="mdl_stg_fl_obj_small_drawer" instance=ExtResource( 1 )]
 
@@ -14,5 +14,5 @@ material/0 = ExtResource( 2 )
 [node name="StaticBody" type="StaticBody" parent="." index="1"]
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.319614, -0.0517871 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.287736, -0.00964613 )
 shape = SubResource( 1 )

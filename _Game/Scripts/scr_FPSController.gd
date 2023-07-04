@@ -31,6 +31,7 @@ onready var item_info_menu = $"../UI_ItemInfoMenu"
 onready var main_menu = $"../UI_MainMenu"
 onready var welcome_window = $"../UI_WelcomeWindow"
 onready var HUD = $"../HUD"
+onready var crosshair = $"../UI_Crosshair"
 var draggable = false
 var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
 var collisions
@@ -79,6 +80,7 @@ func _physics_process(delta):
 				# select currently targeted object
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
+				crosshair.show_tooltip("Klikkaa!")
 				HUD.append_debugtext("Mouse on " + targeted_object.to_string())
 				#print_debug(targeted_object, object_select.get_collider())
 				if targeted_object.is_in_group(("Draggable")):							
@@ -93,6 +95,7 @@ func _physics_process(delta):
 			if targeted_object != null:
 				targeted_object.emit_signal("mouse_exited")
 				targeted_object = null
+				crosshair.clear_tooltip()
 			#print_debug("object_detected")
 	# if no interactable objects in range, disable object_select raycast. 
 	else:
