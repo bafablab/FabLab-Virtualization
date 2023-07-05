@@ -64,7 +64,7 @@ extents = Vector3( 0.2, 2.2, 2.2 )
 extents = Vector3( 1.8, 2.2, 0.2 )
 
 [sub_resource type="CylinderShape" id=21]
-height = 3.3
+height = 3.73907
 radius = 0.25
 
 [node name="model" instance=ExtResource( 1 )]
@@ -226,9 +226,25 @@ collision_layer = 5
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00379, 0.125824 )
 shape = SubResource( 18 )
 
-[node name="Pillar" type="StaticBody" parent="Collisions" index="16"]
+[node name="Pillars" type="StaticBody" parent="Collisions" index="16"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.74027, 0, -5.90702 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Collisions/Pillar" index="0"]
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Pillars" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.193932, 1.89547, 0.118823 )
+shape = SubResource( 21 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Collisions/Pillars" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.70468, 1.75126, 0.107328 )
+shape = SubResource( 21 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Collisions/Pillars" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.75118, 1.63645, 6.02205 )
+shape = SubResource( 21 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Collisions/Pillars" index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.74125, 1.74479, -6.07076 )
+shape = SubResource( 21 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="Collisions/Pillars" index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.74762, 1.5922, -11.952 )
 shape = SubResource( 21 )
