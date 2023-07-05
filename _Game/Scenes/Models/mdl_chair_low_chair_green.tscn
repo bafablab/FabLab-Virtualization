@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://_Game/Models/chair_low_chair/mdl_low_chair_single_mat_Cube001.mesh" type="ArrayMesh" id=1]
 [ext_resource path="res://_Game/Models/chair_low_chair/mat_low_chair_green/mat_chair_low_chair_single_mat_green.tres" type="Material" id=2]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.2, 0.6, 0.3 )
+extents = Vector3( 0.279891, 0.0478448, 0.250749 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.213849, 0.158944, 0.0691808 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.0388409, 0.0800528, 0.191057 )
 
 [node name="mdl_chair_low_chair_green" type="Spatial"]
 
@@ -15,5 +21,18 @@ material/0 = ExtResource( 2 )
 [node name="StaticBody" type="StaticBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46974, 0 )
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+[node name="SeatBottom" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0348566, 0.036864 )
 shape = SubResource( 1 )
+
+[node name="SeatBack" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 0.948517, 0.316725, 0, -0.316725, 0.948517, 0.0178772, 0.144179, -0.153627 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.922998, 0.372597, 0.0961585, -0.374332, 0.927295, 0, -0.0891673, -0.0359951, 0.995366, 0.233605, 0.13145, 0.0550699 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.922998, -0.372597, -0.0961585, 0.374331, 0.927295, 0, 0.0891673, -0.0359951, 0.995366, -0.233598, 0.13145, 0.0550699 )
+shape = SubResource( 3 )
