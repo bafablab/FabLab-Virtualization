@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://_Game/Models/chair_low_chair/mdl_low_chair_single_mat_Cube001.mesh" type="ArrayMesh" id=1]
 [ext_resource path="res://_Game/Models/chair_low_chair/mat_low_chair_green/mat_chair_low_chair_single_mat_green.tres" type="Material" id=2]
@@ -11,6 +11,9 @@ extents = Vector3( 0.213849, 0.158944, 0.0691808 )
 
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.0388409, 0.0800528, 0.191057 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.02, 0.25, 0.02 )
 
 [node name="mdl_chair_low_chair_green" type="Spatial"]
 
@@ -29,10 +32,26 @@ shape = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 0.948517, 0.316725, 0, -0.316725, 0.948517, 0.0178772, 0.144179, -0.153627 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+[node name="SeatLeft" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 0.922998, 0.372597, 0.0961585, -0.374332, 0.927295, 0, -0.0891673, -0.0359951, 0.995366, 0.233605, 0.13145, 0.0550699 )
 shape = SubResource( 3 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+[node name="SeatRight" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 0.922998, -0.372597, -0.0961585, 0.374331, 0.927295, 0, 0.0891673, -0.0359951, 0.995366, -0.233598, 0.13145, 0.0550699 )
 shape = SubResource( 3 )
+
+[node name="Leg1" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.996195, 0.0871557, 0, -0.0869434, 0.993768, 0.0697565, 0.00607968, -0.069491, 0.997564, -0.185361, -0.223182, 0.175504 )
+shape = SubResource( 4 )
+
+[node name="Leg2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.996195, -0.0871558, 0, 0.0869434, 0.993768, 0.0697565, -0.00607968, -0.069491, 0.997564, 0.187993, -0.223182, 0.175504 )
+shape = SubResource( 4 )
+
+[node name="Leg3" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.996195, 0.0871558, 0, -0.0869434, 0.993768, -0.0697565, -0.00607968, 0.069491, 0.997564, -0.185361, -0.223182, -0.110699 )
+shape = SubResource( 4 )
+
+[node name="Leg4" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.996195, -0.0871558, 0, 0.0869434, 0.993768, -0.0697565, 0.00607968, 0.069491, 0.997564, 0.187993, -0.223182, -0.110747 )
+shape = SubResource( 4 )
