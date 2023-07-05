@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://_Game/Models/dev_laser_cutter/mat_dev_laser_cutter.tres" type="Material" id=1]
 [ext_resource path="res://_Game/Models/mats_plywood_sheet/Mats_plywood_sheet_separated_mdl_star_hollow.mesh" type="ArrayMesh" id=2]
 [ext_resource path="res://_Game/Models/mats_plywood_sheet/Mats_plywood_sheet_separated_mdl_star.mesh" type="ArrayMesh" id=3]
+[ext_resource path="res://_Game/Scripts/scr_pickup.gd" type="Script" id=4]
 
 [sub_resource type="PhysicsMaterial" id=4]
 bounce = 0.34
@@ -15,11 +16,12 @@ extents = Vector3( 0.1, 0.0174229, 0.1 )
 
 [node name="Mats_plywood_sheet_separated" type="Spatial"]
 
-[node name="RigidBody" type="RigidBody" parent="."]
+[node name="RigidBody" type="RigidBody" parent="." groups=["Draggable"]]
 collision_layer = 32
 collision_mask = 55
 physics_material_override = SubResource( 4 )
 can_sleep = false
+script = ExtResource( 4 )
 
 [node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
 shape = SubResource( 3 )
@@ -32,7 +34,6 @@ material/0 = ExtResource( 1 )
 [node name="RigidBody2" type="RigidBody" parent="RigidBody"]
 collision_layer = 0
 collision_mask = 0
-mode = 3
 sleeping = true
 
 [node name="CollisionShape" type="CollisionShape" parent="RigidBody/RigidBody2"]

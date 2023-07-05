@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "DeviceInfo",
 "language": "GDScript",
-"path": "res://_Game/Scripts/scr_DeviceInfo.gd"
+"path": "res://_Game/Scripts_backup_050723/scr_DeviceInfo.gd"
 }, {
 "base": "Resource",
 "class": "ItemInfo",
 "language": "GDScript",
-"path": "res://_Game/Scripts/scr_ItemInfo.gd"
+"path": "res://_Game/Scripts_backup_050723/scr_ItemInfo.gd"
 } ]
 _global_script_class_icons={
 "DeviceInfo": "",

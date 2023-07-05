@@ -55,7 +55,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, -1 )
 [node name="ObjectSelect" type="RayCast" parent="Head"]
 enabled = true
 cast_to = Vector3( 0, 0, -5 )
-collision_mask = 184
+collision_mask = 188
 collide_with_areas = true
 
 [node name="GroundCheck" type="RayCast" parent="."]
