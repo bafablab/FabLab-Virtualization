@@ -34,9 +34,9 @@ tracks/1/keys = {
 }
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.410399, 1.0978, 0.0317581 )
+extents = Vector3( 0.426584, 1.06112, 0.0317581 )
 
-[node name="mdl_stg_fl_door_fl_narrow_ani" groups=["Device", "Door"] instance=ExtResource( 2 )]
+[node name="mdl_stg_fl_door_fl_narrow_ani" groups=["Door"] instance=ExtResource( 2 )]
 script = ExtResource( 1 )
 interactable = ExtResource( 4 )
 
@@ -47,13 +47,13 @@ material/0 = ExtResource( 3 )
 anims/01_open_door = ExtResource( 5 )
 anims/RESET = SubResource( 2 )
 
-[node name="StaticBody" type="StaticBody" parent="." index="2"]
+[node name="StaticBody" type="StaticBody" parent="." index="2" groups=["Mover"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74848, 0.010914, -17.8085 )
-collision_layer = 17
+collision_layer = 21
 collision_mask = 0
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.44952, 1.00684, -0.0206013 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.418994, 1.04105, -0.0206013 )
 shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="3"]
