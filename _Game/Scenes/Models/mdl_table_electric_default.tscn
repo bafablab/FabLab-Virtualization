@@ -4,10 +4,10 @@
 [ext_resource path="res://_Game/Shared/Material/mat_electric_room_tables.tres" type="Material" id=2]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.900495, 0.0302983, 0.436212 )
+extents = Vector3( 0.900495, 0.0302983, 0.403292 )
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.031192, 0.328366, 0.0276206 )
+extents = Vector3( 0.031192, 0.361325, 0.0276206 )
 
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.0909076, 0.498978, 0.081183 )
@@ -25,21 +25,21 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0741078, 0 )
 shape = SubResource( 1 )
 
 [node name="CollisionShapeLeg0" type="CollisionShape" parent="StaticBody" index="1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.905661, -0.253618, 0.428751 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.871967, -0.28815, 0.367795 )
 shape = SubResource( 2 )
 
 [node name="CollisionShapeLeg2" type="CollisionShape" parent="StaticBody" index="2"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.84446, -0.253618, 0.428751 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86719, -0.29099, 0.364988 )
 shape = SubResource( 2 )
 
 [node name="CollisionShapeLeg3" type="CollisionShape" parent="StaticBody" index="3"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.846579, -0.253618, -0.26518 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.867045, -0.285736, -0.364324 )
 shape = SubResource( 2 )
 
 [node name="CollisionShapeLeg4" type="CollisionShape" parent="StaticBody" index="4"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.900239, -0.253618, -0.26518 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.870893, -0.28314, -0.367222 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="5"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9644, 0.465112, -0.197613 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.926811, 0.465112, -0.197613 )
 shape = SubResource( 3 )

@@ -1,10 +1,19 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://_Game/Models/dev_basic_pc/mat_dev_basic_pc.tres" type="Material" id=1]
 [ext_resource path="res://_Game/Models/dev_basic_pc/mdl_dev_basic_pc_all.mesh" type="ArrayMesh" id=2]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.426757, 0.217313, 0.190578 )
+extents = Vector3( 0.0809342, 0.181468, 0.199158 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.310269, 0.205181, 0.0471532 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.187277, 0.00449178, 0.057356 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.0208963, 0.0139271, 0.0333118 )
 
 [node name="mdl_dev_basic_pc" type="Spatial"]
 
@@ -14,6 +23,18 @@ material/0 = ExtResource( 1 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.152075, 0 )
+[node name="Case" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.404981, 0.180718, -0.131655 )
 shape = SubResource( 1 )
+
+[node name="Display" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0167342, 0.211859, -0.0193722 )
+shape = SubResource( 2 )
+
+[node name="Keyboard" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0012553, 0.00521214, 0.213362 )
+shape = SubResource( 3 )
+
+[node name="Mouse" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.297323, 0.0150549, 0.192595 )
+shape = SubResource( 4 )
