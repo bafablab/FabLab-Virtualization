@@ -98,8 +98,8 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[
 - Tulosteen maksimikoko P129 x L80 x K150 mm
 - Kerrospaksuus 0.01-0.2 mm
 - Suositeltu tiedostomuoto .STL",
-"DEV_DESC_ELNA","[b]Sowing machine desc[/b]","[b]Ompelukone[/b] selite","Sowing machine desc"
-"DEV_DETAILS_ELNA","Elna details","Elna tiedot","Sowing machine details"
+"DEV_DESC_ELNA","Easy-to-use sewing machine for sewing textiles. 30 built-in stitches, including buttonholes, quilting, patchwork and specialty stitches.","Helppokäyttöinen ompelukone tekstiilien ompelemiseen. 30 sisäänrakennettua ommelta, mukana napinlävet, tikkaus-, tilkkutyö- ja erikoisompeleet.","Sowing machine desc"
+"DEV_DETAILS_ELNA","Maximum stitch width 7 mm, maximum stitch length 5 mm.","Maksimi ommelleveys 7 mm, maksimi pistonpituus 5 mm.",""
 "DEV_DESC_ENDER","With a 3D printer you can literally print real three-dimensional objects.
 
 The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
@@ -138,14 +138,14 @@ Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja
 - Muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
 - Laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
 - Työstämiseen käyvät materiaalit löytyvät [url=https://www.epiloglaser.com/laser-machines/fusion-pro-laser-series/#pkg-materials]Epilog:n verkkosivuilta[/url]",
-"DEV_DESC_INNOV","Embroidering machine desc","Brooderauskone selite","Embroidering machine desc SWE"
-"DEV_DETAILS_INNOV",,,
-"DEV_DESC_JUKI_MO","Overlocker desc","Saumuri selite","Overlocker MO desc SWE"
-"DEV_DETAILS_JUKI_MO",,,
-"DEV_DESC_JUKI_MSC","Cover stitch machine desc","Peitetikkikone selite","Overlocker MSC desc SWE"
-"DEV_DETAILS_JUKI_MSC",,,
+"DEV_DESC_INNOV","With an embroidery machine, it is possible to embroider desired texts or patterns on textiles. You can either use the machine's ready-made fonts and patterns or design your own patterns with the Inkscape program.","Kirjontakoneella on mahdollista konekirjoa haluamasi tekstit tai kuviot tekstiileihin. Voit joko käyttää koneen valmiita fontteja ja kuvioita tai suunnitella oman kuviosi Inkscape-ohjelmalla.","Embroidering machine desc SWE"
+"DEV_DETAILS_INNOV","Available embroidery frames 200 x 300 mm and 200 x 200 mm.","Kirjontakehyskoot 200 x 300 mm ja 200 x 200 mm.",""
+"DEV_DESC_JUKI_MO","Treat the edges of the fabric, sew elastic clothes. This overlocker can be used to make more common 3- and 4-thread stitches and rolled hems.","Huolittele kankaan reunat, ompele joustavat vaatteet. Tällä saumurilla onnistuu yleisempien 3- ja 4-lankaisten ompeleiden ja rullapäärmeen tekeminen.","Overlocker MO desc SWE"
+"DEV_DETAILS_JUKI_MO","Differential feed.","Differentiaalisyöttö.",""
+"DEV_DESC_JUKI_MSC","Finish the turns of stretchy garments: necklines, cuffs, hems and hems. This cover stitching machine can do 2-thread chain stitch as well as 3- and 4-thread quilting.","Viimeistele joustavien vaatteiden käänteet: pääntiet, hihan- ja lahkeensuut sekä helmat. Tällä peitetikkikoneella onnistuu 2-lankainen ketjutikki sekä 3- ja 4-lankaiset peitetikit.","Overlocker MSC desc SWE"
+"DEV_DETAILS_JUKI_MSC","Differential feed.","Differentiaalisyöttö.",""
 "DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc SWE"
-"DEV_DETAILS_NOVA",,,
+"DEV_DETAILS_NOVA","","",""
 "DEV_DESC_PHROZEN_CURE","After printing, resin prints have to be hardened with ultraviolet light. With this device it can be done quickly and safely.","Hartsitulosteet tulee tulostuksen jälkeen kovettaa ultraviolettivalolla. Tällä jälkikovetuskaapilla se onnistuu nopeasti ja turvallisesti.","UV hardening lamp desc"
 "DEV_DETAILS_PHROZEN_CURE","- Inner measurements: 29.5 x 29.5 x 45 cm","- Sisätilamitat: 29.5 x 29.5 x 45 cm","UV lamp details"
 "DEV_DESC_PHROZEN_SONIC","With a 3D printer you can literally print real three-dimensional objects.
