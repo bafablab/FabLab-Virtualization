@@ -14,7 +14,6 @@ func _ready():
 	
 func enter_focus():
 	in_focus = true
-	crosshair.show_tooltip(tr("TOOLTIP_INTERACT"))
 	HUD.append_debugtext("Mouse on " + self.name)
 	
 func exit_focus():
@@ -23,6 +22,12 @@ func exit_focus():
 
 func _input(_event):
 	if in_focus:
+		
+		if table_up:
+			crosshair.show_tooltip(tr("TOOLTIP_LOWER_TABLE"))
+		elif !table_up:
+			crosshair.show_tooltip(tr("TOOLTIP_RAISE_TABLE"))
+			
 		if Input.is_action_just_pressed("mouse_click") && !table_moving:
 			if table_up == false:
 				$AnimationPlayer.play("01_height_adjust")

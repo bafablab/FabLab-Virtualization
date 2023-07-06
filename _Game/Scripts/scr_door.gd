@@ -34,7 +34,6 @@ func _ready():
 	
 func enter_focus():
 	in_focus = true
-	crosshair.show_tooltip(tr("TOOLTIP_INTERACT"))
 	HUD.append_debugtext("Mouse on " + self.name)
 	if $AnimationPlayer.current_animation == "01_open_door":
 		hover_text.visible = false
@@ -48,6 +47,12 @@ func exit_focus():
 
 func _input(_event):
 	if in_focus:
+		
+		if door_open:
+			crosshair.show_tooltip(tr("TOOLTIP_CLOSE_DOOR"))
+		elif !door_open:
+			crosshair.show_tooltip(tr("TOOLTIP_OPEN_DOOR"))
+
 		if Input.is_action_just_pressed("mouse_click") && !door_moving:
 			if door_open == false:
 				$AnimationPlayer.play("01_open_door")
