@@ -29,7 +29,7 @@ height = 0.07
 radius = 0.11
 
 [node name="mdl_mats_filament_roll_rigid" type="RigidBody" groups=["Draggable"]]
-collision_layer = 161
+collision_layer = 33
 collision_mask = 55
 contacts_reported = 5
 contact_monitor = true
