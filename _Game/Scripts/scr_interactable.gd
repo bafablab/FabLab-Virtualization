@@ -84,6 +84,7 @@ func exit_focus():
 	in_focus = false
 	#mesh_instance.set_material_overlay(null)
 	hover_text.visible = false
+	crosshair.clear_tooltip()
 
 
 func _input(_event):

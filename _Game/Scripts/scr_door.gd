@@ -44,6 +44,7 @@ func enter_focus():
 func exit_focus():
 	in_focus = false
 	hover_text.visible = false
+	crosshair.clear_tooltip()
 
 func _input(_event):
 	if in_focus:

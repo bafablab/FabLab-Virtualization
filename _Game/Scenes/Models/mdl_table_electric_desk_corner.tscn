@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://_Game/Models/table_electric_desk_corner/mdl_table_electric_desk_corner.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Shared/Material/mat_electric_room_tables.tres" type="Material" id=2]
@@ -12,6 +12,18 @@ extents = Vector3( 0.0515089, 0.396622, 0.577406 )
 
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.0315144, 0.483024, 0.420104 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.9, 0.06, 0.06 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 0.9, 0.06, 0.06 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 0.017797, 0.415949, 0.0475926 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 0.017797, 0.415949, 0.0475926 )
 
 [node name="mdl_table_electric_desk_corner" instance=ExtResource( 1 )]
 
@@ -28,20 +40,38 @@ bone_name = "height_adjust_main"
 [node name="StaticBody" type="StaticBody" parent="Armature/Skeleton/BoneAttachment" index="0"]
 transform = Transform( 1, -1.42109e-14, 4.26326e-14, 1.42109e-14, 1, -4.23516e-21, -1.42109e-14, -4.23516e-21, 1, -0.00151753, 5.96046e-08, 1.49012e-08 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="0"]
+[node name="TableTopLeft" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00845999, 0.765601, 0.232745 )
 shape = SubResource( 1 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="1"]
+[node name="TableTopRight" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0188325, 0.0730697, -0.444248 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape3" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="2"]
+[node name="TableTopCenter" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="2"]
 transform = Transform( 1, 1.35883e-07, -5.62844e-08, -1.35883e-07, 0.707107, -0.707107, -5.62844e-08, 0.707107, 0.707107, -0.0395129, 0.244649, 0.102192 )
 shape = SubResource( 3 )
 
+[node name="LegPoleLeft" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="3"]
+transform = Transform( 0.999997, -2.98428e-13, 5.96856e-13, 2.98428e-13, 0.999997, -7.03037e-20, -1.13687e-13, -1.02491e-19, 1, 0.87, 0.838, 0.446 )
+shape = SubResource( 4 )
+
+[node name="LegPoleRight" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment/StaticBody" index="4"]
+transform = Transform( 0.999999, -8.52651e-14, 1.7053e-13, 8.52651e-14, 0.999999, -1.94818e-20, -2.84217e-14, -2.96462e-20, 1, 0.869807, 0.0348334, -0.731984 )
+shape = SubResource( 5 )
+
 [node name="mdl_dev_basic_pc" parent="Armature/Skeleton/BoneAttachment" index="1" instance=ExtResource( 3 )]
 transform = Transform( -1.12035e-07, -0.999999, -1.96436e-07, -0.47699, -1.19209e-07, 0.878908, -0.878909, 1.92167e-07, -0.47699, -0.0691626, 0.236093, -0.0192423 )
+
+[node name="StaticBody" type="StaticBody" parent="Armature/Skeleton" index="2"]
+
+[node name="LegHorizontalLeft" type="CollisionShape" parent="Armature/Skeleton/StaticBody" index="0"]
+transform = Transform( -1.19209e-07, 0.882944, 0.46947, -0.999996, -1.95471e-07, 1.13708e-07, 1.92166e-07, -0.469471, 0.882947, 0.453559, 0.01429, 0.59347 )
+shape = SubResource( 6 )
+
+[node name="LegHorizontalRight" type="CollisionShape" parent="Armature/Skeleton/StaticBody" index="1"]
+transform = Transform( -1.75403e-07, -0.642786, -0.766043, -0.999998, 2.44287e-07, 2.39911e-08, 1.71714e-07, 0.766044, -0.642787, -0.3912, 0.013316, -0.61097 )
+shape = SubResource( 7 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="." index="2"]
 transform = Transform( -0.969046, -0.10976, 0.22114, 0, 0.895735, 0.444588, -0.246881, 0.430826, -0.868008, 0.347355, 0.698337, -1.36342 )
