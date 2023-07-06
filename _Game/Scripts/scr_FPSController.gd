@@ -26,12 +26,12 @@ var selected_object_transform
 var targeted_object = null
 var draggable_object = null
 var dragging = false
-onready var device_info_menu = $"../UI_DeviceInfoMenu"
-onready var item_info_menu = $"../UI_ItemInfoMenu"
-onready var main_menu = $"../UI_MainMenu"
-onready var welcome_window = $"../UI_WelcomeWindow"
-onready var HUD = $"../HUD"
-onready var crosshair = $"../UI_Crosshair"
+onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
+onready var item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
+onready var main_menu = get_node("/root/FabLab/UI_MainMenu")
+onready var welcome_window = get_node("/root/FabLab/UI_WelcomeWindow")
+onready var HUD = get_node("/root/FabLab/HUD")
+onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
 var draggable = false
 var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
 var collisions

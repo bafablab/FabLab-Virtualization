@@ -318,7 +318,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, -1, -2.92774, 0.00589818, -15.790
 [node name="mdl_table_electric_default4" parent="stg_fablab" instance=ExtResource( 57 )]
 transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, -1, -4.73271, 0.00589818, -15.7908 )
 
-[node name="mdl_table_electric_desk_corner" parent="." instance=ExtResource( 56 )]
+[node name="mdl_table_electric_desk_corner" parent="stg_fablab" instance=ExtResource( 56 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01, 0, -12.6543 )
 
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]

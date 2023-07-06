@@ -4,8 +4,8 @@ extends Spatial
 export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_hover_text_label.tscn")
 export(Resource) var interactable
 
-onready var HUD = $"../../HUD"
-onready var crosshair = $"../../UI_Crosshair"
+onready var HUD = get_node("/root/FabLab/HUD")
+onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
 
 onready var collision_shape  = $StaticBody/CollisionShape
 var static_body
