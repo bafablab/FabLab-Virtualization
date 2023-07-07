@@ -48,10 +48,13 @@ func exit_focus():
 func _input(_event):
 	if in_focus:
 		
-		if door_open:
-			crosshair.show_tooltip(tr("TOOLTIP_CLOSE_DOOR"))
-		elif !door_open:
-			crosshair.show_tooltip(tr("TOOLTIP_OPEN_DOOR"))
+		if !door_moving:
+			if door_open:
+				crosshair.show_tooltip(tr("TOOLTIP_CLOSE_DOOR"))
+			elif !door_open:
+				crosshair.show_tooltip(tr("TOOLTIP_OPEN_DOOR"))
+		else:
+			crosshair.clear_tooltip()
 
 		if Input.is_action_just_pressed("mouse_click") && !door_moving:
 			if door_open == false:

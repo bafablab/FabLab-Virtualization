@@ -23,10 +23,13 @@ func exit_focus():
 func _input(_event):
 	if in_focus:
 		
-		if table_up:
-			crosshair.show_tooltip(tr("TOOLTIP_LOWER_TABLE"))
-		elif !table_up:
-			crosshair.show_tooltip(tr("TOOLTIP_RAISE_TABLE"))
+		if !table_moving:
+			if table_up:
+				crosshair.show_tooltip(tr("TOOLTIP_LOWER_TABLE"))
+			elif !table_up:
+				crosshair.show_tooltip(tr("TOOLTIP_RAISE_TABLE"))
+		else:
+			crosshair.clear_tooltip()
 			
 		if Input.is_action_just_pressed("mouse_click") && !table_moving:
 			if table_up == false:

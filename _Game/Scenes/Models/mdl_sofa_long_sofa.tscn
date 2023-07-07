@@ -1,10 +1,13 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://_Game/Models/sofa_long_sofa/mdl_sofa_long_sofa.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/sofa_long_sofa/Materials/mat_sofa_long_sofa.tres" type="Material" id=2]
 [ext_resource path="res://_Game/Scenes/Models/mdl_pillow_square_yellow.tscn" type="PackedScene" id=3]
 [ext_resource path="res://_Game/Scenes/Models/mdl_pillow_square_black.tscn" type="PackedScene" id=4]
 [ext_resource path="res://_Game/Scenes/Models/mdl_pillow_multicolor_1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://_Game/Scenes/Models/mdl_pillow_multicolor_1_rigidbody.tscn" type="PackedScene" id=6]
+[ext_resource path="res://_Game/Scenes/Models/mdl_pillow_square_black_rigidbody.tscn" type="PackedScene" id=7]
+[ext_resource path="res://_Game/Scenes/Models/mdl_pillow_square_yellow_rigidbody.tscn" type="PackedScene" id=8]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 3.05638, 0.2623, 0.434231 )
@@ -72,44 +75,82 @@ shape = SubResource( 8 )
 
 [node name="pillows" type="Spatial" parent="." index="2"]
 
-[node name="mdl_pillow_multicolor_A" parent="pillows" index="0" instance=ExtResource( 5 )]
+[node name="mdl_pillow_multicolor_A_rigidbody3" parent="pillows" index="0" instance=ExtResource( 6 )]
+transform = Transform( 0.81535, 0, -0.578968, 0, 1, 0, 0.578968, 0, 0.81535, -0.903789, 1.1128, -0.352374 )
+
+[node name="mdl_pillow_multicolor_A_rigidbody" parent="pillows" index="1" instance=ExtResource( 6 )]
+transform = Transform( 0.964484, 0.264142, 0, -0.264142, 0.964484, 0, 0, 0, 1, 0, 0.633642, -0.293846 )
+
+[node name="mdl_pillow_multicolor_A_rigidbody2" parent="pillows" index="2" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.88407, 0.726115, -0.452978 )
+
+[node name="mdl_pillow_square_black_rigidbody" parent="pillows" index="3" instance=ExtResource( 7 )]
+transform = Transform( 0.706298, -0.379015, -0.597905, 0.472843, 0.881147, 0, 0.526842, -0.282715, 0.801567, 1.38246, 0.728068, -0.36977 )
+
+[node name="mdl_pillow_square_black_rigidbody2" parent="pillows" index="4" instance=ExtResource( 7 )]
+transform = Transform( 0.821727, 0.569882, 0, -0.569882, 0.821727, 0, 0, 0, 1, -2.35287, 0.616263, -0.380533 )
+
+[node name="mdl_pillow_square_yellow_rigidbody" parent="pillows" index="5" instance=ExtResource( 8 )]
+transform = Transform( 0.877389, 0, -0.479779, 0, 1, 0, 0.479779, 0, 0.877389, -2.73374, 0.892008, -0.288834 )
+
+[node name="mdl_pillow_square_yellow_rigidbody2" parent="pillows" index="6" instance=ExtResource( 8 )]
+transform = Transform( 0.845038, 0, -0.534706, 0, 1, 0, 0.534706, 0, 0.845038, 2.63617, 0.83215, -0.319024 )
+
+[node name="mdl_pillow_square_yellow_rigidbody3" parent="pillows" index="7" instance=ExtResource( 8 )]
+transform = Transform( 0.94698, -0.244834, -0.208051, 0.23913, 0.969565, -0.0525369, 0.214582, 0, 0.976706, -1.45314, 0.898025, -0.210775 )
+
+[node name="mdl_pillow_multicolor_A" parent="pillows" index="8" instance=ExtResource( 5 )]
 transform = Transform( -0.999564, -0.0151446, 0.0253338, 0.00694773, 0.713476, 0.700645, -0.0286861, 0.700516, -0.71306, -0.347164, 0.585543, -0.464977 )
+visible = false
 
-[node name="mdl_pillow_multicolor_A3" parent="pillows" index="1" instance=ExtResource( 5 )]
+[node name="mdl_pillow_multicolor_A3" parent="pillows" index="9" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.29692, 0.545928, -0.529813 )
+visible = false
 
-[node name="mdl_pillow_multicolor_A4" parent="pillows" index="2" instance=ExtResource( 5 )]
+[node name="mdl_pillow_multicolor_A4" parent="pillows" index="10" instance=ExtResource( 5 )]
 transform = Transform( 0.98992, 0, 0.141627, 0, 1, 0, -0.141627, 0, 0.98992, 1.75046, 0.503818, -0.518768 )
+visible = false
 
-[node name="mdl_pillow_multicolor_A6" parent="pillows" index="3" instance=ExtResource( 5 )]
+[node name="mdl_pillow_multicolor_A6" parent="pillows" index="11" instance=ExtResource( 5 )]
 transform = Transform( 0.13423, -0.955959, -0.261006, -0.0619599, 0.254778, -0.965013, 0.989011, 0.145706, -0.0250323, 0.671079, 0.579101, -0.518768 )
+visible = false
 
-[node name="mdl_pillow_multicolor_A5" parent="pillows" index="4" instance=ExtResource( 5 )]
+[node name="mdl_pillow_multicolor_A5" parent="pillows" index="12" instance=ExtResource( 5 )]
 transform = Transform( -0.0202768, 0.511338, -0.85914, 0.0120648, 0.85938, 0.511196, 0.999722, 0, -0.0235946, 2.85594, 0.616976, -0.275364 )
+visible = false
 
-[node name="mdl_pillow_multicolor_A2" parent="pillows" index="5" instance=ExtResource( 5 )]
+[node name="mdl_pillow_multicolor_A2" parent="pillows" index="13" instance=ExtResource( 5 )]
 transform = Transform( -0.983333, 0.181812, -0.000986574, 0.180335, 0.974629, -0.132581, -0.0231431, -0.130549, -0.991172, -1.34439, 0.559406, -0.464977 )
+visible = false
 
-[node name="mdl_pillow_square_yellow3" parent="pillows" index="6" instance=ExtResource( 3 )]
+[node name="mdl_pillow_square_yellow3" parent="pillows" index="14" instance=ExtResource( 3 )]
 transform = Transform( 0.546657, 0.837356, 0, -0.837356, 0.546657, 0, 0, 0, 1, -2.87462, 0.674496, -0.462578 )
+visible = false
 
-[node name="mdl_pillow_square_yellow4" parent="pillows" index="7" instance=ExtResource( 3 )]
+[node name="mdl_pillow_square_yellow4" parent="pillows" index="15" instance=ExtResource( 3 )]
 transform = Transform( 0.869857, 0, -0.493304, 0, 1, 0, 0.493304, 0, 0.869857, -1.67623, 0.513495, -0.480429 )
+visible = false
 
-[node name="mdl_pillow_square_yellow6" parent="pillows" index="8" instance=ExtResource( 3 )]
+[node name="mdl_pillow_square_yellow6" parent="pillows" index="16" instance=ExtResource( 3 )]
 transform = Transform( 0.869857, 0, -0.493304, 0, 1, 0, 0.493304, 0, 0.869857, 2.68482, 0.513495, -0.345833 )
+visible = false
 
-[node name="mdl_pillow_square_yellow5" parent="pillows" index="9" instance=ExtResource( 3 )]
+[node name="mdl_pillow_square_yellow5" parent="pillows" index="17" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 0.218143, -0.975917, 0, 0.975917, 0.218143, -0.444775, 0.664321, -0.609334 )
+visible = false
 
-[node name="mdl_pillow_square_black" parent="pillows" index="10" instance=ExtResource( 4 )]
+[node name="mdl_pillow_square_black" parent="pillows" index="18" instance=ExtResource( 4 )]
 transform = Transform( 0.979116, 0.118253, -0.165369, -0.202109, 0.654105, -0.728902, 0.0219739, 0.747103, 0.664345, -0.946117, 0.695887, -0.561317 )
+visible = false
 
-[node name="mdl_pillow_square_black2" parent="pillows" index="11" instance=ExtResource( 4 )]
+[node name="mdl_pillow_square_black2" parent="pillows" index="19" instance=ExtResource( 4 )]
 transform = Transform( 0.989653, -0.057025, -0.131661, -0.00698496, 0.897391, -0.44118, 0.14331, 0.437535, 0.887708, -1.93004, 0.591203, -0.330134 )
+visible = false
 
-[node name="mdl_pillow_square_black3" parent="pillows" index="12" instance=ExtResource( 4 )]
+[node name="mdl_pillow_square_black3" parent="pillows" index="20" instance=ExtResource( 4 )]
 transform = Transform( 0.922329, -0.264096, 0.282068, 0.370851, 0.399976, -0.838146, 0.10853, 0.877652, 0.46685, 1.47497, 0.693819, -0.568151 )
+visible = false
 
-[node name="mdl_pillow_square_black4" parent="pillows" index="13" instance=ExtResource( 4 )]
+[node name="mdl_pillow_square_black4" parent="pillows" index="21" instance=ExtResource( 4 )]
 transform = Transform( -0.595137, -0.480702, -0.644001, -0.101226, 0.839829, -0.533329, 0.797223, -0.252215, -0.548473, 2.62089, 0.631825, -0.485407 )
+visible = false
