@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=1]
 [ext_resource path="res://_Game/Resources/dev_shining3d_einstar.tres" type="Resource" id=2]
@@ -6,7 +6,10 @@
 [ext_resource path="res://_Game/Models/dev_3d_scanner/mat_dev_3d_scanner.tres" type="Material" id=4]
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.12683, 0.0452584, 0.1047 )
+extents = Vector3( 0.0976719, 0.0356135, 0.0976403 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.0259292, 0.0207473, 0.0918828 )
 
 [node name="mdl_dev_shining3d_einstar" type="Spatial" groups=["Device"]]
 script = ExtResource( 1 )
@@ -21,9 +24,13 @@ material/0 = ExtResource( 4 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0497997, 0 )
 collision_layer = 17
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000435193, 0.0506062, 0 )
+[node name="Case" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000435193, 0.052654, 0 )
 shape = SubResource( 2 )
+
+[node name="Scanner" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.979138, 0, 0.203197, 0, 1, 0, -0.203197, 0, 0.979138, -0.0518948, 0.104275, -0.000346057 )
+shape = SubResource( 3 )
 
 [node name="HoverTextPosition" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.226501, 0 )

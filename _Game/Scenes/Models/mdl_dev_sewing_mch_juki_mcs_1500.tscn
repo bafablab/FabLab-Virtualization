@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://_Game/Models/dev_sewing_mch_juki_mcs_1500/mdl.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/dev_sewing_mch_juki_mcs_1500/mat_dev_sewing_mch_juki_mcs_1500_tr.tres" type="Material" id=2]
@@ -7,7 +7,10 @@
 [ext_resource path="res://_Game/Resources/dev_juki_msc_1500.tres" type="Resource" id=5]
 
 [sub_resource type="BoxShape" id=4]
-extents = Vector3( 0.0965731, 0.107379, 0.0635925 )
+extents = Vector3( 0.110568, 0.132437, 0.107274 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 0.0763498, 0.0510776, 0.125038 )
 
 [node name="mdl_dev_sewing_mch_juki_mcs_1500" groups=["Device"] instance=ExtResource( 1 )]
 script = ExtResource( 4 )
@@ -31,4 +34,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125304, 0 )
 collision_layer = 17
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00215173, 0.00442311, -0.0520678 )
 shape = SubResource( 4 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0796172, -0.0764371, -0.0156358 )
+shape = SubResource( 5 )
