@@ -1,11 +1,38 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://_Game/Models/shelf_showroom/mdl_shelf_showroom.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/shelf_showroom/mat_shelf_showroom_metal_shroud.tres" type="Material" id=2]
 [ext_resource path="res://_Game/Models/shelf_showroom/mat_shelf_showroom.tres" type="Material" id=3]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 1.5, 1, 0.1 )
+extents = Vector3( 1.38721, 0.269483, 0.185791 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1.38476, 0.015, 0.182247 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 1.38476, 0.015, 0.182247 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 1.38476, 0.015, 0.182247 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 1.38476, 0.0262387, 0.182247 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 0.0293278, 1.03, 0.182 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 0.0293278, 1.03, 0.182 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.0293278, 1.03, 0.182 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 0.0293278, 1.03, 0.182 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 1.38554, 1.03, 0.0256179 )
 
 [node name="mdl_shelf_showroom" instance=ExtResource( 1 )]
 
@@ -16,5 +43,42 @@ material/1 = ExtResource( 2 )
 [node name="StaticBody" type="StaticBody" parent="." index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+[node name="BottomShelf" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.735091, -0.128244 )
 shape = SubResource( 1 )
+
+[node name="Shelf1" type="CollisionShape" parent="StaticBody" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0936717, -0.127239 )
+shape = SubResource( 2 )
+
+[node name="Shelf2" type="CollisionShape" parent="StaticBody" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.266422, -0.126756 )
+shape = SubResource( 3 )
+
+[node name="Shelf3" type="CollisionShape" parent="StaticBody" index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624711, -0.127 )
+shape = SubResource( 4 )
+
+[node name="Roof" type="CollisionShape" parent="StaticBody" index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02461, -0.127 )
+shape = SubResource( 5 )
+
+[node name="LeftWall" type="CollisionShape" parent="StaticBody" index="5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36152, 0.0273451, -0.127 )
+shape = SubResource( 6 )
+
+[node name="RightWall" type="CollisionShape" parent="StaticBody" index="6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3648, 0.0188174, -0.127 )
+shape = SubResource( 7 )
+
+[node name="MidLeft" type="CollisionShape" parent="StaticBody" index="7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.452431, 0.0175133, -0.127 )
+shape = SubResource( 8 )
+
+[node name="MidRight" type="CollisionShape" parent="StaticBody" index="8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.453173, 0.0175133, -0.127 )
+shape = SubResource( 9 )
+
+[node name="Backing" type="CollisionShape" parent="StaticBody" index="9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0181698, -0.31107 )
+shape = SubResource( 10 )
