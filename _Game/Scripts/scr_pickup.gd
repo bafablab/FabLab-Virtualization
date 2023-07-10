@@ -43,7 +43,7 @@ func pickup_sleeping_state_changed():
 
 func pickup_body_entered(body):
 	
-	# Prevent sleep if in collision with a possible moving object such as a door or a moving table
+	# Prevent sleep if in collision with a possible moving object (is in group Mover) such as a door or a moving table
 	if body.is_in_group("Mover"):
 		HUD.append_debugtext("Pickup object collided with a Mover")
 		self.can_sleep = false

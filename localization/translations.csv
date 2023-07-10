@@ -30,6 +30,29 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 
 BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "WELCOME_BUTTON","Continue","Jatka","Fortsätta"
+"FAB_CHARTER_HEADER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
+"FAB_CHARTER_TEXT","[b]What is a fab lab?[/b]
+Fab labs are a global network of local labs, enabling invention by providing access to tools for digital fabrication
+
+[b]What's in a fab lab?[/b]
+Fab labs share an evolving inventory of core capabilities to make (almost) anything, allowing people and projects to be shared
+
+[b]What does the fab lab network provide?[/b]
+Operational, educational, technical, financial, and logistical assistance beyond what's available within one lab
+
+[b]Who can use a fab lab?[/b]
+Fab labs are available as a community resource, offering open access for individuals as well as scheduled access for programs
+
+[b]What are your responsibilities?[/b]
+[i]Safety:[/i] not hurting people or machines
+[i]Operations:[/i] assisting with cleaning, maintaining, and improving the lab
+[i]Knowledge:[/i] contributing to documentation and instruction
+
+[b]Who owns fab lab inventions?[/b]
+Designs and processes developed in fab labs can be protected and sold however an inventor chooses, but should remain available for individuals to use and learn from
+
+[b]How can businesses use a fab lab?[/b]
+Commercial activities can be prototyped and incubated in a fab lab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success","Fablab Charter FI","Fablab Charter SWE"
 "DEV_MENU_INFO","Description","Esittely","Beskrivning"
 "DEV_MENU_DETAILS","Technical information","Tekniset tiedot","Tekniska information"
 "DEV_MENU_EXAMPLES","Example products:","Esimerkkituotteita:","Exempelprodukter:"

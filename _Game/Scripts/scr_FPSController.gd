@@ -178,15 +178,6 @@ func _on_Area_body_exited(body):
 	objects_in_range.erase(body)
 #	print(objects_in_range)
 
-# Not in use (I think), Sami 26.4.2023
-#func _on_Area_area_entered(area):
-#	objects_in_range.append(area)
-##	print(objects_in_range)
-#
-#func _on_Area_area_exited(area):
-#	objects_in_range.erase(area)
-##	print(objects_in_range)
-
 # toggle mouse mode for debug purposes
 func toggle_mouse():	
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:

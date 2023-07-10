@@ -28,6 +28,8 @@ func _ready():
 		menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 	elif self.is_in_group("Item"):
 		menu = get_node("/root/FabLab/UI_ItemInfoMenu")
+	elif self.is_in_group("FabCharter"):
+		menu = get_node("/root/FabLab/UI_fab_charter")
 	# For possible future use. Only debug stuff currently
 	game_manager = get_node("/root/FabLab")	
 	static_body = get_node("StaticBody")
