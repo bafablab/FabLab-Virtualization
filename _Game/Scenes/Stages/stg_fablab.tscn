@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -58,7 +58,6 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_desk_corner.tscn" type="PackedScene" id=56]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_default.tscn" type="PackedScene" id=57]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_polygon_owl_rigid.tscn" type="PackedScene" id=58]
-[ext_resource path="res://_Game/Scenes/UI/UI_fab_charter.tscn" type="PackedScene" id=59]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -82,9 +81,6 @@ visible = false
 
 [node name="UI_WelcomeWindow" parent="." instance=ExtResource( 44 )]
 pause_mode = 0
-visible = false
-
-[node name="UI_fab_charter" parent="." instance=ExtResource( 59 )]
 visible = false
 
 [node name="UI_MainMenu" parent="." instance=ExtResource( 22 )]

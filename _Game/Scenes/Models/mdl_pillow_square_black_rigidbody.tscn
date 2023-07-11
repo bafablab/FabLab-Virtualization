@@ -10,6 +10,8 @@ extents = Vector3( 0.175921, 0.0375127, 0.176973 )
 [node name="mdl_pillow_square_black_rigidbody" type="RigidBody" groups=["Draggable"]]
 collision_layer = 33
 collision_mask = 55
+contacts_reported = 5
+contact_monitor = true
 script = ExtResource( 3 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
