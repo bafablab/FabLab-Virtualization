@@ -22,7 +22,7 @@ transform = Transform( 0.115257, 0, 0, 0, 0.115257, 0, 0, 0, 0.115257, 0, 0, 0 )
 material_overlay = SubResource( 2 )
 
 [node name="StaticBody" type="StaticBody" parent="." index="1"]
-collision_layer = 22
+collision_layer = 18
 collision_mask = 9
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]

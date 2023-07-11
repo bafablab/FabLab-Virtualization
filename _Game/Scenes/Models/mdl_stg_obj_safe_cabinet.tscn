@@ -4,7 +4,7 @@
 [ext_resource path="res://_Game/Models/stg_fl_obj_safe_cabinet/mat_stg_fl_obj_safe_cabinet.tres" type="Material" id=2]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 1.4, 1, 0.3 )
+extents = Vector3( 1.42642, 1, 0.266294 )
 
 [node name="mdl_stg_obj_safe_cabinet" instance=ExtResource( 1 )]
 
@@ -12,7 +12,8 @@ extents = Vector3( 1.4, 1, 0.3 )
 material/0 = ExtResource( 2 )
 
 [node name="StaticBody" type="StaticBody" parent="." index="1"]
+collision_layer = 3
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -0.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.118304, 1, -0.271334 )
 shape = SubResource( 1 )

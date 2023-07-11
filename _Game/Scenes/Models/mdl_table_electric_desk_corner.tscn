@@ -89,6 +89,9 @@ tracks/7/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 4.16667, 1, 0
 [node name="mdl_table_electric_desk_corner" instance=ExtResource( 1 )]
 script = ExtResource( 4 )
 
+[node name="Skeleton" parent="Armature" index="0"]
+bones/1/bound_children = [ NodePath("BoneAttachment") ]
+
 [node name="mdl" parent="Armature/Skeleton" index="0"]
 material/0 = ExtResource( 2 )
 
@@ -124,6 +127,7 @@ shape = SubResource( 5 )
 transform = Transform( -1.12035e-07, -0.999999, -1.96436e-07, -0.47699, -1.19209e-07, 0.878908, -0.878909, 1.92167e-07, -0.47699, -0.0691626, 0.236093, -0.0192423 )
 
 [node name="LowerLegs" type="StaticBody" parent="Armature/Skeleton" index="2"]
+collision_layer = 3
 
 [node name="LegHorizontalLeft" type="CollisionShape" parent="Armature/Skeleton/LowerLegs" index="0"]
 transform = Transform( -1.19209e-07, 0.882944, 0.46947, -0.999996, -1.95471e-07, 1.13708e-07, 1.92166e-07, -0.469471, 0.882947, 0.453559, 0.01429, 0.59347 )

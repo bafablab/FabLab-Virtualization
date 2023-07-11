@@ -150,7 +150,7 @@ func on_empty_grabber():
 		on_grabber_collision(collision_object)
 
 func on_full_grabber():
-	var expected_translation = $Head.to_global(grabbed_item_rel_pos)
+	var expected_translation = $Head.to_global(holdposition.translation) # Was: $Head.to_global(grabbed_item_rel_pos)
 	var linear_vel = expected_translation - grabbed_item.translation
 	grabbed_item.update_velocity(linear_vel)
 	if !Input.is_action_pressed("mouse_click"):

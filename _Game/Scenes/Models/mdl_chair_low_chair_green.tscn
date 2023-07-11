@@ -23,6 +23,7 @@ material/0 = ExtResource( 2 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46974, 0 )
+collision_layer = 3
 
 [node name="SeatBottom" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0348566, 0.036864 )

@@ -16,6 +16,7 @@ extents = Vector3( 0.06, 0.335, 0.06 )
 [node name="mdl_table_large_round_table" type="Spatial"]
 
 [node name="StaticBody" type="StaticBody" parent="."]
+collision_layer = 3
 
 [node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
 mesh = ExtResource( 1 )
