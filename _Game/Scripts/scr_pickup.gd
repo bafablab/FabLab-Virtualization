@@ -4,7 +4,7 @@ extends RigidBody
 onready var HUD = get_node("/root/FabLab/HUD")
 onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
 
-# Modify the grab force for a more fluid or more rigid hold force
+# Modify the grab force for a more fluid or more rigid hold force, default is 20
 const GRAB_FORCE = 20
 var linear_vel = null
 
@@ -38,7 +38,7 @@ func _input(_event):
 		else:
 			crosshair.clear_tooltip()
 
-# Functions for handling the movement of this object
+# Functions for handling the movement of this object.
 func _integrate_forces(state):
 	if linear_vel != null:
 		state.linear_velocity = linear_vel * GRAB_FORCE

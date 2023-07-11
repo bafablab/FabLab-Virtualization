@@ -1,45 +1,45 @@
 extends KinematicBody
 
-# These variables are from the FPSController tutorial
-export var speed = 10
-export var h_acceleration = 6
+# Variables for moving the player
+export var speed = 10 # maximum speed of the player
+export var h_acceleration = 6 # rate of acceleration
 export var gravity = 20
-var jump = 10
+#var jump = 10 # Jumping force, not currently used
 var full_contact = false
 var direction = Vector3()
 var h_velocity = Vector3()
 var movement = Vector3()
 var gravity_vec = Vector3()
 
+# Set mouse behavior here
 export var mouse_sensitivity = 0.06
 export var inverse_mouse = -1
 
 onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect 		# raycast for detecting interactables
-onready var grabber = $Head/Grabber # raycast for holding objects
+onready var grabber = $Head/Grabber # raycast for picking up objects, think of it as an invisible hand
 onready var camera = $Head/Camera
-onready var holdposition = $Head/Camera/HoldPosition
+onready var holdposition = $Head/Camera/HoldPosition # position where a picked up object is held
 
-# These variables are specific for the project
-export var moving = true
+export var moving = true # for enabling/disabling movement
 
+# Variables for interacting with objects
 var objects_in_range = []
 var selected_object_transform
 var targeted_object = null
 
+# Variables for picking up items
 var grabbed_item = null
 var grabbed_item_rel_pos
 
+# UI windows, HUD and crosshair
 onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 onready var item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 onready var main_menu = get_node("/root/FabLab/UI_MainMenu")
 onready var welcome_window = get_node("/root/FabLab/UI_WelcomeWindow")
 onready var HUD = get_node("/root/FabLab/HUD")
 onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
-
-var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
-var collisions
 
 # Called when the node enters the scene tree for the first time.
 #func _ready():
@@ -67,10 +67,12 @@ func _process(_delta):
 	else:
 		moving = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	#print_debug(moving)
 	
 
+# Physics process, runs all the time unless game is paused, not connected to FPS
 func _physics_process(delta):
+	
+	# ------- Object selection code begins -------
 	# Check if interactable objects in range
 	if objects_in_range.size() > 0 and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		# enable object_select raycast if objects near
@@ -100,9 +102,10 @@ func _physics_process(delta):
 			object_select.enabled = false
 	# ------- Object selection code ends -------
 	
-	# Handles grabbing items
+	# Handle item grabbing
 	handle_grabber()
 	
+	# ----- Movement code begins ------
 	# Movement code from tutorial
 	direction = Vector3()
 	if ground_check.is_colliding():
@@ -110,6 +113,7 @@ func _physics_process(delta):
 	else:
 		full_contact = false
 	
+	# Keeps the player on the ground
 	if not is_on_floor():
 		gravity_vec += Vector3.DOWN * gravity * delta
 	elif is_on_floor() and full_contact:
@@ -118,6 +122,7 @@ func _physics_process(delta):
 		gravity_vec = -get_floor_normal()
 	
 	if moving:
+# Jumping is not implemented
 #		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 #			gravity_vec = Vector3.UP * jump
 		if Input.is_action_pressed("move_forward"):
@@ -137,48 +142,67 @@ func _physics_process(delta):
 		move_and_slide(movement, Vector3.UP)
 	else:
 		h_velocity = Vector3.ZERO # stop player if any menu is open
+	# ------ Movement code ends ------
 
+# ------ Object picking/throwing functions begin ------
+# Called all the time from the physics process
 func handle_grabber():
 	if grabbed_item == null:
 		on_empty_grabber()
 	else:
 		on_full_grabber()
 
+# If the grabber raycast collides with a object that can be picked up, do so
 func on_empty_grabber():
 	var collision_object = grabber.get_collider()
 	if collision_object != null:
 		on_grabber_collision(collision_object)
 
+# Holds the picked up object in the specified hold position
 func on_full_grabber():
-	var expected_translation = $Head.to_global(holdposition.translation) # Was: $Head.to_global(grabbed_item_rel_pos)
+	var expected_translation = $Head.to_global(holdposition.translation) # Was: $Head.to_global(grabbed_item_rel_pos), This would make the holding distance what it was when the object was clicked, the object doesn't move toward the player
 	var linear_vel = expected_translation - grabbed_item.translation
 	grabbed_item.update_velocity(linear_vel)
 	if !Input.is_action_pressed("mouse_click"):
 		let_go();
-	
+# TODO: Throwing
+#	if Input.is_action_just_pressed("right_mouse_click"):
+#		HUD.append_debugtext("Throwing!")
+#		throw()
+
+# Drop the picked up object
 func let_go():
 	grabbed_item.update_velocity(null)
 	grabbed_item = null
 
+# TODO: Throwing
+#func throw():
+#	if grabbed_item != null:
+#		var knockback = grabbed_item.translation - translation
+#		grabbed_item.apply_central_impulse(knockback * 10)
+#		grabbed_item = null
+
+# Picks up the object in the grabber raycast
 func on_grabber_collision(collision_object):
 	if can_be_picked(collision_object):
 		if Input.is_action_pressed("mouse_click"):
-			grabbed_item_rel_pos = $Head.to_local(collision_object.translation)
+			#grabbed_item_rel_pos = $Head.to_local(collision_object.translation)
 			grabbed_item = collision_object
 			grabbed_item.apply_central_impulse(Vector3.UP * 0.1)
 
 # Checker if targeted object is a pickable object (has scr_pickup.gd attached)
 func can_be_picked(object):
 	return object.has_method("update_velocity")
+	
+	
+# ------ Object picking/throwing functions end ------
 
-# Add nearby intaractables to a list
+# Add/remove nearby intaractables to a list, based on a cylindrical area surrounding the player
 func _on_Area_body_entered(body):
 	objects_in_range.append(body)
-#	print(objects_in_range)
 
 func _on_Area_body_exited(body):
 	objects_in_range.erase(body)
-#	print(objects_in_range)
 
 # toggle mouse mode for debug purposes
 func toggle_mouse():	
