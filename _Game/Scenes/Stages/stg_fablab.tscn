@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -58,6 +58,9 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_desk_corner.tscn" type="PackedScene" id=56]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_electric_default.tscn" type="PackedScene" id=57]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_polygon_owl_rigid.tscn" type="PackedScene" id=58]
+[ext_resource path="res://_Game/Scenes/Models/mdl_pillow_square_yellow_rigidbody.tscn" type="PackedScene" id=59]
+[ext_resource path="res://_Game/Scenes/Models/mdl_pillow_multicolor_1_rigidbody.tscn" type="PackedScene" id=60]
+[ext_resource path="res://_Game/Scenes/Models/mdl_pillow_square_black_rigidbody.tscn" type="PackedScene" id=61]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -87,7 +90,6 @@ visible = false
 
 [node name="FPSController" parent="." instance=ExtResource( 7 )]
 transform = Transform( 0.997071, 0, -0.0764757, 0, 1, 0, 0.0764757, 0, 0.997071, 3.73036, 0, -15.3207 )
-collision_layer = 1
 inverse_mouse = 1
 
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
@@ -139,6 +141,24 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.74734
 
 [node name="mdl_long_sofa" parent="stg_fablab" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.96339, 0.00620852, -5.37632 )
+
+[node name="mdl_pillow_square_yellow_rigidbody" parent="stg_fablab" instance=ExtResource( 59 )]
+transform = Transform( 0.92868, 0, -0.370882, 0, 1, 0, 0.370882, 0, 0.92868, 2.41024, 0.628572, -5.74862 )
+
+[node name="mdl_pillow_square_yellow_rigidbody2" parent="stg_fablab" instance=ExtResource( 59 )]
+transform = Transform( 0.856853, 0, -0.515562, -0.149694, 0.95692, -0.248788, 0.493351, 0.290352, 0.819939, 4.59137, 1.03716, -5.54983 )
+
+[node name="mdl_pillow_square_black_rigidbody" parent="stg_fablab" instance=ExtResource( 61 )]
+transform = Transform( 0.980318, -0.16026, 0.1153, 0.159163, 0.987075, 0.0187199, -0.116809, 0, 0.993154, 3.49332, 0.633189, -5.84906 )
+
+[node name="mdl_pillow_square_black_rigidbody2" parent="stg_fablab" instance=ExtResource( 61 )]
+transform = Transform( 0.985524, 0, 0.169539, 0, 1, 0, -0.169539, 0, 0.985524, 7.57982, 0.668672, -5.47414 )
+
+[node name="mdl_pillow_multicolor_A_rigidbody" parent="stg_fablab" instance=ExtResource( 60 )]
+transform = Transform( 0.7026, 0, -0.711585, 0, 1, 0, 0.711585, 0, 0.7026, 5.21387, 0.943031, -5.5986 )
+
+[node name="mdl_pillow_multicolor_A_rigidbody2" parent="stg_fablab" instance=ExtResource( 60 )]
+transform = Transform( 0.710908, 0.407113, 0.573471, -0.220907, 0.90341, -0.367492, -0.66769, 0.134569, 0.732176, 7.02034, 0.935086, -5.68875 )
 
 [node name="mdl_shelf_showroom" parent="stg_fablab" instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.82366, 0, -11.4941 )
@@ -324,7 +344,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01, 0, -12.6543 )
 
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
-collision_layer = 2147483777
+collision_layer = 2147483681
 collision_mask = 2147483703
 contacts_reported = 5
 contact_monitor = true

@@ -12,7 +12,10 @@ var wasCalledFromDeviceMenu = false
 onready var item_3d_view = $VBoxContainer/TabContainer/Panel/Item3DView
 
 # Called when the node enters the scene tree for the first time.
-#func _ready():
+func _ready():
+	# Handle clicking hyperlinks in other than HTML5 versions of the game
+	if OS.get_name() != "HTML5":
+		$VBoxContainer/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 
 func init(itm):
@@ -31,10 +34,6 @@ func init(itm):
 	
 	# Initialize the object 3d view
 	item_3d_view.init(item.mesh_instance)
-	
-	# Handle clicking hyperlinks in other than HTML5 versions of the game
-	if OS.get_name() != "HTML5":
-		$VBoxContainer/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 	self.visible = true
 	

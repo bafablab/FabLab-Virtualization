@@ -16,6 +16,7 @@ func updatetexts():
 	# Add texts to header and textbox since Godot doesn't automatically translate text in the bbcode-field
 	$VBoxContainer/Panel/WelcomeHeader.bbcode_text = "[center][b]" + tr("WELCOME_HEADER") + "[/b][/center]"
 	$VBoxContainer/Panel/WelcomeText.bbcode_text = tr("WELCOME_TEXT")
+	$VBoxContainer/Panel/Button.text = tr("BUTTON_CLOSE")
 
 func _input(event):
 	if self.visible:

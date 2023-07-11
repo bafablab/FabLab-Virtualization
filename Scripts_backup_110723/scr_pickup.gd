@@ -1,23 +1,16 @@
 extends RigidBody
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-var player
-var holdposition
 var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
 var collision_amount
-var rigid_body
-onready var HUD = $"../HUD"
+onready var rigid_body = self
+onready var HUD = get_node("/root/FabLab/HUD")
+onready var player = get_node("/root/FabLab/FPSController")
+onready var holdposition = get_node("/root/FabLab/FPSController/Head/Camera/HoldPosition")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	player = get_node("/root/FabLab/FPSController")
-	holdposition = get_node("/root/FabLab/FPSController/Head/Camera/HoldPosition")
-	rigid_body = self
-	
 	self.connect("body_entered", self, "pickup_body_entered")
+	self.connect("body_exited", self, "pickup_body_exited")
 	self.connect("sleeping_state_changed", self, "pickup_sleeping_state_changed")	
 
 	
@@ -49,9 +42,18 @@ func pickup_sleeping_state_changed():
 		HUD.append_debugtext("Pickup object " + self.name + " awake")
 
 func pickup_body_entered(body):
+	
+	# Prevent sleep if in collision with a possible moving object (is in group Mover) such as a door or a moving table
+	if body.is_in_group("Mover"):
+		HUD.append_debugtext("Pickup object collided with a Mover")
+		self.can_sleep = false
+		
 	if player.dragging:
 		if body.get_name() != "FPSController":
 			pass
-			#print_debug("pickup collided with")
-			#print_debug(body.get_name())
-			#print_debug(body.transform.origin)
+
+func pickup_body_exited(body):
+	# When exiting a Mover, turn ability to sleep back on
+	if body.is_in_group("Mover"):
+		HUD.append_debugtext("Pickup object exited a Mover")
+		self.can_sleep = true

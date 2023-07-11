@@ -25,8 +25,6 @@ func _ready():
 	
 	# connect signals that are emitted when mouse enters and exits static body
 	# FPSController emits same signals when objectSelect raycast is colliding with static body
-	# Mouse over is currently used only while debugging, but may be useful if
-	# different movement controls are added.
 	static_body.connect("mouse_entered", self, "enter_focus")
 	static_body.connect("mouse_exited", self, "exit_focus")	
 	

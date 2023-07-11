@@ -10,29 +10,34 @@ var direction = Vector3()
 var h_velocity = Vector3()
 var movement = Vector3()
 var gravity_vec = Vector3()
+
 export var mouse_sensitivity = 0.06
 export var inverse_mouse = -1
+
 onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect 		# raycast for detecting interactables
+onready var grabber = $Head/Grabber # raycast for holding objects
 onready var camera = $Head/Camera
 onready var holdposition = $Head/Camera/HoldPosition
-var held_object : Object
 
 # These variables are specific for the project
 export var moving = true
+
 var objects_in_range = []
 var selected_object_transform
 var targeted_object = null
-var draggable_object = null
-var dragging = false
+
+var grabbed_item = null
+var grabbed_item_rel_pos
+
 onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 onready var item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 onready var main_menu = get_node("/root/FabLab/UI_MainMenu")
 onready var welcome_window = get_node("/root/FabLab/UI_WelcomeWindow")
 onready var HUD = get_node("/root/FabLab/HUD")
 onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
-var draggable = false
+
 var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
 var collisions
 
@@ -82,14 +87,6 @@ func _physics_process(delta):
 				object_select.get_collider().emit_signal("mouse_entered")
 				targeted_object = object_select.get_collider()
 					
-				#print_debug(targeted_object, object_select.get_collider())
-				if targeted_object.is_in_group(("Draggable")):							
-					draggable_object = targeted_object
-					draggable = true
-					HUD.append_debugtext("Mouse on draggable")
-				else:
-					if !dragging:
-						draggable = false
 		else:
 			# clear targeted object if raycast isn't colliding and unselect it
 			if targeted_object != null:
@@ -103,33 +100,8 @@ func _physics_process(delta):
 			object_select.enabled = false
 	# ------- Object selection code ends -------
 	
-	if draggable_object && draggable == true:
-		# Drag object when mouse button is down
-		if Input.is_action_pressed("mouse_click"):
-			dragging = true
-			draggable_object.mode = RigidBody.MODE_RIGID
-			draggable_object.sleeping = false
-			#draggable_object.connect("body_entered", self, "pickup_collision")
-			#HUD.append_debugtext("Holding object")
-			crosshair.clear_tooltip()
-		else:
-			dragging = false
-		
-		# Throwing object
-		if Input.is_action_just_pressed("right_mouse_click"):
-			if draggable_object != null and dragging == true:
-				#draggable_object.mode = RigidBody.MODE_RIGID
-				#draggable_object.collision_mask = 1
-				#draggable_object.set_collision_layer_bit(0, true)
-				HUD.append_debugtext("Throwing object")
-				var throwdirection = self.get_transform().basis.z
-				draggable_object.add_central_force(throwdirection * -500)
-				dragging = false
-				draggable = false
-			
-		if dragging == true:
-			draggable_object.contact_monitor = true
-			draggable_object.global_transform.origin = holdposition.global_transform.origin
+	# Handles grabbing items
+	handle_grabber()
 	
 	# Movement code from tutorial
 	direction = Vector3()
@@ -166,8 +138,38 @@ func _physics_process(delta):
 	else:
 		h_velocity = Vector3.ZERO # stop player if any menu is open
 
-func pickup_collision(body):
-	pass
+func handle_grabber():
+	if grabbed_item == null:
+		on_empty_grabber()
+	else:
+		on_full_grabber()
+
+func on_empty_grabber():
+	var collision_object = grabber.get_collider()
+	if collision_object != null:
+		on_grabber_collision(collision_object)
+
+func on_full_grabber():
+	var expected_translation = $Head.to_global(grabbed_item_rel_pos)
+	var linear_vel = expected_translation - grabbed_item.translation
+	grabbed_item.update_velocity(linear_vel)
+	if !Input.is_action_pressed("mouse_click"):
+		let_go();
+	
+func let_go():
+	grabbed_item.update_velocity(null)
+	grabbed_item = null
+
+func on_grabber_collision(collision_object):
+	if can_be_picked(collision_object):
+		if Input.is_action_pressed("mouse_click"):
+			grabbed_item_rel_pos = $Head.to_local(collision_object.translation)
+			grabbed_item = collision_object
+			grabbed_item.apply_central_impulse(Vector3.UP * 0.1)
+
+# Checker if targeted object is a pickable object (has scr_pickup.gd attached)
+func can_be_picked(object):
+	return object.has_method("update_velocity")
 
 # Add nearby intaractables to a list
 func _on_Area_body_entered(body):

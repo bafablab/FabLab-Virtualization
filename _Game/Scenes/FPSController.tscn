@@ -20,7 +20,7 @@ radius = 0.241777
 radius = 5.03202
 
 [node name="FPSController" type="KinematicBody"]
-collision_layer = 17
+collision_mask = 55
 script = ExtResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
@@ -51,12 +51,18 @@ visible = false
 mesh = SubResource( 5 )
 
 [node name="HoldPosition" type="Spatial" parent="Head/Camera"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, -1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
 
 [node name="ObjectSelect" type="RayCast" parent="Head"]
 enabled = true
 cast_to = Vector3( 0, 0, -5 )
-collision_mask = 188
+collision_mask = 190
+collide_with_areas = true
+
+[node name="Grabber" type="RayCast" parent="Head"]
+enabled = true
+cast_to = Vector3( 0, 0, -3 )
+collision_mask = 54
 collide_with_areas = true
 
 [node name="GroundCheck" type="RayCast" parent="."]

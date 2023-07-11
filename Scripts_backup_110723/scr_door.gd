@@ -4,8 +4,8 @@ extends Spatial
 export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_hover_text_label.tscn")
 export(Resource) var interactable
 
-onready var HUD = $"../../HUD"
-onready var crosshair = $"../../UI_Crosshair"
+onready var HUD = get_node("/root/FabLab/HUD")
+onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
 
 onready var collision_shape  = $StaticBody/CollisionShape
 var static_body
@@ -34,7 +34,6 @@ func _ready():
 	
 func enter_focus():
 	in_focus = true
-	crosshair.show_tooltip(tr("TOOLTIP_INTERACT"))
 	HUD.append_debugtext("Mouse on " + self.name)
 	if $AnimationPlayer.current_animation == "01_open_door":
 		hover_text.visible = false
@@ -44,9 +43,19 @@ func enter_focus():
 func exit_focus():
 	in_focus = false
 	hover_text.visible = false
+	crosshair.clear_tooltip()
 
 func _input(_event):
 	if in_focus:
+		
+		if !door_moving:
+			if door_open:
+				crosshair.show_tooltip(tr("TOOLTIP_CLOSE_DOOR"))
+			elif !door_open:
+				crosshair.show_tooltip(tr("TOOLTIP_OPEN_DOOR"))
+		else:
+			crosshair.clear_tooltip()
+
 		if Input.is_action_just_pressed("mouse_click") && !door_moving:
 			if door_open == false:
 				$AnimationPlayer.play("01_open_door")

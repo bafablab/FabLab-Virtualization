@@ -4,8 +4,8 @@ onready var button_finnish = $Panel/Panel/Button_Finnish
 onready var checkbox_inverty = $Panel/HBoxContainer/CheckBox
 onready var fps_controller = $"../FPSController"
 onready var firststart = true
-onready var welcome_window = $"../UI_WelcomeWindow"
-onready var HUD = $"../HUD"
+onready var welcome_window = get_node("/root/FabLab/UI_WelcomeWindow")
+onready var HUD = get_node("/root/FabLab/HUD")
 
 func _ready():
 	show()

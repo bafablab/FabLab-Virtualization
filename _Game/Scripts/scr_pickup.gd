@@ -1,59 +1,66 @@
 extends RigidBody
 
-var collision_pos : Vector3 = Vector3(0.0, 0.0, 0.0)
-var collision_amount
-onready var rigid_body = self
+# For accessing the HUD and tooltips
 onready var HUD = get_node("/root/FabLab/HUD")
-onready var player = get_node("/root/FabLab/FPSController")
-onready var holdposition = get_node("/root/FabLab/FPSController/Head/Camera/HoldPosition")
+onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
 
-# Called when the node enters the scene tree for the first time.
+# Modify the grab force for a more fluid or more rigid hold force
+const GRAB_FORCE = 20
+var linear_vel = null
+
+var in_focus = false
+
 func _ready():
+	# For when mouse is hovering over this object
+	self.connect("mouse_entered", self, "enter_focus")
+	self.connect("mouse_exited", self, "exit_focus")	
+	
+	# For collisions with other objects
 	self.connect("body_entered", self, "pickup_body_entered")
 	self.connect("body_exited", self, "pickup_body_exited")
+	
+	# For sleep state changes
 	self.connect("sleeping_state_changed", self, "pickup_sleeping_state_changed")	
 
+func enter_focus():
+	in_focus = true
+	HUD.append_debugtext("Mouse on pickup object " + self.name)
 	
+func exit_focus():
+	in_focus = false
+	crosshair.clear_tooltip()
+	
+func _input(_event):
+	if in_focus:
+		# Only show tooltip when NOT dragging the object
+		if !Input.is_action_pressed("mouse_click"):
+			crosshair.show_tooltip(tr("TOOLTIP_INTERACT"))
+		else:
+			crosshair.clear_tooltip()
+
+# Functions for handling the movement of this object
 func _integrate_forces(state):
-	collision_amount = state.get_contact_count()
-	if collision_amount > 0:
-		for index in collision_amount:
-			if state.get_contact_collider_object(index) != player:
-				if holdposition.translation.z <= -0.1:
-					holdposition.translation.z = holdposition.translation.z + 0.1
-					#print_debug("local collision:")
-					#print_debug(holdposition.transform.origin)
-			else:
-				if holdposition.translation.z > -1:
-					holdposition.translation.z = holdposition.translation.z - 0.1
-	else:
-		if holdposition.translation.z > -1:
-			holdposition.translation.z = holdposition.translation.z - 0.1
+	if linear_vel != null:
+		state.linear_velocity = linear_vel * GRAB_FORCE
 
+func update_velocity(lv):
+	linear_vel = lv
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
+# Report sleep mode changes to debug
 func pickup_sleeping_state_changed():
 	if self.sleeping:
 		HUD.append_debugtext("Pickup object " + self.name + " sleeping")
 	else:
 		HUD.append_debugtext("Pickup object " + self.name + " awake")
 
+# Prevent sleep if in collision with a possible moving object (is in group Mover) such as a door or a moving table
 func pickup_body_entered(body):
-	
-	# Prevent sleep if in collision with a possible moving object (is in group Mover) such as a door or a moving table
 	if body.is_in_group("Mover"):
-		HUD.append_debugtext("Pickup object collided with a Mover")
+		HUD.append_debugtext(self.name + " collided with a Mover, can_sleep = false")
 		self.can_sleep = false
-		
-	if player.dragging:
-		if body.get_name() != "FPSController":
-			pass
 
+# When exiting a Mover, turn ability to sleep back on
 func pickup_body_exited(body):
-	# When exiting a Mover, turn ability to sleep back on
 	if body.is_in_group("Mover"):
-		HUD.append_debugtext("Pickup object exited a Mover")
+		HUD.append_debugtext(self.name + " exited a Mover, can_sleep = true")
 		self.can_sleep = true

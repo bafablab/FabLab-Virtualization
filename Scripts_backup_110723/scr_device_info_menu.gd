@@ -15,8 +15,11 @@ var device
 var inFocus
 
 # Called when the node enters the scene tree for the first time.
-#func _ready():
-	
+func _ready():
+	# Handle clicking hyperlinks in other than HTML5 versions of the game
+	if OS.get_name() != "HTML5":
+		intro_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+		details_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 
 func init(dev):
 	device = dev
@@ -28,11 +31,6 @@ func init(dev):
 	# attribuutti bbcode_text mahdollistaa rikkaamman tekstin näytön (esim lihavointi)
 	intro_text.bbcode_text = "[b]" + tr(device.generic_name) + "[/b] - [b]" + tr(device.name) + "[/b]\n\n" + tr(device.info_text)
 	details_text.bbcode_text = tr(device.details_text)
-	
-	# Handle clicking hyperlinks in other than HTML5 versions of the game
-	if OS.get_name() != "HTML5":
-		intro_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
-		details_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 	self.visible = true
 	
