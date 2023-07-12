@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://_Game/Shared/Material/mat_electric_devs.tres" type="Material" id=1]
 [ext_resource path="res://_Game/Models/dev_electric_afg_2125/mdl_dev_electric_afg_2125.glb" type="PackedScene" id=2]
+[ext_resource path="res://_Game/Resources/dev_electronics.tres" type="Resource" id=3]
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=4]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.110867, 0.0450129, 0.134111 )
@@ -9,7 +11,9 @@ extents = Vector3( 0.110867, 0.0450129, 0.134111 )
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.127501, 0.0726131, 0.0165819 )
 
-[node name="mdl_dev_electric_afg_2125" instance=ExtResource( 2 )]
+[node name="mdl_dev_electric_afg_2125" groups=["Device"] instance=ExtResource( 2 )]
+script = ExtResource( 4 )
+interactable = ExtResource( 3 )
 
 [node name="dev" parent="." index="0"]
 material/0 = ExtResource( 1 )

@@ -76,6 +76,7 @@ Commercial activities can be prototyped and incubated in a fab lab, but they mus
 Right button or mouse wheel zooms, middle button moves the object.","Voit pyörittää kappaletta klikkaamalla ja raahaamalla hiirtä ikkunassa.
 Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta.","ITEM_INFO_3D_HELP på svenska"
 "OBJECT_DOOR","Door","Ovi","Dörr"
+"DEV_GENERIC_NAME_ELECTRONICS","Electronics workshop","Elektroniikkatyöpaja","Electronics workshop"
 "DEV_GENERIC_NAME_3DSCANNER","3D Scanner","3D-skanneri","3D-skanner"
 "DEV_GENERIC_NAME_3DPRINTER","3D Printer","3D-tulostin","3D-skrivare"
 "DEV_GENERIC_NAME_3DPRINTER_RESIN","3D Printer (resin)","3D-tulostin (hartsi)","3D-skrivare (harts)"
@@ -90,6 +91,7 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_GENERIC_NAME_CNCMILL","CNC milling machine","CNC-jyrsin","CNC fräsmaskin"
 "DEV_GENERIC_NAME_PRECISIONMILL","Precision milling machine","Tarkkuusjyrsin","Precisionsfräsmaskin"
 "DEV_GENERIC_NAME_SANDBLASTER","Sand blaster","Hiekkapuhallin","Sandblåsare"
+"DEV_NAME_ELECTRONICS","Various devices","Erilaisia laitteita","Många saker"
 "DEV_NAME_ELEGOO","ELEGOO Mars 2 MSLA","ELEGOO Mars 2 MSLA","ELEGOO Mars 2 MSLA"
 "DEV_NAME_ELNA","ELNA eXperience 520 S","ELNA eXperience 520 S","ELNA eXperience 520 S"
 "DEV_NAME_ENDER","Ender-3 V2 Neo","Ender-3 V2 Neo","Ender-3 V2 Neo"
@@ -104,6 +106,8 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_NAME_ROLAND_CAMM","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24"
 "DEV_NAME_SHINING3D","Shining3D Einstar","Shining3D Einstar","Shining3D Einstar"
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
+"DEV_DESC_ELECTRONICS","Electronics desc","Elektroniikka selite","Electronics desc SWE"
+"DEV_DETAILS_ELECTRONICS","Electronics details","Elektroniikka lisätietoja","Electronics details SWE"
 "DEV_DESC_ELEGOO","With a 3D printer you can literally print real three-dimensional objects.
 
 The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.

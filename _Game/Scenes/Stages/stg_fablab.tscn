@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=72 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -67,7 +67,6 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_spd1168x.tscn" type="PackedScene" id=65]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_rtc_1004.tscn" type="PackedScene" id=66]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_afg_2125.tscn" type="PackedScene" id=67]
-[ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_device_info.tscn" type="PackedScene" id=68]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_electric_devs_holder.tscn" type="PackedScene" id=69]
 
 [sub_resource type="PhysicsMaterial" id=3]
@@ -340,9 +339,6 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.00720
 
 [node name="mdl_table_electric_default" parent="stg_fablab" instance=ExtResource( 57 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.92151, 0.00589818, -14.9772 )
-
-[node name="electric_device_info" parent="stg_fablab/mdl_table_electric_default" instance=ExtResource( 68 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.447643, 0.95441, 0.0780525 )
 
 [node name="mdl_table_electric_default2" parent="stg_fablab" instance=ExtResource( 57 )]
 transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, 1, -4.72647, 0.00589818, -14.9772 )
