@@ -1,7 +1,7 @@
 extends KinematicBody
 
 # Variables for moving the player
-export var speed = 10 # maximum speed of the player
+export var speed = 4 # maximum speed of the player
 export var h_acceleration = 6 # rate of acceleration
 export var gravity = 20
 #var jump = 10 # Jumping force, not currently used

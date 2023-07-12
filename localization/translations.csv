@@ -6,6 +6,7 @@
 "MAIN_MENU_EXIT","Exit","Lopeta","Sluta"
 "BUTTON_CLOSE","Close","Sulje","Stäng"
 "TOOLTIP_INTERACT","Click me!","Klikkaa!","Klicka!"
+"TOOLTIP_GRAB","Grab","Ota","Ta"
 "TOOLTIP_RAISE_TABLE","Raise table","Nosta pöytää","Höja bordet"
 "TOOLTIP_LOWER_TABLE","Lower table","Laske pöytää","Sänk bordet"
 "TOOLTIP_OPEN_DOOR","Open door","Avaa ovi","Öppna dörren"
