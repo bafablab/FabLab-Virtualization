@@ -31,8 +31,10 @@ radius = 0.11
 [node name="mdl_mats_filament_roll_rigid" type="RigidBody" groups=["Draggable"]]
 collision_layer = 33
 collision_mask = 55
+mass = 0.5
 contacts_reported = 5
 contact_monitor = true
+angular_damp = 2.0
 script = ExtResource( 3 )
 
 [node name="mats_filament_roll" type="MeshInstance" parent="."]
