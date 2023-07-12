@@ -1,0 +1,12 @@
+RigidBodyjen luonti:
+
+1. On luotu Scene, jossa roottina Spatial ja sen alla MeshInstance
+2. Poista Sceneltä inheritance (klikkaa Spatialia oikealla näppäimellä -> clear inheritance)
+3. Luo uusi RigidBody-node, nimeä se root-Spatialin mukaan _rigid-päätteellä (esim mdl_dev_hyrskytin_rigid) ja muuta se scenen juureksi (oikea klikkaus -> set as scene root)
+4. Siirrä MeshInstance RigidBodyn alle, poista Spatial-node
+5. Luo RigidBodylle CollisionShape ja tee siitä mallille sopiva
+6. Aseta RigidBodylle tarvittava angular damp (esim. 2) ja massa
+7. Aseta RigidBodylle oikeat collision layerit (1, 6) ja maskit (1, 2, 3, 5, 6)
+8. Tarkista vielä tiedostonimi, laita siihenkin pääte _rigid
+
+Interactablejen luonti:

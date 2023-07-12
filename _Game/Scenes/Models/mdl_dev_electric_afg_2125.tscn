@@ -1,9 +1,26 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://_Game/Shared/Material/mat_electric_devs.tres" type="Material" id=1]
 [ext_resource path="res://_Game/Models/dev_electric_afg_2125/mdl_dev_electric_afg_2125.glb" type="PackedScene" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.110867, 0.0450129, 0.134111 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.127501, 0.0726131, 0.0165819 )
 
 [node name="mdl_dev_electric_afg_2125" instance=ExtResource( 2 )]
 
 [node name="dev" parent="." index="0"]
 material/0 = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="1"]
+collision_layer = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0460252, 0.0110386 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013568, -0.0159143, 0.110307 )
+shape = SubResource( 2 )
