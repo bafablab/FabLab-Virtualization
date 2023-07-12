@@ -106,7 +106,28 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_NAME_ROLAND_CAMM","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24"
 "DEV_NAME_SHINING3D","Shining3D Einstar","Shining3D Einstar","Shining3D Einstar"
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
-"DEV_DESC_ELECTRONICS","Electronics desc","Elektroniikka selite","Electronics desc SWE"
+"DEV_DESC_ELECTRONICS","4 workstations for electronics, with:
+
+- Oscilloscope
+- Function generator
+- Soldering station
+- Laboratory power supply
+- Exhaust tube
+- Multimeter","4 kpl elektroniikan työpisteitä, joissa:
+
+- Oskilloskooppi
+- Funktiogeneraattori
+- Juotosasema
+- Laboratoriovirtalähde
+- Poistoimuputki
+- Yleismittari","4 arbetsstationer för elektronik, med:
+
+- Oscilloskop
+- Funktionsgenerator
+- Lödstation
+- Laboratorieströmförsörjning
+- Avgasrör
+- Multimeter"
 "DEV_DETAILS_ELECTRONICS","Electronics details","Elektroniikka lisätietoja","Electronics details SWE"
 "DEV_DESC_ELEGOO","With a 3D printer you can literally print real three-dimensional objects.
 
