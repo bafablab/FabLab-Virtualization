@@ -76,7 +76,7 @@ Commercial activities can be prototyped and incubated in a fab lab, but they mus
 Right button or mouse wheel zooms, middle button moves the object.","Voit pyörittää kappaletta klikkaamalla ja raahaamalla hiirtä ikkunassa.
 Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta.","ITEM_INFO_3D_HELP på svenska"
 "OBJECT_DOOR","Door","Ovi","Dörr"
-"DEV_GENERIC_NAME_ELECTRONICS","Electronics workshop","Elektroniikkatyöpaja","Electronics workshop"
+"DEV_GENERIC_NAME_ELECTRONICS","Electronics workstations","Elektroniikkatyöpisteet","Elektroniksarbetsstationer"
 "DEV_GENERIC_NAME_3DSCANNER","3D Scanner","3D-skanneri","3D-skanner"
 "DEV_GENERIC_NAME_3DPRINTER","3D Printer","3D-tulostin","3D-skrivare"
 "DEV_GENERIC_NAME_3DPRINTER_RESIN","3D Printer (resin)","3D-tulostin (hartsi)","3D-skrivare (harts)"
@@ -104,6 +104,7 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_NAME_PHROZEN_SONIC","Phrozen Sonic Mega 8K","Phrozen Sonic Mega 8K","Phrozen Sonic Mega 8K"
 "DEV_NAME_RENSI","Rensi REU900","Rensi REU900","Rensi REU900"
 "DEV_NAME_ROLAND_CAMM","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24"
+"DEV_NAME_ROLAND_SRM","Roland SRM-20","Roland SRM-20","Roland SRM-20"
 "DEV_NAME_SHINING3D","Shining3D Einstar","Shining3D Einstar","Shining3D Einstar"
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
 "DEV_DESC_ELECTRONICS","4 workstations for electronics, with:
@@ -233,6 +234,8 @@ Materials:
 Materiaalit:
 - Puu
 - Muovi","CNC details SWE"
+"DEV_DESC_ROLAND_SRM","cnc desc","cnc desc","cnc desc"
+"DEV_DETAILS_ROLAND_SRM","cnc details","cnc details","cnc details"
 "DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.
 
 The sticker or print is designed in vector graphics software (such as Inkscape). The vinyl cutter then cuts the chosen design from the material precisely and quickly.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
