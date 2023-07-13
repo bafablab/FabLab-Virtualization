@@ -1,11 +1,13 @@
 extends KinematicBody
 
 # Variables for moving the player
-export var speed = 4 # maximum speed of the player
+export var speed = 4 # maximum walking speed of the player
+export var runspeed = 8 # maximum running speed
 export var h_acceleration = 6 # rate of acceleration
 export var gravity = 20
 #var jump = 10 # Jumping force, not currently used
 var full_contact = false
+var currentspeed
 var direction = Vector3()
 var h_velocity = Vector3()
 var movement = Vector3()
@@ -59,6 +61,7 @@ func _input(event):
 		toggle_mouse()
 
 
+# Normal process, runs every frame
 func _process(_delta):
 	# disable player movement if any menu is visible and show mouse cursor
 	if (main_menu.visible or item_info_menu.visible or device_info_menu.visible or welcome_window.visible):
@@ -134,7 +137,15 @@ func _physics_process(delta):
 		elif Input.is_action_pressed("move_right"):
 			direction += transform.basis.x
 		direction = direction.normalized()
-		h_velocity = h_velocity.linear_interpolate(direction * speed, h_acceleration * delta)
+		
+		# Change speed if running or not
+		if Input.is_action_pressed("run"):
+			currentspeed = runspeed
+		else:
+			currentspeed = speed
+		
+		h_velocity = h_velocity.linear_interpolate(direction * currentspeed, h_acceleration * delta)
+		
 		movement.z = h_velocity.z + gravity_vec.z
 		movement.x = h_velocity.x + gravity_vec.x
 		movement.y = gravity_vec.y
