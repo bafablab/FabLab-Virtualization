@@ -353,16 +353,16 @@ transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, -1, -4.73271, 0.00589818, -15.79
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01, 0, -12.6543 )
 
 [node name="mdl_stg_fl_obj_electric_devs_holder" parent="stg_fablab" instance=ExtResource( 69 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.15721, 0.755912, -15.3121 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94155, 0.755912, -15.1907 )
 
 [node name="mdl_dev_electric_afg_2125" parent="stg_fablab/mdl_stg_fl_obj_electric_devs_holder" instance=ExtResource( 67 )]
-transform = Transform( 1, 0, 0, 0, 0.987075, 0.16026, 0, -0.16026, 0.987075, 0.301697, 0.0863296, 0.0362978 )
+transform = Transform( 1, 0, 0, 0, 0.987075, 0.16026, 0, -0.16026, 0.987075, 0.305073, 0.0916417, 0.0354357 )
 
 [node name="mdl_dev_electric_gsd_1152a-u" parent="stg_fablab/mdl_stg_fl_obj_electric_devs_holder" instance=ExtResource( 64 )]
-transform = Transform( 1, 0, 0, 0, 0.985621, 0.168971, 0, -0.168971, 0.985621, -0.276606, 0.14479, 0.112323 )
+transform = Transform( 1, 0, 0, 0, 0.985621, 0.168971, 0, -0.168971, 0.985621, -0.274149, 0.151955, 0.111094 )
 
 [node name="mdl_dev_electric_spd1168x" parent="stg_fablab/mdl_stg_fl_obj_electric_devs_holder" instance=ExtResource( 65 )]
-transform = Transform( 1, 0, 0, 0, 0.985351, 0.170536, 0, -0.170536, 0.985351, 0.0367045, 0.0519578, 0.0488405 )
+transform = Transform( 1, 0, 0, 0, 0.985351, 0.170536, 0, -0.170536, 0.985351, 0.0390558, 0.0592001, 0.0611076 )
 
 [node name="SpotLight" type="SpotLight" parent="stg_fablab/mdl_stg_fl_obj_electric_devs_holder"]
 transform = Transform( 1, 0, 0, 0, 0.523094, 0.852275, 0, -0.852275, 0.523094, 0, 0.628148, 0.918372 )
@@ -372,16 +372,16 @@ spot_angle = 58.65
 spot_angle_attenuation = 0.784584
 
 [node name="mdl_dev_electric_rtc_1004" parent="stg_fablab" instance=ExtResource( 66 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.92071, 0.761331, -15.1417 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7144, 0.761331, -15.1417 )
 
 [node name="mdl_dev_electric_gsd_1152a-u" parent="stg_fablab" instance=ExtResource( 63 )]
-transform = Transform( 1, 0, 0, 0, 0.989124, 0.147084, 0, -0.147084, 0.989124, -4.32584, 0.836432, -15.1326 )
+transform = Transform( 1, 0, 0, 0, 0.989124, 0.147084, 0, -0.147084, 0.989124, -4.24434, 0.836432, -15.1326 )
 
 [node name="mdl_dev_electric_spd1168x" parent="stg_fablab" instance=ExtResource( 65 )]
-transform = Transform( -0.994362, 0, 0.106039, 0, 1, 0, -0.106039, 0, -0.994362, -3.93901, 0.756952, -15.5172 )
+transform = Transform( -0.994362, 0, 0.106039, 0, 1, 0, -0.106039, 0, -0.994362, -3.93901, 0.749512, -15.5172 )
 
 [node name="mdl_dev_electric_afg_2125" parent="stg_fablab" instance=ExtResource( 67 )]
-transform = Transform( -0.95299, -0.101054, 0.285654, 0, 0.942746, 0.333511, -0.303002, 0.317832, -0.898428, -4.29734, 0.771002, -15.5316 )
+transform = Transform( -0.95299, -0.101054, 0.285654, 0, 0.942746, 0.333511, -0.303002, 0.317832, -0.898428, -4.2994, 0.7902, -15.5251 )
 
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
