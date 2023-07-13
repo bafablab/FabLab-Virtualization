@@ -5,7 +5,7 @@ export var speed = 4 # maximum walking speed of the player
 export var runspeed = 8 # maximum running speed
 export var h_acceleration = 6 # rate of acceleration
 export var gravity = 20
-#var jump = 10 # Jumping force, not currently used
+var jump = 5 # Jumping force, not currently used
 var full_contact = false
 var currentspeed
 var direction = Vector3()
@@ -126,8 +126,8 @@ func _physics_process(delta):
 	
 	if moving:
 # Jumping is not implemented
-#		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
-#			gravity_vec = Vector3.UP * jump
+		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
+			gravity_vec = Vector3.UP * jump
 		if Input.is_action_pressed("move_forward"):
 			direction -= transform.basis.z
 		elif Input.is_action_pressed("move_backward"):
