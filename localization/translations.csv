@@ -64,10 +64,10 @@ Commercial activities can be prototyped and incubated in a fab lab, but they mus
 "ITEM_DESC_OWL","- 3D-printed
 - Material: PLA-filament, 140 grams
 - Material cost: 0,70 €
-- Print time: 5 hours","- 3D-tulostettu pöllö
+- Print time: 9.5 hours","- 3D-tulostettu pöllö
 - Materiaali: PLA-filamentti, 140 grammaa
 - Materiaalikulut: 0,70 €
-- Tulostusaika: 5 tuntia","3D-utskriven uggla"
+- Tulostusaika: 9,5 tuntia","3D-utskriven uggla"
 "ITEM_DESC_FIREHAZARD","Laser Cutter, fire hazard!","Laserleikkuri, palovaara!","Laserskärare, brandrisk!"
 "ITEM_DESC_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
 "ITEM_INFO_3D_MODEL_TITLE","3D-Model","3D-malli","3D-modell"
@@ -129,7 +129,16 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 - Laboratorieströmförsörjning
 - Avgasrör
 - Multimeter"
-"DEV_DETAILS_ELECTRONICS","Electronics details","Elektroniikka lisätietoja","Electronics details SWE"
+"DEV_DETAILS_ELECTRONICS","- [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
+- [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
+- [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
+- [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]","- [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
+- [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
+- [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
+- [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]","- [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
+- [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
+- [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
+- [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]"
 "DEV_DESC_ELEGOO","With a 3D printer you can literally print real three-dimensional objects.
 
 The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.

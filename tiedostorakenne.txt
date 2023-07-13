@@ -17,7 +17,7 @@ FabLab-Virtualization		Projektin juuri, sisältää Godot-projektitiedoston (pro
     |-Models				Pelissä käytettyjen 3d-mallien scenet, jotka sisältävät 3d-mallin ja peliin liittyvää dataa kuten collision boxit, animaatiot ym. Näitä on aseteltu pelin pääsceneen.
 	|-Stages				Pelin pääscene, stg_fablab.tscn. Peli käynnistyy tästä scenestä ja sisältää koko mallinnetun ympäristön ja pelin käyttöliittymän.
 	|-UI					Pelin 2d-scenet eli käyttöliittymä. Sisältää mm. päävalikon, laitteiden ja objektien infoikkunat ja HUD:n
-  |-Scripts					Pelin lähes kaikki skriptit on keskitetty tänne.
+  |-Scripts					Pelin kaikki skriptit on keskitetty tänne.
   |-Shaders					Shader-tiedostoja. 3d-renderöintiin liittyvää mustaa magiaa.
   |-Shared
     |-Material				Materiaalitiedot tietyille pinnoille.

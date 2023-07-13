@@ -57,7 +57,7 @@ func pickup_sleeping_state_changed():
 # Deal also with collisions with interactable devices and items
 func pickup_body_entered(body):
 	
-	# Most things are structured with a Spatial as a root node and that has the script and group information
+	# Most devices and static items are structured with a Spatial as a root node and that has the script and group information
 	var parent = body.find_parent("*")
 	
 	# But doors and the moving table have the group set to their StaticBody
