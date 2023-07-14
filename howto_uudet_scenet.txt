@@ -20,7 +20,7 @@ Interactablejen luonti (Device/Item):
 --------------------
 RigidBodyjen luonti:
 
-1. Aloita vastaavalla tavalla kuten Interactablejen luonnissa, eli luo modelista periytyvä scene hakemistoon _Game/Scenes/Models/
+1. Aloita vastaavalla tavalla kuten Interactablejen luonnissa, eli luo modelista (.glb) periytyvä scene hakemistoon _Game/Scenes/Models/
 2. Poista Sceneltä inheritance (klikkaa Spatialia oikealla näppäimellä -> clear inheritance)
 3. Luo uusi RigidBody-node, nimeä se root-Spatialin mukaan _rigid-päätteellä (esim mdl_dev_hyrskytin_rigid) ja muuta se scenen juureksi (oikea klikkaus -> set as scene root)
 4. Siirrä MeshInstance RigidBodyn alle ja poista Spatial-node

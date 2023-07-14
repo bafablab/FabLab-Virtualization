@@ -3,8 +3,8 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#hide_all()
-	show_hud(true)
+	hide_all()
+	#show_hud(true)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
