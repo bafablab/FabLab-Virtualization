@@ -4,7 +4,7 @@
 [ext_resource path="res://_Game/Models/table_large_round_table/mat_table_large_round_table.tres" type="Material" id=2]
 
 [sub_resource type="CylinderShape" id=1]
-height = 0.04
+height = 0.0492093
 radius = 0.7
 
 [sub_resource type="BoxShape" id=2]
@@ -24,7 +24,7 @@ skeleton = NodePath("../..")
 material/0 = ExtResource( 2 )
 
 [node name="TableSurface" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.683181, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.674156, 0 )
 shape = SubResource( 1 )
 
 [node name="LegBase" type="CollisionShape" parent="StaticBody"]
