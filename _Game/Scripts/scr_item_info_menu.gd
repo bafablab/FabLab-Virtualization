@@ -27,10 +27,7 @@ func init(itm):
 	
 	item = itm
 	#item_name_label.text = item.name
-	tab_container.set_tab_title(0, "ITEM_INFO_TITLE")
-	
-	# tr() is used when godot doesn't automatically detect translatable text
-	info_text.bbcode_text = "[b]" + tr(item.name) + "[/b]\n\n" + tr(item.info_text)
+	updatetexts()
 	
 	# Initialize the object 3d view
 	item_3d_view.init(item.mesh_instance)
@@ -41,6 +38,11 @@ func init(itm):
 	# scripts. For example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
 
+func updatetexts():
+	if item != null:
+		tab_container.set_tab_title(0, "ITEM_INFO_TITLE")
+		# tr() is used when godot doesn't automatically detect translatable text
+		info_text.bbcode_text = "[b]" + tr(item.name) + "[/b]\n\n" + tr(item.info_text)
 
 func _input(event):
 	if self.visible:
@@ -60,5 +62,4 @@ func exit_window():
 	if wasCalledFromDeviceMenu:
 		device_info_menu.show()
 		wasCalledFromDeviceMenu = false
-	# set first tab active when menu is closed so next time it is opened it is on the first tab
-	#tab_container.current_tab = 0
+	item = null

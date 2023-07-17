@@ -5,6 +5,8 @@ onready var checkbox_inverty = $Panel/HBoxContainer/CheckBox
 onready var fps_controller = $"../FPSController"
 onready var firststart = true
 onready var welcome_window = get_node("/root/FabLab/UI_WelcomeWindow")
+onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
+onready var item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 onready var HUD = get_node("/root/FabLab/HUD")
 
 func _ready():
@@ -24,6 +26,8 @@ func change_language():
 			TranslationServer.set_locale("en")
 	# Call all nodes with troublesome texts and tell them to update their text fields
 	welcome_window.updatetexts()
+	device_info_menu.updatetexts()
+	item_info_menu.updatetexts()
 
 
 func _on_CheckBox_toggled(button_pressed):
