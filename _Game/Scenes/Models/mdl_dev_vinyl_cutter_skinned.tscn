@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://_Game/Models/vinyl_cutter/mat_vinyl_cutter.tres" type="Material" id=1]
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=2]
@@ -350,7 +350,13 @@ tracks/9/enabled = true
 tracks/9/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.533333, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
 [sub_resource type="BoxShape" id=7]
-extents = Vector3( 0.392466, 0.0588071, 0.135341 )
+extents = Vector3( 0.427155, 0.0515781, 0.135341 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.427155, 0.0515781, 0.0624081 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 0.0557373, 0.0515781, 0.10165 )
 
 [node name="mdl_vinyl_cutter_skinned" type="Spatial" groups=["Device"]]
 script = ExtResource( 2 )
@@ -428,5 +434,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0847664, 0 )
 collision_layer = 16
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0434003, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00941001, -0.033241, 0.0124619 )
 shape = SubResource( 7 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0670695, -0.0534225 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 0.886058, -0.463574, 0, 0.463574, 0.886058, 0.380982, 0.0485028, 0.0421557 )
+shape = SubResource( 9 )

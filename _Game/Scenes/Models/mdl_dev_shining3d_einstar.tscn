@@ -24,7 +24,7 @@ material/0 = ExtResource( 4 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0497997, 0 )
 collision_layer = 17
 
-[node name="Case" type="CollisionShape" parent="StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000435193, 0.052654, 0 )
 shape = SubResource( 2 )
 
