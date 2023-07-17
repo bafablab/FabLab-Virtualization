@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://_Game/Models/table_electric_basic/mdl_table_electric_default.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Shared/Material/mat_electric_room_tables.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=3]
+[ext_resource path="res://_Game/Resources/info_vacuum.tres" type="Resource" id=4]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.900495, 0.0302983, 0.403292 )
@@ -10,7 +12,7 @@ extents = Vector3( 0.900495, 0.0302983, 0.403292 )
 extents = Vector3( 0.031192, 0.361325, 0.0276206 )
 
 [sub_resource type="BoxShape" id=3]
-extents = Vector3( 0.0909076, 0.498978, 0.081183 )
+extents = Vector3( 0.0909076, 0.498978, 0.0891763 )
 
 [node name="mdl_table_electric_default" instance=ExtResource( 1 )]
 
@@ -41,6 +43,17 @@ shape = SubResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.870893, -0.28314, -0.367222 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="5"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.926811, 0.465112, -0.197613 )
+[node name="Spatial" type="Spatial" parent="." index="2" groups=["GenericInfo"]]
+script = ExtResource( 3 )
+interactable = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="Spatial" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.884014, 0.785282, -0.183849 )
+collision_layer = 17
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0427973, 0.325437, -0.0341371 )
 shape = SubResource( 3 )
+
+[node name="HoverTextPosition" type="Spatial" parent="Spatial" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.971556, 1.28555, -0.214954 )

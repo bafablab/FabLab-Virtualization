@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_GenericInfo.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "INFO_NAME_FAB_CHARTER"
+header_text = "INFO_HEADER_FAB_CHARTER"
+info_text = "INFO_TEXT_FAB_CHARTER"

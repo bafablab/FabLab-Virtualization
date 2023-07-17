@@ -15,12 +15,18 @@ _global_script_classes=[ {
 "path": "res://_Game/Scripts/scr_DeviceInfo.gd"
 }, {
 "base": "Resource",
+"class": "GenericInfo",
+"language": "GDScript",
+"path": "res://_Game/Scripts/scr_GenericInfo.gd"
+}, {
+"base": "Resource",
 "class": "ItemInfo",
 "language": "GDScript",
 "path": "res://_Game/Scripts/scr_ItemInfo.gd"
 } ]
 _global_script_class_icons={
 "DeviceInfo": "",
+"GenericInfo": "",
 "ItemInfo": ""
 }
 

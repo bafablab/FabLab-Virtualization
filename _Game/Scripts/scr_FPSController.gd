@@ -38,6 +38,7 @@ var grabbed_item_rel_pos
 # UI windows, HUD and crosshair
 onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 onready var item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
+onready var generic_info_menu = get_node("/root/FabLab/UI_generic_info_menu")
 onready var main_menu = get_node("/root/FabLab/UI_MainMenu")
 onready var welcome_window = get_node("/root/FabLab/UI_WelcomeWindow")
 onready var HUD = get_node("/root/FabLab/HUD")
@@ -64,7 +65,7 @@ func _input(event):
 # Normal process, runs every frame
 func _process(_delta):
 	# disable player movement if any menu is visible and show mouse cursor
-	if (main_menu.visible or item_info_menu.visible or device_info_menu.visible or welcome_window.visible):
+	if (main_menu.visible or item_info_menu.visible or device_info_menu.visible or generic_info_menu.visible or welcome_window.visible):
 		moving = false
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	else:

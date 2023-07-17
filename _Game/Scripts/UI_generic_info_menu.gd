@@ -1,22 +1,32 @@
 extends Control
 
 onready var menu_window = $VBoxContainer
+var generic_info
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	updatetexts()
-	
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":
-		$VBoxContainer/Panel/WelcomeText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+		$VBoxContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 	self.hide()
 	
+func init(resource):
+	generic_info = resource
+	updatetexts()
+	self.visible = true
+	
+	# set_input_as_handled()
+	# consumes the event so it is not triggered in other
+	# scripts, for example close the window immidiately.
+	get_tree().get_root().set_input_as_handled()
+	
 func updatetexts():
-	# Add texts to header and textbox since Godot doesn't automatically translate text in the bbcode-field
-	$VBoxContainer/Panel/WelcomeHeader.bbcode_text = "[center][b]" + tr("FAB_CHARTER_HEADER") + "[/b][/center]"
-	$VBoxContainer/Panel/WelcomeText.bbcode_text = tr("FAB_CHARTER_TEXT")
-	$VBoxContainer/Panel/Button.text = tr("BUTTON_CLOSE")
+	if generic_info != null:
+		# Add texts to header and textbox since Godot doesn't automatically translate text in the bbcode-field
+		$VBoxContainer/Panel/Header.bbcode_text = "[center][b]" + tr(generic_info.header_text) + "[/b][/center]"
+		$VBoxContainer/Panel/InfoText.bbcode_text = tr(generic_info.info_text)
+		$VBoxContainer/Panel/Button.text = tr("BUTTON_CLOSE")
 
 func _input(event):
 	if self.visible:
@@ -33,7 +43,9 @@ func open():
 
 # hide window, Close button connects here
 func close():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	self.hide()
+	generic_info = null
 	
 # Function for opening hyperlinks in other than HTML5-based exports
 func _on_RichTextLabel_meta_clicked(meta):

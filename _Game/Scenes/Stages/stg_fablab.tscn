@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=73 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -67,10 +67,11 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_spd1168x.tscn" type="PackedScene" id=65]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_rtc_1004.tscn" type="PackedScene" id=66]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_afg_2125.tscn" type="PackedScene" id=67]
+[ext_resource path="res://_Game/Scenes/UI/UI_generic_info_menu.tscn" type="PackedScene" id=68]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_electric_devs_holder.tscn" type="PackedScene" id=69]
 
 [sub_resource type="PhysicsMaterial" id=3]
-bounce = 0.6
+bounce = 0.8
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -90,6 +91,9 @@ pause_mode = 2
 visible = false
 
 [node name="UI_ItemInfoMenu" parent="." instance=ExtResource( 18 )]
+visible = false
+
+[node name="UI_generic_info_menu" parent="." instance=ExtResource( 68 )]
 visible = false
 
 [node name="UI_WelcomeWindow" parent="." instance=ExtResource( 44 )]

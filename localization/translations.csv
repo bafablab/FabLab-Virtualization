@@ -31,8 +31,13 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 
 BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "WELCOME_BUTTON","Continue","Jatka","Fortsätta"
-"FAB_CHARTER_HEADER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
-"FAB_CHARTER_TEXT","[b]What is a fab lab?[/b]
+"DEV_MENU_INFO","Description","Esittely","Beskrivning"
+"DEV_MENU_DETAILS","Technical information","Tekniset tiedot","Tekniska information"
+"DEV_MENU_EXAMPLES","Example products:","Esimerkkituotteita:","Exempelprodukter:"
+"DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
+"INFO_NAME_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
+"INFO_HEADER_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
+"INFO_TEXT_FAB_CHARTER","[b]What is a fab lab?[/b]
 Fab labs are a global network of local labs, enabling invention by providing access to tools for digital fabrication
 
 [b]What's in a fab lab?[/b]
@@ -54,10 +59,9 @@ Designs and processes developed in fab labs can be protected and sold however an
 
 [b]How can businesses use a fab lab?[/b]
 Commercial activities can be prototyped and incubated in a fab lab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success","Fablab Charter FI","Fablab Charter SWE"
-"DEV_MENU_INFO","Description","Esittely","Beskrivning"
-"DEV_MENU_DETAILS","Technical information","Tekniset tiedot","Tekniska information"
-"DEV_MENU_EXAMPLES","Example products:","Esimerkkituotteita:","Exempelprodukter:"
-"DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
+"INFO_NAME_VACUUM","Exhaust tube","Poistoimuputki","Exhaust tube SWE"
+"INFO_HEADER_VACUUM","Exhaust tube","Poistoimuputki","Exhaust tube SWE"
+"INFO_TEXT_VACUUM","Soldering causes fumes that have to be extracted safely.","Juottamisesta syntyy haitallisia kaasuja, jotka pitää imeä turvallisesti pois.","Exhaust tube text SWE"
 "ITEM_NAME_OWL","Polygon Owl","Polygonipöllö","Polygon-uggla"
 "ITEM_NAME_FIREHAZARD","Fire hazard","Tulipalovaara","Brändrisk"
 "ITEM_NAME_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
