@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_Game/Models/stg_fl_obj_small_metal_desk/mat_stg_fl_obj_small_metal_desk.tres" type="Material" id=1]
+[ext_resource path="res://_Game/Models/stg_fl_obj_small_metal_desk/mdl_stg_fl_obj_small_metal_desk.glb" type="PackedScene" id=2]
+
+[node name="mdl_stg_fl_obj_small_metal_desk" instance=ExtResource( 2 )]
+
+[node name="model" parent="." index="0"]
+material/0 = ExtResource( 1 )
