@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=70 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -41,7 +41,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_plywood_sheet_separated.tscn" type="PackedScene" id=39]
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_simple.tscn" type="PackedScene" id=40]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_obj_safe_cabinet.tscn" type="PackedScene" id=41]
-[ext_resource path="res://_Game/Scripts/scr_pickup.gd" type="Script" id=42]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_ball_rigidbody.tscn" type="PackedScene" id=42]
 [ext_resource path="res://_Game/Scenes/UI/UI_HUD.tscn" type="PackedScene" id=43]
 [ext_resource path="res://_Game/Scenes/UI/UI_welcome_window.tscn" type="PackedScene" id=44]
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll_rigid.tscn" type="PackedScene" id=45]
@@ -69,14 +69,6 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_afg_2125.tscn" type="PackedScene" id=67]
 [ext_resource path="res://_Game/Scenes/UI/UI_generic_info_menu.tscn" type="PackedScene" id=68]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_electric_devs_holder.tscn" type="PackedScene" id=69]
-[ext_resource path="res://_Game/Models/stg_fl_obj_ball/stg_fl_obj_ball_ball.mesh" type="ArrayMesh" id=70]
-
-[sub_resource type="PhysicsMaterial" id=3]
-bounce = 0.8
-
-[sub_resource type="SphereShape" id=2]
-margin = 0.198
-radius = 0.188198
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
@@ -386,23 +378,8 @@ transform = Transform( -0.994362, 0, 0.106039, 0, 1, 0, -0.106039, 0, -0.994362,
 [node name="mdl_dev_electric_afg_2125" parent="stg_fablab" instance=ExtResource( 67 )]
 transform = Transform( -0.95299, -0.101054, 0.285654, 0, 0.942746, 0.333511, -0.303002, 0.317832, -0.898428, -4.2994, 0.7902, -15.5251 )
 
-[node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 0.267791, -11.18 )
-collision_layer = 2147483681
-collision_mask = 2147483703
-physics_material_override = SubResource( 3 )
-contacts_reported = 5
-contact_monitor = true
-angular_damp = 1.0
-script = ExtResource( 42 )
-
-[node name="MeshInstance" type="MeshInstance" parent="collision_test_object"]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
-mesh = ExtResource( 70 )
-skeleton = NodePath("../..")
-
-[node name="CollisionShape" type="CollisionShape" parent="collision_test_object"]
-shape = SubResource( 2 )
+[node name="mdl_itm_ball_rigidbody" parent="." instance=ExtResource( 42 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7935, 0.214577, -10.6652 )
 
 [node name="mdl_mats_filament_roll_rigid" parent="." instance=ExtResource( 45 )]
 transform = Transform( 0.0168067, 0.999859, 0, -0.999859, 0.0168067, 0, 0, 0, 1, 2.24702, 0.948778, -13.5893 )
