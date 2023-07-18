@@ -116,6 +116,7 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_GENERIC_NAME_CNCMILL","CNC milling machine","CNC-jyrsin","CNC fräsmaskin"
 "DEV_GENERIC_NAME_PRECISIONMILL","Precision milling machine","Tarkkuusjyrsin","Precisionsfräsmaskin"
 "DEV_GENERIC_NAME_SANDBLASTER","Sand blaster","Hiekkapuhallin","Sandblåsare"
+"DEV_GENERIC_NAME_COMPUTER","Computer","Tietokone","Dator"
 "DEV_NAME_ELECTRONICS","Various devices","Erilaisia laitteita","Många saker"
 "DEV_NAME_ELEGOO","ELEGOO Mars 2 MSLA","ELEGOO Mars 2 MSLA","ELEGOO Mars 2 MSLA"
 "DEV_NAME_ELNA","ELNA eXperience 520 S","ELNA eXperience 520 S","ELNA eXperience 520 S"
@@ -132,6 +133,7 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_NAME_ROLAND_SRM","Roland SRM-20","Roland SRM-20","Roland SRM-20"
 "DEV_NAME_SHINING3D","Shining3D Einstar","Shining3D Einstar","Shining3D Einstar"
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
+"DEV_NAME_COMPUTER","For designing","Suunnitteluun","För design"
 "DEV_DESC_ELECTRONICS","4 workstations for electronics, with:
 
 - Oscilloscope
@@ -333,7 +335,45 @@ Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulo
 - Tulostusmateriaali: biohajoava PLA-muovi, ABS-muovi
 - Tulosteen maksimikoko 210 × 200 × 189 mm
 - Kerrospaksuus 0.05-0.4 mm
-- Suositeltu tiedostomuoto .stl",
+- Suositeltu tiedostomuoto .stl",""
+"DEV_DESC_COMPUTER","Every FabLab project begins with designing it on the computer.
+
+FabLab has five computers available for designing. They have many types of software installed, such as graphics, 3D modeling and slicing software.
+
+You can come to the FabLab with a ready-made plan, or just to get to know the possibilities FabLab offers.","Jokainen FabLab-projekti alkaa suunnittelemalla se tietokoneella.
+
+FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja kuten grafiikka- ja 3D-mallinnusohjelmia.
+
+Voit tulla FabLabille joko valmiin suunnitelman kanssa, tai vain tutustumaan FabLabin tarjoamiin mahdollisuuksiin.",""
+"DEV_DETAILS_COMPUTER","[b]Installed software:[/b]
+
+[b]Graphics:[/b]
+- Inkscape (vector)
+- Gimp (bitmap)
+
+[b]3D Modeling/CAD:[/b]
+- Blender
+- Autodesk Fusion360
+- Tinkercad
+
+[b]3D printing slicers:[/b]
+- 3DWOX Desktop
+- Ultimaker Cura
+- Chitubox","[b]Asennetut ohjelmistot:[/b]
+
+[b]Grafiikka:[/b]
+- Inkscape (vektori)
+- Gimp (bittikartta)
+
+[b]3D-mallinnus/CAD:[/b]
+- Blender
+- Autodesk Fusion360
+- Tinkercad
+
+[b]3D-tulostuksen slicerit:[/b]
+- 3DWOX Desktop
+- Ultimaker Cura
+- Chitubox",""
 "DEV_VIDEO_TITLE_1","Ski video","Hiihtovideo","Hiihtovideo ruotsi"
 "DEV_VIDEO_DESC_1","Man flies over a bus","Mies hiihtää bussin yli","Mies lentää ruotsi"
 "DEV_VIDEO_TITLE_2","Video number 2","Video numero 2","Video nummer 2"
