@@ -393,6 +393,7 @@ collision_mask = 2147483703
 physics_material_override = SubResource( 3 )
 contacts_reported = 5
 contact_monitor = true
+angular_damp = 1.0
 script = ExtResource( 42 )
 
 [node name="MeshInstance" type="MeshInstance" parent="collision_test_object"]

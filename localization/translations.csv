@@ -5,7 +5,7 @@
 "MAIN_MENU_REVERT_Y","Invert mouse Y-axis","Käännä hiiren Y-akseli","Vänd musens Y-axel"
 "MAIN_MENU_EXIT","Exit","Lopeta","Sluta"
 "BUTTON_CLOSE","Close","Sulje","Stäng"
-"TOOLTIP_INTERACT","Click me!","Klikkaa!","Klicka!"
+"TOOLTIP_INTERACT","Click for info","Klikkaa","Klicka"
 "TOOLTIP_GRAB","Grab","Ota","Ta"
 "TOOLTIP_RAISE_TABLE","Raise table","Nosta pöytää","Höja bordet"
 "TOOLTIP_LOWER_TABLE","Lower table","Laske pöytää","Sänk bordet"
@@ -38,16 +38,16 @@ BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
 "INFO_NAME_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
 "INFO_HEADER_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
 "INFO_TEXT_FAB_CHARTER","[b]What is a fab lab?[/b]
-Fab labs are a global network of local labs, enabling invention by providing access to tools for digital fabrication
+Fab labs are a global network of local labs, enabling invention by providing access to tools for digital fabrication.
 
 [b]What's in a fab lab?[/b]
-Fab labs share an evolving inventory of core capabilities to make (almost) anything, allowing people and projects to be shared
+Fab labs share an evolving inventory of core capabilities to make (almost) anything, allowing people and projects to be shared.
 
 [b]What does the fab lab network provide?[/b]
-Operational, educational, technical, financial, and logistical assistance beyond what's available within one lab
+Operational, educational, technical, financial, and logistical assistance beyond what's available within one lab.
 
 [b]Who can use a fab lab?[/b]
-Fab labs are available as a community resource, offering open access for individuals as well as scheduled access for programs
+Fab labs are available as a community resource, offering open access for individuals as well as scheduled access for programs.
 
 [b]What are your responsibilities?[/b]
 [i]Safety:[/i] not hurting people or machines
@@ -55,10 +55,31 @@ Fab labs are available as a community resource, offering open access for individ
 [i]Knowledge:[/i] contributing to documentation and instruction
 
 [b]Who owns fab lab inventions?[/b]
-Designs and processes developed in fab labs can be protected and sold however an inventor chooses, but should remain available for individuals to use and learn from
+Designs and processes developed in fab labs can be protected and sold however an inventor chooses, but should remain available for individuals to use and learn from.
 
 [b]How can businesses use a fab lab?[/b]
-Commercial activities can be prototyped and incubated in a fab lab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success","Fablab Charter FI","Fablab Charter SWE"
+Commercial activities can be prototyped and incubated in a fab lab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success.","[b]Mikä on fab lab?[/b]
+Fab labit ovat maailmanlaajuinen verkosto paikallisia labroja, jotka mahdollistavat keksintöjen keksimisen tarjoamalla pääsyn digitaalisen valmistuksen työkaluihin.
+
+[b]Mitä fab labissa on?[/b]
+Fab labit jakavat jatkuvasti kehittyvän kokoelman resursseja, joilla voi valmistaa (melkein) mitä tahansa, mikä mahdollistaa ihmisten tietotaidon ja projektien jaon.
+
+[b]Mitä fab labien verkosto tarjoaa?[/b]
+Toiminnallista, koulutuksellista, teknistä, taloudellista ja logistista apua yli sen, mitä yksittäinen laboratorio voi tarjota.
+
+[b]Kuka voi käyttää fab labia?[/b]
+Fab labit ovat yhteisöllinen resurssi, antaen avoimen pääsyn yksilöille sekä pääsyn yhteisöille ajanvarauksella.
+
+[b]Mitkä ovat fab labin käyttäjän vastuut?[/b]
+[i]Turvallisuus:[/i] älä satuta ihmisiä tai koneita
+[i]Toiminta:[/i] auta labran siivouksessa, ylläpidossa ja kehityksessä
+[i]Tieto:[/i] osallistu dokumentaatioon ja ohjaukseen
+
+[b]Kuka omistaa fab labissa kehitetyt keksinnöt?[/b]
+Fab labeissa kehitetyt mallit ja prosessit voidaan suojata ja myydä keksijän valinnan mukaan, mutta niiden tulee olla yksilöiden käytettävissä ja opittavissa.
+
+[b]Kuinka yritykset voivat käyttää fab labia?[/b]
+Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne eivät saa olla ristiriidassa muiden käyttötarkoitusten kanssa. Niiden tulisi kasvaa ulos labrasta, ja niiden odotetaan hyödyttävän keksijöitä, labroja ja verkostoja jotka edistivät niiden menestystä.","Fablab Charter SWE"
 "INFO_NAME_VACUUM","Exhaust tube","Poistoimuputki","Exhaust tube SWE"
 "INFO_HEADER_VACUUM","Exhaust tube","Poistoimuputki","Exhaust tube SWE"
 "INFO_TEXT_VACUUM","Soldering causes fumes that have to be extracted safely.","Juottamisesta syntyy haitallisia kaasuja, jotka pitää imeä turvallisesti pois.","Exhaust tube text SWE"
