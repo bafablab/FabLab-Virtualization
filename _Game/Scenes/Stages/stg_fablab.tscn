@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=72 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -36,7 +36,6 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_basic_pc.tscn" type="PackedScene" id=34]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_large_round_table.tscn" type="PackedScene" id=35]
 [ext_resource path="res://_Game/Scenes/Models/mdl_chair_low_chair_green.tscn" type="PackedScene" id=36]
-[ext_resource path="res://_Game/Scenes/Models/mdl_dev_3dprinter_sindoh_3dwox_1_lq_skinned.tscn" type="PackedScene" id=37]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_vinyl_cutter_skinned.tscn" type="PackedScene" id=38]
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_plywood_sheet_separated.tscn" type="PackedScene" id=39]
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_simple.tscn" type="PackedScene" id=40]
@@ -103,7 +102,7 @@ visible = false
 [node name="UI_MainMenu" parent="." instance=ExtResource( 22 )]
 
 [node name="FPSController" parent="." instance=ExtResource( 7 )]
-transform = Transform( 0.997071, 0, -0.0764757, 0, 1, 0, 0.0764757, 0, 0.997071, 3.73036, 0, -15.3207 )
+transform = Transform( 0.707106, 0, 0.707106, 0, 1, 0, -0.707106, 0, 0.707106, 8.44715, 0, -1.05602 )
 inverse_mouse = 1
 
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
@@ -294,9 +293,6 @@ transform = Transform( 0.777815, 0, -0.628493, 0, 1, 0, 0.628493, 0, 0.777815, 5
 [node name="mdl_chair_low_chair_green7" parent="stg_fablab" instance=ExtResource( 36 )]
 transform = Transform( 0.124762, 0, -0.992187, 0, 1, 0, 0.992187, 0, 0.124762, 5.28541, 0, -4.27961 )
 
-[node name="mch_3dprinter_sindoh_3dwox_1_lq_skinned" parent="stg_fablab" instance=ExtResource( 37 )]
-transform = Transform( -0.236584, 0, 0.971611, 0, 1, 0, -0.971611, 0, -0.236584, 2.07547, 0.909852, -14.6281 )
-
 [node name="mdl_dev_embroidery_brother_inno_v3" parent="stg_fablab" instance=ExtResource( 30 )]
 transform = Transform( -0.00216417, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00216417, 5.70258, 0.759783, -7.65924 )
 
@@ -388,7 +384,7 @@ transform = Transform( -0.994362, 0, 0.106039, 0, 1, 0, -0.106039, 0, -0.994362,
 transform = Transform( -0.95299, -0.101054, 0.285654, 0, 0.942746, 0.333511, -0.303002, 0.317832, -0.898428, -4.2994, 0.7902, -15.5251 )
 
 [node name="collision_test_object" type="RigidBody" parent="." groups=["Draggable"]]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 1.80806, -13.2208 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.95357, 0.267791, -11.18 )
 collision_layer = 2147483681
 collision_mask = 2147483703
 physics_material_override = SubResource( 3 )
@@ -405,13 +401,16 @@ skeleton = NodePath("../..")
 shape = SubResource( 2 )
 
 [node name="mdl_mats_filament_roll_rigid" parent="." instance=ExtResource( 45 )]
-transform = Transform( 0.0168067, 0.999859, 0, -0.999859, 0.0168067, 0, 0, 0, 1, 2.32015, 0.948778, -13.5893 )
+transform = Transform( 0.0168067, 0.999859, 0, -0.999859, 0.0168067, 0, 0, 0, 1, 2.24702, 0.948778, -13.5893 )
 
 [node name="mdl_itm_polygon_owl_rigid" parent="." instance=ExtResource( 58 )]
 transform = Transform( -0.449303, 0, 0.893379, 0, 1, 0, -0.893379, 0, -0.449303, 1.99632, 0.878661, -9.3117 )
 
 [node name="mdl_mats_vinyl_roll_rigid" parent="." instance=ExtResource( 62 )]
-transform = Transform( 0.891987, 0, -0.452061, 0, 1, 0, 0.452061, 0, 0.891987, 2.55687, 0.815934, -9.20155 )
+transform = Transform( 0.750157, 0, -0.661259, 0, 1, 0, 0.661259, 0, 0.750157, 1.9335, 0.96066, -14.5718 )
+
+[node name="mdl_mats_filament_roll_rigid2" parent="." instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501, 0.79187, -9.23527 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )
@@ -422,3 +421,4 @@ environment = ExtResource( 3 )
 
 [node name="Mats_plywood_sheet_separated" parent="." instance=ExtResource( 39 )]
 transform = Transform( -0.0608977, 0.983993, -0.167477, 0.0087624, 0.168309, 0.985695, 0.998106, 0.0585591, -0.0188718, 5.59463, 0.345635, -22.5876 )
+visible = false
