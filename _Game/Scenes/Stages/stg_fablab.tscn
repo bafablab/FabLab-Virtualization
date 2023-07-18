@@ -69,11 +69,10 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_electric_afg_2125.tscn" type="PackedScene" id=67]
 [ext_resource path="res://_Game/Scenes/UI/UI_generic_info_menu.tscn" type="PackedScene" id=68]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_electric_devs_holder.tscn" type="PackedScene" id=69]
+[ext_resource path="res://_Game/Models/stg_fl_obj_ball/stg_fl_obj_ball_ball.mesh" type="ArrayMesh" id=70]
 
 [sub_resource type="PhysicsMaterial" id=3]
 bounce = 0.8
-
-[sub_resource type="SphereMesh" id=1]
 
 [sub_resource type="SphereShape" id=2]
 margin = 0.198
@@ -398,7 +397,7 @@ script = ExtResource( 42 )
 
 [node name="MeshInstance" type="MeshInstance" parent="collision_test_object"]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
-mesh = SubResource( 1 )
+mesh = ExtResource( 70 )
 skeleton = NodePath("../..")
 
 [node name="CollisionShape" type="CollisionShape" parent="collision_test_object"]
