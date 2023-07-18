@@ -163,7 +163,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36994, 0.523829, -2.02294 )
 shape = SubResource( 19 )
 
 [node name="wall_7" type="StaticBody" parent="Collisions" index="8"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.02454, 1.2, -11.6836 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.02454, 1.2, -11.5179 )
 collision_layer = 5
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/wall_7" index="0"]
