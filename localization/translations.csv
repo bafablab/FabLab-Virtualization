@@ -16,15 +16,15 @@
 
 FabLab is a workspace for small-scale digital manifacturing, where you can make and produce almost anything! You can use FabLab's facilities and equipment free of charge. The personnel at FabLab guides you on how to use the different devices, but the actual making and manufacturing is done by yourself.
 
-Move in this virtual environment with the WASD-keys and the mouse. Feel free to click on the different devices to learn what they are, and what you can do with them.
+BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) monday to friday from 9 AM to 4 PM. Reservation information and possible exceptions to opening hours can be found from [url=https://businessasema.com/en/fablab/]FabLab's website[/url].
 
-BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) monday to friday from 9 AM to 4 PM. Reservation information and possible exceptions to opening hours can be found from [url=https://businessasema.com/en/fablab/]FabLab's website[/url].","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
+Move in this virtual environment with the WASD-keys and the mouse. Feel free to click on the different devices to learn what they are, and what you can do with them.","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
 
 FabLab on digitaalisen pienvalmistuksen työtila, joka tarjoaa mahdollisuudet tehdä ja valmistaa melkein mitä vain! Voit käyttää FabLabin tiloja ja laitteita maksutta. FabLabin henkilökunta opastaa laitteiden käytössä, mutta varsinaisen valmistuksen hoidat itsenäisesti.
 
-Liiku tässä virtuaaliympäristössä WASD-näppäimillä ja hiirellä. Klikkaamalla eri laitteita opit, mitä ne ovat ja mitä niillä voi tehdä.
+BusinessAsema FabLab sijaitsee osoitteessa Hallituskatu 36, Oulu. FabLab on auki ajanvarauksella ma-pe klo 9-16. Ajanvaraustiedot ja mahdolliset aukioloaikojen poikkeukset löytyvät [url=https://businessasema.com/fablab/]FabLabin websivuilta[/url].
 
-BusinessAsema FabLab sijaitsee osoitteessa Hallituskatu 36, Oulu. FabLab on auki ajanvarauksella ma-pe klo 9-16. Ajanvaraustiedot ja mahdolliset aukioloaikojen poikkeukset löytyvät [url=https://businessasema.com/fablab/]FabLabin websivuilta[/url].","Du har kommit till Uleåborgs BusinessAsemas virtuella FabLab.
+Liiku tässä virtuaaliympäristössä WASD-näppäimillä ja hiirellä. Klikkaamalla eri laitteita opit, mitä ne ovat ja mitä niillä voi tehdä.","Du har kommit till Uleåborgs BusinessAsemas virtuella FabLab.
 I denna virtuella miljö kan du utforska FabLabs faciliteter och utrustning.
 
 Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika enheterna för att lära dig vad de är och vad du kan göra med dem.
@@ -153,11 +153,11 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
 "DEV_DETAILS_ELEGOO","- 1 machine available
-- Printing material: resin
+- Printing material: UV-curing resin
 - Maximum print size L129 x W80 x H150 mm
 - Layer thickness 0.01-0.2 mm
 - Preferred file format .STL","- 1 kpl käytettävissä
-- Tulostusmateriaali: hartsi/resiini
+- Tulostusmateriaali: UV-kovettuva hartsi
 - Tulosteen maksimikoko P129 x L80 x K150 mm
 - Kerrospaksuus 0.01-0.2 mm
 - Suositeltu tiedostomuoto .STL",
@@ -213,19 +213,19 @@ Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja
 "DEV_DETAILS_PHROZEN_CURE","- Inner measurements: 29.5 x 29.5 x 45 cm","- Sisätilamitat: 29.5 x 29.5 x 45 cm","UV lamp details"
 "DEV_DESC_PHROZEN_SONIC","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modeling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A resin printer uses light from an LCD display to cure UV-active liquid resin layer by layer in a process called [url=https://en.wikipedia.org/wiki/Stereolithography]stereolithography[/url]. The resulting print is highly detailed, but the print time is usually longer than with filament depositing 3D-printers. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä UV-kovettuvaa hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
 "DEV_DETAILS_PHROZEN_SONIC","- One available at the FabLab
-- Printing material: resin
+- Printing material: UV-curing resin
 - Maximum print size L33 x W18.5 x H40 cm
 - Layer thickness 0.01-0.30 mm
 - Preferred file format .stl","- Yksi tulostin FabLabilla
-- Tulostusmateriaali: hartsi/resiini
+- Tulostusmateriaali: UV-kovettuva hartsi
 - Tulosteen maksimikoko P33 x L18,5 x K40 cm
 - Kerrospaksuus 0,01-0,30 mm
 - Suositeltu tiedostomuoto .stl","Phrozen Sonic details"
@@ -297,11 +297,11 @@ Skanneri luo useiden kameroiden ja infrapunavalon avulla tarkan 3D-mallin skanna
 - Tukee useita datamuotolähtöjä (OBJ, STL, PLY, P3, 3MF), jotka ovat yhteensopivia erilaisten 3D-tulostimien ja 3D-suunnitteluohjelmistojen kanssa","Details Shining SWE"
 "DEV_DESC_SINDOH","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modeling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
 "DEV_DETAILS_SINDOH","- 3 machines at the FabLab
