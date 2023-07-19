@@ -38,7 +38,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_chair_low_chair_green.tscn" type="PackedScene" id=36]
 [ext_resource path="res://_Game/Scenes/Models/stg_fl_obj_poster_2x1_fabworldmap.tscn" type="PackedScene" id=37]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_vinyl_cutter_skinned.tscn" type="PackedScene" id=38]
-[ext_resource path="res://_Game/Scenes/Models/mdl_mats_plywood_sheet_separated.tscn" type="PackedScene" id=39]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_ball_animated.tscn" type="PackedScene" id=39]
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_simple.tscn" type="PackedScene" id=40]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_obj_safe_cabinet.tscn" type="PackedScene" id=41]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_ball_rigidbody.tscn" type="PackedScene" id=42]
@@ -406,13 +406,12 @@ transform = Transform( 0.750157, 0, -0.661259, 0, 1, 0, 0.661259, 0, 0.750157, 1
 [node name="mdl_mats_filament_roll_rigid2" parent="." instance=ExtResource( 45 )]
 transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501, 0.79187, -9.23527 )
 
+[node name="Spatial" parent="." instance=ExtResource( 39 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.82654, 0.902538, -2.28198 )
+
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )
 far = 30.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
-
-[node name="Mats_plywood_sheet_separated" parent="." instance=ExtResource( 39 )]
-transform = Transform( -0.0608977, 0.983993, -0.167477, 0.0087624, 0.168309, 0.985695, 0.998106, 0.0585591, -0.0188718, 5.59463, 0.345635, -22.5876 )
-visible = false

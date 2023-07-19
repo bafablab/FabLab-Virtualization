@@ -16,7 +16,8 @@
 
 FabLab is a workspace for small-scale digital manifacturing, where you can make and produce almost anything! You can use FabLab's facilities and equipment free of charge. The personnel at FabLab guides you on how to use the different devices, but the actual making and manufacturing is done by yourself.
 
-BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) monday to friday from 9 AM to 4 PM. Reservation information and possible exceptions to opening hours can be found from [url=https://businessasema.com/en/fablab/]FabLab's website[/url].
+BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) Monday to Friday from 9 AM to 4 PM. Reservation information and possible exceptions to opening hours can be found from [url=https://businessasema.com/en/fablab/]FabLab's website[/url].
+
 
 Move in this virtual environment with the WASD-keys and the mouse. Feel free to click on the different devices to learn what they are, and what you can do with them.","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
 
@@ -24,17 +25,34 @@ FabLab on digitaalisen pienvalmistuksen työtila, joka tarjoaa mahdollisuudet te
 
 BusinessAsema FabLab sijaitsee osoitteessa Hallituskatu 36, Oulu. FabLab on auki ajanvarauksella ma-pe klo 9-16. Ajanvaraustiedot ja mahdolliset aukioloaikojen poikkeukset löytyvät [url=https://businessasema.com/fablab/]FabLabin websivuilta[/url].
 
+
 Liiku tässä virtuaaliympäristössä WASD-näppäimillä ja hiirellä. Klikkaamalla eri laitteita opit, mitä ne ovat ja mitä niillä voi tehdä.","Du har kommit till Uleåborgs BusinessAsemas virtuella FabLab.
-I denna virtuella miljö kan du utforska FabLabs faciliteter och utrustning.
 
-Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika enheterna för att lära dig vad de är och vad du kan göra med dem.
+FabLab är en arbetsplats för småskalig digital tillverkning, där du kan göra och producera nästan vad som helst! Du kan använda FabLabs lokaler och utrustning utan kostnad. Personalen på FabLab guidar dig om hur du använder de olika enheterna, men själva tillverkningen och tillverkningen gör du själv.
 
-BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg."
+BusinessAsema FabLab finns på Hallituskatu 36, Uleåborg. FabLab är öppet (bokning krävs) måndag till fredag från 9:00 till 16:00. Bokningsinformation och eventuella undantag från öppettider finns på [url=https://businessasema.com/fablab/]FabLabs websida[/url].
+
+Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika enheterna för att lära dig vad de är och vad du kan göra med dem."
 "WELCOME_BUTTON","Continue","Jatka","Fortsätta"
 "DEV_MENU_INFO","Description","Esittely","Beskrivning"
 "DEV_MENU_DETAILS","Technical information","Tekniset tiedot","Tekniska information"
 "DEV_MENU_EXAMPLES","Example products:","Esimerkkituotteita:","Exempelprodukter:"
 "DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
+"INFO_NAME_FABLAB_INTRO","What is a FabLab?","Mikä FabLab on?","Vad är en FabLab?"
+"INFO_HEADER_FABLAB_INTRO","FabLab","FabLab","FabLab"
+"INFO_TEXT_FABLAB_INTRO","- FabLab is a small-scale digital manufacturing workspace, a prototype workshop
+- A global concept developed at MIT, there are an estimated 5,000 labs worldwide
+- The goal is to offer opportunities to make and produce almost anything
+- In the FabLab, you create your own plans and models, and you use machines and equipment independently
+- FabLab instructors are there to help and advise, but not to do it for you
+- The FabLab is free to use. The use of materials for testing, prototyping and hobbies is also free of charge, within reasonable limits
+- We don't stock a large and wide selection of materials, so even for slightly different or larger projects, you should be prepared to bring your own materials","- FabLab on digitaalisen pienvalmistuksen työtila, prototyyppipaja
+- Maailmanlaajuinen MIT:ssä kehitetty konsepti, arviolta jo 5000 labraa maailmalla
+- Tavoitteena tarjota mahdollisuudet tehdä ja valmistaa melkein mitä vain
+- FabLabissa luot omat suunnitelmat ja mallit, sekä käytät koneita ja laitteita itsenäisesti
+- FabLabin ohjaajat ovat paikalla avustamassa ja neuvomassa, mutteivät kuitenkaan tekemässä puolestasi
+- FabLabin käyttö on maksutonta. Myös materiaalien käyttö testaukseen, protoiluun ja harrastamiseen on maksutonta, kohtuuden rajoissa
+- Emme varastoi isoa ja laajaa materiaalivalikoimaa joten hiemankin erilaisem-missa tai isommissa projekteissa kannattaa varautua tuomaan omat materiaalit","FabLab intro SWE"
 "INFO_NAME_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
 "INFO_HEADER_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
 "INFO_TEXT_FAB_CHARTER","[b]What is a fab lab?[/b]
@@ -130,7 +148,7 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_NAME_PHROZEN_SONIC","Phrozen Sonic Mega 8K","Phrozen Sonic Mega 8K","Phrozen Sonic Mega 8K"
 "DEV_NAME_RENSI","Rensi REU900","Rensi REU900","Rensi REU900"
 "DEV_NAME_ROLAND_CAMM","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24","Roland CAMM-1 GS-24"
-"DEV_NAME_ROLAND_SRM","Roland SRM-20","Roland SRM-20","Roland SRM-20"
+"DEV_NAME_ROLAND_SRM","Roland MonoFab SRM-20","Roland MonoFab SRM-20","Roland MonoFab SRM-20"
 "DEV_NAME_SHINING3D","Shining3D Einstar","Shining3D Einstar","Shining3D Einstar"
 "DEV_NAME_SINDOH","Sindoh Wox dp201","Sindoh Wox dp201","Sindoh Wox dp201"
 "DEV_NAME_COMPUTER","For designing","Suunnitteluun","För design"
@@ -225,7 +243,9 @@ Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja
 - Laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
 - Työstämiseen käyvät materiaalit löytyvät [url=https://www.epiloglaser.com/laser-machines/fusion-pro-laser-series/#pkg-materials]Epilog:n verkkosivuilta[/url]",
 "DEV_DESC_INNOV","With an embroidery machine, it is possible to embroider desired texts or patterns on textiles. You can either use the machine's ready-made fonts and patterns or design your own patterns with the Inkscape program.","Kirjontakoneella on mahdollista konekirjoa haluamasi tekstit tai kuviot tekstiileihin. Voit joko käyttää koneen valmiita fontteja ja kuvioita tai suunnitella oman kuviosi Inkscape-ohjelmalla.","Embroidering machine desc SWE"
-"DEV_DETAILS_INNOV","Available embroidery frames 200 x 300 mm and 200 x 200 mm.","Kirjontakehyskoot 200 x 300 mm ja 200 x 200 mm.",""
+"DEV_DETAILS_INNOV","- Available embroidery frames 200 x 300 mm and 200 x 200 mm.
+- .pes file format","- Kirjontakehyskoot 200 x 300 mm ja 200 x 200 mm
+- Tiedostomuoto .pes","Innov details SWE"
 "DEV_DESC_JUKI_MO","Treat the edges of the fabric, sew elastic clothes. This overlocker can be used to make more common 3- and 4-thread stitches and rolled hems.","Huolittele kankaan reunat, ompele joustavat vaatteet. Tällä saumurilla onnistuu yleisempien 3- ja 4-lankaisten ompeleiden ja rullapäärmeen tekeminen.","Overlocker MO desc SWE"
 "DEV_DETAILS_JUKI_MO","Differential feed.","Differentiaalisyöttö.",""
 "DEV_DESC_JUKI_MSC","Finish the turns of stretchy garments: necklines, cuffs, hems and hems. This cover stitching machine can do 2-thread chain stitch as well as 3- and 4-thread quilting.","Viimeistele joustavien vaatteiden käänteet: pääntiet, hihan- ja lahkeensuut sekä helmat. Tällä peitetikkikoneella onnistuu 2-lankainen ketjutikki sekä 3- ja 4-lankaiset peitetikit.","Overlocker MSC desc SWE"
@@ -270,8 +290,14 @@ Materials:
 Materiaalit:
 - Puu
 - Muovi","CNC details SWE"
-"DEV_DESC_ROLAND_SRM","cnc desc","cnc desc","cnc desc"
-"DEV_DETAILS_ROLAND_SRM","cnc details","cnc details","cnc details"
+"DEV_DESC_ROLAND_SRM","The precision CNC router is suitable for smaller and more precise engraving and milling works. For example, casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin kaiverrustöihin. Esimerkkinä valumuotit, pienet korkokuvataulut, piirilevyt, muovioptiikka yms.","cnc desc SWE"
+"DEV_DETAILS_ROLAND_SRM","- Machining area 232x156 mm
+- Operation strokes 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
+- Mills available: 0.25mm, 0.4mm, 0.8mm, 1mm and 0.2-0.5mm V-shape
+- Cuttable materials: Wax, wood, foam, plastic, PC board","- Työstöalue 232x156 mm
+- Liikeradat 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
+- Saatavilla olevat terät: 0.25mm, 0.4mm, 0.8mm, 1mm ja 0.2-0.5mm V-malli
+- Työstettävät materiaalit: Vaha, puu, muovi, piirilevyaihiot","cnc details SWE"
 "DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.
 
 The sticker or print is designed in vector graphics software (such as Inkscape). The vinyl cutter then cuts the chosen design from the material precisely and quickly.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
@@ -345,35 +371,29 @@ You can come to the FabLab with a ready-made plan, or just to get to know the po
 FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja kuten grafiikka- ja 3D-mallinnusohjelmia.
 
 Voit tulla FabLabille joko valmiin suunnitelman kanssa, tai vain tutustumaan FabLabin tarjoamiin mahdollisuuksiin.",""
-"DEV_DETAILS_COMPUTER","[b]Installed software:[/b]
+"DEV_DETAILS_COMPUTER","[b]Hardware:[/b]
 
-[b]Graphics:[/b]
-- Inkscape (vector)
-- Gimp (bitmap)
+[b]Processor:[/b] Intel Xeon 3.7 Ghz
+[b]GPU:[/b] Nvidia Quadro P2000 5 GB
+[b]RAM:[/b] 32 GB
 
-[b]3D Modeling/CAD:[/b]
-- Blender
-- Autodesk Fusion360
-- Tinkercad
 
-[b]3D printing slicers:[/b]
-- 3DWOX Desktop
-- Ultimaker Cura
-- Chitubox","[b]Asennetut ohjelmistot:[/b]
+[b]Installed software:[/b]
 
-[b]Grafiikka:[/b]
-- Inkscape (vektori)
-- Gimp (bittikartta)
+[b]Graphics:[/b] Inkscape, Gimp, Paint.NET
+[b]3D Modeling and CAD:[/b] Blender, Autodesk Fusion360, Tinkercad, KiCad
+[b]3D printing slicers:[/b] 3DWOX Desktop, Ultimaker Cura, Chitubox
+[b]Development:[/b] Visual Studio, Unity, Arduino IDE, Atmel Studio","[b]Laitteisto:[/b]
 
-[b]3D-mallinnus/CAD:[/b]
-- Blender
-- Autodesk Fusion360
-- Tinkercad
+[b]Prosessori:[/b] Intel Xeon 3.7 Ghz
+[b]Näytönohjain:[/b] Nvidia Quadro P2000 5 Gt
+[b]Muisti:[/b] 32 Gt
 
-[b]3D-tulostuksen slicerit:[/b]
-- 3DWOX Desktop
-- Ultimaker Cura
-- Chitubox",""
+[b]Asennetut ohjelmistot:[/b]
+[b]Grafiikka:[/b] Inkscape, Gimp, Paint.NET
+[b]3D-Mallinnus ja CAD:[/b] Blender, Autodesk Fusion360, Tinkercad, KiCad
+[b]3D-tulostimien slicerit:[/b] 3DWOX Desktop, Ultimaker Cura, Chitubox
+[b]Kehitys:[/b] Visual Studio, Unity, Arduino IDE, Atmel Studio",""
 "DEV_VIDEO_TITLE_1","Ski video","Hiihtovideo","Hiihtovideo ruotsi"
 "DEV_VIDEO_DESC_1","Man flies over a bus","Mies hiihtää bussin yli","Mies lentää ruotsi"
 "DEV_VIDEO_TITLE_2","Video number 2","Video numero 2","Video nummer 2"

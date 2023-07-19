@@ -136,5 +136,6 @@ func update_hover_text():
 func play_animation():
 	animation = get_node_or_null("AnimationPlayer")
 	if animation:
-		if interactable.animationNames:
-			$AnimationPlayer.play(interactable.animationNames[0])
+		if !$AnimationPlayer.is_playing():
+			if interactable.animationNames:
+				$AnimationPlayer.play(interactable.animationNames[0])
