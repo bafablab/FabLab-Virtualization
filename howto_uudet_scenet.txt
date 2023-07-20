@@ -1,5 +1,5 @@
 -------------------------------------
-Interactablejen luonti (Device/Item):
+Interactablejen luonti (Device/Item/GenericInfo):
 
 1.  Uudet importattavat mallit ovat hakemistossa _Game/Models/laitteen_nimi/
 2.  Kaksoisklikkaa .glb-päätteistä Scene-tiedostoa, luodaan siitä periytyvä uusi scene eli valitse New Inherited, sijoita hakemistoon _Game/Scenes/Models/
@@ -8,8 +8,8 @@ Interactablejen luonti (Device/Item):
 5.  Säädä CollisionShape(t) kohdilleen
 6.  Aseta StaticBodylle oikea collision layer (laitteiden tapauksessa esim. 1, 5) ja maskit (1 riittää)
 7.  Luo tarvittaessa HoverTextPosition-niminen Spatial-node, joka määrittää laitteen yllä leijuvan tekstin paikkaa, voi jättää myös pois, jolloin käytetään oletusarvoista sijaintia hieman laitteen yläpuolella
-8.  Juurinodelle pitää määrittää DeviceInfo tai ItemInfo-resource:
-8.1.	Luo uusi resource hakemistoon _Game/Resources/: klikkaa oikealla, new Resource, tyypiksi DeviceInfo tai ItemInfo listasta
+8.  Juurinodelle pitää määrittää DeviceInfo/ItemInfo/GenericInfo-resource:
+8.1.	Luo uusi resource hakemistoon _Game/Resources/: klikkaa oikealla, new Resource, valitse sopiva tyyppi listasta
 8.2.	Lisää translations.csv:hen (localization-hakemistossa projektin juuressa) tarvittavat tekstistringit ainakin yhdellä kielellä, Devicen tapauksessa yleisnimi (DEV_GENERIC_NAME_xxxx), tarkka nimi (DEV_NAME_xxxx), esittelyteksti (DEV_DESC_xxxx) ja lisätiedot (DEV_DETAILS_xxxx) jossa xxxx sopiva laitteen/itemin yksilöivä nimi
 8.3.	Lisää nämä translation keyt resourcen tekstikenttiin
 8.4.	Jos laitteella on esimerkkituote, vedä se kohtaan "Example Items"

@@ -25,9 +25,6 @@ extents = Vector3( 0.158576, 0.229698, 0.149272 )
 script = ExtResource( 4 )
 interactable = ExtResource( 5 )
 
-[node name="Skeleton" parent="Armature" index="0"]
-bones/2/bound_children = [ NodePath("../../BoneAttachment") ]
-
 [node name="dev" parent="Armature/Skeleton" index="0"]
 material/0 = ExtResource( 1 )
 material/1 = ExtResource( 2 )
@@ -39,13 +36,13 @@ material/0 = ExtResource( 1 )
 transform = Transform( 1, 0, 0, 0, -0.976226, -0.216757, 0, 0.216757, -0.976224, 0, 0.407583, 0.124399 )
 bone_name = "Armature/Skeleton/door"
 
-[node name="StaticBody_Ani" type="StaticBody" parent="BoneAttachment" index="0"]
+[node name="StaticBody_Ani" type="StaticBody" parent="BoneAttachment" index="0" groups=["Mover"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="BoneAttachment/StaticBody_Ani" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 1.49012e-08, 1, 0, 0.187755, -2.98023e-08 )
 shape = SubResource( 1 )
 
-[node name="StaticBody" type="StaticBody" parent="." index="3"]
+[node name="StaticBody" type="StaticBody" parent="." index="3" groups=["Mover"]]
 collision_layer = 17
 
 [node name="cs_side" type="CollisionShape" parent="StaticBody" index="0"]

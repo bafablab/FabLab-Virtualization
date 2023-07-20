@@ -44,6 +44,8 @@ func _input(_event):
 			crosshair.clear_tooltip()
 
 # Functions for handling the movement of this object.
+
+# Custom force integrator
 func _integrate_forces(state):
 	if linear_vel != null:
 		state.linear_velocity = linear_vel * GRAB_FORCE

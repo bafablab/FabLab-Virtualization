@@ -4,7 +4,7 @@ onready var tooltip = $TooltipBackground/Tooltip
 onready var tooltipbg = $TooltipBackground
 onready var tooltips_enabled = true
 
-func _input(event):
+func _input(_event):
 	# Enable/disable tooltips
 	if Input.is_action_just_pressed("toggle_tooltips"):
 		if tooltips_enabled:

@@ -93,14 +93,14 @@ script = ExtResource( 4 )
 [node name="mdl" parent="Armature/Skeleton" index="0"]
 material/0 = ExtResource( 2 )
 
-[node name="mdl_dev_compact_milling_mch_srm-20" parent="Armature/Skeleton" index="1" instance=ExtResource( 5 )]
-transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0.438251, 0.755717, 0.375956 )
-
-[node name="BoneAttachment" type="BoneAttachment" parent="Armature/Skeleton" index="2"]
+[node name="BoneAttachment" type="BoneAttachment" parent="Armature/Skeleton" index="1"]
 transform = Transform( 0, 1, 7.10543e-15, -1, 0, 1.92167e-07, 1.92167e-07, -7.10543e-15, 1, -0.502147, 0.676381, 0.211474 )
 bone_name = "height_adjust_main"
 
-[node name="TableBody" type="StaticBody" parent="Armature/Skeleton/BoneAttachment" index="0" groups=["Mover"]]
+[node name="mdl_dev_compact_milling_mch_srm-20" parent="Armature/Skeleton/BoneAttachment" index="0" instance=ExtResource( 5 )]
+transform = Transform( -2.90165e-14, -1, -1.92167e-07, -1, -1.36543e-21, 1.50996e-07, -1.50996e-07, 1.92167e-07, -1, -0.0793362, 0.940398, 0.164482 )
+
+[node name="TableBody" type="StaticBody" parent="Armature/Skeleton/BoneAttachment" index="1" groups=["Mover"]]
 transform = Transform( 1, -1.42109e-14, 4.26326e-14, 1.42109e-14, 1, -4.23516e-21, -1.42109e-14, -4.23516e-21, 1, -0.00151753, 5.96046e-08, 1.49012e-08 )
 collision_layer = 19
 
@@ -124,10 +124,10 @@ shape = SubResource( 4 )
 transform = Transform( 0.999999, -8.52651e-14, 1.7053e-13, 8.52651e-14, 0.999999, -1.94818e-20, -2.84217e-14, -2.96462e-20, 1, 0.869807, 0.0348334, -0.731984 )
 shape = SubResource( 5 )
 
-[node name="mdl_dev_basic_pc" parent="Armature/Skeleton/BoneAttachment" index="1" instance=ExtResource( 3 )]
+[node name="mdl_dev_basic_pc" parent="Armature/Skeleton/BoneAttachment" index="2" instance=ExtResource( 3 )]
 transform = Transform( -1.12035e-07, -0.999999, -1.96436e-07, -0.47699, -1.19209e-07, 0.878908, -0.878909, 1.92167e-07, -0.47699, -0.0691626, 0.236093, -0.0192423 )
 
-[node name="LowerLegs" type="StaticBody" parent="Armature/Skeleton" index="3"]
+[node name="LowerLegs" type="StaticBody" parent="Armature/Skeleton" index="2"]
 collision_layer = 3
 
 [node name="LegHorizontalLeft" type="CollisionShape" parent="Armature/Skeleton/LowerLegs" index="0"]

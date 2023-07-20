@@ -126,7 +126,6 @@ func _physics_process(delta):
 		gravity_vec = -get_floor_normal()
 	
 	if moving:
-# Jumping is not implemented
 		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 			gravity_vec = Vector3.UP * jump
 		if Input.is_action_pressed("move_forward"):
@@ -199,9 +198,9 @@ func let_go():
 func on_grabber_collision(collision_object):
 	if can_be_picked(collision_object):
 		if Input.is_action_pressed("mouse_click"):
-			#grabbed_item_rel_pos = $Head.to_local(collision_object.translation)
+			#grabbed_item_rel_pos = $Head.to_local(collision_object.translation) # Use if a preset hold position is not used, check on_full_grabber()
 			grabbed_item = collision_object
-			grabbed_item.apply_central_impulse(Vector3.UP * 0.1)
+			grabbed_item.apply_central_impulse(Vector3.UP * 0.1) # Wakes up a sleeping RigidBody!
 
 # Checker if targeted object is a pickable object (has scr_pickup.gd attached)
 func can_be_picked(object):

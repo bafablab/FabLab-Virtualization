@@ -17,7 +17,7 @@ var menu
 var hover_text
 var hover_text_position
 var in_focus = false
-var static_body
+var interactable_body
 
 var animation
 
@@ -31,15 +31,18 @@ func _ready():
 		menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	elif self.is_in_group("GenericInfo"):
 		menu = get_node("/root/FabLab/UI_generic_info_menu")
-
-	static_body = get_node("StaticBody")
+	
+	if get_node_or_null("StaticBody"):
+		interactable_body = get_node("StaticBody")
+	elif get_node_or_null("RigidBody"):
+		interactable_body = get_node("RigidBody")
 	
 	# connect signals that are emitted when mouse enters and exits static body
 	# FPSController emits same signals when objectSelect raycast is colliding with static body
 	# Mouse over is currently used only while debugging, but may be useful if
 	# different movement controls are added.
-	static_body.connect("mouse_entered", self, "enter_focus")
-	static_body.connect("mouse_exited", self, "exit_focus")	
+	interactable_body.connect("mouse_entered", self, "enter_focus")
+	interactable_body.connect("mouse_exited", self, "exit_focus")	
 	
 	#   Find MeshInstance and add it to ItemInfo-resource so it can be shown in the 3d view
 	for child in get_children():
@@ -90,12 +93,8 @@ func exit_focus():
 
 
 func _input(_event):
-	if main_menu.visible:			#Do not read mouse clicks here if main menu is visible
-		in_focus = false
 	if in_focus:
 		if Input.is_action_just_pressed("mouse_click"):
-			# Reveal mouse pointer to interact with the menu
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			HUD.append_debugtext("Interactable clicked")
 			# initialize menu with interactable's information
 			menu.init(interactable)
