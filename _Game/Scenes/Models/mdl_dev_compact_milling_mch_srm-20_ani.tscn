@@ -19,7 +19,7 @@ extents = Vector3( 0.215276, 0.0387012, 0.198945 )
 extents = Vector3( 0.159607, 0.193599, 0.0359903 )
 
 [sub_resource type="BoxShape" id=5]
-extents = Vector3( 0.158576, 0.229698, 0.149272 )
+extents = Vector3( 0.158576, 0.201952, 0.149272 )
 
 [node name="mdl_dev_compact_milling_mch_srm-20" groups=["Device"] instance=ExtResource( 3 )]
 script = ExtResource( 4 )
