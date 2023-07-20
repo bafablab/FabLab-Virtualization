@@ -43,5 +43,6 @@ func _input(_event):
 			#in_focus = false
 	
 
+# warning-ignore:unused_argument
 func _on_AnimationPlayer_animation_finished(anim_name):
 	table_moving = false

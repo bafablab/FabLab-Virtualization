@@ -2,7 +2,15 @@ extends Control
 
 onready var tooltip = $TooltipBackground/Tooltip
 onready var tooltipbg = $TooltipBackground
+onready var tooltips_enabled = true
 
+func _input(event):
+	# Enable/disable tooltips
+	if Input.is_action_just_pressed("toggle_tooltips"):
+		if tooltips_enabled:
+			tooltips_enabled = false
+		else:
+			tooltips_enabled = true
 
 func _physics_process(_delta):
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
@@ -10,7 +18,7 @@ func _physics_process(_delta):
 	else:
 		self.visible = false
 	
-	if tooltip.text:
+	if tooltip.text && tooltips_enabled:
 		tooltipbg.show()
 	else:
 		tooltipbg.hide()
