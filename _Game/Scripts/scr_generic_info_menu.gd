@@ -22,6 +22,7 @@ func init(resource):
 	# scripts, for example close the window immidiately.
 	get_tree().get_root().set_input_as_handled()
 	
+	
 func updatetexts():
 	if generic_info != null:
 		# Add texts to header and textbox since Godot doesn't automatically translate text in the bbcode-field

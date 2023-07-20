@@ -18,7 +18,7 @@ var hover_text
 var hover_text_position
 var in_focus = false
 var static_body
-var game_manager
+
 var animation
 
  
@@ -31,8 +31,7 @@ func _ready():
 		menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	elif self.is_in_group("GenericInfo"):
 		menu = get_node("/root/FabLab/UI_generic_info_menu")
-	# For possible future use. Only debug stuff currently
-	game_manager = get_node("/root/FabLab")	
+
 	static_body = get_node("StaticBody")
 	
 	# connect signals that are emitted when mouse enters and exits static body
@@ -45,11 +44,6 @@ func _ready():
 	#   Find MeshInstance and add it to ItemInfo-resource so it can be shown in the 3d view
 	for child in get_children():
 		if child is MeshInstance:
-			#overlay_material = child.get_material_overlay()
-			#if overlay_material == null:
-				#HUD.append_debugtext("No overlay material (highlight shader)")
-			#child.set_material_overlay(null)
-			#mesh_instance = child
 			if self.is_in_group("Item"):
 				interactable.mesh_instance = child
 			break
@@ -91,7 +85,6 @@ func enter_focus():
 # THis function is called when mouse or crosshair moves away from the interactable
 func exit_focus():
 	in_focus = false
-	#mesh_instance.set_material_overlay(null)
 	hover_text.visible = false
 	crosshair.clear_tooltip()
 
