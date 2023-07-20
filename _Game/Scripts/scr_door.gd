@@ -86,6 +86,7 @@ func set_hover_text():
 #	pass
 
 
+# warning-ignore:unused_argument
 func _on_AnimationPlayer_animation_finished(anim_name):
 	door_moving = false
 	hover_text.transform.origin = hover_text_position.transform.origin

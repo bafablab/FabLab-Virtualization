@@ -7,6 +7,7 @@ var generic_info
 func _ready():
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":
+# warning-ignore:return_value_discarded
 		$VBoxContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 	self.hide()
@@ -43,10 +44,10 @@ func open():
 
 # hide window, Close button connects here
 func close():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	self.hide()
 	generic_info = null
 	
 # Function for opening hyperlinks in other than HTML5-based exports
 func _on_RichTextLabel_meta_clicked(meta):
+# warning-ignore:return_value_discarded
 	OS.shell_open(meta)

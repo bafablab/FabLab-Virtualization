@@ -11,6 +11,7 @@ func _ready():
 #func _process(delta):
 #	pass
 
+# warning-ignore:unused_argument
 func _input(event):
 		# Toggles debug text visibility
 	if Input.is_action_just_pressed("toggle_debug"):

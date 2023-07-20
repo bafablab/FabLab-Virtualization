@@ -15,6 +15,7 @@ onready var item_3d_view = $VBoxContainer/TabContainer/Panel/Item3DView
 func _ready():
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":
+# warning-ignore:return_value_discarded
 		$VBoxContainer/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 
@@ -54,10 +55,10 @@ func _input(event):
 
 # Function for opening hyperlinks in other than HTML5-based exports
 func _on_RichTextLabel_meta_clicked(meta):
+# warning-ignore:return_value_discarded
 	OS.shell_open(meta)
 
 func exit_window():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	self.visible = false
 	if wasCalledFromDeviceMenu:
 		device_info_menu.show()

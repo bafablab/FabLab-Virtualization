@@ -8,6 +8,7 @@ func _ready():
 	
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
 	if OS.get_name() != "HTML5":
+# warning-ignore:return_value_discarded
 		$VBoxContainer/Panel/WelcomeText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 	self.hide()
@@ -44,6 +45,7 @@ func close():
 	
 # Function for opening hyperlinks in other than HTML5-based exports
 func _on_RichTextLabel_meta_clicked(meta):
+# warning-ignore:return_value_discarded
 	OS.shell_open(meta)
 
 

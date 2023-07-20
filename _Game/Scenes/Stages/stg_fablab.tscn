@@ -406,7 +406,7 @@ transform = Transform( 0.750157, 0, -0.661259, 0, 1, 0, 0.661259, 0, 0.750157, 1
 [node name="mdl_mats_filament_roll_rigid2" parent="." instance=ExtResource( 45 )]
 transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501, 0.79187, -9.23527 )
 
-[node name="Spatial" parent="." instance=ExtResource( 39 )]
+[node name="mdl_itm_ball_animated" parent="." instance=ExtResource( 39 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.82654, 0.902538, -2.28198 )
 
 [node name="Camera" type="Camera" parent="."]

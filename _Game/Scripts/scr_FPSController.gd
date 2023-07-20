@@ -106,7 +106,7 @@ func _physics_process(delta):
 			object_select.enabled = false
 	# ------- Object selection code ends -------
 	
-	# Handle item grabbing
+	# ------- Handle item grabbing --------
 	handle_grabber()
 	
 	# ----- Movement code begins ------
@@ -151,6 +151,7 @@ func _physics_process(delta):
 		movement.x = h_velocity.x + gravity_vec.x
 		movement.y = gravity_vec.y
 		
+# warning-ignore:return_value_discarded
 		move_and_slide(movement, Vector3.UP)
 	else:
 		h_velocity = Vector3.ZERO # stop player if any menu is open

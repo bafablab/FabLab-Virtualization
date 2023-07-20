@@ -12,14 +12,19 @@ var in_focus = false
 
 func _ready():
 	# For when mouse is hovering over this object
+# warning-ignore:return_value_discarded
 	self.connect("mouse_entered", self, "enter_focus")
+# warning-ignore:return_value_discarded
 	self.connect("mouse_exited", self, "exit_focus")	
 	
 	# For collisions with other objects
+# warning-ignore:return_value_discarded
 	self.connect("body_entered", self, "pickup_body_entered")
+# warning-ignore:return_value_discarded
 	self.connect("body_exited", self, "pickup_body_exited")
 	
 	# For sleep state changes
+# warning-ignore:return_value_discarded
 	self.connect("sleeping_state_changed", self, "pickup_sleeping_state_changed")	
 
 func enter_focus():

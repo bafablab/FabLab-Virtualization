@@ -66,7 +66,6 @@ func clear_example_items():
 		item_list.remove_child(button)
 
 func exit_window():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	self.visible = false
 	
 	# set first tab active when menu is closed so next time it is opened it is on the first tab
@@ -80,6 +79,7 @@ func exit_window():
 
 # Function for opening hyperlinks in other than HTML5-based exports
 func _on_RichTextLabel_meta_clicked(meta):
+# warning-ignore:return_value_discarded
 	OS.shell_open(meta)
 
 func create_example_items():

@@ -79,7 +79,10 @@ func enter_focus():
 	crosshair.show_tooltip(tr("TOOLTIP_INTERACT"))
 	HUD.append_debugtext("Mouse on " + self.name)
 	
-	play_animation()
+	if self.is_in_group("Device"):
+		play_animation()
+	
+	
 #	if overlay_material:
 #		mesh_instance.set_material_overlay(overlay_material)	
 #	else:
@@ -136,6 +139,5 @@ func update_hover_text():
 func play_animation():
 	animation = get_node_or_null("AnimationPlayer")
 	if animation:
-		if !$AnimationPlayer.is_playing():
-			if interactable.animationNames:
-				$AnimationPlayer.play(interactable.animationNames[0])
+		if interactable.animationNames:
+			$AnimationPlayer.play(interactable.animationNames[0])
