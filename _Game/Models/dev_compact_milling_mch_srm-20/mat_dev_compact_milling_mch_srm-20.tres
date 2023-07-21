@@ -1,4 +1,9 @@
-[gd_resource type="SpatialMaterial" format=2]
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Models/dev_compact_milling_mch_srm-20/txt_dev_compact_milling_mch_srm-20_dif_2048.png" type="Texture" id=1]
 
 [resource]
-albedo_color = Color( 0.6, 0.6, 0.6, 1 )
+flags_unshaded = true
+flags_disable_ambient_light = true
+params_specular_mode = 4
+albedo_texture = ExtResource( 1 )
