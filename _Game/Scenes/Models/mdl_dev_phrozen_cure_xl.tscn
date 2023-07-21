@@ -1,21 +1,20 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=1]
 [ext_resource path="res://_Game/Resources/dev_phrozen_cure_xl.tres" type="Resource" id=2]
-
-[sub_resource type="CubeMesh" id=1]
-size = Vector3( 0.403, 0.636, 0.435 )
+[ext_resource path="res://_Game/Models/dev_phrozen_cure_xl/mat_dev_phrozen_cure_xl.tres" type="Material" id=3]
+[ext_resource path="res://_Game/Models/dev_phrozen_cure_xl/mdl_dev_phrozen_cure_xl_Cube.mesh" type="ArrayMesh" id=4]
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.146174, 0.320089, 0.232672 )
+extents = Vector3( 0.146174, 0.299356, 0.166159 )
 
 [node name="mdl_dev_phrozen_cure_xl" type="Spatial" groups=["Device"]]
 script = ExtResource( 1 )
 interactable = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.323049, 0 )
-mesh = SubResource( 1 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 collision_layer = 17
