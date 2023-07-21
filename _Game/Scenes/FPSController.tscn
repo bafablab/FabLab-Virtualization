@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_FPSController.gd" type="Script" id=1]
 
@@ -11,9 +11,6 @@ radius = 0.202746
 height = 1.47313
 
 [sub_resource type="CapsuleMesh" id=5]
-
-[sub_resource type="SphereShape" id=6]
-radius = 5.0
 
 [node name="FPSController" type="KinematicBody"]
 collision_mask = 55
@@ -46,13 +43,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
 
 [node name="ObjectSelect" type="RayCast" parent="Head"]
 enabled = true
-cast_to = Vector3( 0, 0, -3 )
+cast_to = Vector3( 0, 0, -2.5 )
 collision_mask = 54
 collide_with_areas = true
 
 [node name="Grabber" type="RayCast" parent="Head"]
 enabled = true
-cast_to = Vector3( 0, 0, -3 )
+cast_to = Vector3( 0, 0, -2.5 )
 collision_mask = 54
 collide_with_areas = true
 
@@ -60,15 +57,3 @@ collide_with_areas = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.252088, 0 )
 enabled = true
 cast_to = Vector3( 0, -1.5, 0 )
-
-[node name="Area" type="Area" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6036, 0 )
-collision_layer = 8
-collision_mask = 16
-
-[node name="CollisionShape" type="CollisionShape" parent="Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.524494, 0 )
-shape = SubResource( 6 )
-
-[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
-[connection signal="body_exited" from="Area" to="." method="_on_Area_body_exited"]

@@ -27,7 +27,6 @@ onready var holdposition = $Head/Camera/HoldPosition # position where a picked u
 export var moving = true # for enabling/disabling movement
 
 # Variables for interacting with objects
-var objects_in_range = []
 var selected_object_transform
 var targeted_object = null
 
@@ -77,11 +76,7 @@ func _process(_delta):
 func _physics_process(delta):
 	
 	# ------- Object selection code begins -------
-	# Check if interactable objects in range
-	if objects_in_range.size() > 0 and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		# enable object_select raycast if objects near
-		if !object_select.enabled:
-			object_select.enabled = true
+	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if object_select.is_colliding():
 			# Do not emit signal again if targeted object hasn't changed
 			if object_select.get_collider() != targeted_object:
@@ -99,12 +94,8 @@ func _physics_process(delta):
 				targeted_object.emit_signal("mouse_exited")
 				targeted_object = null
 				crosshair.clear_tooltip()
-			#print_debug("object_detected")
-	# if no interactable objects in range, disable object_select raycast. 
-	else:
-		if object_select.enabled:
-			object_select.enabled = false
-	# ------- Object selection code ends -------
+	# ------ Object selection code ends ------- 
+
 	
 	# ------- Handle item grabbing --------
 	handle_grabber()
@@ -208,13 +199,6 @@ func can_be_picked(object):
 	
 	
 # ------ Object picking/throwing functions end ------
-
-# Add/remove nearby intaractables to a list, based on a cylindrical area surrounding the player
-func _on_Area_body_entered(body):
-	objects_in_range.append(body)
-
-func _on_Area_body_exited(body):
-	objects_in_range.erase(body)
 
 # toggle mouse mode for debug purposes
 func toggle_mouse():	
