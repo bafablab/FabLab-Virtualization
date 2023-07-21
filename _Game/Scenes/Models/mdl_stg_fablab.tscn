@@ -82,7 +82,7 @@ extents = Vector3( 1.04966, 1.7, 0.095 )
 extents = Vector3( 1, 0.287163, 0.0923694 )
 
 [sub_resource type="BoxShape" id=13]
-extents = Vector3( 1.37217, 1.7, 0.183 )
+extents = Vector3( 1.37217, 1.94498, 0.183 )
 
 [sub_resource type="BoxShape" id=16]
 extents = Vector3( 1.91376, 2.14751, 0.2 )
@@ -116,7 +116,7 @@ shape = SubResource( 1 )
 collision_layer = 5
 
 [node name="GeneralCeiling" type="CollisionShape" parent="Collisions/Ceiling" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.72308, 3.61024, -12.0485 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.723, 3.554, -12.049 )
 shape = SubResource( 23 )
 
 [node name="LoweredCeiling" type="CollisionShape" parent="Collisions/Ceiling" index="1"]
@@ -296,7 +296,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.03479, 0, -19.3416 )
 collision_layer = 5
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/wall_15" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00379, 0.125824 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.27999, 0.125824 )
 shape = SubResource( 18 )
 
 [node name="Pillars" type="StaticBody" parent="Collisions" index="17"]
