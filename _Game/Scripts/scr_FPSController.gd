@@ -200,7 +200,7 @@ func on_grabber_collision(collision_object):
 		if Input.is_action_pressed("mouse_click"):
 			#grabbed_item_rel_pos = $Head.to_local(collision_object.translation) # Use if a preset hold position is not used, check on_full_grabber()
 			grabbed_item = collision_object
-			grabbed_item.apply_central_impulse(Vector3.UP * 0.1) # Wakes up a sleeping RigidBody!
+			grabbed_item.set_sleeping(false)
 
 # Checker if targeted object is a pickable object (has scr_pickup.gd attached)
 func can_be_picked(object):
