@@ -176,7 +176,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10205, 0.056788, 0.876296 )
 shape = SubResource( 6 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="Collisions/wall_6" index="1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.16755, 0.0453753, -0.824838 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.682929, 0.0453753, -0.824838 )
 shape = SubResource( 15 )
 
 [node name="wall_7" type="StaticBody" parent="Collisions" index="8"]
