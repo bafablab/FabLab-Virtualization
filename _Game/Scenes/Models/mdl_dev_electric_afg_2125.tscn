@@ -28,3 +28,6 @@ shape = SubResource( 1 )
 [node name="CollisionShape2" type="CollisionShape" parent="StaticBody" index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013568, -0.0159143, 0.110307 )
 shape = SubResource( 2 )
+
+[node name="HoverTextPosition" type="Spatial" parent="." index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.255871, 0 )
