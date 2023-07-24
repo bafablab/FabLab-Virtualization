@@ -290,7 +290,15 @@ Materials:
 Materiaalit:
 - Puu
 - Muovi","CNC details SWE"
-"DEV_DESC_ROLAND_SRM","The precision CNC router is suitable for smaller and more precise engraving and milling works. For example, casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin kaiverrustöihin. Esimerkkinä valumuotit, pienet korkokuvataulut, piirilevyt, muovioptiikka yms.","cnc desc SWE"
+"DEV_DESC_ROLAND_SRM","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from for example plastic, wood and printed circuit boards.
+
+Designing of the workpiece begins in ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in software. The router then moves its rotary cutting tool in along three axis based on these commands. This means the tool movements are very precise and repeatable.
+
+The precision CNC router is suitable for smaller and more precise engraving and milling works. For example, casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","CNC- eli tietokoneohjatulla jyrsimellä voidaan työstää nopeasti ja tarkasti esimerkiksi muovia, puuta ja piirilevyaihioita.
+
+Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, jonka jälkeen tehdystä mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
+
+Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin kaiverrustöihin. Esimerkkinä valumuotit, pienet korkokuvataulut, piirilevyt, muovioptiikka yms.","cnc desc SWE"
 "DEV_DETAILS_ROLAND_SRM","- Machining area 232x156 mm
 - Operation strokes 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
 - Mills available: 0.25mm, 0.4mm, 0.8mm, 1mm and 0.2-0.5mm V-shape
