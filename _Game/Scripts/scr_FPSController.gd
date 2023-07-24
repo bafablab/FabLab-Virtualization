@@ -56,10 +56,6 @@ func _input(event):
 			head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
 			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
 
-	# Change mouse mode for debug. MOUSE_MODE_CAPTURED and MOUSE_MODE_VISIBLE - mouse_toggle currently "-"
-	if Input.is_action_just_pressed("mouse_toggle"):
-		toggle_mouse()
-
 
 # Normal process, runs every frame
 func _process(_delta):
@@ -199,10 +195,3 @@ func can_be_picked(object):
 	
 	
 # ------ Object picking/throwing functions end ------
-
-# toggle mouse mode for debug purposes
-func toggle_mouse():	
-	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	else:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
