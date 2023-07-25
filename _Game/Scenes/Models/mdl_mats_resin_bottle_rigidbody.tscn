@@ -27,8 +27,10 @@ radius = 0.026
 
 [node name="mdl_mats_resin_bottle_rigidbody" type="RigidBody" groups=["Draggable"]]
 collision_layer = 33
+mass = 2.0
 contacts_reported = 5
 contact_monitor = true
+angular_damp = 2.0
 script = ExtResource( 1 )
 
 [node name="mats" type="MeshInstance" parent="."]
