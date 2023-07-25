@@ -221,7 +221,7 @@ Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulo
 - Tulostusmateriaali: biohajoava PLA
 - Tulosteen maksimikoko 220 x 220 x 250 mm
 - Kerrospaksuus 0.05-0.35 mm
-- Suositeltu tiedostomuoto .STL",
+- Suositeltu tiedostomuoto .STL",""
 "DEV_DESC_EPILOG","A laser cutter is a powerful tool that uses a laser beam to cut or engrave a variety of materials such as wood, acrylic, rubber, leather and felt.
 
 With it, its possible to cut complex shapes and edges very precisely and quickly, which makes it a popular tool for craft enthusiasts, advertising companies, industry, and for the production of prototypes and production pieces.","Laserleikkuri on tehokas työkalu, joka käyttää lasersädettä leikatakseen tai kaivertaakseen erilaisia materiaaleja, kuten puuta, akryylia, kumia, nahkaa ja huopaa.
@@ -290,7 +290,7 @@ Materials:
 Materiaalit:
 - Puu
 - Muovi","CNC details SWE"
-"DEV_DESC_ROLAND_SRM","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from for example plastic, wood and printed circuit boards.
+"DEV_DESC_ROLAND_SRM","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from, for example, plastic, wood and printed circuit boards.
 
 Designing of the workpiece begins in ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in software. The router then moves its rotary cutting tool in along three axis based on these commands. This means the tool movements are very precise and repeatable.
 
