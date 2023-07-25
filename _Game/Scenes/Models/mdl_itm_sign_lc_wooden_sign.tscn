@@ -6,7 +6,7 @@
 [ext_resource path="res://_Game/Resources/itm_lasercut_firehazard.tres" type="Resource" id=4]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.20902, 0.0627329, 0.0423365 )
+extents = Vector3( 0.368951, 0.0715641, 0.0329381 )
 
 [node name="md_itm_sign_lc_cutter_wooden_sign" type="Spatial" groups=["Item"]]
 script = ExtResource( 3 )
@@ -21,7 +21,7 @@ material/0 = ExtResource( 1 )
 collision_layer = 17
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0490836, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0126314, 0.0823216, 0.00453696 )
 shape = SubResource( 1 )
 
 [node name="HoverTextPosition" type="Spatial" parent="."]
