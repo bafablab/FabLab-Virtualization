@@ -64,6 +64,8 @@ func pause_game():
 
 # Quit the game
 func _on_ExitButton_pressed():
+	if OS.get_name() == "HTML5":
+		JavaScript.eval('document.getElementById("canvas").remove();')
 	get_tree().quit()
 
 # Pressing escape pauses the game and shows the main menu
