@@ -13,10 +13,9 @@ onready var item_3d_view = $VBoxContainer/TabContainer/Panel/Item3DView
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	# Handle clicking hyperlinks in other than HTML5 versions of the game
-	if OS.get_name() != "HTML5":
+
 # warning-ignore:return_value_discarded
-		$VBoxContainer/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+	$VBoxContainer/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 
 func init(itm):
@@ -53,10 +52,14 @@ func _input(event):
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				exit_window()
 
-# Function for opening hyperlinks in other than HTML5-based exports
+# Function for opening hyperlinks
 func _on_RichTextLabel_meta_clicked(meta):
+	# For other than web exports
+	if OS.get_name() != "HTML5":
 # warning-ignore:return_value_discarded
-	OS.shell_open(meta)
+		OS.shell_open(meta)
+	else:
+		JavaScript.eval('window.open("' + meta + '")') # open the link in a new window
 
 func exit_window():
 	self.visible = false

@@ -32,7 +32,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="FabLab-Virtualization"
+config/name="VirtualFabLab"
 run/main_scene="res://_Game/Scenes/Stages/stg_fablab.tscn"
 config/icon="res://icon.png"
 

@@ -17,9 +17,8 @@ var inFocus
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Handle clicking hyperlinks in other than HTML5 versions of the game
-	if OS.get_name() != "HTML5":
-		intro_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
-		details_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+	intro_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+	details_text.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 
 func init(dev):
 	device = dev
@@ -77,10 +76,14 @@ func exit_window():
 	# Clear device
 	device = null
 
-# Function for opening hyperlinks in other than HTML5-based exports
+# Function for opening hyperlinks
 func _on_RichTextLabel_meta_clicked(meta):
+	# For other than web exports
+	if OS.get_name() != "HTML5":
 # warning-ignore:return_value_discarded
-	OS.shell_open(meta)
+		OS.shell_open(meta)
+	else:
+		JavaScript.eval('window.open("' + meta + '")') # open the link in a new window
 
 func create_example_items():
 	# clear the example item before adding current device's example items
