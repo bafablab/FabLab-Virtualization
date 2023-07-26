@@ -65,7 +65,8 @@ func pause_game():
 # Quit the game
 func _on_ExitButton_pressed():
 	if OS.get_name() == "HTML5":
-		JavaScript.eval('document.getElementById("canvas").remove();')
+		JavaScript.eval('document.getElementById("canvas").remove();') # removes the game canvas from the HTML file so that a halted game is not shown
+		# TODO: Add a quit message to the HTML template and maybe a restart button?
 	get_tree().quit()
 
 # Pressing escape pauses the game and shows the main menu
