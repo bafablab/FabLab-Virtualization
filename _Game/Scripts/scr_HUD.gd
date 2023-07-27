@@ -21,6 +21,10 @@ func _input(event):
 	# Toggle whole HUD visibility
 	if Input.is_action_just_pressed("toggle_hud"):
 		toggle_hud()
+		
+	# Toggle controls help visibility
+	if Input.is_action_just_pressed("toggle_controlshelp"):
+		toggle_controlshelp()
 
 # Toggle HUD visibility
 func toggle_hud():
@@ -73,6 +77,12 @@ func set_helptext(text):
 
 func clear_helptext():
 	$HelpText.bbcode_text = ""
+	
+func toggle_controlshelp():
+	if $ControlsHelp.visible:
+		hide_controlshelp()
+	else:
+		show_controlshelp()
 	
 func show_controlshelp():
 	$ControlsHelp.show()
