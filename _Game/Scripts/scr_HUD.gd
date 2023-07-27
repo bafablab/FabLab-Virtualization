@@ -25,6 +25,12 @@ func _input(event):
 	# Toggle controls help visibility
 	if Input.is_action_just_pressed("toggle_controlshelp"):
 		toggle_controlshelp()
+	
+	if Input.is_action_just_pressed("toggle_fps"):
+		toggle_fps()
+
+func _process(delta: float) -> void:
+	$FPS.set_text("FPS " + String(Engine.get_frames_per_second()))
 
 # Toggle HUD visibility
 func toggle_hud():
@@ -32,6 +38,13 @@ func toggle_hud():
 		hide_all()
 	else:
 		show_hud(true)
+		
+# Toggle FPS visibility
+func toggle_fps():
+	if $FPS.visible:
+		$FPS.hide()
+	else:
+		$FPS.show()
 
 # Show HUD elements, and DebugText too if parameter is true
 func show_hud(debug):
@@ -47,6 +60,7 @@ func hide_all():
 	$HelpText.hide()
 	hide_controlshelp()
 	$DebugText.hide()
+	$FPS.hide()
 	
 # Clear all HUD texts
 func clear_all():
