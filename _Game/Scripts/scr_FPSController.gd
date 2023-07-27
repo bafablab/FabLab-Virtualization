@@ -13,6 +13,8 @@ var h_velocity = Vector3()
 var movement = Vector3()
 var gravity_vec = Vector3()
 
+var always_run = false
+
 # Set mouse behavior here
 export var mouse_sensitivity = 0.06
 export var inverse_mouse = -1
@@ -55,6 +57,12 @@ func _input(event):
 			rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 			head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
 			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
+			
+	if Input.is_action_just_pressed("toggle_always_run"):
+		if !always_run:
+			always_run = true
+		else:
+			always_run = false
 
 
 # Normal process, runs every frame
@@ -126,7 +134,7 @@ func _physics_process(delta):
 		direction = direction.normalized()
 		
 		# Change speed if running or not
-		if Input.is_action_pressed("run"):
+		if Input.is_action_pressed("run") or always_run:
 			currentspeed = runspeed
 		else:
 			currentspeed = speed
