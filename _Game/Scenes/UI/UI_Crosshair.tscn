@@ -1,13 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_Crosshair.gd" type="Script" id=1]
-[ext_resource path="res://_Game/UI/Themes/Fonts/Barlow-Light.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://_Game/Images/simple_cursor.png" type="Texture" id=2]
 [ext_resource path="res://_Game/UI/Themes/FabLab_Theme.tres" type="Theme" id=3]
 [ext_resource path="res://_Game/Images/mousebutton.png" type="Texture" id=4]
-
-[sub_resource type="DynamicFont" id=1]
-size = 48
-font_data = ExtResource( 2 )
 
 [node name="Control" type="Control"]
 anchor_left = 0.5
@@ -21,19 +17,18 @@ margin_bottom = 360.0
 theme = ExtResource( 3 )
 script = ExtResource( 1 )
 
-[node name="Crosshair" type="Label" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -30.0
-margin_top = -30.0
-margin_right = 30.0
-margin_bottom = 30.0
-custom_fonts/font = SubResource( 1 )
-text = "+"
-align = 1
-valign = 1
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+texture = ExtResource( 2 )
+stretch_mode = 3
 
 [node name="TooltipBackground" type="Panel" parent="."]
 modulate = Color( 1, 1, 1, 0.666667 )
