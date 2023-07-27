@@ -3,17 +3,11 @@
 [ext_resource path="res://_Game/Scripts/scr_Crosshair.gd" type="Script" id=1]
 [ext_resource path="res://_Game/UI/Themes/Fonts/Barlow-Light.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://_Game/UI/Themes/FabLab_Theme.tres" type="Theme" id=3]
+[ext_resource path="res://_Game/Images/mousebutton.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
 font_data = ExtResource( 2 )
-
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.901961, 0, 0.0156863, 1 )
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
 
 [node name="Control" type="Control"]
 anchor_left = 0.5
@@ -42,29 +36,36 @@ align = 1
 valign = 1
 
 [node name="TooltipBackground" type="Panel" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -60.0
-margin_top = 30.0
-margin_right = 60.0
-margin_bottom = 60.0
-rect_min_size = Vector2( 60, 30 )
+margin_left = -75.0
+margin_top = 60.0
+margin_right = 75.0
+margin_bottom = 110.0
+rect_min_size = Vector2( 60, 50 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/panel = SubResource( 2 )
 
 [node name="Tooltip" type="Label" parent="TooltipBackground"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -100.0
-margin_top = -15.0
-margin_right = 100.0
-margin_bottom = 15.0
+margin_left = -30.0
+margin_top = -19.0
+margin_right = 70.0
+margin_bottom = 21.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 align = 1
 valign = 1
+
+[node name="MouseClick" type="TextureRect" parent="TooltipBackground"]
+margin_left = 7.0
+margin_top = 5.0
+margin_right = 47.0
+margin_bottom = 45.0
+texture = ExtResource( 4 )

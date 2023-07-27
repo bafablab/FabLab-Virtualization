@@ -2,6 +2,7 @@ extends Control
 
 onready var tooltip = $TooltipBackground/Tooltip
 onready var tooltipbg = $TooltipBackground
+onready var tooltipicon = $TooltipBackground/MouseClick
 onready var tooltips_enabled = true
 
 func _input(_event):
@@ -20,8 +21,10 @@ func _physics_process(_delta):
 	
 	if tooltip.text && tooltips_enabled:
 		tooltipbg.show()
+		tooltipicon.show()
 	else:
 		tooltipbg.hide()
+		tooltipicon.hide()
 		
 func show_tooltip(text):
 	tooltip.set_text(text)

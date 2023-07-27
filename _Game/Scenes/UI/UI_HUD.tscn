@@ -1,8 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://_Game/UI/Themes/Fonts/segoeui.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://_Game/Scripts/scr_HUD.gd" type="Script" id=2]
 [ext_resource path="res://_Game/UI/Themes/FabLab_Theme.tres" type="Theme" id=3]
+[ext_resource path="res://_Game/Images/wasd.png" type="Texture" id=4]
+[ext_resource path="res://_Game/Images/mouse.png" type="Texture" id=5]
+[ext_resource path="res://_Game/Images/mousebutton.png" type="Texture" id=6]
+[ext_resource path="res://_Game/Images/F1.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -17,6 +21,71 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 3 )
 script = ExtResource( 2 )
+
+[node name="ControlsHelp" type="Panel" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -250.0
+margin_top = -70.0
+margin_right = 250.0
+margin_bottom = -20.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="WASD" type="TextureRect" parent="ControlsHelp"]
+margin_left = 7.0
+margin_top = 5.0
+margin_right = 158.0
+margin_bottom = 105.0
+texture = ExtResource( 4 )
+
+[node name="Mouse" type="TextureRect" parent="ControlsHelp"]
+margin_left = 73.0
+margin_top = 6.0
+margin_right = 113.0
+margin_bottom = 56.0
+texture = ExtResource( 5 )
+
+[node name="ControlsMovement" type="Label" parent="ControlsHelp"]
+margin_left = 113.0
+margin_top = 15.0
+margin_right = 213.0
+margin_bottom = 35.0
+text = "CONTROLS_MOVEMENT"
+valign = 1
+clip_text = true
+
+[node name="MouseClick" type="TextureRect" parent="ControlsHelp"]
+margin_left = 225.0
+margin_top = 5.0
+margin_right = 265.0
+margin_bottom = 45.0
+texture = ExtResource( 6 )
+
+[node name="ControlsClick" type="Label" parent="ControlsHelp"]
+margin_left = 264.0
+margin_top = 15.0
+margin_right = 393.0
+margin_bottom = 35.0
+text = "CONTROLS_CLICK"
+
+[node name="F1" type="TextureRect" parent="ControlsHelp"]
+margin_left = 390.0
+margin_top = 5.0
+margin_right = 430.0
+margin_bottom = 45.0
+texture = ExtResource( 7 )
+
+[node name="ControlsMenu" type="Label" parent="ControlsHelp"]
+margin_left = 437.0
+margin_top = 15.0
+margin_right = 527.0
+margin_bottom = 35.0
+text = "CONTROLS_MENU"
+clip_text = true
 
 [node name="TaskTextBackground" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0.745098 )

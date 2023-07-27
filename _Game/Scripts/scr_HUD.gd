@@ -4,6 +4,7 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	hide_all()
+	show_controlshelp()
 	#show_hud(true)
 
 
@@ -32,6 +33,7 @@ func toggle_hud():
 func show_hud(debug):
 	show_tasktext()
 	$HelpText.show()
+	show_controlshelp()
 	if debug:
 		$DebugText.show()
 
@@ -39,6 +41,7 @@ func show_hud(debug):
 func hide_all():
 	hide_tasktext()
 	$HelpText.hide()
+	hide_controlshelp()
 	$DebugText.hide()
 	
 # Clear all HUD texts
@@ -69,7 +72,13 @@ func set_helptext(text):
 	$HelpText.bbcode_text = text
 
 func clear_helptext():
-	$HelpText.bbcode_text =""
+	$HelpText.bbcode_text = ""
+	
+func show_controlshelp():
+	$ControlsHelp.show()
+
+func hide_controlshelp():
+	$ControlsHelp.hide()
 
 func toggle_debug():
 	if $DebugText.visible:
