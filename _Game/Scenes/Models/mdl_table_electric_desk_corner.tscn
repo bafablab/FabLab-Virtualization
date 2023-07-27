@@ -141,10 +141,6 @@ shape = SubResource( 7 )
 [node name="AnimationPlayer" parent="." index="1"]
 anims/01_height_adjust = SubResource( 8 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="." index="2"]
-transform = Transform( -0.969046, -0.10976, 0.22114, 0, 0.895735, 0.444588, -0.246881, 0.430826, -0.868008, 0.347355, 0.698337, -1.36342 )
-shadow_enabled = true
-
 [connection signal="mouse_entered" from="Armature/Skeleton/BoneAttachment/TableBody" to="." method="enter_focus"]
 [connection signal="mouse_exited" from="Armature/Skeleton/BoneAttachment/TableBody" to="." method="exit_focus"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
