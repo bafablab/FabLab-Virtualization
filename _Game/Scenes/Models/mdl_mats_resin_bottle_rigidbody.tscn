@@ -4,6 +4,7 @@
 [ext_resource path="res://_Game/Models/mats_resin_bottle/mat_mats_resin_bottle.tres" type="Material" id=2]
 
 [sub_resource type="PhysicsMaterial" id=4]
+bounce = 0.3
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "mdl_mats_resin_bottle_mdl0"
@@ -29,6 +30,7 @@ radius = 0.026
 
 [node name="mdl_mats_resin_bottle_rigidbody" type="RigidBody" groups=["Draggable"]]
 collision_layer = 33
+mass = 2.0
 physics_material_override = SubResource( 4 )
 contacts_reported = 5
 contact_monitor = true
