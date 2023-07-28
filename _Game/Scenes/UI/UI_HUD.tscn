@@ -28,62 +28,62 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -250.0
-margin_top = -70.0
-margin_right = 250.0
+margin_left = -260.0
+margin_top = -80.0
+margin_right = 260.0
 margin_bottom = -20.0
 grow_horizontal = 2
 mouse_filter = 2
 
 [node name="WASD" type="TextureRect" parent="ControlsHelp"]
-margin_left = 7.0
-margin_top = 5.0
-margin_right = 158.0
-margin_bottom = 105.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 161.0
+margin_bottom = 110.0
 texture = ExtResource( 4 )
 
 [node name="Mouse" type="TextureRect" parent="ControlsHelp"]
-margin_left = 73.0
-margin_top = 6.0
-margin_right = 113.0
-margin_bottom = 56.0
+margin_left = 75.0
+margin_top = 11.0
+margin_right = 115.0
+margin_bottom = 61.0
 texture = ExtResource( 5 )
 
 [node name="ControlsMovement" type="Label" parent="ControlsHelp"]
 margin_left = 113.0
-margin_top = 15.0
+margin_top = 20.0
 margin_right = 213.0
-margin_bottom = 35.0
+margin_bottom = 40.0
 text = "CONTROLS_MOVEMENT"
 valign = 1
 clip_text = true
 
 [node name="MouseClick" type="TextureRect" parent="ControlsHelp"]
 margin_left = 225.0
-margin_top = 5.0
+margin_top = 10.0
 margin_right = 265.0
-margin_bottom = 45.0
+margin_bottom = 50.0
 texture = ExtResource( 6 )
 
 [node name="ControlsClick" type="Label" parent="ControlsHelp"]
 margin_left = 264.0
-margin_top = 15.0
+margin_top = 20.0
 margin_right = 393.0
-margin_bottom = 35.0
+margin_bottom = 40.0
 text = "CONTROLS_CLICK"
 
 [node name="F1" type="TextureRect" parent="ControlsHelp"]
 margin_left = 390.0
-margin_top = 5.0
+margin_top = 10.0
 margin_right = 430.0
-margin_bottom = 45.0
+margin_bottom = 50.0
 texture = ExtResource( 7 )
 
 [node name="ControlsMenu" type="Label" parent="ControlsHelp"]
 margin_left = 437.0
-margin_top = 15.0
+margin_top = 20.0
 margin_right = 527.0
-margin_bottom = 35.0
+margin_bottom = 40.0
 text = "CONTROLS_MENU"
 clip_text = true
 
