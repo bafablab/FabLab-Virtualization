@@ -86,7 +86,7 @@ visible = false
 [node name="UI_ItemInfoMenu" parent="." instance=ExtResource( 18 )]
 visible = false
 
-[node name="UI_generic_info_menu" parent="." instance=ExtResource( 68 )]
+[node name="UI_GenericInfoMenu" parent="." instance=ExtResource( 68 )]
 visible = false
 
 [node name="UI_WelcomeWindow" parent="." instance=ExtResource( 44 )]

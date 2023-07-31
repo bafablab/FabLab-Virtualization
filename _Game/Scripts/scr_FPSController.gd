@@ -39,7 +39,7 @@ var grabbed_item_rel_pos
 # UI windows, HUD and crosshair
 onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 onready var item_info_menu = get_node("/root/FabLab/UI_ItemInfoMenu")
-onready var generic_info_menu = get_node("/root/FabLab/UI_generic_info_menu")
+onready var generic_info_menu = get_node("/root/FabLab/UI_GenericInfoMenu")
 onready var main_menu = get_node("/root/FabLab/UI_MainMenu")
 onready var welcome_window = get_node("/root/FabLab/UI_WelcomeWindow")
 onready var HUD = get_node("/root/FabLab/HUD")

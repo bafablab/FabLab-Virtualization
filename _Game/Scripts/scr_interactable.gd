@@ -30,7 +30,7 @@ func _ready():
 	elif self.is_in_group("Item"):
 		menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	elif self.is_in_group("GenericInfo"):
-		menu = get_node("/root/FabLab/UI_generic_info_menu")
+		menu = get_node("/root/FabLab/UI_GenericInfoMenu")
 	
 	if get_node_or_null("StaticBody"):
 		interactable_body = get_node("StaticBody")
