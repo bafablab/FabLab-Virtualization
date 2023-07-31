@@ -150,22 +150,22 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.74734
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.96339, 0.00620852, -5.37632 )
 
 [node name="mdl_pillow_square_yellow_rigidbody" parent="stg_fablab" instance=ExtResource( 59 )]
-transform = Transform( 0.92868, 0, -0.370882, 0, 1, 0, 0.370882, 0, 0.92868, 2.41024, 0.628572, -5.74862 )
+transform = Transform( 0.92868, 0, -0.370882, 0, 1, 0, 0.370882, 0, 0.92868, 2.41024, 0.559393, -5.74862 )
 
 [node name="mdl_pillow_square_yellow_rigidbody2" parent="stg_fablab" instance=ExtResource( 59 )]
-transform = Transform( 0.856853, 0, -0.515562, -0.149694, 0.95692, -0.248788, 0.493351, 0.290352, 0.819939, 4.59137, 1.03716, -5.54983 )
+transform = Transform( 0.856853, 0, -0.515562, -0.149694, 0.95692, -0.248788, 0.493351, 0.290352, 0.819939, 4.59137, 0.751611, -5.54983 )
 
 [node name="mdl_pillow_square_black_rigidbody" parent="stg_fablab" instance=ExtResource( 61 )]
-transform = Transform( 0.980318, -0.16026, 0.1153, 0.159163, 0.987075, 0.0187199, -0.116809, 0, 0.993154, 3.49332, 0.633189, -5.84906 )
+transform = Transform( 0.980318, -0.16026, 0.1153, 0.159163, 0.987075, 0.0187199, -0.116809, 0, 0.993154, 3.49332, 0.602051, -5.84906 )
 
 [node name="mdl_pillow_square_black_rigidbody2" parent="stg_fablab" instance=ExtResource( 61 )]
 transform = Transform( 0.985524, 0, 0.169539, 0, 1, 0, -0.169539, 0, 0.985524, 7.57982, 0.668672, -5.47414 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody" parent="stg_fablab" instance=ExtResource( 60 )]
-transform = Transform( 0.7026, 0, -0.711585, 0, 1, 0, 0.711585, 0, 0.7026, 5.21387, 0.943031, -5.5986 )
+transform = Transform( 0.7026, 0, -0.711585, 0, 1, 0, 0.711585, 0, 0.7026, 5.21387, 0.566001, -5.5986 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody2" parent="stg_fablab" instance=ExtResource( 60 )]
-transform = Transform( 0.710908, 0.407113, 0.573471, -0.220907, 0.90341, -0.367492, -0.66769, 0.134569, 0.732176, 7.02034, 0.935086, -5.68875 )
+transform = Transform( 0.710908, 0.407113, 0.573471, -0.220907, 0.90341, -0.367492, -0.66769, 0.134569, 0.732176, 7.02034, 0.666152, -5.68875 )
 
 [node name="mdl_shelf_showroom" parent="stg_fablab" instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.82366, 0, -11.4941 )
