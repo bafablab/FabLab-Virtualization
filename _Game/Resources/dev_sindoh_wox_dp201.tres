@@ -1,9 +1,6 @@
-[gd_resource type="Resource" load_steps=6 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
-[ext_resource path="res://test/Video/test files/bus.ogv" type="VideoStream" id=2]
-[ext_resource path="res://test/Video/test files/media-source_webm_test-vp9.webm" type="VideoStream" id=3]
-[ext_resource path="res://test/Video/test files/V208 WEBM - VP8 1080p 24fps 8bit - VORBIS2.0.webm" type="VideoStream" id=4]
 [ext_resource path="res://_Game/Resources/itm_polygon_owl.tres" type="Resource" id=6]
 
 [resource]
@@ -12,8 +9,5 @@ name = "DEV_NAME_SINDOH"
 generic_name = "DEV_GENERIC_NAME_3DPRINTER_FILAMENT"
 info_text = "DEV_DESC_SINDOH"
 details_text = "DEV_DETAILS_SINDOH"
-videos = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ]
-video_titles = [ "DEV_VIDEO_TITLE_1", "DEV_VIDEO_TITLE_2", "DEV_VIDEO_TITLE_3" ]
-video_descriptions = [ "DEV_VIDEO_DESC_1", "DEV_VIDEO_DESC_2", "DEV_VIDEO_DESC_3" ]
 example_items = [ ExtResource( 6 ) ]
 animationNames = [ "door_front_open_1", "door_top_open" ]

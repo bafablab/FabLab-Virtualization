@@ -1,9 +1,0 @@
-[gd_resource type="Resource" load_steps=2 format=2]
-
-[ext_resource path="res://_Game/Scripts/scr_ItemInfo.gd" type="Script" id=1]
-
-[resource]
-script = ExtResource( 1 )
-name = "Filamenttidiipadaa"
-info_text = ""
-item_type = 0

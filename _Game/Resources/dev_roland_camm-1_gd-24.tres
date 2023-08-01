@@ -1,7 +1,6 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=2 format=2]
 
 [ext_resource path="res://_Game/Scripts/scr_DeviceInfo.gd" type="Script" id=1]
-[ext_resource path="res://test/Video/test files/bus.ogv" type="VideoStream" id=2]
 
 [resource]
 script = ExtResource( 1 )
@@ -9,8 +8,5 @@ name = "DEV_NAME_ROLAND_CAMM"
 generic_name = "DEV_GENERIC_NAME_VINYLCUTTER"
 info_text = "DEV_DESC_ROLAND_CAMM"
 details_text = "DEV_DETAILS_ROLAND_CAMM"
-videos = [ ExtResource( 2 ) ]
-video_titles = [  ]
-video_descriptions = [  ]
 example_items = [  ]
 animationNames = [ "cutter_movement_1", "lever_down", "lever_down_up" ]

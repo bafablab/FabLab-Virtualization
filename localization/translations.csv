@@ -44,19 +44,19 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 "DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
 "INFO_NAME_FABLAB_INTRO","What is a FabLab?","Mikä FabLab on?","Vad är en FabLab?"
 "INFO_HEADER_FABLAB_INTRO","FabLab","FabLab","FabLab"
-"INFO_TEXT_FABLAB_INTRO","- FabLab is a small-scale digital manufacturing workspace, a prototype workshop
-- A global concept developed at MIT, there are an estimated 5,000 labs worldwide
-- The goal is to offer opportunities to make and produce almost anything
-- In the FabLab, you create your own plans and models, and you use machines and equipment independently
-- FabLab instructors are there to help and advise, but not to do it for you
-- The FabLab is free to use. The use of materials for testing, prototyping and hobbies is also free of charge, within reasonable limits
-- We don't stock a large and wide selection of materials, so even for slightly different or larger projects, you should be prepared to bring your own materials","- FabLab on digitaalisen pienvalmistuksen työtila, prototyyppipaja
-- Maailmanlaajuinen MIT:ssä kehitetty konsepti, arviolta jo 5000 labraa maailmalla
-- Tavoitteena tarjota mahdollisuudet tehdä ja valmistaa melkein mitä vain
-- FabLabissa luot omat suunnitelmat ja mallit, sekä käytät koneita ja laitteita itsenäisesti
-- FabLabin ohjaajat ovat paikalla avustamassa ja neuvomassa, mutteivät kuitenkaan tekemässä puolestasi
-- FabLabin käyttö on maksutonta. Myös materiaalien käyttö testaukseen, protoiluun ja harrastamiseen on maksutonta, kohtuuden rajoissa
-- Emme varastoi isoa ja laajaa materiaalivalikoimaa joten hiemankin erilaisemmissa tai isommissa projekteissa kannattaa varautua tuomaan omat materiaalit","FabLab intro SWE"
+"INFO_TEXT_FABLAB_INTRO","• A FabLab is a small-scale digital manufacturing workspace, a prototype workshop
+• A global concept developed at MIT, there are an estimated 5,000 labs worldwide
+• The goal is to offer opportunities to make and produce almost anything
+• In the FabLab, you create your own plans and models, and you use machines and equipment independently
+• FabLab instructors are there to help and advise, but not to do it for you
+• The FabLab is free to use. The use of materials for testing, prototyping and hobbies is also free of charge, within reasonable limits
+• We don't stock a large and wide selection of materials, so even for slightly different or larger projects, you should be prepared to bring your own materials","• FabLab on digitaalisen pienvalmistuksen työtila, prototyyppipaja
+• Maailmanlaajuinen MIT:ssä kehitetty konsepti, arviolta jo 5000 labraa maailmalla
+• Tavoitteena tarjota mahdollisuudet tehdä ja valmistaa melkein mitä vain
+• FabLabissa luot omat suunnitelmat ja mallit, sekä käytät koneita ja laitteita itsenäisesti
+• FabLabin ohjaajat ovat paikalla avustamassa ja neuvomassa, mutteivät kuitenkaan tekemässä puolestasi
+• FabLabin käyttö on maksutonta. Myös materiaalien käyttö testaukseen, protoiluun ja harrastamiseen on maksutonta, kohtuuden rajoissa
+• Emme varastoi isoa ja laajaa materiaalivalikoimaa joten hiemankin erilaisemmissa tai isommissa projekteissa kannattaa varautua tuomaan omat materiaalit","FabLab intro SWE"
 "INFO_NAME_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
 "INFO_HEADER_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
 "INFO_TEXT_FAB_CHARTER","[b]What is a fab lab?[/b]
@@ -108,13 +108,13 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 "ITEM_NAME_OWL","Polygon Owl","Polygonipöllö","Polygon-uggla"
 "ITEM_NAME_FIREHAZARD","Fire hazard","Tulipalovaara","Brändrisk"
 "ITEM_NAME_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
-"ITEM_DESC_OWL","- 3D-printed
-- Material: PLA-filament, 140 grams
-- Material cost: 0,70 €
-- Print time: 9.5 hours","- 3D-tulostettu pöllö
-- Materiaali: PLA-filamentti, 140 grammaa
-- Materiaalikulut: 0,70 €
-- Tulostusaika: 9,5 tuntia","3D-utskriven uggla"
+"ITEM_DESC_OWL","• 3D-printed
+• Material: PLA-filament, 140 grams
+• Material cost: 0,70 €
+• Print time: 9.5 hours","• 3D-tulostettu pöllö
+• Materiaali: PLA-filamentti, 140 grammaa
+• Materiaalikulut: 0,70 €
+• Tulostusaika: 9,5 tuntia","3D-utskriven uggla"
 "ITEM_DESC_FIREHAZARD","Laser Cutter, fire hazard!","Laserleikkuri, palovaara!","Laserskärare, brandrisk!"
 "ITEM_DESC_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
 "ITEM_INFO_3D_MODEL_TITLE","3D-Model","3D-malli","3D-modell"
@@ -158,36 +158,36 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_NAME_COMPUTER","For designing","Suunnitteluun","För design"
 "DEV_DESC_ELECTRONICS","4 workstations for electronics, with:
 
-- Oscilloscope
-- Function generator
-- Soldering station
-- Laboratory power supply
-- Exhaust tube
-- Multimeter","4 kpl elektroniikan työpisteitä, joissa:
+• Oscilloscope
+• Function generator
+• Soldering station
+• Laboratory power supply
+• Exhaust tube
+• Multimeter","4 kpl elektroniikan työpisteitä, joissa:
 
-- Oskilloskooppi
-- Funktiogeneraattori
-- Juotosasema
-- Laboratoriovirtalähde
-- Poistoimuputki
-- Yleismittari","4 arbetsstationer för elektronik, med:
+• Oskilloskooppi
+• Funktiogeneraattori
+• Juotosasema
+• Laboratoriovirtalähde
+• Poistoimuputki
+• Yleismittari","4 arbetsstationer för elektronik, med:
 
-- Oscilloskop
-- Funktionsgenerator
-- Lödstation
-- Laboratorieströmförsörjning
-- Avgasrör
-- Multimeter"
-"DEV_DETAILS_ELECTRONICS","- [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
-- [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
-- [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
-- [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]","- [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
-- [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
-- [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
-- [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]","- [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
-- [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
-- [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
-- [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]"
+• Oscilloskop
+• Funktionsgenerator
+• Lödstation
+• Laboratorieströmförsörjning
+• Avgasrör
+• Multimeter"
+"DEV_DETAILS_ELECTRONICS","• [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
+• [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
+• [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
+• [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]","• [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
+• [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
+• [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
+• [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]","• [url=https://www.rohde-schwarz.com/us/products/test-and-measurement/oscilloscopes/rs-rtc1000-oscilloscope_63493-515585.html]Rohde & Schwarz RTC1002[/url]
+• [url=https://www.gwinstek.com/en-global/products/detail/GDS-1000A-U]GW Instek GDS-1152A-U[/url]
+• [url=https://www.gwinstek.com/en-global/products/detail/AFG-2100_AFG-2000]GW Instek AFG-2125[/url]
+• [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]"
 "DEV_DESC_ELEGOO","With a 3D printer you can literally print real three-dimensional objects.
 
 The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
@@ -197,16 +197,16 @@ A 3D resin printer uses light from an LCD display to cure liquid resin layer by 
 Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
-"DEV_DETAILS_ELEGOO","- 1 machine available
-- Printing material: UV-curing resin
-- Maximum print size L129 x W80 x H150 mm
-- Layer thickness 0.01-0.2 mm
-- Preferred file format .STL","- 1 kpl käytettävissä
-- Tulostusmateriaali: UV-kovettuva hartsi
-- Tulosteen maksimikoko P129 x L80 x K150 mm
-- Kerrospaksuus 0.01-0.2 mm
-- Suositeltu tiedostomuoto .STL",
-"DEV_DESC_ELNA","Easy-to-use sewing machine for sewing textiles. 30 built-in stitches, including buttonholes, quilting, patchwork and specialty stitches.","Helppokäyttöinen ompelukone tekstiilien ompelemiseen. 30 sisäänrakennettua ommelta, mukana napinlävet, tikkaus-, tilkkutyö- ja erikoisompeleet.","Sowing machine desc"
+"DEV_DETAILS_ELEGOO","• 1 machine available
+• Printing material: UV-curing resin
+• Maximum print size L129 x W80 x H150 mm
+• Layer thickness 0.01-0.2 mm
+• Preferred file format .STL","• 1 kpl käytettävissä
+• Tulostusmateriaali: UV-kovettuva hartsi
+• Tulosteen maksimikoko P129 x L80 x K150 mm
+• Kerrospaksuus 0.01-0.2 mm
+• Suositeltu tiedostomuoto .STL",
+"DEV_DESC_ELNA","Easy-to-use sewing machine for sewing textiles. 30 built-in stitches, including buttonholes, quilting, patchwork and specialty stitches.","Helppokäyttöinen ompelukone tekstiilien ompelemiseen. 30 sisäänrakennettua ommelta, mukana napinlävet, tikkaus-, tilkkutyö• ja erikoisompeleet.","Sowing machine desc"
 "DEV_DETAILS_ELNA","Maximum stitch width 7 mm, maximum stitch length 5 mm.","Maksimi ommelleveys 7 mm, maksimi pistonpituus 5 mm.",""
 "DEV_DESC_ENDER","With a 3D printer you can literally print real three-dimensional objects.
 
@@ -217,15 +217,15 @@ A filament-type 3D printer works by melting a string of plastic called a filamen
 Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
-"DEV_DETAILS_ENDER","- 3 machines available
-- Printing material: biodegradable PLA
-- Maximum print size 220 x 220 x 250 mm
-- Layer thickness 0.05-0.35 mm
-- Preferred file format .STL","- 3 kpl käytettävissä
-- Tulostusmateriaali: biohajoava PLA
-- Tulosteen maksimikoko 220 x 220 x 250 mm
-- Kerrospaksuus 0.05-0.35 mm
-- Suositeltu tiedostomuoto .STL",""
+"DEV_DETAILS_ENDER","• 3 machines available
+• Printing material: biodegradable PLA
+• Maximum print size 220 x 220 x 250 mm
+• Layer thickness 0.05-0.35 mm
+• Preferred file format .STL","• 3 kpl käytettävissä
+• Tulostusmateriaali: biohajoava PLA
+• Tulosteen maksimikoko 220 x 220 x 250 mm
+• Kerrospaksuus 0.05-0.35 mm
+• Suositeltu tiedostomuoto .STL",""
 "DEV_DESC_EPILOG","A laser cutter is a powerful tool that uses a laser beam to cut or engrave a variety of materials such as wood, acrylic, rubber, leather and felt.
 
 With it, its possible to cut complex shapes and edges very precisely and quickly, which makes it a popular tool for craft enthusiasts, advertising companies, industry, and for the production of prototypes and production pieces.","Laserleikkuri on tehokas työkalu, joka käyttää lasersädettä leikatakseen tai kaivertaakseen erilaisia materiaaleja, kuten puuta, akryylia, kumia, nahkaa ja huopaa.
@@ -233,31 +233,31 @@ With it, its possible to cut complex shapes and edges very precisely and quickly
 Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja erittäin tarkasti ja nopeasti, mikä tekee siitä suositun työkalun esimerkiksi käsityöharrastajille, mainosalan yrityksille, teollisuuteen sekä prototyyppien ja tuotantokappaleiden valmistukseen.","Laser cutter desc"
 "DEV_DETAILS_EPILOG","Printing is done directly from Inkscape software.
 
-- SVG file format
-- Machining area ca. 1200 x 900 mm
-- Cutting line width 0.033–0.077 mm
-- Other line widths, patterns and images are engraved
-- Laser groove depth ca. 0.15 mm, varies a little depending on the material
-- Compatible materials can be found on [url=https://www.epiloglaser.com/laser-machines/fusion-pro-laser-series/#pkg-materials]Epilog's website[/url]","Tulostus tapahtuu suoraan Inkscape-ohjelmasta.
+• SVG file format
+• Machining area ca. 1200 x 900 mm
+• Cutting line width 0.033–0.077 mm
+• Other line widths, patterns and images are engraved
+• Laser groove depth ca. 0.15 mm, varies a little depending on the material
+• Compatible materials can be found on [url=https://www.epiloglaser.com/laser-machines/fusion-pro-laser-series/#pkg-materials]Epilog's website[/url]","Tulostus tapahtuu suoraan Inkscape-ohjelmasta.
 
-- SVG-tiedostomuoto
-- Työstoalue n. 1200 × 900 mm
-- Leikkauslinjan paksuus 0.033–0.077 mm
-- Muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
-- Laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
-- Työstämiseen käyvät materiaalit löytyvät [url=https://www.epiloglaser.com/laser-machines/fusion-pro-laser-series/#pkg-materials]Epilog:n verkkosivuilta[/url]",
+• SVG-tiedostomuoto
+• Työstoalue n. 1200 × 900 mm
+• Leikkauslinjan paksuus 0.033–0.077 mm
+• Muut viivanpaksuudet, kuviot ja kuvat kaiverretaan.
+• Laserin uraleveys n. 0.15 mm, vaihtelee jonkin verran materiaalista riippuen.
+• Työstämiseen käyvät materiaalit löytyvät [url=https://www.epiloglaser.com/laser-machines/fusion-pro-laser-series/#pkg-materials]Epilog:n verkkosivuilta[/url]",
 "DEV_DESC_INNOV","With an embroidery machine, it is possible to embroider desired texts or patterns on textiles. You can either use the machine's ready-made fonts and patterns or design your own patterns with the Inkscape program.","Kirjontakoneella on mahdollista konekirjoa haluamasi tekstit tai kuviot tekstiileihin. Voit joko käyttää koneen valmiita fontteja ja kuvioita tai suunnitella oman kuviosi Inkscape-ohjelmalla.","Embroidering machine desc SWE"
-"DEV_DETAILS_INNOV","- Available embroidery frames 200 x 300 mm and 200 x 200 mm.
-- .pes file format","- Kirjontakehyskoot 200 x 300 mm ja 200 x 200 mm
-- Tiedostomuoto .pes","Innov details SWE"
-"DEV_DESC_JUKI_MO","Treat the edges of the fabric, sew elastic clothes. This overlocker can be used to make more common 3- and 4-thread stitches and rolled hems.","Huolittele kankaan reunat, ompele joustavat vaatteet. Tällä saumurilla onnistuu yleisempien 3- ja 4-lankaisten ompeleiden ja rullapäärmeen tekeminen.","Overlocker MO desc SWE"
+"DEV_DETAILS_INNOV","• Available embroidery frames 200 x 300 mm and 200 x 200 mm.
+• .pes file format","• Kirjontakehyskoot 200 x 300 mm ja 200 x 200 mm
+• Tiedostomuoto .pes","Innov details SWE"
+"DEV_DESC_JUKI_MO","Treat the edges of the fabric, sew elastic clothes. This overlocker can be used to make more common 3• and 4-thread stitches and rolled hems.","Huolittele kankaan reunat, ompele joustavat vaatteet. Tällä saumurilla onnistuu yleisempien 3• ja 4-lankaisten ompeleiden ja rullapäärmeen tekeminen.","Overlocker MO desc SWE"
 "DEV_DETAILS_JUKI_MO","Differential feed.","Differentiaalisyöttö.",""
-"DEV_DESC_JUKI_MSC","Finish the turns of stretchy garments: necklines, cuffs, hems and hems. This cover stitching machine can do 2-thread chain stitch as well as 3- and 4-thread quilting.","Viimeistele joustavien vaatteiden käänteet: pääntiet, hihan- ja lahkeensuut sekä helmat. Tällä peitetikkikoneella onnistuu 2-lankainen ketjutikki sekä 3- ja 4-lankaiset peitetikit.","Overlocker MSC desc SWE"
+"DEV_DESC_JUKI_MSC","Finish the turns of stretchy garments: necklines, cuffs, hems and hems. This cover stitching machine can do 2-thread chain stitch as well as 3• and 4-thread quilting.","Viimeistele joustavien vaatteiden käänteet: pääntiet, hihan• ja lahkeensuut sekä helmat. Tällä peitetikkikoneella onnistuu 2-lankainen ketjutikki sekä 3• ja 4-lankaiset peitetikit.","Overlocker MSC desc SWE"
 "DEV_DETAILS_JUKI_MSC","Differential feed.","Differentiaalisyöttö.",""
 "DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc SWE"
 "DEV_DETAILS_NOVA","","",""
 "DEV_DESC_PHROZEN_CURE","After printing, resin prints have to be hardened with ultraviolet light. With this device it can be done quickly and safely.","Hartsitulosteet tulee tulostuksen jälkeen kovettaa ultraviolettivalolla. Tällä jälkikovetuskaapilla se onnistuu nopeasti ja turvallisesti.","UV hardening lamp desc"
-"DEV_DETAILS_PHROZEN_CURE","- Inner measurements: 29.5 x 29.5 x 45 cm","- Sisätilamitat: 29.5 x 29.5 x 45 cm","UV lamp details"
+"DEV_DETAILS_PHROZEN_CURE","• Inner measurements: 29.5 x 29.5 x 45 cm","• Sisätilamitat: 29.5 x 29.5 x 45 cm","UV lamp details"
 "DEV_DESC_PHROZEN_SONIC","With a 3D printer you can literally print real three-dimensional objects.
 
 The object is designed with a 3d modeling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
@@ -267,15 +267,15 @@ A resin printer uses light from an LCD display to cure UV-active liquid resin la
 Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä UV-kovettuvaa hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
-"DEV_DETAILS_PHROZEN_SONIC","- One available at the FabLab
-- Printing material: UV-curing resin
-- Maximum print size L33 x W18.5 x H40 cm
-- Layer thickness 0.01-0.30 mm
-- Preferred file format .stl","- Yksi tulostin FabLabilla
-- Tulostusmateriaali: UV-kovettuva hartsi
-- Tulosteen maksimikoko P33 x L18,5 x K40 cm
-- Kerrospaksuus 0,01-0,30 mm
-- Suositeltu tiedostomuoto .stl","Phrozen Sonic details"
+"DEV_DETAILS_PHROZEN_SONIC","• One available at the FabLab
+• Printing material: UV-curing resin
+• Maximum print size L33 x W18.5 x H40 cm
+• Layer thickness 0.01-0.30 mm
+• Preferred file format .stl","• Yksi tulostin FabLabilla
+• Tulostusmateriaali: UV-kovettuva hartsi
+• Tulosteen maksimikoko P33 x L18,5 x K40 cm
+• Kerrospaksuus 0,01-0,30 mm
+• Suositeltu tiedostomuoto .stl","Phrozen Sonic details"
 "DEV_DESC_RENSI","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from wood or plastic.
 
 Designing of the workpiece begins in ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in software. The router then moves its rotary cutting tool in along three axis based on these commands. This means the tool movements are very precise and repeatable.
@@ -288,52 +288,52 @@ CNC-jyrsimellä voi tehdä erilaisia muotteja, osia, arkkitehtuurisia malleja, j
 "DEV_DETAILS_RENSI","Machining area 900×700 mm
 
 Materials:
-- Wood
-- Plastic","Työstöalue 900×700 mm
+• Wood
+• Plastic","Työstöalue 900×700 mm
 
 Materiaalit:
-- Puu
-- Muovi","CNC details SWE"
+• Puu
+• Muovi","CNC details SWE"
 "DEV_DESC_ROLAND_SRM","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from, for example, plastic, wood and printed circuit boards.
 
 Designing of the workpiece begins in ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in software. The router then moves its rotary cutting tool in along three axis based on these commands. This means the tool movements are very precise and repeatable.
 
-The precision CNC router is suitable for smaller and more precise engraving and milling works. For example, casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","CNC- eli tietokoneohjatulla jyrsimellä voidaan työstää nopeasti ja tarkasti esimerkiksi muovia, puuta ja piirilevyaihioita.
+The precision CNC router is suitable for smaller and more precise engraving and milling works. For example, casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","CNC- eli tietokoneohjatulla jyrsimellä voidaan jyrsiä ja kaivertaa esimerkiksi muovia, puuta ja piirilevyaihioita.
 
 Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, jonka jälkeen tehdystä mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
 
-Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin kaiverrustöihin. Esimerkkinä valumuotit, pienet korkokuvataulut, piirilevyt, muovioptiikka yms.","cnc desc SWE"
-"DEV_DETAILS_ROLAND_SRM","- Machining area 232x156 mm
-- Operation strokes 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
-- Mills available: 0.25mm, 0.4mm, 0.8mm, 1mm and 0.2-0.5mm V-shape
-- Cuttable materials: Wax, wood, foam, plastic, PC board","- Työstöalue 232x156 mm
-- Liikeradat 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
-- Saatavilla olevat terät: 0.25mm, 0.4mm, 0.8mm, 1mm ja 0.2-0.5mm V-malli
-- Työstettävät materiaalit: Vaha, puu, muovi, piirilevyaihiot","cnc details SWE"
+Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin töihin. Esimerkkinä valumuotit, pienet korkokuvataulut, piirilevyt, muovioptiikka yms.","cnc desc SWE"
+"DEV_DETAILS_ROLAND_SRM","• Machining area 232x156 mm
+• Operation strokes 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
+• Mills available: 0.25mm, 0.4mm, 0.8mm, 1mm and 0.2-0.5mm V-shape
+• Cuttable materials: Wax, wood, foam, plastic, PC board","• Työstöalue 232x156 mm
+• Liikeradat 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
+• Saatavilla olevat terät: 0.25mm, 0.4mm, 0.8mm, 1mm ja 0.2-0.5mm V-malli
+• Työstettävät materiaalit: Vaha, puu, muovi, piirilevyaihiot","cnc details SWE"
 "DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.
 
 The sticker or print is designed in vector graphics software (such as Inkscape). The vinyl cutter then cuts the chosen design from the material precisely and quickly.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
 
 Tarra tai painatus suunnitellaan tietokoneella vektorigrafiikkaohjelmalla (esim. Inkscape). Vinyylileikkuri leikkaa leikkuuterällään suunnittelemasi kuvion haluamastasi materiaalista tarkasti, mutta ripeästi.","Vinyl cutter desc SWE"
-"DEV_DETAILS_ROLAND_CAMM","- Working area width ca. 610 mm
-- Printing using either Roland Cut Studio or Inkscape software
-- SVG or CV file formats
-- Recognizes crop marks for precise alignment
+"DEV_DETAILS_ROLAND_CAMM","• Working area width ca. 610 mm
+• Printing using either Roland Cut Studio or Inkscape software
+• SVG or CV file formats
+• Recognizes crop marks for precise alignment
 
 Materials available at BusinessAsema:
 
-- Vinyls in different colours
-- Heat transfer vinyl in white/black/red
-- Sand blasting mask","- Työstöalueen leveys n. 610 mm
-- Tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
-- SVG tai CV -tiedostomuodot
-- Tunnistaa paikannusmerkinnät
+• Vinyls in different colours
+• Heat transfer vinyl in white/black/red
+• Sand blasting mask","• Työstöalueen leveys n. 610 mm
+• Tulostus käyttäen joko Roland Cut Studio tai Inkscape -ohjelmia
+• SVG tai CV -tiedostomuodot
+• Tunnistaa paikannusmerkinnät
 
 FabLabilla saatavilla olevat materiaalit:
 
-- Erivärisiä vinyylejä
-- Kuumasiirtovinyyli valkoinen/musta/punainen
-- Hiekkapuhallusmaski","Details Roland SWE"
+• Erivärisiä vinyylejä
+• Kuumasiirtovinyyli valkoinen/musta/punainen
+• Hiekkapuhallusmaski","Details Roland SWE"
 "DEV_DESC_SHINING3D","With this handheld scanner you can scan any three dimensional object, space or even people into a computer.
 
 With the help of its cameras and infrared lights the scanner creates an accurate 3D model of the subject. Thanks to its color camera the texture and colors of the subject are also captured.
@@ -343,19 +343,19 @@ With a 3D-scanner and a 3D printer you can create a three-dimensional copy of al
 Skanneri luo useiden kameroiden ja infrapunavalon avulla tarkan 3D-mallin skannattavasta kohteesta. Värikameran ansiosta myös kohteen pinnan tekstuuri ja väritys saadaan mukaan 3D-malliin.
 
 3D-skannerin avulla esimerkiksi jo olemassa olevien esineen kopioiminen 3D-tulosteeksi onnistuu helposti. 3D-skannaus mahdollistaa myös luonnollisten näköisten kolmiulotteisten ihmishahmojen hyödyntämisen esim. virtuaalitodellisuudessa ja pelinkehityksessä.","3D scanner desc SWE"
-"DEV_DETAILS_SHINING3D","- 1 scanner available at the FabLab
-- Must be tethered to a computer while scanning
-- 3 infrared projectors, two depth cameras, one RGB color camera
-- 0.1-3 mm point distance in scan data
-- 980,000 scanned points/s, up to 14 FPS
-- Scanning distance 160-1400mm
-- Supports multiple data format outputs (OBJ, STL, PLY, P3, 3MF), compatible with different 3D printers and 3D design softwares","- 1 kpl saatavilla Fablabilla
-- Pitää olla kytkettynä tietokoneeseen skannatessa
-- 3 infrapunaprojektoria, kaksi syvyyskameraa, yksi RGB-värikamera
-- 0,1-3 mm pisteväli skannausdatassa
-- 980 000 skannattua pistettä/s, jopa 14 ruutua sekunnissa
-- Skannausetäisyys 160-1400 mm
-- Tukee useita datamuotolähtöjä (OBJ, STL, PLY, P3, 3MF), jotka ovat yhteensopivia erilaisten 3D-tulostimien ja 3D-suunnitteluohjelmistojen kanssa","Details Shining SWE"
+"DEV_DETAILS_SHINING3D","• 1 scanner available at the FabLab
+• Must be tethered to a computer while scanning
+• 3 infrared projectors, two depth cameras, one RGB color camera
+• 0.1-3 mm point distance in scan data
+• 980,000 scanned points/s, up to 14 FPS
+• Scanning distance 160-1400mm
+• Supports multiple data format outputs (OBJ, STL, PLY, P3, 3MF), compatible with different 3D printers and 3D design softwares","• 1 kpl saatavilla Fablabilla
+• Pitää olla kytkettynä tietokoneeseen skannatessa
+• 3 infrapunaprojektoria, kaksi syvyyskameraa, yksi RGB-värikamera
+• 0,1-3 mm pisteväli skannausdatassa
+• 980 000 skannattua pistettä/s, jopa 14 ruutua sekunnissa
+• Skannausetäisyys 160-1400 mm
+• Tukee useita datamuotolähtöjä (OBJ, STL, PLY, P3, 3MF), jotka ovat yhteensopivia erilaisten 3D-tulostimien ja 3D-suunnitteluohjelmistojen kanssa","Details Shining SWE"
 "DEV_DESC_SINDOH","With a 3D printer you can literally print real three-dimensional objects.
 
 The object is designed with a 3d modeling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
@@ -365,22 +365,22 @@ A filament-type 3D printer works by melting a string of plastic called a filamen
 Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
-"DEV_DETAILS_SINDOH","- 3 machines at the FabLab
-- Printing material: biodegradable PLA-plastic, ABS-plastic
-- Maximum print size 210 × 200 × 189 mm
-- Smallest layer thickness 0.05 mm
-- Preferred file format .stl","- FabLabilla 3 kpl
-- Tulostusmateriaali: biohajoava PLA-muovi, ABS-muovi
-- Tulosteen maksimikoko 210 × 200 × 189 mm
-- Kerrospaksuus 0.05-0.4 mm
-- Suositeltu tiedostomuoto .stl",""
+"DEV_DETAILS_SINDOH","• 3 machines at the FabLab
+• Printing material: biodegradable PLA-plastic, ABS-plastic
+• Maximum print size 210 × 200 × 189 mm
+• Smallest layer thickness 0.05 mm
+• Preferred file format .stl","• FabLabilla 3 kpl
+• Tulostusmateriaali: biohajoava PLA-muovi, ABS-muovi
+• Tulosteen maksimikoko 210 × 200 × 189 mm
+• Kerrospaksuus 0.05-0.4 mm
+• Suositeltu tiedostomuoto .stl",""
 "DEV_DESC_COMPUTER","Every FabLab project begins with designing it on the computer.
 
 FabLab has five computers available for designing. They have many types of software installed, such as graphics, 3D modeling and slicing software.
 
 You can come to the FabLab with a ready-made plan, or just to get to know the possibilities FabLab offers.","Jokainen FabLab-projekti alkaa suunnittelemalla se tietokoneella.
 
-FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja kuten grafiikka- ja 3D-mallinnusohjelmia.
+FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja kuten grafiikka• ja 3D-mallinnusohjelmia.
 
 Voit tulla FabLabille joko valmiin suunnitelman kanssa, tai vain tutustumaan FabLabin tarjoamiin mahdollisuuksiin.",""
 "DEV_DETAILS_COMPUTER","[b]Hardware:[/b]
