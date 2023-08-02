@@ -9,4 +9,3 @@ data_*/
 # Builds for different platforms
 /test/Export/
 .vscode/settings.json
-*.import
