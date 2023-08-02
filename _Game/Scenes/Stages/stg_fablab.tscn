@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -13,7 +13,6 @@
 [ext_resource path="res://_Game/Scenes/UI/UI_Crosshair.tscn" type="PackedScene" id=11]
 [ext_resource path="res://_Game/Scenes/Models/mdl_shelf_showroom.tscn" type="PackedScene" id=12]
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_triplets.tscn" type="PackedScene" id=13]
-[ext_resource path="res://_Game/Scenes/Models/mdl_dev_vinyl_cutter.tscn" type="PackedScene" id=14]
 [ext_resource path="res://_Game/Scenes/Stages/stg_fablab.gd" type="Script" id=15]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_router_rensi.tscn" type="PackedScene" id=16]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_multicolor_square.tscn" type="PackedScene" id=17]
@@ -209,9 +208,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.36089, 0, -8.13363 )
 [node name="mdl_table_multicolor_long_ompelu" parent="stg_fablab/adjust_multicolor_table_heigtht" instance=ExtResource( 9 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.35911, 0, -7.87622 )
 
-[node name="mdl_dev_vinyl_cutter" parent="stg_fablab" instance=ExtResource( 14 )]
-transform = Transform( -5.46392e-08, 0, -1.25, 0, 1.25, 0, 1.25, 0, -5.46392e-08, 1.44237, 0.911384, -15.5253 )
-
 [node name="mdl_dev_router_rensi" parent="stg_fablab" instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1.50936, 0, 0, 0, 1, -4.3052, 0, -19.9378 )
 
@@ -306,7 +302,10 @@ transform = Transform( 0.124762, 0, -0.992187, 0, 1, 0, 0.992187, 0, 0.124762, 5
 transform = Transform( -0.00216417, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00216417, 5.70258, 0.759783, -7.65924 )
 
 [node name="mdl_vinyl_cutter_skinned" parent="stg_fablab" instance=ExtResource( 38 )]
-transform = Transform( 0.347247, 0, -0.937774, 0, 1, 0, 0.937774, 0, 0.347247, 1.54488, 0.908719, -13.9353 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.44237, 0.911384, -14.8072 )
+
+[node name="mdl_dev_basic_pc9" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.537, 0.9, -13.969 )
 
 [node name="mdl_dev_laser_cutter_ani" parent="stg_fablab" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50365, -0.00203678, -22.8161 )
@@ -388,6 +387,9 @@ transform = Transform( -0.994362, 0, 0.106039, 0, 1, 0, -0.106039, 0, -0.994362,
 [node name="mdl_dev_electric_afg_2125" parent="stg_fablab" instance=ExtResource( 67 )]
 transform = Transform( -0.95299, -0.101054, 0.285654, 0, 0.942746, 0.333511, -0.303002, 0.317832, -0.898428, -4.2994, 0.7902, -15.5251 )
 
+[node name="mdl_dev_basic_pc10" parent="stg_fablab" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.781, 0.75, -15.818 )
+
 [node name="mdl_stg_fl_obj_small_metal_desk" parent="stg_fablab" instance=ExtResource( 70 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.04672, -0.00608277, -23.2969 )
 
@@ -410,7 +412,8 @@ transform = Transform( 0.0168067, 0.999859, 0, -0.999859, 0.0168067, 0, 0, 0, 1,
 transform = Transform( -0.449303, 0, 0.893379, 0, 1, 0, -0.893379, 0, -0.449303, 1.99632, 0.878661, -9.3117 )
 
 [node name="mdl_mats_vinyl_roll_rigid" parent="." instance=ExtResource( 62 )]
-transform = Transform( 0.750157, 0, -0.661259, 0, 1, 0, 0.661259, 0, 0.750157, 1.9335, 0.96066, -14.5718 )
+transform = Transform( 0.750157, 0, -0.661259, 0, 1, 0, 0.661259, 0, 0.750157, 1.54729, 0.96066, -15.5101 )
+angular_damp = 3.0
 
 [node name="mdl_mats_filament_roll_rigid2" parent="." instance=ExtResource( 45 )]
 transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501, 0.79187, -9.23527 )
