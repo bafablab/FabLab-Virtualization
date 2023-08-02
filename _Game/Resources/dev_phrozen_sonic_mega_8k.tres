@@ -9,4 +9,4 @@ generic_name = "DEV_GENERIC_NAME_3DPRINTER_RESIN"
 info_text = "DEV_DESC_PHROZEN_SONIC"
 details_text = "DEV_DETAILS_PHROZEN_SONIC"
 example_items = [  ]
-animationNames = [  ]
+animationNames = [ "04_working" ]
