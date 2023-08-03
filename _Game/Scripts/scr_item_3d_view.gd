@@ -33,11 +33,13 @@ func _input(event):
 			elif Input.is_action_pressed("middle_mouse_click"):
 				camera.transform.origin.y += event.relative.y * mouse_sensitivity * 0.003
 				camera.transform.origin.x += -event.relative.x * mouse_sensitivity * 0.003
-		elif event is InputEventMouseButton:
+		
+		if event is InputEventMouseButton:
 			if Input.is_action_pressed("mouse_wheel_up"):
 				camera.transform.origin.z -= 0.1
 			elif Input.is_action_pressed("mouse_wheel_down"):
 				camera.transform.origin.z += 0.1
+				
 		
 		# Prevent zooming too far or too close
 		if camera.transform.origin.z < min_camera_distance:
@@ -55,7 +57,20 @@ func _input(event):
 		elif camera.transform.origin.y > max_camera_y:
 			camera.transform.origin.y = max_camera_y
 		
-		
+
+func _process(_delta):
+	if(is_visible_in_tree() and input_allowed):
+		# Rotate the object with a gamepad
+		if Input.get_joy_axis(0, 2) < -0.3 or Input.get_joy_axis(0, 2) > 0.3:
+			item.rotate_y(deg2rad( Input.get_joy_axis(0, 2) * 3))
+		if Input.get_joy_axis(0, 3) < -0.3 or Input.get_joy_axis(0, 3) > 0.3:
+			item.rotate_x(deg2rad( Input.get_joy_axis(0, 3) * 3))
+			
+		# Zooming with a gamepad
+		if Input.get_joy_axis(0, 1) < -0.3:
+			camera.transform.origin.z -= 0.01
+		if Input.get_joy_axis(0, 1) > 0.3:
+			camera.transform.origin.z += 0.01
 
 # These functions and the timer prevent accidental rotation of the item on the moment of opening the 3d view
 
