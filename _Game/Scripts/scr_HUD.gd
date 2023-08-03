@@ -29,7 +29,7 @@ func _input(event):
 	if Input.is_action_just_pressed("toggle_fps"):
 		toggle_fps()
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	$FPS.set_text("FPS " + String(Engine.get_frames_per_second()))
 
 # Toggle HUD visibility

@@ -24,7 +24,10 @@ func _input(event):
 			# Close the menu by clicking anywhere outside of it
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				close()
-				
+		
+		if Input.is_action_just_pressed("ui_cancel"):
+			close()
+			
 	# Show welcome window again if F3 pressed
 	# Bug: if device or item info windows are open, input handling is out of whack
 	if Input.is_action_just_pressed("show_welcome"):
@@ -32,6 +35,7 @@ func _input(event):
 			open()
 		else:
 			close()
+
 
 # show window
 func open():

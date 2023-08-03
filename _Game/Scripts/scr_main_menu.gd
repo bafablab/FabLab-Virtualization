@@ -1,6 +1,7 @@
 extends Control
 
 onready var button_finnish = $Panel/Panel/Button_Finnish
+onready var button_english = $Panel/Panel/Button_English
 onready var checkbox_inverty = $Panel/HBoxContainer/CheckBox
 onready var fps_controller = $"../FPSController"
 onready var firststart = true
@@ -73,6 +74,25 @@ func _on_ExitButton_pressed():
 func _input(_event):
 	if self.visible:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
+		if Input.is_action_just_pressed("ui_right"):
+			button_english.pressed = true
+			button_english.emit_signal("pressed")
+		if Input.is_action_just_pressed("ui_left"):
+			button_finnish.pressed = true
+			button_finnish.emit_signal("pressed")
+			
+		if Input.is_action_just_pressed("ui_x_button"):
+			if !checkbox_inverty.pressed:
+				checkbox_inverty.pressed = true
+			else:
+				checkbox_inverty.pressed = false
+		
+		if Input.is_action_just_pressed("ui_cancel"):
+			start_game()
+		
+		if Input.is_action_just_pressed("ui_select_button"):
+			_on_ExitButton_pressed()
 		
 	if Input.is_action_just_pressed("escape"):
 		if !self.visible:

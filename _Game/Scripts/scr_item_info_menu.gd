@@ -51,6 +51,9 @@ func _input(event):
 			# Close the menu by clicking anywhere outside of it
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				exit_window()
+				
+		if Input.is_action_just_pressed("ui_cancel"):
+			exit_window()
 
 # Function for opening hyperlinks
 func _on_RichTextLabel_meta_clicked(meta):

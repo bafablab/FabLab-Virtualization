@@ -58,6 +58,15 @@ func _input(event):
 			var evLocal = make_input_local(event)
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				exit_window()
+		
+		if Input.is_action_just_pressed("ui_cancel"):
+			exit_window()
+			
+		if Input.is_action_just_pressed("ui_left") || Input.is_action_just_pressed("ui_right"):
+			if tab_container.current_tab == 0:
+				tab_container.set_current_tab(1)
+			elif tab_container.current_tab == 1:
+				tab_container.set_current_tab(0)
 
 func clear_example_items():
 	example_text.bbcode_text = ""

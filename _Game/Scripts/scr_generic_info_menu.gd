@@ -1,7 +1,9 @@
 extends Control
 
 onready var menu_window = $VBoxContainer
+onready var infotext = $VBoxContainer/Panel/InfoText
 var generic_info
+var currentline
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,6 +16,7 @@ func _ready():
 func init(resource):
 	generic_info = resource
 	updatetexts()
+	currentline = 0
 	self.visible = true
 	
 	# set_input_as_handled()
@@ -36,6 +39,21 @@ func _input(event):
 			# Close the menu by clicking anywhere outside of it
 			if !Rect2(menu_window.rect_position, menu_window.rect_size).has_point(evLocal.position):
 				close()
+				
+		if Input.is_action_just_pressed("ui_cancel"):
+			close()
+			
+		if infotext.scroll_active && Input.is_action_just_pressed("ui_down"):
+			currentline += 3
+			if currentline > infotext.get_line_count():
+				currentline = infotext.get_line_count() - infotext.get_visible_line_count()
+			infotext.scroll_to_line(currentline)
+			
+		if infotext.scroll_active && Input.is_action_just_pressed("ui_up"):
+			currentline -= 3
+			if currentline < 0:
+				currentline = 0
+			infotext.scroll_to_line(currentline)
 
 
 # show window

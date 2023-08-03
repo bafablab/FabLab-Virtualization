@@ -57,7 +57,7 @@ func _input(event):
 			rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 			head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
 			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
-			
+
 	if Input.is_action_just_pressed("toggle_always_run"):
 		if !always_run:
 			always_run = true
@@ -121,8 +121,15 @@ func _physics_process(delta):
 		gravity_vec = -get_floor_normal()
 	
 	if moving:
+		if Input.get_joy_axis(0, 2) < -0.3 or Input.get_joy_axis(0, 2) > 0.3:
+			rotation.y -= deg2rad( Input.get_joy_axis(0, 2) * 2)
+		if Input.get_joy_axis(0, 3) < -0.3 or Input.get_joy_axis(0, 3) > 0.3:
+			head.rotation.x -= deg2rad( Input.get_joy_axis(0, 3) * 2 * inverse_mouse)
+			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
+		
 		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 			gravity_vec = Vector3.UP * jump
+			
 		if Input.is_action_pressed("move_forward"):
 			direction -= transform.basis.z
 		elif Input.is_action_pressed("move_backward"):
