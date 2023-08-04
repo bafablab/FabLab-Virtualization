@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=2]
+[gd_scene load_steps=72 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://_Game/Scenes/UI/UI_Crosshair.tscn" type="PackedScene" id=11]
 [ext_resource path="res://_Game/Scenes/Models/mdl_shelf_showroom.tscn" type="PackedScene" id=12]
 [ext_resource path="res://_Game/Scenes/Models/mdl_door_triplets.tscn" type="PackedScene" id=13]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stf_fl_obj_black_stool.tscn" type="PackedScene" id=14]
 [ext_resource path="res://_Game/Scenes/Stages/stg_fablab.gd" type="Script" id=15]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_router_rensi.tscn" type="PackedScene" id=16]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_multicolor_square.tscn" type="PackedScene" id=17]
@@ -309,6 +310,12 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.537, 
 
 [node name="mdl_dev_laser_cutter_ani" parent="stg_fablab" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50365, -0.00203678, -22.8161 )
+
+[node name="mdl_stf_fl_obj_black_stool2" parent="stg_fablab" instance=ExtResource( 14 )]
+transform = Transform( -0.419927, 0, 0.907558, 0, 1, 0, -0.907558, 0, -0.419927, 2.91998, 0.0263684, -22.9543 )
+
+[node name="mdl_stf_fl_obj_black_stool" parent="stg_fablab" instance=ExtResource( 14 )]
+transform = Transform( -0.525962, 0, 0.850508, 0, 1, 0, -0.850508, 0, -0.525962, -2.64846, 0.0263687, -18.7871 )
 
 [node name="mdl_stg_fl_obj_metal_table" parent="stg_fablab" instance=ExtResource( 47 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2963, 0, -12.4932 )
