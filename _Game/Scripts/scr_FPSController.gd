@@ -19,6 +19,9 @@ var always_run = false
 export var mouse_sensitivity = 0.06
 export var inverse_mouse = -1
 
+export var gamepad_enabled = false
+export var joypad_sensitivity = 1.5 # how fast gamepad looking moves, bigger is faster
+
 onready var head = $Head
 onready var ground_check = $GroundCheck
 onready var object_select = $Head/ObjectSelect 		# raycast for detecting interactables
@@ -54,6 +57,7 @@ func _input(event):
 	# Do not rotate the player when mouse is visible ie. some menu is open
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
+			# Mouse looking
 			rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 			head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity * inverse_mouse))
 			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
@@ -88,9 +92,9 @@ func _physics_process(delta):
 					# unselect previous interactable
 					targeted_object.emit_signal("mouse_exited")		# same signal than godot's own mouse cursor
 				
-				# select currently targeted object
-				object_select.get_collider().emit_signal("mouse_entered")
-				targeted_object = object_select.get_collider()
+			# select currently targeted object
+			object_select.get_collider().emit_signal("mouse_entered")
+			targeted_object = object_select.get_collider()
 					
 		else:
 			# clear targeted object if raycast isn't colliding and unselect it
@@ -121,10 +125,12 @@ func _physics_process(delta):
 		gravity_vec = -get_floor_normal()
 	
 	if moving:
+		
+		# Gamepad looking
 		if Input.get_joy_axis(0, 2) < -0.3 or Input.get_joy_axis(0, 2) > 0.3:
-			rotation.y -= deg2rad( Input.get_joy_axis(0, 2) * 2)
+			rotation.y -= deg2rad( Input.get_joy_axis(0, 2) * joypad_sensitivity)
 		if Input.get_joy_axis(0, 3) < -0.3 or Input.get_joy_axis(0, 3) > 0.3:
-			head.rotation.x -= deg2rad( Input.get_joy_axis(0, 3) * 2 * inverse_mouse)
+			head.rotation.x -= deg2rad( Input.get_joy_axis(0, 3) * joypad_sensitivity * inverse_mouse)
 			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
 		
 		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
