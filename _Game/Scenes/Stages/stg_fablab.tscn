@@ -1,11 +1,10 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=72 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
 [ext_resource path="res://_Game/Environment/env_fablab.tres" type="Environment" id=3]
 [ext_resource path="res://_Game/Scenes/Models/mdl_box_filament_pack_closed.tscn" type="PackedScene" id=4]
 [ext_resource path="res://_Game/Scenes/Models/mdl_chair_bar_stool_01.tscn" type="PackedScene" id=5]
-[ext_resource path="res://_Game/Scenes/Models/mdl_mats_filament_roll.tscn" type="PackedScene" id=6]
 [ext_resource path="res://_Game/Scenes/FPSController.tscn" type="PackedScene" id=7]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_3dprinter_sindoh_3dwox_1_lq.tscn" type="PackedScene" id=8]
 [ext_resource path="res://_Game/Scenes/Models/mdl_table_multicolor_long.tscn" type="PackedScene" id=9]
@@ -114,9 +113,6 @@ transform = Transform( 0.574706, 0, 0.81836, 0, 1, 0, -0.81836, 0, 0.574706, 1.1
 [node name="mdl_bar_stool_02" parent="stg_fablab" instance=ExtResource( 5 )]
 transform = Transform( 0.0147652, 0, 0.999891, 0, 1, 0, -0.999891, 0, 0.0147652, 1.29559, 0, -15.1697 )
 
-[node name="mdl_mats_filament_roll" parent="stg_fablab" instance=ExtResource( 6 )]
-transform = Transform( -0.0311852, -0.999514, -1.81175e-05, 2.38355e-05, 1.73831e-05, -1, 0.999514, -0.0311852, 2.32822e-05, 0.150628, 0.454685, -15.5769 )
-
 [node name="mdl_box_filament_pack_closed" parent="stg_fablab" instance=ExtResource( 4 )]
 transform = Transform( 0.875059, 0, 0.484016, 0, 1, 0, -0.484016, 0, 0.875059, 0.153404, 0.00749162, -15.587 )
 
@@ -223,7 +219,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.11064, -23.2477 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09979, 0.898575, -13.9199 )
 
 [node name="mdl_dev_shining3d_einstar" parent="stg_fablab" instance=ExtResource( 28 )]
-transform = Transform( 0.916265, 0, 0.400573, 0, 1, 0, -0.400573, 0, 0.916265, 1.89662, 0.784404, -6.81806 )
+transform = Transform( -0.234633, 0, -0.972084, 0, 1, 0, 0.972084, 0, -0.234633, 2.72348, 0.784404, -9.3692 )
 
 [node name="mdl_dev_phrozen_cure_xl" parent="stg_fablab" instance=ExtResource( 29 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.02461, 0.906104, -16.9902 )
@@ -475,7 +471,7 @@ transform = Transform( 0.750157, 0, -0.661259, 0, 1, 0, 0.661259, 0, 0.750157, 1
 angular_damp = 3.0
 
 [node name="mdl_mats_filament_roll_rigid2" parent="." instance=ExtResource( 45 )]
-transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501, 0.79187, -9.23527 )
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501, 0.79187, -8.89505 )
 
 [node name="mdl_mats_resin_bottle_rigidbody" parent="." instance=ExtResource( 71 )]
 transform = Transform( -0.790615, 0, -0.612314, 0, 1, 0, 0.612314, 0, -0.790615, 8.8457, 0.994628, -22.3875 )
