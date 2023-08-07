@@ -2,8 +2,8 @@
 
 [ext_resource path="res://_Game/Models/stg_fl_obj_safe_cabinet/mdl.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/stg_fl_obj_safe_cabinet/mat_stg_fl_obj_safe_cabinet.tres" type="Material" id=2]
-[ext_resource path="res://_Game/Resources/object_door.tres" type="Resource" id=3]
-[ext_resource path="res://_Game/Scripts/scr_door_safe_cabinet.gd" type="Script" id=4]
+[ext_resource path="res://_Game/Scripts/scr_door.gd" type="Script" id=3]
+[ext_resource path="res://_Game/Resources/object_door.tres" type="Resource" id=4]
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.0210301, 0.155058, 0.20415 )
@@ -24,8 +24,8 @@ extents = Vector3( 0.222702, 0.313104, 0.266294 )
 length = 0.001
 
 [node name="mdl_stg_obj_safe_cabinet" groups=["Door"] instance=ExtResource( 1 )]
-script = ExtResource( 4 )
-interactable = ExtResource( 3 )
+script = ExtResource( 3 )
+interactable = ExtResource( 4 )
 
 [node name="Skeleton" parent="Armature002" index="0"]
 bones/3/bound_children = [ NodePath("BoneAttachment") ]
@@ -39,7 +39,7 @@ bone_name = "door_end"
 
 [node name="StaticBody" type="StaticBody" parent="Armature002/Skeleton/BoneAttachment" index="0" groups=["Mover"]]
 transform = Transform( -0.000664783, -0.0334178, 0.999441, 0.019877, 0.999244, 0.0334244, -0.999802, 0.0198881, -4.02311e-08, -0.225443, -0.234153, 0.00925738 )
-collision_layer = 21
+collision_layer = 19
 collision_mask = 0
 
 [node name="CollisionShape" type="CollisionShape" parent="Armature002/Skeleton/BoneAttachment/StaticBody" index="0"]

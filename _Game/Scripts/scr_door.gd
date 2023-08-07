@@ -21,7 +21,9 @@ var hover_text_position
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	static_body = get_node("StaticBody")
+	static_body = get_node_or_null("Armature002/Skeleton/BoneAttachment/StaticBody") # For safe cabinet
+	if !static_body: # for normal doors
+		static_body = get_node("StaticBody")
 	
 	# connect signals that are emitted when mouse enters and exits static body
 	# FPSController emits same signals when objectSelect raycast is colliding with static body
