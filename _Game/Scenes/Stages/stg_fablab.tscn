@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -72,6 +72,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_small_metal_desk.tscn" type="PackedScene" id=70]
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_resin_bottle_rigidbody.tscn" type="PackedScene" id=71]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_desk_chair_1_simple.tscn" type="PackedScene" id=72]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_round_wooden_tray_simple.tscn" type="PackedScene" id=73]
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
@@ -463,6 +464,9 @@ transform = Transform( -0.0491287, 0, 0.998792, 0, 1, 0, -0.998792, 0, -0.049128
 
 [node name="stg_fl_obj_desk_chair_1_simple17" parent="stg_fablab" instance=ExtResource( 72 )]
 transform = Transform( 0.00294955, 0, 0.999996, 0, 1, 0, -0.999996, 0, 0.00294955, 6.50946, 0.0263697, -4.13634 )
+
+[node name="stg_fl_obj_round_wooden_tray_simple" parent="stg_fablab" instance=ExtResource( 73 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.24413, 1.13427, -7.02982 )
 
 [node name="mdl_itm_ball_rigidbody" parent="." instance=ExtResource( 42 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7935, 0.214577, -10.6652 )
