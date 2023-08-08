@@ -27,8 +27,9 @@ func _ready():
 # warning-ignore:return_value_discarded
 	self.connect("sleeping_state_changed", self, "pickup_sleeping_state_changed")	
 	
+	# Make chairs etc. slower to move
 	if self.is_in_group("Heavy"):
-		GRAB_FORCE = 2
+		GRAB_FORCE = 4
 
 func enter_focus():
 	in_focus = true
