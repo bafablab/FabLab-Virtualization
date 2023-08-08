@@ -418,47 +418,50 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05531, 0.876055, 0.0176182 
 [node name="stg_fl_obj_round_wooden_tray_simple" parent="stg_fablab" instance=ExtResource( 73 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29793, 0.776772, -9.06084 )
 
-[node name="RigidBody" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( -0.133744, 0, -0.991016, 0, 1, 0, 0.991016, 0, -0.133744, 5.87462, 0.0263808, -8.75645 )
 
-[node name="RigidBody2" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody2" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.0941604, 0, 0.995557, 0, 1, 0, -0.995557, 0, 0.0941604, 4.77555, 0.0263717, -8.50491 )
 
-[node name="RigidBody3" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody3" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( -0.842481, 0, 0.538727, 0, 1, 0, -0.538727, 0, -0.842481, 4.49199, 0.0263712, -7.11505 )
 
-[node name="RigidBody4" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody4" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.205111, 0, -0.978739, 0, 1, 0, 0.978739, 0, 0.205111, 3.00744, 0.0263743, -7.15537 )
 
-[node name="RigidBody5" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody5" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.0692516, 0, -0.997599, 0, 1, 0, 0.997599, 0, 0.0692516, 2.94985, 0.0263705, -8.20577 )
 
-[node name="RigidBody6" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody6" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( -0.0327714, 0, 0.999463, 0, 1, 0, -0.999463, 0, -0.0327714, 1.83837, 0.0263762, -7.22435 )
 
-[node name="RigidBody7" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody7" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.130578, 0, 0.991438, 0, 1, 0, -0.991438, 0, 0.130578, 1.82451, 0.026376, -8.41239 )
 
-[node name="RigidBody8" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody8" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.696051, 0, -0.717993, 0, 1, 0, 0.717993, 0, 0.696051, -4.95743, 0.0263835, -12.6735 )
 
-[node name="RigidBody9" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody9" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.90537, 0.0263716, -16.3629 )
 
-[node name="RigidBody10" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody10" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.0668485, 0, -0.997763, 0, 1, 0, 0.997763, 0, 0.0668485, 7.65761, 0.0263681, -3.04699 )
 
-[node name="RigidBody11" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody11" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.128017, 0, -0.991772, 0, 1, 0, 0.991772, 0, 0.128017, 7.71843, 0.0263683, -4.00943 )
 
-[node name="RigidBody12" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody12" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.0146079, 0, 0.999893, 0, 1, 0, -0.999893, 0, 0.0146079, 6.3854, 0.0263698, -4.15918 )
 
-[node name="RigidBody13" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody13" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( 0.0589405, 0, 0.998262, 0, 1, 0, -0.998262, 0, 0.0589405, 6.44099, 0.02637, -3.13119 )
 
-[node name="RigidBody14" parent="stg_fablab" instance=ExtResource( 74 )]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody14" parent="stg_fablab" instance=ExtResource( 74 )]
 transform = Transform( -0.270886, 0, 0.962611, 0, 1, 0, -0.962611, 0, -0.270886, -2.93992, 0.0263704, -14.4012 )
+
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody15" parent="stg_fablab" instance=ExtResource( 74 )]
+transform = Transform( -0.601243, 0, -0.799066, 0, 1, 0, 0.799066, 0, -0.601243, 6.11451, 0.0263816, -7.49582 )
 
 [node name="mdl_itm_ball_rigidbody" parent="." instance=ExtResource( 42 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.30896, 0.214577, -12.3557 )
@@ -488,9 +491,6 @@ far = 30.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
-
-[node name="RigidBody" parent="." instance=ExtResource( 74 )]
-transform = Transform( -0.601243, 0, -0.799066, 0, 1, 0, 0.799066, 0, -0.601243, 6.11451, 0.0263816, -7.49582 )
 
 [node name="stg_fl_obj_cable_shaft_1" parent="." instance=ExtResource( 72 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.123702, 0.855951, -23.2943 )

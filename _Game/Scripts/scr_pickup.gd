@@ -5,7 +5,7 @@ onready var HUD = get_node("/root/FabLab/HUD")
 onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
 
 # Modify the grab force for a more fluid or more rigid hold force, default is 20
-const GRAB_FORCE = 20
+var GRAB_FORCE = 20
 var linear_vel = null
 
 var in_focus = false
@@ -26,6 +26,9 @@ func _ready():
 	# For sleep state changes
 # warning-ignore:return_value_discarded
 	self.connect("sleeping_state_changed", self, "pickup_sleeping_state_changed")	
+	
+	if self.is_in_group("Heavy"):
+		GRAB_FORCE = 2
 
 func enter_focus():
 	in_focus = true

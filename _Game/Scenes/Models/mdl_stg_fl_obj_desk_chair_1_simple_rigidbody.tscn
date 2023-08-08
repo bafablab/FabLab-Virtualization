@@ -31,7 +31,7 @@ radius = 0.0359892
 height = 0.4
 radius = 0.02
 
-[node name="RigidBody" type="RigidBody" groups=["Draggable"]]
+[node name="mdl_stg_obj_desk_chair_1_simple_rigidbody" type="RigidBody" groups=["Draggable", "Heavy"]]
 collision_layer = 33
 collision_mask = 55
 mass = 10.0
