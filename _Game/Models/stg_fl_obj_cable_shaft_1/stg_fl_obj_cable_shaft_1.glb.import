@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/stg_fl_obj_cable_shaft_electrics.glb-04c6e058bbbd6975da8b774b1826846c.scn"
+path="res://.import/stg_fl_obj_cable_shaft_1.glb-9da4dc9c8c4a1cc35dc43c480f63ed17.scn"
 
 [deps]
 
-source_file="res://_Game/Models/stg_fl_obj_cable_shaft_1/stg_fl_obj_cable_shaft_electrics.glb"
-dest_files=[ "res://.import/stg_fl_obj_cable_shaft_electrics.glb-04c6e058bbbd6975da8b774b1826846c.scn" ]
+source_file="res://_Game/Models/stg_fl_obj_cable_shaft_1/stg_fl_obj_cable_shaft_1.glb"
+dest_files=[ "res://.import/stg_fl_obj_cable_shaft_1.glb-9da4dc9c8c4a1cc35dc43c480f63ed17.scn" ]
 
 [params]
 
