@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=2]
+[gd_scene load_steps=75 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -71,6 +71,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_electric_devs_holder.tscn" type="PackedScene" id=69]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_small_metal_desk.tscn" type="PackedScene" id=70]
 [ext_resource path="res://_Game/Scenes/Models/mdl_mats_resin_bottle_rigidbody.tscn" type="PackedScene" id=71]
+[ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_cable_shaft_1.tscn" type="PackedScene" id=72]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_round_wooden_tray_simple.tscn" type="PackedScene" id=73]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_desk_chair_1_simple_rigidbody.tscn" type="PackedScene" id=74]
 
@@ -490,3 +491,6 @@ environment = ExtResource( 3 )
 
 [node name="RigidBody" parent="." instance=ExtResource( 74 )]
 transform = Transform( -0.601243, 0, -0.799066, 0, 1, 0, 0.799066, 0, -0.601243, 6.11451, 0.0263816, -7.49582 )
+
+[node name="stg_fl_obj_cable_shaft_1" parent="." instance=ExtResource( 72 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.123702, 0.855951, -23.2943 )
