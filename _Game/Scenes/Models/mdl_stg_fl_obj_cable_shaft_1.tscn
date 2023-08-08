@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://_Game/Models/stg_fl_obj_cable_shaft_1/mat_stg_fl_obj_cable_shaft_1.tres" type="Material" id=1]
-[ext_resource path="res://_Game/Models/stg_fl_obj_cable_shaft_1/stg_fl_obj_cable_shaft_electrics.glb" type="PackedScene" id=2]
+[ext_resource path="res://_Game/Models/stg_fl_obj_cable_shaft_1/stg_fl_obj_cable_shaft_1.glb" type="PackedScene" id=2]
 
 [node name="stg_fl_obj_cable_shaft_1" instance=ExtResource( 2 )]
 
-[node name="mdl_electrics_cable_etc001" parent="." index="0"]
+[node name="mdl_cable_shaft_1" parent="." index="0"]
 material/0 = ExtResource( 1 )
