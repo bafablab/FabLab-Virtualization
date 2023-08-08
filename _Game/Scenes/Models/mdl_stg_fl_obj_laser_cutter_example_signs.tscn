@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_Game/Models/stg_fl_obj_laser_cutter_example_signs/mat_stg_fl_obj_laser_cutter_example_signs.tres" type="Material" id=1]
+[ext_resource path="res://_Game/Models/stg_fl_obj_laser_cutter_example_signs/stg_fl_obj_laser_cutter_example_signs.glb" type="PackedScene" id=2]
+
+[node name="stg_fl_obj_laser_cutter_example_signs" instance=ExtResource( 2 )]
+
+[node name="signs" parent="." index="0"]
+material/0 = ExtResource( 1 )
