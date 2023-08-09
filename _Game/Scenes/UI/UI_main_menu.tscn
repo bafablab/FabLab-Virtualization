@@ -705,9 +705,11 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=216]
 size = 20
+extra_spacing_top = 4
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=243]
+extra_spacing_top = 2
 font_data = ExtResource( 1 )
 
 [node name="UI_main_menu" type="Control"]
