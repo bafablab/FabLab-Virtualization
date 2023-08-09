@@ -109,15 +109,29 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 "ITEM_NAME_OWL","Polygon Owl","Polygonipöllö","Polygon-uggla"
 "ITEM_NAME_FIREHAZARD","Fire hazard","Tulipalovaara","Brändrisk"
 "ITEM_NAME_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
-"ITEM_DESC_OWL","• 3D-printed
+"ITEM_NAME_CHESSBOARD","Coaster","Lasinalunen","Coaster"
+"ITEM_NAME_CHRISTMAS","Christmas greeting","Joulutervehdys","Jul"
+"ITEM_NAME_DEER_BOX","Ornament box","Koristelaatikko","Ornament box"
+"ITEM_NAME_STAMP","Stamp","Leimasin","Stamp"
+"ITEM_NAME_STAR_TREK","Coaster","Lasinalunen","Coaster"
+"ITEM_NAME_WOODEN_CARD","Nameplate","Nimikyltti","Nameplate"
+"ITEM_NAME_WOODEN_TRIANGLE","Shelf ornament","Hyllykoriste","Desk ornament"
+"ITEM_DESC_OWL","• 3D-printed owl decoration
 • Material: PLA-filament, 140 grams
 • Material cost: 0,70 €
-• Print time: 9.5 hours","• 3D-tulostettu pöllö
+• Print time: 9.5 hours","• 3D-tulostettu koristepöllö
 • Materiaali: PLA-filamentti, 140 grammaa
 • Materiaalikulut: 0,70 €
 • Tulostusaika: 9,5 tuntia","3D-utskriven uggla"
 "ITEM_DESC_FIREHAZARD","Laser Cutter, fire hazard!","Laserleikkuri, palovaara!","Laserskärare, brandrisk!"
 "ITEM_DESC_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
+"ITEM_DESC_CHESSBOARD","","",""
+"ITEM_DESC_CHRISTMAS","","",""
+"ITEM_DESC_DEER_BOX","","",""
+"ITEM_DESC_STAMP","","",""
+"ITEM_DESC_STAR_TREK","","",""
+"ITEM_DESC_WOODEN_CARD","","",""
+"ITEM_DESC_WOODEN_TRIANGLE","","",""
 "ITEM_INFO_3D_MODEL_TITLE","3D-Model","3D-malli","3D-modell"
 "ITEM_INFO_TITLE","Information","Tietoja","Information"
 "ITEM_INFO_3D_HELP","You can rotate the object by clicking and dragging the mouse in the window.
