@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -75,6 +75,11 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_round_wooden_tray_simple.tscn" type="PackedScene" id=73]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_desk_chair_1_simple_rigidbody.tscn" type="PackedScene" id=74]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_laser_cutter_example_signs.tscn" type="PackedScene" id=75]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_showroom_stamp.tscn" type="PackedScene" id=76]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_showroom_wooden_triangle.tscn" type="PackedScene" id=77]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_showroom_deer_box.tscn" type="PackedScene" id=78]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_showroom_wooden_card.tscn" type="PackedScene" id=79]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_showroom_chessboard.tscn" type="PackedScene" id=80]
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
@@ -186,6 +191,24 @@ transform = Transform( 0.930794, 0, 0.365543, 0, 1, 0, -0.365543, 0, 0.930794, 4
 [node name="mdl_shelf_showroom" parent="stg_fablab" instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.82366, 0, -11.4941 )
 
+[node name="mdl_itm_showroom_wooden_card" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 79 )]
+transform = Transform( 0.99514, 0, -0.0984687, 0, 1, 0, 0.0984687, 0, 0.99514, -0.687176, 1.30522, -0.0334272 )
+
+[node name="mdl_itm_showroom_chessboard" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 80 )]
+transform = Transform( 0.990363, 0, 0.138499, 0, 1, 0, -0.138499, 0, 0.990363, -1.152, 0.92, -0.09 )
+
+[node name="mdl_itm_showroom_stamp" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 76 )]
+transform = Transform( 0.376111, 0.926575, -3.466e-08, -1.16424e-08, 4.21324e-08, 1, 0.926575, -0.376111, 2.6634e-08, 0.141375, 1.29646, -0.0821009 )
+
+[node name="mdl_itm_showroom_wooden_triangle" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 77 )]
+transform = Transform( 0.991479, 0, 0.130267, 0, 1, 0, -0.130267, 0, 0.991479, -0.196764, 1.69961, -0.0291491 )
+
+[node name="mdl_itm_showroom_deer_box" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 78 )]
+transform = Transform( 0.997703, 0, 0.0677367, 0, 1, 0, -0.0677367, 0, 0.997703, -1.07966, 1.378, -0.1439 )
+
+[node name="mdl_itm_polygon_owl" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18341, 1.38606, -0.0489006 )
+
 [node name="mdl_door_triplets_01" parent="stg_fablab" instance=ExtResource( 13 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.30302, -0.000226378, -10.8909 )
 
@@ -242,9 +265,6 @@ transform = Transform( -0.0134908, 3.19443e-05, -0.999909, -0.000116186, 1, 3.35
 
 [node name="mdl_dev_elegoo_mars_2" parent="stg_fablab" instance=ExtResource( 31 )]
 transform = Transform( -0.011327, 0, -0.999936, 0, 1, 0, 0.999936, 0, -0.011327, 8.88994, 0.895692, -22.7567 )
-
-[node name="mdl_itm_polygon_owl" parent="stg_fablab" instance=ExtResource( 33 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.64025, 1.38606, -11.543 )
 
 [node name="mdl_dev_basic_pc" parent="stg_fablab" instance=ExtResource( 34 )]
 transform = Transform( -1.74418e-05, 0, -1, 0, 1, 0, 1, 0, -1.74418e-05, 2.07837, 0.754658, -7.42502 )

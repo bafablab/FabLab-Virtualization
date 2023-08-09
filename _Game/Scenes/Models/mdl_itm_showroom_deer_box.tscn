@@ -1,12 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://_Game/Models/itm_showroom_items_1/mdl_itm_showroom_deer_box.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/itm_showroom_items_1/mat_itm_showroom_items_1.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=3]
+[ext_resource path="res://_Game/Resources/itm_deer_box.tres" type="Resource" id=4]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.101749, 0.0994624, 0.0495295 )
 
 [node name="mdl_itm_showroom_deer_box" groups=["Item"] instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+interactable = ExtResource( 4 )
 
 [node name="mdl_deer_box" parent="." index="0"]
 material/0 = ExtResource( 2 )
