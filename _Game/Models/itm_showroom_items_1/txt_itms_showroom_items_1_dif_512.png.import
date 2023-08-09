@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/txt_itms_showroom_items_1_dif_512.png-76874f3d875b36a505cf734e2e8f6cf1.s3tc.stex"
+path.etc2="res://.import/txt_itms_showroom_items_1_dif_512.png-76874f3d875b36a505cf734e2e8f6cf1.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://_Game/Models/itm_showroom_items_1/txt_itms_showroom_items_1_dif_512.png"
+dest_files=[ "res://.import/txt_itms_showroom_items_1_dif_512.png-76874f3d875b36a505cf734e2e8f6cf1.s3tc.stex", "res://.import/txt_itms_showroom_items_1_dif_512.png-76874f3d875b36a505cf734e2e8f6cf1.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
