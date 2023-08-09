@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_Game/Models/itm_showroom_items_1/mdl_itm_showroom_star_trek.glb" type="PackedScene" id=1]
+[ext_resource path="res://_Game/Models/itm_showroom_items_1/mat_itm_showroom_items_1.tres" type="Material" id=2]
+
+[node name="mdl_itm_showroom_star_trek" instance=ExtResource( 1 )]
+
+[node name="mdl_star_trek" parent="." index="0"]
+material/0 = ExtResource( 2 )
