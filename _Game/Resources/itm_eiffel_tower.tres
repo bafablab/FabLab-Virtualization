@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Empty Item Info!"
-info_text = "This item does not have ItemInfo resource set. Add a correct one."
+name = "ITEM_NAME_EIFFEL"
+info_text = "ITEM_DESC_EIFFEL"
 manu_time = 0
 device_used = ""

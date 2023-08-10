@@ -211,7 +211,7 @@ transform = Transform( 0.991479, 0, 0.130267, 0, 1, 0, -0.130267, 0, 0.991479, -
 transform = Transform( 0.997703, 0, 0.0677367, 0, 1, 0, -0.0677367, 0, 0.997703, -1.07966, 1.378, -0.1439 )
 
 [node name="mdl_itm_polygon_owl" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 33 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18341, 1.38606, -0.0489006 )
+transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.18341, 1.3412, -0.0489006 )
 
 [node name="mdl_itm_showroom_star_trek" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 82 )]
 transform = Transform( 1, 0, 0, 0, 0.578655, 0.815572, 0, -0.815572, 0.578655, -0.854567, 0.955304, -0.0386457 )

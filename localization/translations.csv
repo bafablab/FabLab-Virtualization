@@ -19,7 +19,7 @@
 "WELCOME_HEADER","Welcome!","Tervetuloa!","Välkommen!"
 "WELCOME_TEXT","You have arrived to BusinessAsema Oulu’s virtual FabLab.
 
-FabLab is a workspace for small-scale digital manifacturing, where you can make and produce almost anything! You can use FabLab's facilities and equipment free of charge. The personnel at FabLab guides you on how to use the different devices, but the actual making and manufacturing is done by yourself.
+FabLab is a workspace for small-scale digital manufacturing, where you can make and produce almost anything! You can use FabLab's facilities and equipment free of charge. The personnel at FabLab guides you on how to use the different devices, but the actual making and manufacturing is done by yourself.
 
 BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) Monday to Friday from 9 AM to 4 PM. Reservation information and possible exceptions to opening hours can be found from [url=https://businessasema.com/en/fablab/]FabLab's website[/url].
 
@@ -109,13 +109,14 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 "ITEM_NAME_OWL","Polygon Owl","Polygonipöllö","Polygon-uggla"
 "ITEM_NAME_FIREHAZARD","Fire hazard","Tulipalovaara","Brändrisk"
 "ITEM_NAME_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
-"ITEM_NAME_CHESSBOARD","Coaster","Lasinalunen","Coaster"
+"ITEM_NAME_CHESSBOARD","Chessboard","Shakkilauta","Chessboard"
 "ITEM_NAME_CHRISTMAS","Christmas greeting","Joulutervehdys","Jul"
 "ITEM_NAME_DEER_BOX","Shadow box","Varjolaatikko","Shadow box"
 "ITEM_NAME_STAMP","Stamp","Leimasin","Stamp"
 "ITEM_NAME_STAR_TREK","Coaster","Lasinalunen","Coaster"
 "ITEM_NAME_WOODEN_CARD","Name tag","Nimikyltti","Name tag"
 "ITEM_NAME_WOODEN_TRIANGLE","Shelf ornament","Hyllykoriste","Desk ornament"
+"ITEM_NAME_EIFFEL","Eiffel Tower","Eiffelin torni","Eiffel Tower"
 "ITEM_DESC_OWL","• 3D-printed owl decoration
 • Material: PLA-filament, 140 grams
 • Material cost: 0,70 €
@@ -125,9 +126,9 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 • Tulostusaika: 9,5 tuntia","3D-utskriven uggla"
 "ITEM_DESC_FIREHAZARD","Laser Cutter, fire hazard!","Laserleikkuri, palovaara!","Laserskärare, brandrisk!"
 "ITEM_DESC_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
-"ITEM_DESC_CHESSBOARD","• Laser cut and engraved coaster
+"ITEM_DESC_CHESSBOARD","• Laser cut and engraved mini chessboard
 • Material: 3 mm plywood
-• Manufacturing time: approx. 5 minutes + designing","• Laserleikattu ja -kaiverrettu lasinalunen
+• Manufacturing time: approx. 5 minutes","• Laserleikattu ja -kaiverrettu minishakkilauta
 • Materiaali: 3 mm vaneri
 • Valmistusaika: n. 5 minuuttia",""
 "ITEM_DESC_CHRISTMAS","• Laser cut and engraved christmas greeting/ornament
@@ -151,7 +152,7 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 • Materiaali: korkki
 • Valmistusaika: n. 10 minuuttia",""
 "ITEM_DESC_WOODEN_CARD","• Laser cut and engraved name tag
-• Material 2 mm plywood
+• Material: 2 mm plywood
 • Manufacturing time: approx. 10 minutes","• Laserleikattu ja -kaiverrettu nimikyltti
 • Materiaali: 2 mm vaneri
 • Valmistusaika: n. 10 minuuttia",""
@@ -159,6 +160,11 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 • Parts are cut with a laser cutter, glued together and painted","• Kolmiulotteinen maalaus
 • Osat on laserleikattu, liimattu yhteen ja maalattu
 • Materiaali: 3 mm vaneri, maali",""
+"ITEM_DESC_EIFFEL","• 3D printed model of the Eiffel Tower
+• Material: UV hardening resin
+• Manufacturing time: 43 hours","","• 3D-tulostettu malli Eiffelin tornista
+• Materiaali: UV-kovettuva hartsi
+• Valmistusaika: 43 tuntia"
 "ITEM_INFO_3D_MODEL_TITLE","3D-Model","3D-malli","3D-modell"
 "ITEM_INFO_TITLE","Information","Tietoja","Information"
 "ITEM_INFO_3D_HELP","You can rotate the object by clicking and dragging the mouse in the window.
