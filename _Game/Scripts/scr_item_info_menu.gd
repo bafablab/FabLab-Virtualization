@@ -40,7 +40,7 @@ func init(itm):
 
 func updatetexts():
 	if item != null:
-		tab_container.set_tab_title(0, "ITEM_INFO_TITLE")
+		tab_container.set_tab_title(0, "   " + tr("ITEM_INFO_TITLE") + "   ")
 		# tr() is used when godot doesn't automatically detect translatable text
 		info_text.bbcode_text = "[b]" + tr(item.name) + "[/b]\n\n" + tr(item.info_text)
 

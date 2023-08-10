@@ -36,8 +36,8 @@ func init(dev):
 
 func updatetexts():
 	if device != null:
-		tab_container.set_tab_title(0, "DEV_MENU_INFO")
-		tab_container.set_tab_title(1, "DEV_MENU_DETAILS")
+		tab_container.set_tab_title(0, "   " + tr("DEV_MENU_INFO") + "   ")
+		tab_container.set_tab_title(1, "   " + tr("DEV_MENU_DETAILS") + "   ")
 		
 		# tr() fetches a translation from translations.csv
 		# bbcode_text enables rich text such as bolding, hyperlinks, etc.
