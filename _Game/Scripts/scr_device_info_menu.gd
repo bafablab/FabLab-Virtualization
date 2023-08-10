@@ -101,7 +101,7 @@ func create_example_items():
 
 	for item in device.example_items:
 		var button = Button.new()
-		button.text = " " + tr(item.name) + " "
+		button.text = "   " + tr(item.name) + "   "
 		item_list.add_child(button)
 		button.connect("pressed", self, "_item_button_pressed", [item])
 
