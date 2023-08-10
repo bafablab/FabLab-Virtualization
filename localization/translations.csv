@@ -111,10 +111,10 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 "ITEM_NAME_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
 "ITEM_NAME_CHESSBOARD","Coaster","Lasinalunen","Coaster"
 "ITEM_NAME_CHRISTMAS","Christmas greeting","Joulutervehdys","Jul"
-"ITEM_NAME_DEER_BOX","Ornament box","Koristelaatikko","Ornament box"
+"ITEM_NAME_DEER_BOX","Shadow box","Varjolaatikko","Shadow box"
 "ITEM_NAME_STAMP","Stamp","Leimasin","Stamp"
 "ITEM_NAME_STAR_TREK","Coaster","Lasinalunen","Coaster"
-"ITEM_NAME_WOODEN_CARD","Nameplate","Nimikyltti","Nameplate"
+"ITEM_NAME_WOODEN_CARD","Name tag","Nimikyltti","Name tag"
 "ITEM_NAME_WOODEN_TRIANGLE","Shelf ornament","Hyllykoriste","Desk ornament"
 "ITEM_DESC_OWL","• 3D-printed owl decoration
 • Material: PLA-filament, 140 grams
@@ -125,13 +125,40 @@ Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne 
 • Tulostusaika: 9,5 tuntia","3D-utskriven uggla"
 "ITEM_DESC_FIREHAZARD","Laser Cutter, fire hazard!","Laserleikkuri, palovaara!","Laserskärare, brandrisk!"
 "ITEM_DESC_FILAMENT_ROLL","Filament roll","Filamenttirulla","Filamentrull"
-"ITEM_DESC_CHESSBOARD","","",""
-"ITEM_DESC_CHRISTMAS","","",""
-"ITEM_DESC_DEER_BOX","","",""
-"ITEM_DESC_STAMP","","",""
-"ITEM_DESC_STAR_TREK","","",""
-"ITEM_DESC_WOODEN_CARD","","",""
-"ITEM_DESC_WOODEN_TRIANGLE","","",""
+"ITEM_DESC_CHESSBOARD","• Laser cut and engraved coaster
+• Material: 3 mm plywood
+• Manufacturing time: approx. 5 minutes + designing","• Laserleikattu ja -kaiverrettu lasinalunen
+• Materiaali: 3 mm vaneri
+• Valmistusaika: n. 5 minuuttia",""
+"ITEM_DESC_CHRISTMAS","• Laser cut and engraved christmas greeting/ornament
+• Material: plywood and acrylic
+• Manufacturing time: approx. 15 minutes","• Laserleikattu ja -kaiverrettu joulutervehdys/koriste
+• Materiaali: vaneri ja akryyli
+• Valmistusaika: n. 15 minuuttia",""
+"ITEM_DESC_DEER_BOX","• Laser cut shadow box with finger joints
+• Material: 3 mm plywood
+• Manufacturing time: approx. 30 minutes","• Laserleikattu varjolaatikko sormiliitoksilla
+• Materiaali: 3 mm vaneri
+• Valmistusaika: n. 30 minuuttia",""
+"ITEM_DESC_STAMP","• A stamp with a 3D printed body and a laser engraved stamp part
+• Material: PLA plastic (body), rubber (stamp)
+• Manufacturing time: approx. 1 hour + 10 minutes","• Leimasin, jonka varsi on 3D-tulostettu ja leimaosa laserkaiverrettu
+• Materiaali: PLA-muovi (varsi), kumi (leimaosa)
+• Valmistusaika: n. 1 tunti + 10 minuuttia",""
+"ITEM_DESC_STAR_TREK","• Laser cut and engraved coaster
+• Material: cork
+• Manufacturing time: approx. 10 minutes","• Laserleikattu ja -kaiverrettu lasinalunen
+• Materiaali: korkki
+• Valmistusaika: n. 10 minuuttia",""
+"ITEM_DESC_WOODEN_CARD","• Laser cut and engraved name tag
+• Material 2 mm plywood
+• Manufacturing time: approx. 10 minutes","• Laserleikattu ja -kaiverrettu nimikyltti
+• Materiaali: 2 mm vaneri
+• Valmistusaika: n. 10 minuuttia",""
+"ITEM_DESC_WOODEN_TRIANGLE","• Three dimensional painting
+• Parts are cut with a laser cutter, glued together and painted","• Kolmiulotteinen maalaus
+• Osat on laserleikattu, liimattu yhteen ja maalattu
+• Materiaali: 3 mm vaneri, maali",""
 "ITEM_INFO_3D_MODEL_TITLE","3D-Model","3D-malli","3D-modell"
 "ITEM_INFO_TITLE","Information","Tietoja","Information"
 "ITEM_INFO_3D_HELP","You can rotate the object by clicking and dragging the mouse in the window.

@@ -20,7 +20,7 @@ func init(mesh):
 	default_basis.y = Vector3(0, 1, 0) # Vector pointing along the Y axis
 	default_basis.z = Vector3(0, 0, 1) # Vector pointing along the Z axis
 	item.transform.basis = default_basis
-	camera.translation = Vector3(0,0,0.3)
+	camera.translation = Vector3(0,0,0.2)
 
 func _input(event):
 	if(is_visible_in_tree() and input_allowed):

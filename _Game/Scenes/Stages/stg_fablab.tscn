@@ -195,10 +195,10 @@ transform = Transform( 0.930794, 0, 0.365543, 0, 1, 0, -0.365543, 0, 0.930794, 4
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.82366, 0, -11.4941 )
 
 [node name="mdl_itm_showroom_wooden_card" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 79 )]
-transform = Transform( 0.99514, 0, -0.0984687, 0, 1, 0, 0.0984687, 0, 0.99514, -0.687176, 1.30522, -0.0334272 )
+transform = Transform( 0.99514, 0, -0.0984687, 0, 1, 0, 0.0984687, 0, 0.99514, -0.664846, 1.30522, -0.0334272 )
 
 [node name="mdl_itm_showroom_chessboard" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 80 )]
-transform = Transform( 0.990363, 0, 0.138499, 0, 1, 0, -0.138499, 0, 0.990363, -1.152, 0.92, -0.09 )
+transform = Transform( 1, 0, 0, 0, 0.915936, -0.401325, 0, 0.401324, 0.915936, -1.152, 0.95694, -0.0900002 )
 
 [node name="mdl_itm_showroom_stamp" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 76 )]
 transform = Transform( 0.376111, 0.926575, 4.05019e-08, 0, -4.37114e-08, 1, 0.926575, -0.376111, -1.64403e-08, 0.141375, 1.29646, -0.0821009 )
@@ -213,10 +213,10 @@ transform = Transform( 0.997703, 0, 0.0677367, 0, 1, 0, -0.0677367, 0, 0.997703,
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18341, 1.38606, -0.0489006 )
 
 [node name="mdl_itm_showroom_star_trek" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 82 )]
-transform = Transform( 0.993584, -9.31323e-10, 0.113099, -0.0113744, 0.99493, 0.0999248, -0.112526, -0.10057, 0.988546, -0.924079, 1.33167, -0.0386457 )
+transform = Transform( 1, 0, 0, 0, 0.578655, 0.815572, 0, -0.815572, 0.578655, -0.854567, 0.955304, -0.0386457 )
 
 [node name="mdl_itm_showroom_christmas" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 81 )]
-transform = Transform( 1.2, 0, 0, 0, -5.24537e-08, 1.2, 0, -1.2, -5.24537e-08, -0.744318, 0.926736, -0.0573845 )
+transform = Transform( 1.2, 0, 0, 0, 0.707865, 0.968983, 0, -0.968983, 0.707865, -0.642955, 0.952562, -0.0573845 )
 
 [node name="mdl_door_triplets_01" parent="stg_fablab" instance=ExtResource( 13 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.30302, -0.000226378, -10.8909 )

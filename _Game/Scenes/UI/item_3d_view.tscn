@@ -30,7 +30,7 @@ render_target_update_mode = 3
 [node name="MeshInstance" type="MeshInstance" parent="Viewport/Spatial/Item"]
 
 [node name="Camera" type="Camera" parent="Viewport/Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5 )
 near = 0.01
 
 [node name="NoInputTimer" type="Timer" parent="."]

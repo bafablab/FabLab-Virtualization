@@ -113,7 +113,7 @@ func set_hover_text():
 	if hover_text_position:
 		hover_text.transform.origin = hover_text_position.transform.origin
 	else:
-		hover_text.global_transform.origin.y += collision_shape.shape.extents.y + 0.2
+		hover_text.global_transform.origin.y += collision_shape.shape.extents.y + 0.05
 	hover_text.visible = false
 
 # Separate function for setting/changing the hover text strings because of clunky localization server
