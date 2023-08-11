@@ -42,7 +42,7 @@ func updatetexts():
 		# tr() fetches a translation from translations.csv
 		# bbcode_text enables rich text such as bolding, hyperlinks, etc.
 		intro_text.bbcode_text = "[b]" + tr(device.generic_name) + "[/b] - [b]" + tr(device.name) + "[/b]\n\n" + tr(device.info_text)
-		details_text.bbcode_text = tr(device.details_text)
+		details_text.bbcode_text = "[b]" + tr(device.generic_name) + "[/b] - [b]" + tr(device.name) + "[/b]\n\n" + tr(device.details_text)
 		
 		clear_example_items()
 		
