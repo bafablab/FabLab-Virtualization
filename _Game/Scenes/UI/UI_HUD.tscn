@@ -28,9 +28,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -260.0
+margin_left = -250.0
 margin_top = -80.0
-margin_right = 260.0
+margin_right = 250.0
 margin_bottom = -20.0
 grow_horizontal = 2
 mouse_filter = 2
@@ -59,30 +59,30 @@ valign = 1
 clip_text = true
 
 [node name="MouseClick" type="TextureRect" parent="ControlsHelp"]
-margin_left = 225.0
+margin_left = 230.0
 margin_top = 10.0
-margin_right = 265.0
+margin_right = 270.0
 margin_bottom = 50.0
 texture = ExtResource( 6 )
 
 [node name="ControlsClick" type="Label" parent="ControlsHelp"]
-margin_left = 264.0
+margin_left = 269.0
 margin_top = 20.0
-margin_right = 393.0
+margin_right = 398.0
 margin_bottom = 40.0
 text = "CONTROLS_CLICK"
 
 [node name="F1" type="TextureRect" parent="ControlsHelp"]
-margin_left = 390.0
+margin_left = 380.0
 margin_top = 10.0
-margin_right = 430.0
+margin_right = 420.0
 margin_bottom = 50.0
 texture = ExtResource( 7 )
 
 [node name="ControlsMenu" type="Label" parent="ControlsHelp"]
-margin_left = 437.0
+margin_left = 430.0
 margin_top = 20.0
-margin_right = 527.0
+margin_right = 520.0
 margin_bottom = 40.0
 text = "CONTROLS_MENU"
 clip_text = true
