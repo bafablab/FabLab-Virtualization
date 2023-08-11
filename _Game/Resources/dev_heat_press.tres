@@ -4,9 +4,9 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Heat Press"
-generic_name = "Heat Press"
-info_text = "Empty info text"
-details_text = "Empty details text"
+name = "DEV_NAME_STAHLS"
+generic_name = "DEV_GENERIC_NAME_HEATPRESS"
+info_text = "DEV_DESC_STAHLS"
+details_text = "DEV_DETAILS_STAHLS"
 example_items = [  ]
 animationNames = [ "04_working" ]
