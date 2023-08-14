@@ -526,7 +526,7 @@ transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501
 transform = Transform( -0.790615, 0, -0.612314, 0, 1, 0, 0.612314, 0, -0.790615, 8.8457, 0.994628, -22.3875 )
 
 [node name="mdl_itm_ball_animated" parent="." instance=ExtResource( 39 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.69225, 1.10707, -2.36782 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72091, 1.10707, -2.37999 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )

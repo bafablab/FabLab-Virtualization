@@ -185,7 +185,7 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 "DEV_GENERIC_NAME_COVERSTITCH","Cover stitching machine","Peitetikkikone","Täcksömsmaskin"
 "DEV_GENERIC_NAME_CNCMILL","CNC milling machine","CNC-jyrsin","CNC fräsmaskin"
 "DEV_GENERIC_NAME_PRECISIONMILL","Precision milling machine","Tarkkuusjyrsin","Precisionsfräsmaskin"
-"DEV_GENERIC_NAME_SANDBLASTER","Sand blaster","Hiekkapuhallin","Sandblåsare"
+"DEV_GENERIC_NAME_SANDBLASTER","Sand blasting cabinet","Hiekkapuhalluskaappi","Sandblåsare"
 "DEV_GENERIC_NAME_COMPUTER","Computer","Tietokone","Dator"
 "DEV_GENERIC_NAME_HEATPRESS","Heat press","Lämpöprässi","Heat Press"
 "DEV_NAME_ELECTRONICS","Various devices","Erilaisia laitteita","Många saker"
@@ -258,7 +258,7 @@ Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[
 [b]Tulosteen maksimikoko:[/b] P129 x L80 x K150 mm
 [b]Kerrospaksuus:[/b] 0.01-0.2 mm
 [b]Suositeltu tiedostomuoto:[/b] .STL",
-"DEV_DESC_ELNA","Easy-to-use sewing machine for sewing textiles. 30 built-in stitches, including buttonholes, quilting, patchwork and specialty stitches.","Helppokäyttöinen ompelukone tekstiilien ompelemiseen. 30 sisäänrakennettua ommelta, mukana napinlävet, tikkaus-, tilkkutyö• ja erikoisompeleet.","Sowing machine desc"
+"DEV_DESC_ELNA","Easy-to-use sewing machine for sewing textiles. 30 built-in stitches, including buttonholes, quilting, patchwork and specialty stitches.","Helppokäyttöinen ompelukone tekstiilien ompelemiseen. 30 sisäänrakennettua ommelta, mukana napinlävet, tikkaus-, tilkkutyö- ja erikoisompeleet.","Sowing machine desc"
 "DEV_DETAILS_ELNA","Maximum stitch width 7 mm, maximum stitch length 5 mm.","Maksimi ommelleveys 7 mm, maksimi pistonpituus 5 mm.",""
 "DEV_DESC_ENDER","With a 3D printer you can literally print real three-dimensional objects.
 
@@ -304,12 +304,26 @@ Työstämiseen käyvät materiaalit löytyvät [url=https://www.epiloglaser.com/
 "DEV_DETAILS_INNOV","[b]Available embroidery frames:[/b] 200 x 300 mm and 200 x 200 mm
 [b]File format:[/b] .pes file format","[b]Kirjontakehyskoot:[/b] 200 x 300 mm ja 200 x 200 mm
 [b]Tiedostomuoto:[/b] .pes","Innov details SWE"
-"DEV_DESC_JUKI_MO","Treat the edges of the fabric, sew elastic clothes. This overlocker can be used to make more common 3• and 4-thread stitches and rolled hems.","Huolittele kankaan reunat, ompele joustavat vaatteet. Tällä saumurilla onnistuu yleisempien 3• ja 4-lankaisten ompeleiden ja rullapäärmeen tekeminen.","Overlocker MO desc SWE"
+"DEV_DESC_JUKI_MO","Treat the edges of the fabric, sew elastic clothes. This overlocker can be used to make more common 3- and 4-thread stitches and rolled hems.","Huolittele kankaan reunat, ompele joustavat vaatteet. Tällä saumurilla onnistuu yleisempien 3- ja 4-lankaisten ompeleiden ja rullapäärmeen tekeminen.","Overlocker MO desc SWE"
 "DEV_DETAILS_JUKI_MO","Differential feed.","Differentiaalisyöttö.",""
-"DEV_DESC_JUKI_MSC","Finish the turns of stretchy garments: necklines, cuffs, hems and hems. This cover stitching machine can do 2-thread chain stitch as well as 3• and 4-thread quilting.","Viimeistele joustavien vaatteiden käänteet: pääntiet, hihan• ja lahkeensuut sekä helmat. Tällä peitetikkikoneella onnistuu 2-lankainen ketjutikki sekä 3• ja 4-lankaiset peitetikit.","Overlocker MSC desc SWE"
+"DEV_DESC_JUKI_MSC","Finish the turns of stretchy garments: necklines, cuffs, hems and hems. This cover stitching machine can do 2-thread chain stitch as well as 3- and 4-thread quilting.","Viimeistele joustavien vaatteiden käänteet: pääntiet, hihan- ja lahkeensuut sekä helmat. Tällä peitetikkikoneella onnistuu 2-lankainen ketjutikki sekä 3- ja 4-lankaiset peitetikit.","Overlocker MSC desc SWE"
 "DEV_DETAILS_JUKI_MSC","Differential feed.","Differentiaalisyöttö.",""
-"DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc SWE"
-"DEV_DETAILS_NOVA","Sand blaster details","Hiekkapuhallin tekniset tiedot",""
+"DEV_DESC_NOVA","The sand blasting cabinet can be used to smoothen hard surfaces and to remove paint, rust and other impurities. Using a sand blasting mask cut with the vinyl cutter you can also create shapes and figures to different hard surfaces.
+
+The sand blaster works by spraying fine abrasive sand or small glass beads with a high pressure to the workpiece surface, thereby smoothening it. Because sand blasting creates a lot of fine dust, the blasting must be done in an air-tight cabinet such as this.","Hiekkapuhalluskaapissa voidaan hioa kovien kappaleiden pintoja sileämmäksi ja poistaa maalia, ruostetta ja epäpuhtauksia. Vinyylileikkurilla leikattua hiekkapuhallusmaskia käyttämällä voidaan hioa erilaisia kuvioita tai tekstiä koviin pintoihin.
+
+Hiekkapuhaltamisessa ruiskutetaan kovalla paineella hienojakoista hiekkaa tai pieniä lasikuulia kappaleen pintaan, jolloin se hioutuu hankauksen vaikutuksesta. Koska hiekkapuhaltamisessa syntyy paljon pölyä, pitää hionta suorittaa tällaisessa ilmatiiviissä kaapissa.","Sand blaster desc SWE"
+"DEV_DETAILS_NOVA","[b]Pressure:[/b] 4.14-8.2 bar
+[b]Working area:[/b] 945 x 605 x 605 mm
+
+• Doors on both sides
+• Stationary and handheld blasting nozzles
+• Foot-operated switch","[b]Paine:[/b] 4,14-8,2 bar
+[b]Työstöalue:[/b] 945 x 605 x 605 mm
+
+• Molemminpuoliset ovet
+• Kiinteä ja käsikäyttöinen puhalluspistooli
+• Jalkakäyttöinen käyttökytkin",""
 "DEV_DESC_PHROZEN_CURE","After printing, resin prints have to be hardened with ultraviolet light. With this device it can be done quickly and safely.","Hartsitulosteet tulee tulostuksen jälkeen kovettaa ultraviolettivalolla. Tällä jälkikovetuskaapilla se onnistuu nopeasti ja turvallisesti.","UV hardening lamp desc"
 "DEV_DETAILS_PHROZEN_CURE","[b]Inner measurements:[/b] 29.5 x 29.5 x 45 cm","[b]Sisätilamitat:[/b] 29,5 x 29,5 x 45 cm","UV lamp details"
 "DEV_DESC_PHROZEN_SONIC","With a 3D printer you can literally print real three-dimensional objects.
@@ -341,10 +355,8 @@ A CNC router can be used to make all kinds of molds, parts, architectural models
 Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, jonka jälkeen 3D-mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
 
 CNC-jyrsimellä voi tehdä erilaisia muotteja, osia, arkkitehtuurisia malleja, jopa taidetta.","CNC mill desc SWE"
-"DEV_DETAILS_RENSI","Machining area 900×700 mm
-
-[b]Materials:[/b] Wood, plastic","Työstöalue 900×700 mm
-
+"DEV_DETAILS_RENSI","[b]Machining area:[/b] 900×700 mm
+[b]Materials:[/b] Wood, plastic","[b]Työstöalue:[/b] 900×700 mm
 [b]Materiaalit:[/b] Puu, muovi","CNC details SWE"
 "DEV_DESC_ROLAND_SRM","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from, for example, plastic, wood and printed circuit boards.
 
@@ -438,7 +450,7 @@ FabLab has five computers available for designing. They have many types of softw
 
 You can come to the FabLab with a ready-made plan, or just to get to know the possibilities FabLab offers.","Jokainen FabLab-projekti alkaa suunnittelemalla se tietokoneella.
 
-FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja kuten grafiikka• ja 3D-mallinnusohjelmia.
+FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja, kuten grafiikka- ja 3D-mallinnusohjelmia.
 
 Voit tulla FabLabille joko valmiin suunnitelman kanssa, tai vain tutustumaan FabLabin tarjoamiin mahdollisuuksiin.",""
 "DEV_DETAILS_COMPUTER","[b]Hardware:[/b]
