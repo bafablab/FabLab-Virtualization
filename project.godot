@@ -23,11 +23,17 @@ _global_script_classes=[ {
 "class": "ItemInfo",
 "language": "GDScript",
 "path": "res://_Game/Scripts/scr_ItemInfo.gd"
+}, {
+"base": "Resource",
+"class": "Sensor",
+"language": "GDScript",
+"path": "res://_Game/Scripts/scr_sensor.gd"
 } ]
 _global_script_class_icons={
 "DeviceInfo": "",
 "GenericInfo": "",
-"ItemInfo": ""
+"ItemInfo": "",
+"Sensor": ""
 }
 
 [application]

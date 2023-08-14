@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=2]
+[gd_scene load_steps=86 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -84,6 +84,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_showroom_star_trek.tscn" type="PackedScene" id=82]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_heat_press.tscn" type="PackedScene" id=83]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_eiffel_tower_3d_print.tscn" type="PackedScene" id=84]
+[ext_resource path="res://_Game/Scenes/UI/UI_sensor_menu.tscn" type="PackedScene" id=85]
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
@@ -100,6 +101,9 @@ visible = false
 visible = false
 
 [node name="UI_GenericInfoMenu" parent="." instance=ExtResource( 68 )]
+visible = false
+
+[node name="UI_SensorMenu" parent="." instance=ExtResource( 85 )]
 visible = false
 
 [node name="UI_WelcomeWindow" parent="." instance=ExtResource( 44 )]
@@ -295,10 +299,10 @@ transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728,
 transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728, 7.27175, 0.754658, -4.1628 )
 
 [node name="mdl_dev_basic_pc7" parent="stg_fablab" instance=ExtResource( 34 )]
-transform = Transform( 0.0896243, 0, -0.995976, 0, 1, 0, 0.995976, 0, 0.0896243, 6.68394, 0.754658, -4.1628 )
+transform = Transform( 0.0273283, 0, -0.999627, 0, 1, 0, 0.999627, 0, 0.0273283, 6.68394, 0.754658, -4.1628 )
 
 [node name="mdl_dev_basic_pc8" parent="stg_fablab" instance=ExtResource( 34 )]
-transform = Transform( 0.0896243, 0, -0.995976, 0, 1, 0, 0.995976, 0, 0.0896243, 6.68394, 0.754658, -3.01001 )
+transform = Transform( 0.0228093, 0, -0.99974, 0, 1, 0, 0.99974, 0, 0.0228093, 6.68394, 0.754658, -3.01001 )
 
 [node name="mdl_dev_basic_pc6" parent="stg_fablab" instance=ExtResource( 34 )]
 transform = Transform( 0.0361728, 0, 0.999346, 0, 1, 0, -0.999346, 0, 0.0361728, 7.28563, 0.754658, -2.98796 )

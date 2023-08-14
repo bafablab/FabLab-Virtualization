@@ -31,6 +31,8 @@ func _ready():
 		menu = get_node("/root/FabLab/UI_ItemInfoMenu")
 	elif self.is_in_group("GenericInfo"):
 		menu = get_node("/root/FabLab/UI_GenericInfoMenu")
+	elif self.is_in_group("Sensor"):
+		menu = get_node("/root/FabLab/UI_SensorMenu")
 	
 	if get_node_or_null("StaticBody"):
 		interactable_body = get_node("StaticBody")
@@ -63,7 +65,8 @@ func _ready():
 		elif self.is_in_group("GenericInfo"):
 			HUD.append_debugtext("Empty generic info")
 			interactable = empty_generic_info_resource
-			
+		#TODO add empty sensor resource	
+						
 	set_hover_text()
 
 # this function is called when mouse or crosshair is over the interactable
