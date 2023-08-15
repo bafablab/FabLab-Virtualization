@@ -22,7 +22,7 @@ func init(resource):
 	# set_input_as_handled()
 	# consumes the event so it is not triggered in other
 	# scripts, for example close the window immidiately.
-	get_tree().get_root().set_input_as_handled()
+	#get_tree().get_root().set_input_as_handled()
 	
 	
 func updatetexts():
