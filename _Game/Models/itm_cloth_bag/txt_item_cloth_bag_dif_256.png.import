@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/txt_item_cloth_bag_dif_256.png-5c7d952810ca6ba04c40587b6c848eac.s3tc.stex"
-path.etc2="res://.import/txt_item_cloth_bag_dif_256.png-5c7d952810ca6ba04c40587b6c848eac.etc2.stex"
+path.s3tc="res://.import/txt_item_cloth_bag_dif_256.png-494fd1ef8c674eca5694bdcca91aa792.s3tc.stex"
+path.etc2="res://.import/txt_item_cloth_bag_dif_256.png-494fd1ef8c674eca5694bdcca91aa792.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://_Game/Models/item_cloth_bag/txt_item_cloth_bag_dif_256.png"
-dest_files=[ "res://.import/txt_item_cloth_bag_dif_256.png-5c7d952810ca6ba04c40587b6c848eac.s3tc.stex", "res://.import/txt_item_cloth_bag_dif_256.png-5c7d952810ca6ba04c40587b6c848eac.etc2.stex" ]
+source_file="res://_Game/Models/itm_cloth_bag/txt_item_cloth_bag_dif_256.png"
+dest_files=[ "res://.import/txt_item_cloth_bag_dif_256.png-494fd1ef8c674eca5694bdcca91aa792.s3tc.stex", "res://.import/txt_item_cloth_bag_dif_256.png-494fd1ef8c674eca5694bdcca91aa792.etc2.stex" ]
 
 [params]
 
