@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=2]
+[gd_scene load_steps=87 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -85,6 +85,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_heat_press.tscn" type="PackedScene" id=83]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_eiffel_tower_3d_print.tscn" type="PackedScene" id=84]
 [ext_resource path="res://_Game/Scenes/UI/UI_sensor_menu.tscn" type="PackedScene" id=85]
+[ext_resource path="res://_Game/Scenes/Models/mdl_dev_air_sensor.tscn" type="PackedScene" id=86]
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
@@ -538,3 +539,6 @@ far = 30.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
+
+[node name="mdl_dev_air_sensor" parent="." instance=ExtResource( 86 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.262255, 1.65074, -11.9592 )
