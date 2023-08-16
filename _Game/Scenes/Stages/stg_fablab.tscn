@@ -125,7 +125,7 @@ transform = Transform( 1.22, 0, 0, 0, 1.02, 0, 0, 0, 1, 4.37509, -5.27096, -17.8
 visible = false
 
 [node name="mdl_bar_stool_01" parent="stg_fablab" instance=ExtResource( 5 )]
-transform = Transform( 0.574706, 0, 0.81836, 0, 1, 0, -0.81836, 0, 0.574706, 1.14325, 0, -14.0786 )
+transform = Transform( 0.401837, 0, 0.915711, 0, 1, 0, -0.915711, 0, 0.401837, 1.26911, 0, -13.9639 )
 
 [node name="mdl_bar_stool_02" parent="stg_fablab" instance=ExtResource( 5 )]
 transform = Transform( 0.0147652, 0, 0.999891, 0, 1, 0, -0.999891, 0, 0.0147652, 1.29559, 0, -15.1697 )
