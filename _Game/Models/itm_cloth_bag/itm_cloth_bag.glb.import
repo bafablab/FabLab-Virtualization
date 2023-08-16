@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/item_cloth_bag.glb-9ff77670658cc2fa98d6c669405719f7.scn"
+path="res://.import/itm_cloth_bag.glb-2693f657a21f7d69175ed06b04896b17.scn"
 
 [deps]
 
-source_file="res://_Game/Models/itm_cloth_bag/item_cloth_bag.glb"
-dest_files=[ "res://.import/item_cloth_bag.glb-9ff77670658cc2fa98d6c669405719f7.scn" ]
+source_file="res://_Game/Models/itm_cloth_bag/itm_cloth_bag.glb"
+dest_files=[ "res://.import/itm_cloth_bag.glb-2693f657a21f7d69175ed06b04896b17.scn" ]
 
 [params]
 

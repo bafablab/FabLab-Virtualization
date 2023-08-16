@@ -1,6 +1,6 @@
 [gd_resource type="SpatialMaterial" load_steps=2 format=2]
 
-[ext_resource path="res://_Game/Models/itm_cloth_bag/txt_item_cloth_bag_dif_256.png" type="Texture" id=1]
+[ext_resource path="res://_Game/Models/itm_cloth_bag/txt_itm_cloth_bag_dif_256.png" type="Texture" id=1]
 
 [resource]
 flags_unshaded = true
