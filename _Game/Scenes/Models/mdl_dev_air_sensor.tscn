@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=1]
+[ext_resource path="res://_Game/Models/dev_air_sensor/mat_dev_thermometer.tres" type="Material" id=2]
+[ext_resource path="res://_Game/Resources/sensor_test.tres" type="Resource" id=3]
+[ext_resource path="res://_Game/Models/dev_air_sensor/mesh_mdl0.mesh" type="ArrayMesh" id=4]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.0471066, 0.0272447, 0.0118513 )
+
+[node name="mdl_dev_air_sensor" type="Spatial" groups=["Sensor"]]
+script = ExtResource( 1 )
+interactable = ExtResource( 3 )
+
+[node name="dev" type="MeshInstance" parent="."]
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+collision_layer = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.89884e-05, 0.00345133 )
+shape = SubResource( 2 )
