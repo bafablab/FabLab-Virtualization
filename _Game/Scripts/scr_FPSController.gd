@@ -134,7 +134,7 @@ func _physics_process(delta):
 			head.rotation.x -= deg2rad( Input.get_joy_axis(0, 3) * joypad_sensitivity * inverse_mouse)
 			head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
 		
-		if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
+		if Input.is_action_just_pressed("jump") and is_on_floor():
 			gravity_vec = Vector3.UP * jump
 			
 		if Input.is_action_pressed("move_forward"):
