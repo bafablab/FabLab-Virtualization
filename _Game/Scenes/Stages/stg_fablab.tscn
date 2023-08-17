@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=88 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -86,6 +86,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_eiffel_tower_3d_print.tscn" type="PackedScene" id=84]
 [ext_resource path="res://_Game/Scenes/UI/UI_sensor_menu.tscn" type="PackedScene" id=85]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_air_sensor.tscn" type="PackedScene" id=86]
+[ext_resource path="res://_Game/Scenes/Models/mdl_itm_cloth_bag.tscn" type="PackedScene" id=87]
 
 [node name="FabLab" type="Spatial"]
 script = ExtResource( 15 )
@@ -226,6 +227,9 @@ transform = Transform( 1.2, 0, 0, 0, 0.707865, 0.968983, 0, -0.968983, 0.707865,
 
 [node name="itm_eiffel_tower_3d_print" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 84 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.678793, 1.28142, -0.0540667 )
+
+[node name="mdl_itm_cloth_bag" parent="stg_fablab/mdl_shelf_showroom" instance=ExtResource( 87 )]
+transform = Transform( 0.177577, 0.983704, 0.0281648, -0.0788945, -0.0142972, 0.99678, 0.980939, -0.179228, 0.07507, -0.0515909, 0.943164, -0.0870028 )
 
 [node name="mdl_door_triplets_01" parent="stg_fablab" instance=ExtResource( 13 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.30302, -0.000226378, -10.8909 )
