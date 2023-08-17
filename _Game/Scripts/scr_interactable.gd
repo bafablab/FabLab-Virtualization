@@ -12,6 +12,7 @@ onready var crosshair = get_node("/root/FabLab/UI_Crosshair")
 var empty_device_resource = preload("res://_Game/Resources/dev_empty_device_info.tres")
 var empty_item_resource = preload("res://_Game/Resources/itm_empty_item_info.tres")
 var empty_generic_info_resource = preload("res://_Game/Resources/info_empty_generic_info.tres")
+var empty_sensor_resource = preload("res://_Game/Resources/sensor_empty.tres")
 var mesh_instance
 var menu
 var hover_text
@@ -65,7 +66,8 @@ func _ready():
 		elif self.is_in_group("GenericInfo"):
 			HUD.append_debugtext("Empty generic info")
 			interactable = empty_generic_info_resource
-		#TODO add empty sensor resource	
+		elif self.is_in_group("Sensor"):
+			interactable = empty_sensor_resource
 						
 	set_hover_text()
 
