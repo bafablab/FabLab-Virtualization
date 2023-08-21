@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.368951, 0.0715641, 0.0329381 )
 
-[node name="md_itm_sign_lc_cutter_wooden_sign" type="Spatial" groups=["Item"]]
+[node name="md_itm_sign_lc_cutter_wooden_sign" type="Spatial"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1.71725, 0, 0, 0, 1.71725, 0, 0, 0, 1, 0, 0, 0 )

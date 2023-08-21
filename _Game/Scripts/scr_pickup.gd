@@ -79,6 +79,7 @@ func pickup_body_entered(body):
 	# For dealing with collisions with devices in the future
 	if parent.is_in_group("Device"):
 		HUD.append_debugtext(self.name + " collided with " + parent.interactable.name)
+		
 	# For dealing with collisions with static interactable items
 	elif parent.is_in_group("Item"):
 		HUD.append_debugtext(self.name + " collided with " + parent.interactable.name)
