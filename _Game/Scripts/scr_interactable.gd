@@ -79,7 +79,7 @@ func enter_focus():
 	hover_text.visible = true
 	
 	crosshair.show_tooltip(tr("TOOLTIP_INTERACT"))
-	HUD.append_debugtext("Mouse on " + self.name)
+	#HUD.append_debugtext("Mouse on " + self.name)
 	
 	if self.is_in_group("Device"):
 		play_animation()
@@ -100,7 +100,7 @@ func exit_focus():
 func _input(_event):
 	if in_focus:
 		if Input.is_action_just_pressed("mouse_click"):
-			HUD.append_debugtext("Interactable clicked")
+			HUD.append_debugtext(interactable.name + " clicked")
 			# initialize menu with interactable's information
 			menu.init(interactable)
 			# set in_focus false to prevent re-click when closing menu

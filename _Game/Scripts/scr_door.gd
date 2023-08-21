@@ -34,7 +34,7 @@ func _ready():
 	
 func enter_focus():
 	in_focus = true
-	HUD.append_debugtext("Mouse on " + self.name)
+	#HUD.append_debugtext("Mouse on " + self.name)
 	if $AnimationPlayer.current_animation == "01_open_door":
 		hover_text.visible = false
 	else:

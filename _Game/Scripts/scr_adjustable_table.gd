@@ -14,7 +14,7 @@ func _ready():
 	
 func enter_focus():
 	in_focus = true
-	HUD.append_debugtext("Mouse on " + self.name)
+	#HUD.append_debugtext("Mouse on " + self.name)
 	
 func exit_focus():
 	in_focus = false

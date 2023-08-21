@@ -33,7 +33,7 @@ func _ready():
 
 func enter_focus():
 	in_focus = true
-	HUD.append_debugtext("Mouse on pickup object " + self.name)
+	#HUD.append_debugtext("Mouse on pickup object " + self.name)
 	
 func exit_focus():
 	in_focus = false
@@ -75,12 +75,13 @@ func pickup_body_entered(body):
 	if body.is_in_group("Mover"):
 		HUD.append_debugtext(self.name + " collided with a Mover, can_sleep = false")
 		self.can_sleep = false
+		
 	# For dealing with collisions with devices in the future
-	elif parent.is_in_group("Device"):
-		HUD.append_debugtext(self.name + " collided with " + tr(parent.interactable.name))
+	if parent.is_in_group("Device"):
+		HUD.append_debugtext(self.name + " collided with " + parent.interactable.name)
 	# For dealing with collisions with static interactable items
 	elif parent.is_in_group("Item"):
-		HUD.append_debugtext(self.name + " collided with " + tr(parent.interactable.name))
+		HUD.append_debugtext(self.name + " collided with " + parent.interactable.name)
 
 # When exiting a Mover, turn ability to sleep back on
 func pickup_body_exited(body):
