@@ -57,17 +57,19 @@ func _input(_event):
 			crosshair.clear_tooltip()
 
 		if Input.is_action_just_pressed("mouse_click") && !door_moving:
-			if door_open == false:
-				$AnimationPlayer.play("01_open_door")
-				door_moving = true
-				hover_text.visible = false
-				door_open = true;
-			else:
-				$AnimationPlayer.play_backwards("01_open_door")	
-				door_moving = true
-				hover_text.visible = false			
-				door_open = false;
-			#in_focus = false
+			open_close_door()
+	
+func open_close_door():
+	if door_open == false:
+		$AnimationPlayer.play("01_open_door")
+		door_moving = true
+		hover_text.visible = false
+		door_open = true;
+	else:
+		$AnimationPlayer.play_backwards("01_open_door")	
+		door_moving = true
+		hover_text.visible = false			
+		door_open = false;
 	
 func set_hover_text():
 	hover_text_position = get_node_or_null("HoverTextPosition")

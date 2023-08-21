@@ -172,7 +172,7 @@ transform = Transform( 0.92868, 0, -0.370882, 0, 1, 0, 0.370882, 0, 0.92868, 2.4
 transform = Transform( 0.856853, 0, -0.515562, -0.149694, 0.95692, -0.248788, 0.493351, 0.290352, 0.819939, 4.59137, 0.551284, -5.69659 )
 
 [node name="mdl_pillow_square_black_rigidbody" parent="stg_fablab" instance=ExtResource( 61 )]
-transform = Transform( 0.980318, -0.16026, 0.1153, 0.159163, 0.987075, 0.0187199, -0.116809, 0, 0.993154, 3.49332, 0.602051, -5.84906 )
+transform = Transform( 0.980318, -0.16026, 0.1153, 0.159163, 0.987075, 0.0187199, -0.116809, 0, 0.993154, 3.49332, 0.526718, -5.84906 )
 
 [node name="mdl_pillow_square_black_rigidbody2" parent="stg_fablab" instance=ExtResource( 61 )]
 transform = Transform( 0.968952, -0.243432, 0.0432995, 0.0985522, 0.219635, -0.970592, 0.226763, 0.944723, 0.236806, 7.63958, 0.66124, -5.95896 )
@@ -181,19 +181,19 @@ transform = Transform( 0.968952, -0.243432, 0.0432995, 0.0985522, 0.219635, -0.9
 transform = Transform( 0.7026, 0, -0.711585, 0, 1, 0, 0.711585, 0, 0.7026, 5.21387, 0.566001, -5.5986 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody2" parent="stg_fablab" instance=ExtResource( 60 )]
-transform = Transform( 0.710908, 0.407113, 0.573471, -0.220907, 0.90341, -0.367492, -0.66769, 0.134569, 0.732176, 7.02034, 0.666152, -5.68875 )
+transform = Transform( 0.752307, 0.190772, 0.630587, -0.0969692, 0.978796, -0.18043, -0.651637, 0.0745913, 0.754855, 7.02034, 0.494682, -5.68875 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody3" parent="stg_fablab" instance=ExtResource( 60 )]
-transform = Transform( 0.997164, 0, -0.0752572, -0.0752519, -0.0118679, -0.997094, -0.000893142, 0.99993, -0.0118343, 2.88696, 0.658064, -5.99905 )
+transform = Transform( 0.997164, 0, -0.0752572, -0.0752519, -0.0118679, -0.997094, -0.000893142, 0.99993, -0.0118343, 2.88696, 0.622048, -5.99905 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody4" parent="stg_fablab" instance=ExtResource( 60 )]
-transform = Transform( 0.964364, 0, 0.26458, 0.199878, 0.655202, -0.728532, -0.173353, 0.755453, 0.631854, 4.05957, 0.634151, -5.93311 )
+transform = Transform( 0.964364, 0, 0.26458, 0.199878, 0.655202, -0.728532, -0.173353, 0.755453, 0.631854, 4.05957, 0.624858, -5.93311 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody5" parent="stg_fablab" instance=ExtResource( 60 )]
-transform = Transform( 0.988829, -0.0473295, -0.141338, 0, 0.948246, -0.317536, 0.149052, 0.313989, 0.937654, 6.59625, 0.564195, -5.90458 )
+transform = Transform( 0.988829, -0.0473295, -0.141338, 0, 0.948246, -0.317536, 0.149052, 0.313989, 0.937654, 6.59625, 0.53808, -5.90458 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody6" parent="stg_fablab" instance=ExtResource( 60 )]
-transform = Transform( 0.889648, 0, 0.456648, 0.214355, 0.88298, -0.417609, -0.403211, 0.46941, 0.785541, 2.2975, 0.841157, -5.74833 )
+transform = Transform( 0.889648, 0, 0.456648, 0.214355, 0.88298, -0.417609, -0.403211, 0.46941, 0.785541, 2.2975, 0.726699, -5.74833 )
 
 [node name="mdl_pillow_multicolor_A_rigidbody7" parent="stg_fablab" instance=ExtResource( 60 )]
 transform = Transform( 0.930794, 0, 0.365543, 0, 1, 0, -0.365543, 0, 0.930794, 4.79268, 0.675372, -5.83325 )
