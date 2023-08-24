@@ -18,7 +18,7 @@ surfaces/0 = {
 }
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.579855, 0.0500759, 1.45838 )
+extents = Vector3( 0.586889, 0.0500759, 1.48367 )
 
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.04, 0.45, 0.04 )
@@ -34,7 +34,7 @@ skeleton = NodePath("../..")
 material/0 = ExtResource( 1 )
 
 [node name="TableSurface" type="CollisionShape" parent="StaticBody" index="1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00477773, 0.859804, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00477773, 0.859804, 0.00901282 )
 shape = SubResource( 2 )
 
 [node name="Leg1" type="CollisionShape" parent="StaticBody" index="2"]

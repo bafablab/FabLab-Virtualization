@@ -503,16 +503,11 @@ flags = 4
 image = SubResource( 260 )
 size = Vector2( 16, 16 )
 
-[sub_resource type="StyleBoxFlat" id=184]
-bg_color = Color( 0.176471, 0.176471, 0.176471, 0 )
-border_color = Color( 1, 1, 1, 1 )
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
+[sub_resource type="StyleBoxFlat" id=261]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
 [sub_resource type="StyleBoxFlat" id=236]
-bg_color = Color( 0.901961, 0, 0.0156863, 1 )
+bg_color = Color( 0.176471, 0.176471, 0.176471, 1 )
 border_color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="StyleBoxFlat" id=237]
@@ -627,7 +622,7 @@ TabContainer/icons/increment = SubResource( 66 )
 TabContainer/icons/increment_highlight = SubResource( 68 )
 TabContainer/icons/menu = SubResource( 70 )
 TabContainer/icons/menu_highlight = SubResource( 72 )
-TabContainer/styles/panel = SubResource( 184 )
+TabContainer/styles/panel = SubResource( 261 )
 TabContainer/styles/tab_bg = SubResource( 236 )
 TabContainer/styles/tab_disabled = null
 TabContainer/styles/tab_fg = SubResource( 237 )
