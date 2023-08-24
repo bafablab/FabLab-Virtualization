@@ -2,20 +2,19 @@ extends Control
 
 export (String) var label_str
 onready var menu_window = $VBoxContainer
-onready var tab_container = $VBoxContainer/TabContainer
 #onready var item_name_label = $VBoxContainer/Panel/NameLabel
-onready var info_text = $VBoxContainer/TabContainer/Panel/InfoText
+onready var info_text = $VBoxContainer/Panel/InfoText
 onready var device_info_menu = get_node("/root/FabLab/UI_DeviceInfoMenu")
 var item
 var inFocus
 var wasCalledFromDeviceMenu = false
-onready var item_3d_view = $VBoxContainer/TabContainer/Panel/Item3DView
+onready var item_3d_view = $VBoxContainer/Panel/Item3DView
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 
 # warning-ignore:return_value_discarded
-	$VBoxContainer/TabContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
+	$VBoxContainer/Panel/InfoText.connect("meta_clicked", self, "_on_RichTextLabel_meta_clicked")
 	
 
 func init(itm):
@@ -40,7 +39,6 @@ func init(itm):
 
 func updatetexts():
 	if item != null:
-		tab_container.set_tab_title(0, "   " + tr("ITEM_INFO_TITLE") + "   ")
 		# tr() is used when godot doesn't automatically detect translatable text
 		info_text.bbcode_text = "[b]" + tr(item.name) + "[/b]\n\n" + tr(item.info_text)
 
