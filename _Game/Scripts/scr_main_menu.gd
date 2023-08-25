@@ -83,7 +83,7 @@ func _on_ExitButton_pressed():
 		JavaScript.eval('document.getElementById("canvas").remove();') # removes the game canvas from the HTML file so that a halted game is not shown
 	get_tree().quit()
 
-# Pressing escape pauses the game and shows the main menu
+
 func _input(_event):
 	if self.visible:
 		if Input.is_action_just_pressed("ui_right"):
@@ -105,9 +105,14 @@ func _input(_event):
 		# Quit on gamepad by pressing select
 		if Input.is_action_just_pressed("ui_select_button"):
 			_on_ExitButton_pressed()
-		
+			
+	# Pressing escape pauses the game and shows the main menu
 	if Input.is_action_just_pressed("escape"):
 		if !self.visible:
 			pause_game()
 		else:
 			start_game()
+			
+	# Ctrl + F12 resets the game
+	if Input.is_action_just_pressed("reset_game"):
+		get_tree().reload_current_scene()
