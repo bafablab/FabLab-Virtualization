@@ -54,8 +54,8 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 • We don't stock a large and wide selection of materials, so even for slightly different or larger projects, you should be prepared to bring your own materials","• FabLab on digitaalisen pienvalmistuksen työtila, prototyyppipaja
 • Maailmanlaajuinen MIT:ssä kehitetty konsepti, arviolta jo 5000 labraa maailmalla
 • Tavoitteena tarjota mahdollisuudet tehdä ja valmistaa melkein mitä vain
-• FabLabissa luot omat suunnitelmat ja mallit, sekä käytät koneita ja laitteita itsenäisesti
-• FabLabin ohjaajat ovat paikalla avustamassa ja neuvomassa, mutteivät kuitenkaan tekemässä puolestasi
+• FabLabissa luot omat suunnitelmat ja mallit sekä käytät koneita ja laitteita itsenäisesti
+• FabLabin ohjaajat ovat paikalla avustamassa ja neuvomassa, eivät tekemässä puolestasi
 • FabLabin käyttö on maksutonta. Myös materiaalien käyttö testaukseen, protoiluun ja harrastamiseen on maksutonta, kohtuuden rajoissa
 • Emme varastoi isoa ja laajaa materiaalivalikoimaa joten hiemankin erilaisemmissa tai isommissa projekteissa kannattaa varautua tuomaan omat materiaalit","FabLab intro SWE"
 "INFO_NAME_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
@@ -81,28 +81,28 @@ Fab labs are available as a community resource, offering open access for individ
 Designs and processes developed in fab labs can be protected and sold however an inventor chooses, but should remain available for individuals to use and learn from.
 
 [b]How can businesses use a fab lab?[/b]
-Commercial activities can be prototyped and incubated in a fab lab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success.","[b]Mikä on fab lab?[/b]
-Fab labit ovat maailmanlaajuinen verkosto paikallisia labroja, jotka mahdollistavat keksintöjen keksimisen tarjoamalla pääsyn digitaalisen valmistuksen työkaluihin.
+Commercial activities can be prototyped and incubated in a fab lab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success.","[b]Mikä on FabLab?[/b]
+FabLabit ovat maailmanlaajuinen verkosto paikallisia labroja, jotka mahdollistavat keksintöjen keksimisen tarjoamalla pääsyn digitaalisen valmistuksen työkaluihin.
 
-[b]Mitä fab labissa on?[/b]
-Fab labit jakavat jatkuvasti kehittyvän kokoelman resursseja, joilla voi valmistaa (melkein) mitä tahansa, mikä mahdollistaa ihmisten tietotaidon ja projektien jaon.
+[b]Mitä FabLabissa on?[/b]
+Fab labit jakavat jatkuvasti kehittyvän kokoelman resursseja, joilla voi valmistaa (melkein) mitä tahansa sellaista, joka mahdollistaa ihmisten tietotaidon ja projektien jaon.
 
-[b]Mitä fab labien verkosto tarjoaa?[/b]
-Toiminnallista, koulutuksellista, teknistä, taloudellista ja logistista apua yli sen, mitä yksittäinen laboratorio voi tarjota.
+[b]Mitä FabLabien verkosto tarjoaa?[/b]
+FabLabien verkosto tarjoaa toiminnallista, koulutuksellista, teknistä, taloudellista ja logistista apua yli sen, mitä yksittäinen laboratorio voi tarjota.
 
-[b]Kuka voi käyttää fab labia?[/b]
-Fab labit ovat yhteisöllinen resurssi, antaen avoimen pääsyn yksilöille sekä pääsyn yhteisöille ajanvarauksella.
+[b]Kuka voi käyttää FabLabia?[/b]
+FabLabit ovat yhteisöllinen resurssi, antaen avoimen pääsyn jokaiselle ajanvarauksella.
 
-[b]Mitkä ovat fab labin käyttäjän vastuut?[/b]
-[i]Turvallisuus:[/i] älä satuta ihmisiä tai koneita
+[b]Mitkä ovat FabLabin käyttäjän vastuut?[/b]
+[i]Turvallisuus:[/i] varo vahingoittamasta ihmisiä tai koneita
 [i]Toiminta:[/i] auta labran siivouksessa, ylläpidossa ja kehityksessä
 [i]Tieto:[/i] osallistu dokumentaatioon ja ohjaukseen
 
-[b]Kuka omistaa fab labissa kehitetyt keksinnöt?[/b]
-Fab labeissa kehitetyt mallit ja prosessit voidaan suojata ja myydä keksijän valinnan mukaan, mutta niiden tulee olla yksilöiden käytettävissä ja opittavissa.
+[b]Kuka omistaa FabLabissa kehitetyt keksinnöt?[/b]
+Fab labeissa kehitetyt mallit ja prosessit voidaan suojata ja myydä keksijän valinnan mukaan, mutta niiden tulee olla jokaisen käytettävissä ja opittavissa.
 
-[b]Kuinka yritykset voivat käyttää fab labia?[/b]
-Kaupallisia toimintoja voidaan prototypoida ja kehittää fab labissa, mutta ne eivät saa olla ristiriidassa muiden käyttötarkoitusten kanssa. Niiden tulisi kasvaa ulos labrasta, ja niiden odotetaan hyödyttävän keksijöitä, labroja ja verkostoja jotka edistivät niiden menestystä.","Fablab Charter SWE"
+[b]Kuinka yritykset voivat käyttää FabLabia?[/b]
+Kaupallisia toimintoja voidaan prototypoida ja kehittää FabLabissa, mutta ne eivät saa olla ristiriidassa muiden käyttötarkoitusten kanssa. Keksintöjen odotetaan hyödyttävän keksijöiden lisäksi niiden menestystä edistäviä labroja ja verkostoja.","Fablab Charter SWE"
 "INFO_NAME_VACUUM","Exhaust tube","Poistoimuputki","Exhaust tube SWE"
 "INFO_HEADER_VACUUM","Exhaust tube","Poistoimuputki","Exhaust tube SWE"
 "INFO_TEXT_VACUUM","Soldering causes fumes that have to be extracted safely.","Juottamisesta syntyy haitallisia kaasuja, jotka pitää imeä turvallisesti pois.","Exhaust tube text SWE"
@@ -277,7 +277,7 @@ The object is designed with a 3d modeling program, converted ([i]sliced[/i]) int
 
 A 3D resin printer uses light from an LCD display to cure liquid resin layer by layer in a process called [url=https://en.wikipedia.org/wiki/Stereolithography]stereolithography[/url]. Resin prints are very highly detailed, but the printing area is usually quite small and the printing time long. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
 "DEV_DETAILS_ELEGOO","1 machine available
@@ -299,9 +299,9 @@ The object is designed with a 3d modeling program, converted ([i]sliced[/i]) int
 
 A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
-Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
+Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla, kuten nyloneilla ja hiilikuidulla, tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
 "DEV_DETAILS_ENDER","3 printers available
 
 [b]Printing material:[/b] biodegradable PLA
@@ -365,7 +365,7 @@ The object is designed with a 3d modeling program, converted [i](sliced)[/i] int
 
 A resin printer uses light from an LCD display to cure UV-active liquid resin layer by layer in a process called [url=https://en.wikipedia.org/wiki/Stereolithography]stereolithography[/url]. The resulting print is highly detailed, but the print time is usually longer than with filament depositing 3D-printers. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
 3D-hartsitulostimet toimivat valottamalla kerros kerrallaan nestemäistä UV-kovettuvaa hartsia LCD-kennon avulla. Prosessi tunnetaan nimellä [url=https://en.wikipedia.org/wiki/Stereolithography]stereolitografia[/url]. Hartsitulosteet voivat olla erittäin yksityiskohtaisia, mutta tulostusala on yleensä pieni ja tulostusaika pitkä. Hartsitulosteet pitää myös pestä ja kovettaa tulostuksen jälkeen.","3D Resin printer desc"
 "DEV_DETAILS_PHROZEN_SONIC","One printer available
@@ -385,7 +385,7 @@ Designing of the workpiece begins in ordinary CAD/3D software, after which the m
 
 A CNC router can be used to make all kinds of molds, parts, architectural models, even art.","CNC- eli tietokoneohjatulla jyrsimellä voidaan työstää nopeasti ja tarkasti puuta ja muovia.
 
-Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, jonka jälkeen 3D-mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
+Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, minkä jälkeen 3D-mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
 
 CNC-jyrsimellä voi tehdä erilaisia muotteja, osia, arkkitehtuurisia malleja, jopa taidetta.","CNC mill desc SWE"
 "DEV_DETAILS_RENSI","[b]Machining area:[/b] 900×700 mm
@@ -397,9 +397,9 @@ Designing of the workpiece begins in ordinary CAD/3D software, after which the m
 
 The precision CNC router is suitable for smaller and more precise engraving and milling works. For example, casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","CNC- eli tietokoneohjatulla jyrsimellä voidaan jyrsiä ja kaivertaa esimerkiksi muovia, puuta ja piirilevyaihioita.
 
-Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, jonka jälkeen tehdystä mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
+Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, minkä jälkeen tehdystä mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
 
-Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin töihin. Esimerkkinä valumuotit, pienet korkokuvataulut, piirilevyt, muovioptiikka yms.","cnc desc SWE"
+Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin töihin. Esimerkkinä valumuotit, pienet korkokuvataulut, piirilevyt, muovioptiikka, yms.","cnc desc SWE"
 "DEV_DETAILS_ROLAND_SRM","[b]Machining area:[/b] 232x156 mm
 [b]Operation strokes:[/b] 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
 [b]Mills available:[/b] 0.25mm, 0.4mm, 0.8mm, 1mm and 0.2-0.5mm V-shape
@@ -463,9 +463,9 @@ The object is designed with a 3d modeling program, converted [i](sliced)[/i] int
 
 A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
-Esine suunnitellaan tietokoneella, jonka jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
+Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
-Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla kuten nyloneilla ja hiilikuidulla tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
+Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulostuspään läpi ja syöttää sen tulostusalustalle kerros kerrallaan. Filamenttitulostimet ovat edullisia, helppoja ottaa käyttöön ja oppia käyttämään. Eksoottisemmilla tulostusmateriaaleilla, kuten nyloneilla ja hiilikuidulla, tulosteet voivat olla erittäin kestäviä ja siten soveltua jopa teollisuuskäyttöön.","3D Printer desc"
 "DEV_DETAILS_SINDOH","3 printers available
 
 [b]Printing material:[/b] biodegradable PLA-plastic, ABS-plastic
@@ -485,7 +485,7 @@ You can come to the FabLab with a ready-made plan, or just to get to know the po
 
 FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja, kuten grafiikka- ja 3D-mallinnusohjelmia.
 
-Voit tulla FabLabille joko valmiin suunnitelman kanssa, tai vain tutustumaan FabLabin tarjoamiin mahdollisuuksiin.",""
+Voit tulla FabLabille joko valmiin suunnitelman kanssa tai vain tutustumaan FabLabin tarjoamiin mahdollisuuksiin.",""
 "DEV_DETAILS_COMPUTER","[b]Hardware:[/b]
 
 [b]Processor:[/b] Intel Xeon 3.7 Ghz
