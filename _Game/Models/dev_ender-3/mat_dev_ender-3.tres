@@ -1,0 +1,9 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://_Game/Models/dev_ender-3/txt_dev_ender-3_dif_2048.png" type="Texture" id=1]
+
+[resource]
+flags_unshaded = true
+flags_disable_ambient_light = true
+params_specular_mode = 4
+albedo_texture = ExtResource( 1 )
