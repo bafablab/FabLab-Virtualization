@@ -75,10 +75,10 @@ text = "Example products:"
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 160.0
-margin_top = -95.0
+margin_top = -91.0
 margin_right = 200.0
-margin_bottom = -55.0
-rect_min_size = Vector2( 40, 40 )
+margin_bottom = -61.0
+rect_min_size = Vector2( 30, 30 )
 
 [node name="CloseButton" type="Button" parent="VBoxContainer/TabContainer/Panel"]
 anchor_left = 0.5

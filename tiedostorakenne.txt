@@ -5,7 +5,6 @@ Projektin tiedostorakenne
 FabLab-Virtualization		Projektin juuri, sisältää Godot-projektitiedoston (project.godot) ja nämä ohje- ja suunnitelmatekstit.
 |-addons					Godotin lisäosat, ei tällä hetkellä käytössä.
 |-localization				Pelin tekstistringit, translations.csv. Katso täältä howtouse.txt jos haluat muokata pelin tekstejä.
-|-test						Nimensä mukaisesti testailua varten.
 |-_Game
   |-Environment				env_fablab.tres sisältää pelin globaalit ympäristöasetukset, esim. yleisvalaistus, renderöintiasetuksia jne.
   |-Images					Pelissä käytettävät kuvatiedostot laitetaan tänne.
