@@ -17,14 +17,13 @@
 "TOOLTIP_OPEN_DOOR","Open door","Avaa ovi","Öppna dörren"
 "TOOLTIP_CLOSE_DOOR","Close door","Sulje ovi","Stäng dörren"
 "WELCOME_HEADER","Welcome!","Tervetuloa!","Välkommen!"
-"WELCOME_TEXT","You have arrived to BusinessAsema Oulu’s virtual FabLab.
+"WELCOME_TEXT","You have arrived at BusinessAsema Oulu’s virtual FabLab.
 
-FabLab is a workspace for small-scale digital manufacturing, where you can make and produce almost anything! You can use FabLab's facilities and equipment free of charge. The personnel at FabLab guides you on how to use the different devices, but the actual making and manufacturing is done by yourself.
+FabLab is a workspace for small-scale digital manufacturing, where you can make and produce almost anything! You can use FabLab's facilities and equipment free of charge. The personnel at FabLab guides you on how to use the different devices, but you will do the actual making and manufacturing independently.
 
-BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) Monday to Friday from 9 AM to 4 PM. Reservation information and possible exceptions to opening hours can be found from [url=https://businessasema.com/en/fablab/]FabLab's website[/url].
+BusinessAsema FabLab is located at Hallituskatu 36, Oulu. FabLab is open (reservation needed) Monday to Friday from 9 AM to 4 PM. Booking information and possible exceptions to opening hours can be found at [url=https://businessasema.com/en/fablab/]FabLab's website[/url].
 
-
-Move in this virtual environment with the WASD-keys and the mouse. Feel free to click on the different devices to learn what they are, and what you can do with them.","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
+Move around in this virtual environment with the WASD keys and the mouse. Feel free to click on the different devices to learn what they are and what you can do with them.","Olet saapunut Oulun BusinessAseman FabLabin virtuaalimalliin.
 
 FabLab on digitaalisen pienvalmistuksen työtila, joka tarjoaa mahdollisuudet tehdä ja valmistaa melkein mitä vain! Voit käyttää FabLabin tiloja ja laitteita maksutta. FabLabin henkilökunta opastaa laitteiden käytössä, mutta varsinaisen valmistuksen hoidat itsenäisesti.
 
@@ -45,43 +44,43 @@ Rör dig i miljön med WASD-tangenterna och musen. Klicka gärna på de olika en
 "DEV_MENU_VIDEOS","Videos","Videot","Videoklipp"
 "INFO_NAME_FABLAB_INTRO","What is a FabLab?","Mikä FabLab on?","Vad är en FabLab?"
 "INFO_HEADER_FABLAB_INTRO","FabLab","FabLab","FabLab"
-"INFO_TEXT_FABLAB_INTRO","• A FabLab is a small-scale digital manufacturing workspace, a prototype workshop
+"INFO_TEXT_FABLAB_INTRO","• A FabLab is a small-scale digital manufacturing workspace and prototype workshop
 • A global concept developed at MIT, there are an estimated 5,000 labs worldwide
 • The goal is to offer opportunities to make and produce almost anything
-• In the FabLab, you create your own plans and models, and you use machines and equipment independently
-• FabLab instructors are there to help and advise, but not to do it for you
+• In the FabLab, you create your own designs and models, using machines and equipment independently
+• FabLab instructors are there to help and advise, but not to do the work for you
 • The FabLab is free to use. The use of materials for testing, prototyping and hobbies is also free of charge, within reasonable limits
-• We don't stock a large and wide selection of materials, so even for slightly different or larger projects, you should be prepared to bring your own materials","• FabLab on digitaalisen pienvalmistuksen työtila, prototyyppipaja
+• We do not stock a large and wide selection of materials at the FabLab, so even for slightly more special or larger projects, you should be prepared to bring your own materials","• FabLab on digitaalisen pienvalmistuksen työtila, prototyyppipaja
 • Maailmanlaajuinen MIT:ssä kehitetty konsepti, arviolta jo 5000 labraa maailmalla
 • Tavoitteena tarjota mahdollisuudet tehdä ja valmistaa melkein mitä vain
 • FabLabissa luot omat suunnitelmat ja mallit sekä käytät koneita ja laitteita itsenäisesti
 • FabLabin ohjaajat ovat paikalla avustamassa ja neuvomassa, eivät tekemässä puolestasi
 • FabLabin käyttö on maksutonta. Myös materiaalien käyttö testaukseen, protoiluun ja harrastamiseen on maksutonta, kohtuuden rajoissa
 • Emme varastoi isoa ja laajaa materiaalivalikoimaa joten hiemankin erilaisemmissa tai isommissa projekteissa kannattaa varautua tuomaan omat materiaalit","FabLab intro SWE"
-"INFO_NAME_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
-"INFO_HEADER_FAB_CHARTER","The Fab Charter","Fablabin periaatteet","The Fab Charter"
-"INFO_TEXT_FAB_CHARTER","[b]What is a fab lab?[/b]
+"INFO_NAME_FAB_CHARTER","The Fab Charter","FabLabin periaatteet","The Fab Charter"
+"INFO_HEADER_FAB_CHARTER","The Fab Charter","FabLabin periaatteet","The Fab Charter"
+"INFO_TEXT_FAB_CHARTER","[b]What is a FabLab?[/b]
 Fab labs are a global network of local labs, enabling invention by providing access to tools for digital fabrication.
 
-[b]What's in a fab lab?[/b]
-Fab labs share an evolving inventory of core capabilities to make (almost) anything, allowing people and projects to be shared.
+[b]What's in a FabLab?[/b]
+FabLabs share an evolving inventory of core capabilities to make (almost) anything, allowing people and projects to be shared.
 
-[b]What does the fab lab network provide?[/b]
+[b]What does the FabLab network provide?[/b]
 Operational, educational, technical, financial, and logistical assistance beyond what's available within one lab.
 
-[b]Who can use a fab lab?[/b]
-Fab labs are available as a community resource, offering open access for individuals as well as scheduled access for programs.
+[b]Who can use a FabLab?[/b]
+FabLabs are available as a community resource, offering open access for individuals as well as scheduled access for programs.
 
 [b]What are your responsibilities?[/b]
 [i]Safety:[/i] not hurting people or machines
 [i]Operations:[/i] assisting with cleaning, maintaining, and improving the lab
 [i]Knowledge:[/i] contributing to documentation and instruction
 
-[b]Who owns fab lab inventions?[/b]
-Designs and processes developed in fab labs can be protected and sold however an inventor chooses, but should remain available for individuals to use and learn from.
+[b]Who owns FabLab inventions?[/b]
+Designs and processes developed in FabLabs can be protected and sold however an inventor chooses, but should remain available for individuals to use and learn from.
 
-[b]How can businesses use a fab lab?[/b]
-Commercial activities can be prototyped and incubated in a fab lab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success.","[b]Mikä on FabLab?[/b]
+[b]How can businesses use a FabLab?[/b]
+Commercial activities can be prototyped and incubated in a FabLab, but they must not conflict with other uses, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success.","[b]Mikä on FabLab?[/b]
 FabLabit ovat maailmanlaajuinen verkosto paikallisia labroja, jotka mahdollistavat keksintöjen keksimisen tarjoamalla pääsyn digitaalisen valmistuksen työkaluihin.
 
 [b]Mitä FabLabissa on?[/b]
@@ -273,7 +272,7 @@ Zoomaa oikealla napilla tai hiiren rullalla, keskinäppäin liikuttaa kappaletta
 • [url=https://www.siglent.eu/product/1140997/siglent-spd1168x-0-to-16v-0-to-8amp-single-output-power-supply]Siglent SPD1168X[/url]"
 "DEV_DESC_ELEGOO","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modelling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A 3D resin printer uses light from an LCD display to cure liquid resin layer by layer in a process called [url=https://en.wikipedia.org/wiki/Stereolithography]stereolithography[/url]. Resin prints are very highly detailed, but the printing area is usually quite small and the printing time long. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
@@ -295,9 +294,9 @@ Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan ([i]viipaloidaan
 "DEV_DETAILS_ELNA","Maximum stitch width 7 mm, maximum stitch length 5 mm.","Maksimi ommelleveys 7 mm, maksimi pistonpituus 5 mm.",""
 "DEV_DESC_ENDER","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modelling program, converted ([i]sliced[/i]) into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
-A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
+A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber, the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
 Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan ([i]viipaloidaan[/i]) tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
@@ -315,7 +314,7 @@ Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulo
 [b]Suositeltu tiedostomuoto:[/b] .STL",""
 "DEV_DESC_EPILOG","A laser cutter is a powerful tool that uses a laser beam to cut or engrave a variety of materials such as wood, acrylic, rubber, leather and felt.
 
-With it, its possible to cut complex shapes and edges very precisely and quickly, which makes it a popular tool for craft enthusiasts, advertising companies, industry, and for the production of prototypes and production pieces.","Laserleikkuri on tehokas työkalu, joka käyttää lasersädettä leikatakseen tai kaivertaakseen erilaisia materiaaleja, kuten puuta, akryylia, kumia, nahkaa ja huopaa.
+With the laser cutter, it is possible to cut complex shapes and edges very precisely and quickly, which makes it a popular tool for craft enthusiasts, advertising companies, industry, and for the production of prototypes and production pieces.","Laserleikkuri on tehokas työkalu, joka käyttää lasersädettä leikatakseen tai kaivertaakseen erilaisia materiaaleja, kuten puuta, akryylia, kumia, nahkaa ja huopaa.
 
 Sen avulla on mahdollista leikata tai kaivertaa monimutkaisia muotoja ja reunoja erittäin tarkasti ja nopeasti, mikä tekee siitä suositun työkalun esimerkiksi käsityöharrastajille, mainosalan yrityksille, teollisuuteen sekä prototyyppien ja tuotantokappaleiden valmistukseen.","Laser cutter desc"
 "DEV_DETAILS_EPILOG","Printing is done directly from Inkscape software.
@@ -361,7 +360,7 @@ Hiekkapuhaltamisessa ruiskutetaan kovalla paineella hienojakoista hiekkaa tai pi
 "DEV_DETAILS_PHROZEN_CURE","[b]Inner measurements:[/b] 29.5 x 29.5 x 45 cm","[b]Sisätilamitat:[/b] 29,5 x 29,5 x 45 cm","UV lamp details"
 "DEV_DESC_PHROZEN_SONIC","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modelling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
 A resin printer uses light from an LCD display to cure UV-active liquid resin layer by layer in a process called [url=https://en.wikipedia.org/wiki/Stereolithography]stereolithography[/url]. The resulting print is highly detailed, but the print time is usually longer than with filament depositing 3D-printers. The print also needs to be washed and cured after printing.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
@@ -379,9 +378,9 @@ Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan [i](viipaloidaan
 [b]Tulosteen maksimikoko:[/b] P33 x L18,5 x K40 cm
 [b]Kerrospaksuus:[/b] 0,01-0,30 mm
 [b]Suositeltu tiedostomuoto:[/b] .STL","Phrozen Sonic details"
-"DEV_DESC_RENSI","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from wood or plastic.
+"DEV_DESC_RENSI","With a CNC or Computer Numerical Control router, you can efficiently and precisely remove material from wood or plastic.
 
-Designing of the workpiece begins in ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in software. The router then moves its rotary cutting tool in along three axis based on these commands. This means the tool movements are very precise and repeatable.
+Designing of the workpiece begins on ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in the software. The router then moves its rotary cutting tool along three axes based on these commands. This means that the tool movements are very precise and repeatable.
 
 A CNC router can be used to make all kinds of molds, parts, architectural models, even art.","CNC- eli tietokoneohjatulla jyrsimellä voidaan työstää nopeasti ja tarkasti puuta ja muovia.
 
@@ -391,11 +390,11 @@ CNC-jyrsimellä voi tehdä erilaisia muotteja, osia, arkkitehtuurisia malleja, j
 "DEV_DETAILS_RENSI","[b]Machining area:[/b] 900×700 mm
 [b]Materials:[/b] Wood, plastic","[b]Työstöalue:[/b] 900×700 mm
 [b]Materiaalit:[/b] Puu, muovi","CNC details SWE"
-"DEV_DESC_ROLAND_SRM","With a CNC or Computer Numerical Control router you can efficiently and precisely remove material from, for example, plastic, wood and printed circuit boards.
+"DEV_DESC_ROLAND_SRM","With a CNC or Computer Numerical Control router, you can efficiently and precisely remove material from plastic, wood, and printed circuit boards, for example.
 
-Designing of the workpiece begins in ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in software. The router then moves its rotary cutting tool in along three axis based on these commands. This means the tool movements are very precise and repeatable.
+Designing of the workpiece begins on ordinary CAD/3D software, after which the model is turned into a series of commands for the CNC router in the software. The router then moves its rotary cutting tool along three axes based on these commands. This means that the tool movements are very precise and repeatable.
 
-The precision CNC router is suitable for smaller and more precise engraving and milling works. For example, casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","CNC- eli tietokoneohjatulla jyrsimellä voidaan jyrsiä ja kaivertaa esimerkiksi muovia, puuta ja piirilevyaihioita.
+The precision CNC router is suitable for smaller and more precise engraving and milling works, such as casting molds, small high-resolution picture boards, circuit boards, plastic optics, etc.","CNC- eli tietokoneohjatulla jyrsimellä voidaan jyrsiä ja kaivertaa esimerkiksi muovia, puuta ja piirilevyaihioita.
 
 Jyrsittävän kappaleen suunnittelu alkaa tavanomaisista CAD/3D-suunnitteluohjelmistoista, minkä jälkeen tehdystä mallista tehdään jyrsimelle työstökomentosarja ohjelmiston avulla. Jyrsin liikuttaa pyörivää jyrsintätyökaluaan kolmella akselilla näiden työstökäskyjen ohjaamana, jolloin työkalun liikeradat ovat erittäin tarkkoja ja samanlaisia joka kerta.
 
@@ -407,9 +406,9 @@ Tarkkuusjyrsin soveltuu pienempiin ja tarkempiin töihin. Esimerkkinä valumuoti
 [b]Liikeradat:[/b] 203.2 (X) x 152.4 (Y) x 60.5 (Z) mm
 [b]Saatavilla olevat terät:[/b] 0.25mm, 0.4mm, 0.8mm, 1mm ja 0.2-0.5mm V-malli
 [b]Työstettävät materiaalit:[/b] Vaha, puu, muovi, piirilevyaihiot","cnc details SWE"
-"DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With a heat transfer material you can make your own texts and shapes and transfer them to fabric.
+"DEV_DESC_ROLAND_CAMM","Using a vinyl cutter is an easy way to make stickers in almost any shape. With heat transfer material, you can make your own texts and shapes and transfer them to fabric.
 
-The sticker or print is designed in vector graphics software (such as Inkscape). The vinyl cutter then cuts the chosen design from the material precisely and quickly.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
+The sticker or print is designed on vector graphics software (such as Inkscape). The vinyl cutter then cuts the chosen design from the material precisely yet quickly.","Vinyylileikkurin avulla voi helposti leikata monimutkaisen mallisiakin tarroja. Lämpösiirtovinyyliä käyttämällä voi tehdä erilaisia painatuksia kankaaseen, esimerkiksi tekstin tai kuvion vaatteeseen tai muuhun tekstiiliin.
 
 Tarra tai painatus suunnitellaan tietokoneella vektorigrafiikkaohjelmalla (esim. Inkscape). Vinyylileikkuri leikkaa leikkuuterällään suunnittelemasi kuvion haluamastasi materiaalista tarkasti, mutta ripeästi.","Vinyl cutter desc SWE"
 "DEV_DETAILS_ROLAND_CAMM","Printing using either Roland Cut Studio or Inkscape software
@@ -433,11 +432,11 @@ Tunnistaa paikannusmerkinnät tulostetuissa materiaaleissa
 • Erivärisiä vinyylejä
 • Kuumasiirtovinyyli valkoinen/musta/punainen
 • Hiekkapuhallusmaski","Details Roland SWE"
-"DEV_DESC_SHINING3D","With this handheld scanner you can scan any three dimensional object, space or even people into a computer.
+"DEV_DESC_SHINING3D","With this handheld scanner, you can scan any three dimensional object, space or even people into a computer.
 
-With the help of its cameras and infrared lights the scanner creates an accurate 3D model of the subject. Thanks to its color camera the texture and colors of the subject are also captured.
+With the help of its cameras and infrared lights, the scanner creates an accurate 3D model of the subject. Thanks to its colour camera, the texture and colors of the subject are also captured.
 
-With a 3D-scanner and a 3D printer you can create a three-dimensional copy of almost anything fairly easily. 3D scanning also enables the use of life-accurate three-dimensional human characters in virtual reality and game development.","Tällä kädessä pidettävällä skannerilla voit skannata tietokoneelle mitä tahansa kolmiulotteisia esineitä, tiloja tai jopa ihmisiä.
+With a 3D-scanner and a 3D printer, you can create a three-dimensional copy of almost anything fairly easily. 3D scanning also enables the use of life-accurate three-dimensional human characters in virtual reality and game development.","Tällä kädessä pidettävällä skannerilla voit skannata tietokoneelle mitä tahansa kolmiulotteisia esineitä, tiloja tai jopa ihmisiä.
 
 Skanneri luo useiden kameroiden ja infrapunavalon avulla tarkan 3D-mallin skannattavasta kohteesta. Värikameran ansiosta myös kohteen pinnan tekstuuri ja väritys saadaan mukaan 3D-malliin.
 
@@ -459,9 +458,9 @@ Skanneri luo useiden kameroiden ja infrapunavalon avulla tarkan 3D-mallin skanna
 • Tukee useita datamuotolähtöjä (OBJ, STL, PLY, P3, 3MF), jotka ovat yhteensopivia erilaisten 3D-tulostimien ja 3D-suunnitteluohjelmistojen kanssa","Details Shining SWE"
 "DEV_DESC_SINDOH","With a 3D printer you can literally print real three-dimensional objects.
 
-The object is designed with a 3d modeling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
+The object is designed with a 3d modelling program, converted [i](sliced)[/i] into a printable form and transferred to the 3d printer. The printer then prints the object layer by layer. The print time varies depending on the size and complexity of the object, ranging from minutes to hours per print.
 
-A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
+A filament-type 3D printer works by melting a string of plastic called a filament through a hot printing head and depositing it on the build plate one layer after another. Filament printers are affordable and easy to set up and learn. With more exotic printing materials like nylons and carbon fiber, the prints can be very durable, suitable for industrial use.","3D-tulostimella voit kirjaimellisesti tulostaa kolmiulotteisia esineitä.
 
 Esine suunnitellaan tietokoneella, minkä jälkeen se muutetaan [i](viipaloidaan)[/i] tulostuskelpoiseen muotoon. Tämä tiedosto siirretään tulostimelle ja tulostin alkaa tulostamaan esinettä kerros kerrokselta. Esineen koosta ja rakenteesta riippuen tulostamisessa kestää minuuteista useisiin tunteihin.
 
@@ -479,9 +478,9 @@ Filamenttityyppinen 3D-tulostin sulattaa muovilankaa eli filamenttia kuuman tulo
 [b]Suositeltu tiedostomuoto:[/b] .STL",""
 "DEV_DESC_COMPUTER","Every FabLab project begins with designing it on the computer.
 
-FabLab has five computers available for designing. They have many types of software installed, such as graphics, 3D modeling and slicing software.
+FabLab has five computers available for designing. They have a wide range of software installed, such as graphics, 3D modelling and slicing software.
 
-You can come to the FabLab with a ready-made plan, or just to get to know the possibilities FabLab offers.","Jokainen FabLab-projekti alkaa suunnittelemalla se tietokoneella.
+You can come to the FabLab with a ready-made plan, or just to get to know the possibilities that the FabLab offers.","Jokainen FabLab-projekti alkaa suunnittelemalla se tietokoneella.
 
 FabLabin viidelle suunnittelutietokoneelle on asennettuna laaja valikoima ohjelmistoja, kuten grafiikka- ja 3D-mallinnusohjelmia.
 
@@ -496,7 +495,7 @@ Voit tulla FabLabille joko valmiin suunnitelman kanssa tai vain tutustumaan FabL
 [b]Installed software:[/b]
 
 [b]Graphics:[/b] Inkscape, Gimp, Paint.NET
-[b]3D Modeling and CAD:[/b] Blender, Autodesk Fusion360, Tinkercad, KiCad
+[b]3D Modelling and CAD:[/b] Blender, Autodesk Fusion360, Tinkercad, KiCad
 [b]3D printing slicers:[/b] 3DWOX Desktop, Ultimaker Cura, Chitubox
 [b]Development:[/b] Visual Studio, Unity, Arduino IDE, Atmel Studio","[b]Laitteisto:[/b]
 
