@@ -1,28 +1,49 @@
-How to edit translations CSV in LibreOffice Calc:
-
+----
+How to edit translations CSV in LibreOffice Calc (Excel seems to mess up the file, don't use that):
 -Import settings:
 --Character encoding UTF-8
 --Language doesn't matter, english or finnish is fine
 --Separator is comma/pilkku
 --IMPORTANT: Other options: Check the box about quote marks "Lainausmerkit muotoilevat tekstinä"
-
 -After saving from LibreOffice Calc you might want to check the CSV file in a text editor (Notepad++) to check that no mystery quote marks or anything else has broken the file
+----
+How to edit translations in a text editor:
+-It's a bit messy looking, but the format is quite simple and standard CSV.
 -The CSV file should look like this, note the type of quotes used:
+
 "DEV_DESC_INNOV","[b]Embroidering machine[/b] desc","[b]Brodeerauskone[/b] selite","Embroidering machine desc"
 "DEV_DESC_JUKI_MO","[b]Overlocker MO[/b] desc","[b]Saumuri MO[/b] selite","Overlocker MO desc"
 "DEV_DESC_JUKI_MSC","[b]Overlocker MSC[/b] desc","[b]Saumuri MSC[/b] selite","Overlocker MSC desc"
 "DEV_DESC_NOVA","[b]Sand blaster[/b] desc","[b]Hiekkapuhallin[/b] selite","Sand blaster desc"
 
+So:
 
+"STRING_KEY","english text","finnish text","swedish text"
+"STRING_KEY_2","english text","finnish text","swedish text"
+
+Just commas separating the fields and a newline after every line.
+
+Multiline texts are possible and common:
+
+"MULTILINE_STRING","english line 1
+english line 2","finnish line 1
+finnish line 2","swedish line 1
+swedish line 2"
+
+Obviously, don't use "-characters inside the strings.
+
+----
 About the strings themselves:
 -Current string key model is ALL_CAPS_WITH_UNDERSCORE
 -Supported languages are en, fi, sv
--Devices have DEV_NAME_ and DEV_DESC_, other items have ITEM_NAME_ and ITEM_DESC_, if more strings are needed, name them in a similar fashion
--UI strings are named NAME_OF_WINDOW_WHATSTRINGISIT, like MAIN_MENU_TITLE or DEV_MENU_INFO
+-Devices have DEV_NAME_, DEV_GENERIC_NAME_, DEV_DESC_, items have ITEM_NAME_ and ITEM_DESC_, genericinfos have INFO_NAME_, INFO_HEADER_, INFO_TEXT_
+-UI strings are named NAME_OF_WINDOW_WHATSTRINGISIT, like MAIN_MENU_TITLE or DEV_MENU_INFO, there are also general strings used everywhere, like BUTTON_CLOSE
 
+----
 Usage in Godot:
--Godot translation server should automatically translate keys when it sees them in attributes or in code, if not, you can use tr("NAME_OF_STRING") in scripts to force it
+-Godot translation server should automatically translate keys when it sees them in attributes or in code, if not, you can use tr("NAME_OF_STRING") in scripts to force it. This is needed in RichTextLabels, for example. You see tr() used in the scripts a lot because of this.
 
+----
 More:
 https://docs.godotengine.org/en/3.5/tutorials/i18n/internationalizing_games.html
 https://docs.godotengine.org/en/3.5/tutorials/assets_pipeline/importing_translations.html
