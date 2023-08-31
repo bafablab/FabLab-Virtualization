@@ -22,3 +22,6 @@ collision_layer = 17
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
 shape = SubResource( 1 )
+
+[node name="HoverTextPosition" type="Spatial" parent="." index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.131487, -0.0595223 )
