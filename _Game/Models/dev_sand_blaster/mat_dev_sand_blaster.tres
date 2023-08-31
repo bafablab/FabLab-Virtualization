@@ -1,6 +1,6 @@
 [gd_resource type="SpatialMaterial" load_steps=2 format=2]
 
-[ext_resource path="res://_Game/Models/dev_sand_blaster/txt_dev_sand_blaster.png" type="Texture" id=1]
+[ext_resource path="res://_Game/Models/dev_sand_blaster/txt_dev_sand_blaster_1024.png" type="Texture" id=1]
 
 [resource]
 flags_unshaded = true
