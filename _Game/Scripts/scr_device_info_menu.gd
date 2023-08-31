@@ -95,10 +95,11 @@ func _on_RichTextLabel_meta_clicked(meta):
 		JavaScript.eval('window.open("' + meta + '")') # open the link in a new window
 
 func create_example_items():
-	# clear the example item before adding current device's example items
+	# clear the example items before adding current device's example items
 	for button in item_list.get_children():
 		item_list.remove_child(button)
-
+	
+	# create buttons for each example item
 	for item in device.example_items:
 		var button = Button.new()
 		button.text = "   " + tr(item.name) + "   "

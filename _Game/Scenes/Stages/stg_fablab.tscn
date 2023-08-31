@@ -521,34 +521,30 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.0805,
 [node name="mdl_dev_ender-5" parent="stg_fablab" instance=ExtResource( 24 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.12037, 0.909593, -14.7833 )
 
-[node name="mdl_itm_ball_rigidbody" parent="." instance=ExtResource( 42 )]
+[node name="mdl_dev_air_sensor" parent="stg_fablab" instance=ExtResource( 86 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.262255, 1.65074, -11.9592 )
+
+[node name="mdl_itm_ball_rigidbody" parent="stg_fablab" instance=ExtResource( 42 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.30896, 0.214577, -12.3557 )
 
-[node name="mdl_mats_filament_roll_rigid" parent="." instance=ExtResource( 45 )]
+[node name="mdl_mats_filament_roll_rigid" parent="stg_fablab" instance=ExtResource( 45 )]
 transform = Transform( 0.0168067, 0.999859, 0, -0.999859, 0.0168067, 0, 0, 0, 1, 2.24702, 0.948778, -13.5893 )
 
-[node name="mdl_itm_polygon_owl_rigid" parent="." instance=ExtResource( 58 )]
+[node name="mdl_itm_polygon_owl_rigid" parent="stg_fablab" instance=ExtResource( 58 )]
 transform = Transform( -0.449303, 0, 0.893379, 0, 1, 0, -0.893379, 0, -0.449303, 2.171, 0.866979, -9.411 )
 
-[node name="mdl_mats_vinyl_roll_rigid" parent="." instance=ExtResource( 62 )]
+[node name="mdl_mats_vinyl_roll_rigid" parent="stg_fablab" instance=ExtResource( 62 )]
 transform = Transform( 0.750157, 0, -0.661259, 0, 1, 0, 0.661259, 0, 0.750157, 1.54729, 0.96066, -15.5101 )
 angular_damp = 3.0
 
-[node name="mdl_mats_filament_roll_rigid2" parent="." instance=ExtResource( 45 )]
+[node name="mdl_mats_filament_roll_rigid2" parent="stg_fablab" instance=ExtResource( 45 )]
 transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 2.60501, 0.79187, -8.89505 )
 
-[node name="mdl_mats_resin_bottle_rigidbody" parent="." instance=ExtResource( 71 )]
+[node name="mdl_mats_resin_bottle_rigidbody" parent="stg_fablab" instance=ExtResource( 71 )]
 transform = Transform( -0.790615, 0, -0.612314, 0, 1, 0, 0.612314, 0, -0.790615, 8.8457, 0.994628, -22.3875 )
 
-[node name="mdl_itm_ball_animated" parent="." instance=ExtResource( 39 )]
+[node name="mdl_itm_ball_animated" parent="stg_fablab" instance=ExtResource( 39 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72091, 1.10707, -2.37999 )
-
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6447, 1.10859, -5.16481 )
-far = 30.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
-
-[node name="mdl_dev_air_sensor" parent="." instance=ExtResource( 86 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.262255, 1.65074, -11.9592 )
