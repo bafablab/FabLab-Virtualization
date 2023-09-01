@@ -19,7 +19,7 @@ var always_run = false
 export var mouse_sensitivity = 0.06
 export var inverse_mouse = -1
 
-export var gamepad_enabled = false
+export var gamepad_enabled = false # not currently used, meant for a situation where a gamepad can be enabled/disabled from the main menu. Currently a gamepad always works if it's plugged in.
 export var joypad_sensitivity = 1.5 # how fast gamepad looking moves, bigger is faster
 
 onready var head = $Head
