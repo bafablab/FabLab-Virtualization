@@ -35,7 +35,7 @@ func init(itm):
 	
 	# Consumes the event so it is not triggered in other
 	# scripts. For example close the window immidiately.
-	#get_tree().get_root().set_input_as_handled()
+	get_tree().get_root().set_input_as_handled()
 
 func updatetexts():
 	if item != null:
