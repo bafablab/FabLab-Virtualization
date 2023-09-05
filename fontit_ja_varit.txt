@@ -1,9 +1,0 @@
-Fontit:
--Otsikoille yms.: OulunGraadi-Otsikko.otf
--Leipätekstit: Barlow-****.ttf
-
-Värit:
-Räikeä punainen, käytössä esim. BusinessAseman saitin otsikkopalkissa: #e60004
-Vaaleampi punainen: #cf2e2e
-Vielä vaaleampi punainen: #fe5d5f
-Keskiharmaa: #2d2d2d

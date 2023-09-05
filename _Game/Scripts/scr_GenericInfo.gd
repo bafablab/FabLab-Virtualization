@@ -1,6 +1,5 @@
 extends Resource
 
-
 class_name GenericInfo
 
 export(String) var name
