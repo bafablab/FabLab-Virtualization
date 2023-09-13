@@ -6,4 +6,4 @@ The user can interact with FabLab's devices, example products and a couple of ot
 
 This virtual model is meant to be used either as a HTML5 version, or as a native Windows/MacOS/Linux application. HTML5 and Windows builds are provided in releases.
 
-Virtual FabLab has been developed as a part of [BusinessOulu's](https://www.businessoulu.com/en/) EtäAsema-project.
+Virtual FabLab has been developed as a part of [BusinessOulu's](https://www.businessoulu.com/en/) [EtäAsema-project](https://www.businessoulu.com/fi/businessoulu/ohjelmat-ja-hankkeet/etaasema-hanke.html).
