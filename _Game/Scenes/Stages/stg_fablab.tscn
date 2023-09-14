@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=88 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_ender-3.tscn" type="PackedScene" id=24]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_sewing_mch_juki_mcs_1500.tscn" type="PackedScene" id=25]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_elna_experience_520_s.tscn" type="PackedScene" id=26]
+[ext_resource path="res://_Game/Scenes/Models/mdl_dev_cnc_milling_machine_rensi_reu900.tscn" type="PackedScene" id=27]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_shining3d_einstar.tscn" type="PackedScene" id=28]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_phrozen_cure_xl.tscn" type="PackedScene" id=29]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_innov_is_v3_ani.tscn" type="PackedScene" id=30]
@@ -547,6 +548,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.0527, 0.178232, -20.5901 )
 
 [node name="mdl_stg_obj_plastic_container_A3" parent="stg_fablab" instance=ExtResource( 16 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.57163, 0.178227, -23.4843 )
+
+[node name="dev_cnc_milling_machine_rensi_reu900" parent="stg_fablab" instance=ExtResource( 27 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.05619, 0.0263703, -19.8745 )
+
+[node name="mdl_stg_obj_plastic_container_A" parent="stg_fablab/dev_cnc_milling_machine_rensi_reu900" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.121876, 0.129918, -0.461251 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
