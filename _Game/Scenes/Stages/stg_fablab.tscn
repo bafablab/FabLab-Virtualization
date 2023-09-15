@@ -549,10 +549,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.0527, 0.178232, -20.5901 )
 [node name="mdl_stg_obj_plastic_container_A3" parent="stg_fablab" instance=ExtResource( 16 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.57163, 0.178227, -23.4843 )
 
-[node name="dev_cnc_milling_machine_rensi_reu900" parent="stg_fablab" instance=ExtResource( 27 )]
+[node name="mdl_dev_cnc_milling_machine_rensi_reu900" parent="stg_fablab" instance=ExtResource( 27 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.05619, 0.0263703, -19.8745 )
 
-[node name="mdl_stg_obj_plastic_container_A" parent="stg_fablab/dev_cnc_milling_machine_rensi_reu900" instance=ExtResource( 16 )]
+[node name="mdl_stg_obj_plastic_container_A" parent="stg_fablab/mdl_dev_cnc_milling_machine_rensi_reu900" instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.121876, 0.129918, -0.461251 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
