@@ -1,6 +1,8 @@
 [gd_resource type="SpatialMaterial" load_steps=2 format=2]
 
-[ext_resource path="res://_Game/Models/dev_cnc_milling_machine_rensi_reu900/Bake collection_COMBI.tga" type="Texture" id=1]
+[ext_resource path="res://_Game/Models/dev_cnc_milling_machine_rensi_reu900/txt_dev_cnc_milling_mch_dif_2048.png" type="Texture" id=1]
 
 [resource]
+flags_unshaded = true
+flags_disable_ambient_light = true
 albedo_texture = ExtResource( 1 )
