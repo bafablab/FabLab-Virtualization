@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/txt_fablab_hull_dif_baked.png-d8923ae22dec59ae821554eb0e6ee04b.stex"
+path="res://.import/txt_fablab_hull_dif_4096.png-ae5a79d5a4387cf848f1de70dc418ce3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_Game/Models/stg_fablab/Textures/txt_fablab_hull_dif_baked.png"
-dest_files=[ "res://.import/txt_fablab_hull_dif_baked.png-d8923ae22dec59ae821554eb0e6ee04b.stex" ]
+source_file="res://_Game/Models/stg_fablab/Textures/txt_fablab_hull_dif_4096.png"
+dest_files=[ "res://.import/txt_fablab_hull_dif_4096.png-ae5a79d5a4387cf848f1de70dc418ce3.stex" ]
 
 [params]
 
