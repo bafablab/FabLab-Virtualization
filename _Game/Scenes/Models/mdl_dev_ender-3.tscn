@@ -4,7 +4,7 @@
 [ext_resource path="res://_Game/Models/dev_ender-3/mdl_dev_ender-3.glb" type="PackedScene" id=2]
 [ext_resource path="res://_Game/Resources/dev_ender_3_v2.tres" type="Resource" id=3]
 [ext_resource path="res://_Game/Scripts/scr_interactable.gd" type="Script" id=4]
-[ext_resource path="res://_Game/Models/mats_filament_roll/mats_filament_roll_filament_roll.mesh" type="ArrayMesh" id=5]
+[ext_resource path="res://_Game/Models/mats_filament_roll/mats_filament_roll_mdl0.mesh" type="ArrayMesh" id=5]
 [ext_resource path="res://_Game/Models/dev_ender-3/Animation_edits/04_working.anim" type="Animation" id=6]
 
 [sub_resource type="BoxShape" id=1]
@@ -62,5 +62,5 @@ shape = SubResource( 4 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.697867, 0.163654 )
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="4"]
-transform = Transform( -4.80825e-09, 0, 0.11, 0, 0.11, 0, -0.11, 0, -4.80825e-09, -0.116366, 0.538787, -0.0478836 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.116366, 0.533093, -0.0478836 )
 mesh = ExtResource( 5 )
