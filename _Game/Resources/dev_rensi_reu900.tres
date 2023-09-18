@@ -9,4 +9,4 @@ generic_name = "DEV_GENERIC_NAME_CNCMILL"
 info_text = "DEV_DESC_RENSI"
 details_text = "DEV_DETAILS_RENSI"
 example_items = [  ]
-animationNames = [  ]
+animationNames = [ "04_working" ]
