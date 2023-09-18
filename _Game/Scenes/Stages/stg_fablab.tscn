@@ -259,7 +259,7 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.35911
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09117, 1.11064, -23.2477 )
 
 [node name="mdl_dev_shining3d_einstar" parent="stg_fablab" instance=ExtResource( 28 )]
-transform = Transform( -0.234633, 0, -0.972084, 0, 1, 0, 0.972084, 0, -0.234633, 2.72348, 0.784404, -9.3692 )
+transform = Transform( -0.941917, 0, -0.335846, 0, 1, 0, 0.335846, 0, -0.941917, 2.69671, 0.784404, -9.44428 )
 
 [node name="mdl_dev_phrozen_cure_xl" parent="stg_fablab" instance=ExtResource( 29 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.2028, 0.906104, -16.9902 )
