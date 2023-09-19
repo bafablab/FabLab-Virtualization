@@ -8,8 +8,8 @@
 bounce = 0.2
 
 [sub_resource type="CylinderShape" id=3]
-height = 0.00849195
-radius = 0.0114096
+height = 0.0712508
+radius = 0.0951096
 
 [node name="mdl_mats_filament_roll_rigid" type="RigidBody" groups=["Draggable"]]
 collision_layer = 33
@@ -22,7 +22,6 @@ angular_damp = 2.0
 script = ExtResource( 3 )
 
 [node name="mats_filament_roll" type="MeshInstance" parent="."]
-transform = Transform( 0.115257, 0, 0, 0, 0.115257, 0, 0, 0, 0.115257, 0, 0, 0 )
 mesh = ExtResource( 2 )
 skeleton = NodePath("../..")
 material/0 = ExtResource( 1 )
