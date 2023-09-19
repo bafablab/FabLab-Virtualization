@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://_Game/Models/mats_filament_roll/mats_filament_roll.tres" type="Material" id=1]
+[ext_resource path="res://_Game/Models/mats_filament_roll/mat_mats_filament_roll.tres" type="Material" id=1]
 [ext_resource path="res://_Game/Models/mats_filament_roll/mats_filament_roll_mdl0.mesh" type="ArrayMesh" id=2]
 [ext_resource path="res://_Game/Scripts/scr_pickup.gd" type="Script" id=3]
 
