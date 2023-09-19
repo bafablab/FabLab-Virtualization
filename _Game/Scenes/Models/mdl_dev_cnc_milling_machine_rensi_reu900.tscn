@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://_Game/Models/dev_cnc_milling_machine_rensi_reu900/dev_cnc_milling_machine_rensi_reu900.glb" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Models/dev_cnc_milling_machine_rensi_reu900/mat_dev_cnc_milling_machine_rensi_reu900.tres" type="Material" id=2]
@@ -21,10 +21,38 @@ extents = Vector3( 0.08987, 0.0642844, 0.12799 )
 extents = Vector3( 0.0924523, 0.238123, 0.0907022 )
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.409009, 0.348738, 0.586392 )
+extents = Vector3( 0.453978, 0.101033, 0.505738 )
 
 [sub_resource type="BoxShape" id=8]
 extents = Vector3( 0.603849, 0.15865, 0.0767659 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 0.100799, 0.244164, 0.467516 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 0.05, 0.35, 0.05 )
+
+[sub_resource type="BoxShape" id=11]
+extents = Vector3( 0.05, 0.35, 0.05 )
+
+[sub_resource type="BoxShape" id=12]
+extents = Vector3( 0.05, 0.35, 0.05 )
+
+[sub_resource type="BoxShape" id=13]
+extents = Vector3( 0.05, 0.35, 0.05 )
+
+[sub_resource type="BoxShape" id=14]
+extents = Vector3( 0.05, 0.05, 0.475 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 0.05, 0.05, 0.475 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 0.45, 0.05, 0.05 )
+
+[sub_resource type="CylinderShape" id=17]
+height = 0.074
+radius = 0.05
 
 [node name="mdl_dev_cnc_milling_machine_rensi_reu900" groups=["Device"] instance=ExtResource( 1 )]
 script = ExtResource( 3 )
@@ -73,6 +101,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.319858, 1.04615, 0.377694 )
 bone_name = "def_drill_unit"
 
 [node name="StaticBody" type="StaticBody" parent="Armature/Skeleton/BoneAttachment3" index="0"]
+collision_layer = 17
 
 [node name="CollisionShape" type="CollisionShape" parent="Armature/Skeleton/BoneAttachment3/StaticBody" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00177529, -0.0388894, -0.0811439 )
@@ -86,12 +115,60 @@ shape = SubResource( 7 )
 collision_layer = 17
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.439146, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.693514, 0 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="StaticBody" index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10102, -0.081065 )
 shape = SubResource( 8 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.547442, 0.326906, 0.00951368 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="StaticBody" index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.393994, 0.403059, 0.426866 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="StaticBody" index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.392152, 0.404164, -0.425122 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="StaticBody" index="5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.391282, 0.396354, 0.423887 )
+shape = SubResource( 12 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="StaticBody" index="6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.391792, 0.413846, -0.428531 )
+shape = SubResource( 13 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="StaticBody" index="7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.394455, 0.350422, 0 )
+shape = SubResource( 14 )
+
+[node name="CollisionShape9" type="CollisionShape" parent="StaticBody" index="8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.388786, 0.349951, 0 )
+shape = SubResource( 15 )
+
+[node name="CollisionShape10" type="CollisionShape" parent="StaticBody" index="9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0100326, 0.350012, 0 )
+shape = SubResource( 16 )
+
+[node name="CollisionShape11" type="CollisionShape" parent="StaticBody" index="10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.303, 0.036, 0.424 )
+shape = SubResource( 17 )
+
+[node name="CollisionShape12" type="CollisionShape" parent="StaticBody" index="11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302304, 0.036, 0.423941 )
+shape = SubResource( 17 )
+
+[node name="CollisionShape13" type="CollisionShape" parent="StaticBody" index="12"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30582, 0.036, -0.424942 )
+shape = SubResource( 17 )
+
+[node name="CollisionShape14" type="CollisionShape" parent="StaticBody" index="13"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.305968, 0.036, -0.427469 )
+shape = SubResource( 17 )
 
 [node name="HoverTextPosition" type="Spatial" parent="." index="3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39433, 0.249304 )
