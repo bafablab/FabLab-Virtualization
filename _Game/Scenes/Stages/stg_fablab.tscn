@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=2]
+[gd_scene load_steps=87 format=2]
 
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fl_obj_metal_shroud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_fablab.tscn" type="PackedScene" id=2]
@@ -39,7 +39,6 @@
 [ext_resource path="res://_Game/Scenes/Models/stg_fl_obj_poster_2x1_fabworldmap.tscn" type="PackedScene" id=37]
 [ext_resource path="res://_Game/Scenes/Models/mdl_dev_vinyl_cutter_skinned.tscn" type="PackedScene" id=38]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_ball_animated.tscn" type="PackedScene" id=39]
-[ext_resource path="res://_Game/Scenes/Models/mdl_door_simple.tscn" type="PackedScene" id=40]
 [ext_resource path="res://_Game/Scenes/Models/mdl_stg_obj_safe_cabinet.tscn" type="PackedScene" id=41]
 [ext_resource path="res://_Game/Scenes/Models/mdl_itm_ball_rigidbody.tscn" type="PackedScene" id=42]
 [ext_resource path="res://_Game/Scenes/UI/UI_HUD.tscn" type="PackedScene" id=43]
@@ -121,10 +120,6 @@ inverse_mouse = 1
 [node name="stg_fablab" parent="." instance=ExtResource( 2 )]
 
 [node name="mdl_stg_fl_door_fl_narrow_ani" parent="stg_fablab" instance=ExtResource( 53 )]
-
-[node name="mdl_door_simple2" parent="stg_fablab" instance=ExtResource( 40 )]
-transform = Transform( 1.22, 0, 0, 0, 1.02, 0, 0, 0, 1, 4.37509, -5.27096, -17.8218 )
-visible = false
 
 [node name="mdl_bar_stool_01" parent="stg_fablab" instance=ExtResource( 5 )]
 transform = Transform( 0.401837, 0, 0.915711, 0, 1, 0, -0.915711, 0, 0.401837, 1.26911, 0, -13.9639 )

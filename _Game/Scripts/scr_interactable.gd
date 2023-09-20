@@ -3,7 +3,7 @@ extends Spatial
 var overlay_material		# Shader to use when crosshair is on the interactable, not currently used
 export (Resource) var interactable
 # hover text label is a simple scene with only a label. It shows the name of the interactable
-export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_hover_text_label.tscn")
+export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_Hover_Text_Label.tscn")
 onready var collision_shape  = $StaticBody/CollisionShape
 onready var main_menu = get_node("/root/FabLab/UI_MainMenu")
 onready var HUD = get_node("/root/FabLab/HUD")

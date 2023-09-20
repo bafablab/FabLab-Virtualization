@@ -1,7 +1,7 @@
 extends Spatial
 
 
-export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_hover_text_label.tscn")
+export (PackedScene) var hover_text_scene = preload("res://_Game/Scenes/UI/UI_Hover_Text_Label.tscn")
 export(Resource) var interactable
 
 onready var HUD = get_node("/root/FabLab/HUD")
