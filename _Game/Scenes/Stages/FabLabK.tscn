@@ -1,0 +1,671 @@
+[gd_scene load_steps=102 format=2]
+
+[ext_resource path="res://_Game/Shared/Textures/CarpetFloor.png" type="Texture" id=1]
+[ext_resource path="res://_Game/Shared/Textures/CementWallGrey.png" type="Texture" id=5]
+
+[sub_resource type="CubeMesh" id=61]
+
+[sub_resource type="SpatialMaterial" id=192]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=62]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=59]
+
+[sub_resource type="SpatialMaterial" id=193]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=90]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=63]
+
+[sub_resource type="SpatialMaterial" id=194]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=64]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=41]
+
+[sub_resource type="SpatialMaterial" id=195]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=91]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=42]
+
+[sub_resource type="SpatialMaterial" id=196]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=92]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=44]
+
+[sub_resource type="SpatialMaterial" id=197]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=93]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=43]
+
+[sub_resource type="SpatialMaterial" id=198]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=94]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=45]
+
+[sub_resource type="SpatialMaterial" id=199]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=95]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=46]
+
+[sub_resource type="SpatialMaterial" id=200]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=96]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=47]
+
+[sub_resource type="SpatialMaterial" id=201]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=97]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=48]
+
+[sub_resource type="SpatialMaterial" id=202]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=98]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=49]
+
+[sub_resource type="SpatialMaterial" id=203]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=99]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=67]
+
+[sub_resource type="SpatialMaterial" id=191]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=100]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=50]
+
+[sub_resource type="SpatialMaterial" id=204]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=101]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=60]
+
+[sub_resource type="SpatialMaterial" id=205]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=102]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=51]
+
+[sub_resource type="SpatialMaterial" id=206]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=103]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=52]
+
+[sub_resource type="SpatialMaterial" id=207]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=104]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=53]
+
+[sub_resource type="SpatialMaterial" id=208]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=105]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=54]
+
+[sub_resource type="SpatialMaterial" id=209]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=106]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=55]
+
+[sub_resource type="SpatialMaterial" id=210]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=107]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=56]
+
+[sub_resource type="SpatialMaterial" id=211]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=108]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=57]
+
+[sub_resource type="SpatialMaterial" id=212]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=109]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=58]
+
+[sub_resource type="SpatialMaterial" id=213]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=110]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=214]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="CubeMesh" id=68]
+
+[sub_resource type="ConcavePolygonShape" id=111]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=66]
+
+[sub_resource type="SpatialMaterial" id=215]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=112]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=70]
+
+[sub_resource type="SpatialMaterial" id=216]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=113]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=72]
+
+[sub_resource type="SpatialMaterial" id=222]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=114]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=74]
+
+[sub_resource type="SpatialMaterial" id=217]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=115]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=78]
+
+[sub_resource type="SpatialMaterial" id=218]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=117]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=80]
+
+[sub_resource type="SpatialMaterial" id=219]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=118]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=82]
+
+[sub_resource type="SpatialMaterial" id=220]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=119]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=84]
+
+[sub_resource type="SpatialMaterial" id=221]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 6, 2, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=120]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="PlaneMesh" id=154]
+size = Vector2( 1.1, 1.1 )
+
+[sub_resource type="SpatialMaterial" id=189]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 100, 100, 100 )
+
+[sub_resource type="ConcavePolygonShape" id=155]
+data = PoolVector3Array( 0.55, 0, 0.55, -0.55, 0, 0.55, 0.55, 0, -0.55, -0.55, 0, 0.55, -0.55, 0, -0.55, 0.55, 0, -0.55 )
+
+[node name="FabLab" type="Spatial"]
+
+[node name="FablabK" type="Spatial" parent="."]
+
+[node name="Spatial" type="Spatial" parent="FablabK"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.196569 )
+
+[node name="MeshInstance" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 1.42, 0, 0, 0, 1.7, 0, 0, 0, 0.11, 6.44522, 0.837761, 7.08058 )
+mesh = SubResource( 61 )
+skeleton = NodePath("")
+material/0 = SubResource( 192 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance/StaticBody"]
+shape = SubResource( 62 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.11, 0, 0, 0, 1.7, 0, 0, 0, 1.55, 8.20395, 0.871008, 11.7946 )
+mesh = SubResource( 59 )
+skeleton = NodePath("")
+material/0 = SubResource( 193 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance2/StaticBody"]
+shape = SubResource( 90 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 1.2, 0, 0, 0, 1.7, 0, 0, 0, 0.11, 15.2107, 0.880882, 7.07374 )
+mesh = SubResource( 63 )
+material/0 = SubResource( 194 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance3/StaticBody"]
+shape = SubResource( 64 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 14.99, 0, 0, 0, 1.7, 0, 0, 0, 0.17, 12.1916, 0.813788, -6.95521 )
+mesh = SubResource( 41 )
+skeleton = NodePath("")
+material/0 = SubResource( 195 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance4/StaticBody"]
+shape = SubResource( 91 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1.7, 0, 0, 0, 3.92, -2.64328, 0.845789, 0.689271 )
+mesh = SubResource( 42 )
+skeleton = NodePath("")
+material/0 = SubResource( 196 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance5/StaticBody"]
+shape = SubResource( 92 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.6, 0, 0, 0, 1.7, 0, 0, 0, 0.1, -2.1306, 0.824178, 4.50759 )
+mesh = SubResource( 44 )
+skeleton = NodePath("")
+material/0 = SubResource( 197 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance6/StaticBody"]
+shape = SubResource( 93 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1.7, 0, 0, 0, 1.4, -2.60816, 0.814111, -5.71167 )
+mesh = SubResource( 43 )
+skeleton = NodePath("")
+material/0 = SubResource( 198 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance7/StaticBody"]
+shape = SubResource( 94 )
+
+[node name="MeshInstance8" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 5.7, 0, 0, 0, 1.7, 0, 0, 0, 0.1, 5.25177, 0.839208, 4.49787 )
+mesh = SubResource( 45 )
+skeleton = NodePath("")
+material/0 = SubResource( 199 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance8/StaticBody"]
+shape = SubResource( 95 )
+
+[node name="MeshInstance9" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.11, 0, 0, 0, 1.7, 0, 0, 0, 3.6, 9.66714, 0.827524, -3.35713 )
+mesh = SubResource( 46 )
+skeleton = NodePath("")
+material/0 = SubResource( 200 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance9"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance9/StaticBody"]
+shape = SubResource( 96 )
+
+[node name="MeshInstance10" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.11, 0, 0, 0, 1.7, 0, 0, 0, 1.6, 9.66924, 0.860244, 2.90438 )
+mesh = SubResource( 47 )
+skeleton = NodePath("")
+material/0 = SubResource( 201 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance10"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance10/StaticBody"]
+shape = SubResource( 97 )
+
+[node name="MeshInstance11" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.15, 0, 0, 0, 1.7, 0, 0, 0, 5.88, 26.8634, 0.78354, -1.25586 )
+mesh = SubResource( 48 )
+skeleton = NodePath("")
+material/0 = SubResource( 202 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance11"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance11/StaticBody"]
+shape = SubResource( 98 )
+
+[node name="MeshInstance12" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1.7, 0, 0, 0, 1.8, 15.0915, 0.831698, -5.27052 )
+mesh = SubResource( 49 )
+skeleton = NodePath("")
+material/0 = SubResource( 203 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance12"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance12/StaticBody"]
+shape = SubResource( 99 )
+
+[node name="MeshInstance13" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 5.1, 0, 0, 0, 1.7, 0, 0, 0, 0.13, 22.0096, 0.828179, 4.46706 )
+mesh = SubResource( 67 )
+skeleton = NodePath("")
+material/0 = SubResource( 191 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance13"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance13/StaticBody"]
+shape = SubResource( 100 )
+
+[node name="MeshInstance14" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 2.7, 0, 0, 0, 1.7, 0, 0, 0, 0.1, 12.3687, 0.8138, -0.617888 )
+mesh = SubResource( 50 )
+skeleton = NodePath("")
+material/0 = SubResource( 204 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance14"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance14/StaticBody"]
+shape = SubResource( 101 )
+
+[node name="MeshInstance15" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 4.5, 0, 0, 0, 1.7, 0, 0, 0, 0.11, -0.499878, 0.833274, 7.08538 )
+mesh = SubResource( 60 )
+skeleton = NodePath("")
+material/0 = SubResource( 205 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance15"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance15/StaticBody"]
+shape = SubResource( 102 )
+
+[node name="MeshInstance16" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.15, 0, 0, 0, 1.7, 0, 0, 0, 3.15, -0.172003, 0.861699, 10.282 )
+mesh = SubResource( 51 )
+skeleton = NodePath("")
+material/0 = SubResource( 206 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance16"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance16/StaticBody"]
+shape = SubResource( 103 )
+
+[node name="MeshInstance17" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 8.4, 0, 0, 0, 1.7, 0, 0, 0, 0.18, 8.15539, 0.886017, 13.3573 )
+mesh = SubResource( 52 )
+skeleton = NodePath("")
+material/0 = SubResource( 207 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance17"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance17/StaticBody"]
+shape = SubResource( 104 )
+
+[node name="MeshInstance18" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 2.4, 0, 0, 0, 1.7, 0, 0, 0, 0.11, 12.0666, 0.803352, 2.07324 )
+mesh = SubResource( 53 )
+skeleton = NodePath("")
+material/0 = SubResource( 208 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance18"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance18/StaticBody"]
+shape = SubResource( 105 )
+
+[node name="MeshInstance19" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.18, 0, 0, 0, 1.7, 0, 0, 0, 3.25, 16.4028, 0.882751, 10.2225 )
+mesh = SubResource( 54 )
+skeleton = NodePath("")
+material/0 = SubResource( 209 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance19"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance19/StaticBody"]
+shape = SubResource( 106 )
+
+[node name="MeshInstance20" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.11, 0, 0, 0, 1.7, 0, 0, 0, 1.57, 9.77059, 0.853962, 8.65183 )
+mesh = SubResource( 55 )
+skeleton = NodePath("")
+material/0 = SubResource( 210 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance20"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance20/StaticBody"]
+shape = SubResource( 107 )
+
+[node name="MeshInstance21" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.11, 0, 0, 0, 1.7, 0, 0, 0, 1.6, 6.63522, 0.857494, 8.65574 )
+mesh = SubResource( 56 )
+skeleton = NodePath("")
+material/0 = SubResource( 211 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance21"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance21/StaticBody"]
+shape = SubResource( 108 )
+
+[node name="MeshInstance22" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 1.675, 0, 0, 0, 1.7, 0, 0, 0, 0.11, 8.20357, 0.865341, 10.2222 )
+mesh = SubResource( 57 )
+skeleton = NodePath("")
+material/0 = SubResource( 212 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance22"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance22/StaticBody"]
+shape = SubResource( 109 )
+
+[node name="MeshInstance23" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 1.55, 0, 0, 0, 1.7, 0, 0, 0, 0.28, 17.8706, 0.864595, 8.48868 )
+mesh = SubResource( 58 )
+skeleton = NodePath("")
+material/0 = SubResource( 213 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance23"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance23/StaticBody"]
+shape = SubResource( 110 )
+
+[node name="MeshInstance24" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.09, 0, 0, 0, 1.7, 0, 0, 0, 2.15, 19.3395, 0.849129, 6.56341 )
+material_overlay = SubResource( 214 )
+mesh = SubResource( 68 )
+skeleton = NodePath("")
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance24"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance24/StaticBody"]
+shape = SubResource( 111 )
+
+[node name="MeshInstance25" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 2.02, 0, 0, 0, 1.7, 0, 0, 0, 0.11, 10.9403, 0.835577, 7.07961 )
+mesh = SubResource( 66 )
+skeleton = NodePath("")
+material/0 = SubResource( 215 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance25"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance25/StaticBody"]
+shape = SubResource( 112 )
+
+[node name="MeshInstance26" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 1.9, 0, 0, 0, 1.7, 0, 0, 0, 0.1, 13.9493, 0.829099, 4.49926 )
+mesh = SubResource( 70 )
+skeleton = NodePath("")
+material/0 = SubResource( 216 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance26"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance26/StaticBody"]
+shape = SubResource( 113 )
+
+[node name="MeshInstance27" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.13, 0, 0, 0, 1.7, 0, 0, 0, 1.5, 14.3489, 0.804379, 3.05722 )
+mesh = SubResource( 72 )
+skeleton = NodePath("")
+material/0 = SubResource( 222 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance27"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance27/StaticBody"]
+shape = SubResource( 114 )
+
+[node name="MeshInstance28" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1.7, 0, 0, 0, 1.32, 15.0755, 0.799985, -1.07579 )
+mesh = SubResource( 74 )
+skeleton = NodePath("")
+material/0 = SubResource( 217 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance28"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance28/StaticBody"]
+shape = SubResource( 115 )
+
+[node name="MeshInstance30" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.11, 0, 0, 0, 1.7, 0, 0, 0, 0.22, 15.0707, 0.806038, 1.50534 )
+mesh = SubResource( 78 )
+skeleton = NodePath("")
+material/0 = SubResource( 218 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance30"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance30/StaticBody"]
+shape = SubResource( 117 )
+
+[node name="MeshInstance31" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.45, 0, 0, 0, 1.7, 0, 0, 0, 0.11, 14.6626, 0.806209, 1.61836 )
+mesh = SubResource( 80 )
+skeleton = NodePath("")
+material/0 = SubResource( 219 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance31"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance31/StaticBody"]
+shape = SubResource( 118 )
+
+[node name="MeshInstance32" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1.7, 0, 0, 0, 7.1, -4.91793, 0.836052, 0.0445729 )
+mesh = SubResource( 82 )
+skeleton = NodePath("")
+material/0 = SubResource( 220 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance32"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance32/StaticBody"]
+shape = SubResource( 119 )
+
+[node name="MeshInstance33" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 1.3, 0, 0, 0, 1.7, 0, 0, 0, 0.17, -3.9077, 0.800089, -6.95208 )
+mesh = SubResource( 84 )
+skeleton = NodePath("")
+material/0 = SubResource( 221 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/MeshInstance33"]
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/MeshInstance33/StaticBody"]
+shape = SubResource( 120 )
+
+[node name="Floor" type="MeshInstance" parent="FablabK/Spatial"]
+transform = Transform( 30.3, 0, 0, 0, 1, 0, 0, 0, 20, 11.275, -0.130078, 3.3056 )
+mesh = SubResource( 154 )
+material/0 = SubResource( 189 )
+
+[node name="StaticBody" type="StaticBody" parent="FablabK/Spatial/Floor"]
+collision_layer = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="FablabK/Spatial/Floor/StaticBody"]
+shape = SubResource( 155 )
